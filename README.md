@@ -4,9 +4,7 @@ Useful Swift Things
 ### Content
 - [Coding convention](#Coding convention)
 1.  Coding convention
-      	https://github.com/linkedin/swift-style-guide
-	Swift Lint -> https://github.com/realm/SwiftLint - apply for all project
-		- put .yml file into root folder and apply following code in Build Phases
+
 2. HIG(Human Interface Guidelines(UIKit 애플사이트)
 	https://developer.apple.com/documentation/uikit/views_and_controls
 3. Drawable menu in swift
@@ -48,3 +46,6 @@ automaticDimension
 
 
 ## Coding convention
+https://github.com/linkedin/swift-style-guide
+Swift Lint -> https://github.com/realm/SwiftLint - apply for all project
+- put .yml file into root folder and apply following code in Build Phases
