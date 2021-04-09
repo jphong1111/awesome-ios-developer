@@ -1,1 +1,45 @@
 # Useful_iOS
+Useful Swift Things
+
+1.  Coding convention
+      	https://github.com/linkedin/swift-style-guide
+	Swift Lint -> https://github.com/realm/SwiftLint - apply for all project
+		- put .yml file into root folder and apply following code in Build Phases
+2. HIG(Human Interface Guidelines(UIKit 애플사이트)
+	https://developer.apple.com/documentation/uikit/views_and_controls
+ 3. Drawable menu in swift
+https://github.com/instamobile/drawer-menu-swift
+
+4. Table View:
+Good to know the following:
+
+Protocol:  TableViewDataSource
+numberOfRows
+numberOfSections
+cellForRow
+canMoveRow
+moveRow
+commitForRow
+canEditRow
+
+Protocol:  TableViewDelegate
+didSelectRow
+willDisplay
+estimatedHeightForRow
+heightForRow
+swipeActions
+automaticDimension
+
+5. IOS icon download : https://icons8.com/icon/set/food/ios
+
+6. API site - 1. www.rapidapi.com
+
+
+7.  UIDesign inspiration
+	https://www.behance.net/
+	https://dribbble.com/
+	https://www.awwwards.com/
+	http://www.flickr.com/
+	https://mobbin.design/
+	https://pttrns.com/
+	https://pinterest.com/
