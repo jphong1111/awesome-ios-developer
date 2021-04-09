@@ -36,16 +36,20 @@ automaticDimension
 
 
 7.  UIDesign inspiration
-	https://www.behance.net/
-	https://dribbble.com/
-	https://www.awwwards.com/
-	http://www.flickr.com/
-	https://mobbin.design/
-	https://pttrns.com/
-	https://pinterest.com/
+	
 
 
 ## Coding convention
 https://github.com/linkedin/swift-style-guide
 Swift Lint -> https://github.com/realm/SwiftLint - apply for all project
 - put .yml file into root folder and apply following code in Build Phases
+
+## UIDesign
+- UIdesign inspiration
+https://www.behance.net/
+https://dribbble.com/
+https://www.awwwards.com/
+http://www.flickr.com/
+https://mobbin.design/
+https://pttrns.com/
+https://pinterest.com/
