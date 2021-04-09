@@ -7,15 +7,15 @@ Useful Swift Things
 - [API](#API)	
 - [Third Party Library](#Third-Party-Library)
 
-3. Drawable menu in swift
-https://github.com/instamobile/drawer-menu-swift
 
 
 ## Coding convention
 
-https://github.com/linkedin/swift-style-guide
-Swift Lint -> https://github.com/realm/SwiftLint - apply for all project
-- put .yml file into root folder and apply following code in Build Phases
+- https://github.com/linkedin/swift-style-guide
+
+### Swift Lint
+- https://github.com/realm/SwiftLint apply for all project
+put .yml file into root folder and apply following code in Build Phases
 
 ## UIDesign
 
