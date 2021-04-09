@@ -37,19 +37,19 @@ automaticDimension
 	
 
 
-### Coding convention
+## Coding convention
 
 https://github.com/linkedin/swift-style-guide
 Swift Lint -> https://github.com/realm/SwiftLint - apply for all project
 - put .yml file into root folder and apply following code in Build Phases
 
-### UIDesign
+## UIDesign
 
-## iOS icon 
+### iOS icon 
 
 -https://icons8.com/icon/set/food/ios
 
-## UIdesign inspiration
+### UIdesign inspiration
 
 - https://www.behance.net/
 - https://dribbble.com/
@@ -59,6 +59,6 @@ Swift Lint -> https://github.com/realm/SwiftLint - apply for all project
 - https://pttrns.com/
 - https://pinterest.com/
 
-### API
+## API
 
 - www.rapidapi.com
