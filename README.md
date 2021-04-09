@@ -49,13 +49,13 @@ Swift Lint -> https://github.com/realm/SwiftLint - apply for all project
 
 # UIdesign inspiration
 
--https://www.behance.net/
--https://dribbble.com/
--https://www.awwwards.com/
--http://www.flickr.com/
--https://mobbin.design/
--https://pttrns.com/
--https://pinterest.com/
+- https://www.behance.net/
+- https://dribbble.com/
+- https://www.awwwards.com/
+- http://www.flickr.com/
+- https://mobbin.design/
+- https://pttrns.com/
+- https://pinterest.com/
 
 ## API
--www.rapidapi.com
+- www.rapidapi.com
