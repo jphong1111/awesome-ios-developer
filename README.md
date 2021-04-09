@@ -3,9 +3,10 @@ Useful Swift Things
 
 ### Content
 - [Coding convention](#Coding-convention)
+- [UIDesign](#UIDesign)
+- [UIDesign](#UIDesign)
+- [API](#API)	
 
-2. HIG(Human Interface Guidelines(UIKit 애플사이트)
-	
 3. Drawable menu in swift
 https://github.com/instamobile/drawer-menu-swift
 
@@ -29,12 +30,6 @@ heightForRow
 swipeActions
 automaticDimension
 
-5. IOS icon download : 
-
-
-
-	
-
 
 ## Coding convention
 
@@ -49,7 +44,7 @@ Swift Lint -> https://github.com/realm/SwiftLint - apply for all project
 
 ### iOS icon 
 
--https://icons8.com/icon/set/food/ios
+- https://icons8.com/icon/set/food/ios
 
 ### UIdesign inspiration
 
