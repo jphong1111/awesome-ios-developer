@@ -30,12 +30,10 @@ heightForRow
 swipeActions
 automaticDimension
 
-5. IOS icon download : https://icons8.com/icon/set/food/ios
-
-6. API site - 1. www.rapidapi.com
+5. IOS icon download : 
 
 
-7.  UIDesign inspiration
+
 	
 
 
@@ -45,11 +43,19 @@ Swift Lint -> https://github.com/realm/SwiftLint - apply for all project
 - put .yml file into root folder and apply following code in Build Phases
 
 ## UIDesign
-- UIdesign inspiration
-https://www.behance.net/
-https://dribbble.com/
-https://www.awwwards.com/
-http://www.flickr.com/
-https://mobbin.design/
-https://pttrns.com/
-https://pinterest.com/
+
+# iOS icon 
+-https://icons8.com/icon/set/food/ios
+
+# UIdesign inspiration
+
+-https://www.behance.net/
+-https://dribbble.com/
+-https://www.awwwards.com/
+-http://www.flickr.com/
+-https://mobbin.design/
+-https://pttrns.com/
+-https://pinterest.com/
+
+## API
+-www.rapidapi.com
