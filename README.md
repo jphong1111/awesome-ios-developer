@@ -10,26 +10,6 @@ Useful Swift Things
 3. Drawable menu in swift
 https://github.com/instamobile/drawer-menu-swift
 
-4. Table View:
-Good to know the following:
-
-Protocol:  TableViewDataSource
-numberOfRows
-numberOfSections
-cellForRow
-canMoveRow
-moveRow
-commitForRow
-canEditRow
-
-Protocol:  TableViewDelegate
-didSelectRow
-willDisplay
-estimatedHeightForRow
-heightForRow
-swipeActions
-automaticDimension
-
 
 ## Coding convention
 
@@ -48,13 +28,15 @@ Swift Lint -> https://github.com/realm/SwiftLint - apply for all project
 
 ### UIdesign inspiration
 
-- https://www.behance.net/
-- https://dribbble.com/
-- https://www.awwwards.com/
-- http://www.flickr.com/
-- https://mobbin.design/
-- https://pttrns.com/
-- https://pinterest.com/
+- [dribble](https://dribbble.com/)
+- [pinterest](https://pinterest.com/)
+- [behance](https://www.behance.net/)
+- [pttrns](https://pttrns.com/)
+- [awwwards](https://www.awwwards.com/)
+- [flickr](http://www.flickr.com/)
+- [mobbin](https://mobbin.design/)
+
+
 
 ## API
 
