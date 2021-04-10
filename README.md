@@ -1,5 +1,6 @@
-# Useful iOS
-Useful Swift Things
+<p align="center">
+  <img width="110" alt="Buy Me a Coffee" src="buy_me_a_coffee.png" /></a>
+</p>
 
 ### Content
 - [Coding convention](#Coding-convention)
