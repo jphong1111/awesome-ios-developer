@@ -11,7 +11,7 @@ Useful Swift Things
 
 ## Coding convention
 
-- https://github.com/linkedin/swift-style-guide
+- [Swift Style Guide](https://github.com/linkedin/swift-style-guide)
 
 ### Swift Lint
 - https://github.com/realm/SwiftLint apply for all project
@@ -20,11 +20,11 @@ put .yml file into root folder and apply following code in Build Phases
 ## UIDesign
 
 ### HIG(Human Interface Guidelines)
-- https://developer.apple.com/documentation/uikit
+- [Apple UI Kit](https://developer.apple.com/documentation/uikit)
 
 ### iOS icon 
 
-- https://icons8.com/icon/set/food/ios
+- https://icons8.com/icon/set
 
 ### UIdesign inspiration
 
@@ -41,7 +41,7 @@ put .yml file into root folder and apply following code in Build Phases
 ## API
 
 ### Various API Site
-- www.rapidapi.com
+- [rapidAPI](www.rapidapi.com)
 
 ## Third Party Library
 [This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift
