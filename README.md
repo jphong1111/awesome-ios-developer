@@ -35,14 +35,14 @@ put .yml file into root folder and apply following code in Build Phases
 
 ### Delegate Pattern
 
-```
+```swift
 weak var delegate: SomeProtocol?
 ```
 
 ### Singleton Pattern
 
 
-```
+```swift
 class SingletonPattern {
     static let manager = SingletonPattern()
     
@@ -84,7 +84,7 @@ class SingletonPattern {
 ## JSON
 JSON is a language-independent data format
 > Which is relative with **KEY - VALUE** pair
-```
+```json
 {
     "main": [
         {
