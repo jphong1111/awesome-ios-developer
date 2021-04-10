@@ -53,41 +53,21 @@ put .yml file into root folder and apply following code in Build Phases
 ## JSON
 JSON is a language-independent data format
 
-''' 
+```
 {
-    "athletes": [
+    "main": [
         
         {
-            "title": "Can It Help Your Blurred",
-            "body": "For many years, when people  thought of alcohol and drug",
-            "imageUrl": "image1"
+            "title": "example1",
+            "body": "body example1"
         },
         {
-            "title": "We Might Can Help You",
-            "body": "For many years, when people  thought of alcohol and drug",
-            "imageUrl": "image2"
+            "title": "example2",
+            "body: "body example2"
         },
-        {
-            "title": "All We Can Do Is Blurred",
-            "body": "For many years, when people  thought of alcohol and drug",
-            "imageUrl": "image3"
-        },
-        {
-            "title": "All The Thing Is Fun",
-            "body": "For many years, when people  thought of alcohol and drug",
-            "imageUrl": "image4"
-        },
-        {
-            "title": "Can It Improve My Skills",
-            "body": "For many years, when people  thought of alcohol and drug",
-            "imageUrl": "image5"
-        }
-        
-      
     ]
 }
-
-'''
+```
 ### JSON parser extension for Chrome
 [JSON parser pro](https://chrome.google.com/webstore/detail/json-viewer-pro/eifflpmocdbdmepbjaopkkhbfmdgijcc) **FREE** :+1:
 
