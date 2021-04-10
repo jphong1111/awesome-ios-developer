@@ -3,6 +3,7 @@
 
 ### Content
 - [Coding convention](#Coding-convention)
+- [Design Pattern](#Design-Pattern)
 - [UIDesign](#UIDesign)
 - [API](#API)	
 - [JSON](#JSON)
@@ -23,6 +24,10 @@ The way of force you to adapt coding convention
 - [Swift Lint](https://github.com/realm/SwiftLint) apply for all project:+1:
 
 put .yml file into root folder and apply following code in Build Phases
+
+### Design Pattern
+
+## Delegate pattern
 
 ## UIDesign
 
@@ -56,7 +61,6 @@ JSON is a language-independent data format
 ```
 {
     "main": [
-        
         {
             "title": "example1",
             "body": "body example1"
@@ -69,6 +73,7 @@ JSON is a language-independent data format
 }
 ```
 ### JSON parser extension for Chrome
+This extension makes JSON more structable
 [JSON parser pro](https://chrome.google.com/webstore/detail/json-viewer-pro/eifflpmocdbdmepbjaopkkhbfmdgijcc) **FREE** :+1:
 
 ## Third Party Library
