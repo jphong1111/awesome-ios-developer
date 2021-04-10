@@ -89,11 +89,11 @@ JSON is a language-independent data format
     "main": [
         {
             "title": "example1",
-            "body": "body example1"
+            "body": "body1"
         },
         {
             "title": "example2",
-            "body: "body example2"
+            "body: "body2"
         },
     ]
 }
