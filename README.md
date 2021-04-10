@@ -5,7 +5,8 @@
 - [Coding convention](#Coding-convention)
 - [Design Pattern](#Design-Pattern)
 - [Code Structuring](#Code-Structuring)
-    - [MVC]
+    - [MVC](#MVC)
+    - [MVVM](#MVVM)
 - [UIDesign](#UIDesign)
 - [API](#API)	
 - [JSON](#JSON)
@@ -48,6 +49,8 @@ class SingletonPattern {
 ## Code Structuring
 
 ### MVC
+
+### MVVM
 
 ## UIDesign
 
