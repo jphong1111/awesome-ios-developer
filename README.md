@@ -52,7 +52,7 @@ put .yml file into root folder and apply following code in Build Phases
 
 ## JSON
 JSON is a language-independent data format
-
+> Which is relative with **KEY - VALUE** pair
 ```
 {
     "main": [
