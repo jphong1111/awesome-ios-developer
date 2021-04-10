@@ -41,6 +41,7 @@ class SingletonPattern {
     static let manager = SingletonPattern()
     
     private init() {}
+}
 ```
 
 
