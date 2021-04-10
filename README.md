@@ -50,4 +50,4 @@ put .yml file into root folder and apply following code in Build Phases
 - [rapidAPI](www.rapidapi.com)
 
 ## Third Party Library
-[This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift
+[This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
