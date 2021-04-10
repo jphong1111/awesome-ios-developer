@@ -25,9 +25,24 @@ The way of force you to adapt coding convention
 
 put .yml file into root folder and apply following code in Build Phases
 
-### Design Pattern
+## Design Pattern
 
-## Delegate pattern
+### Delegate Pattern
+
+```
+weak var delegate: SomeProtocol?
+```
+
+### Singleton Pattern
+
+
+```
+class SingletonPattern {
+    static let manager = SingletonPattern()
+    
+    private init() {}
+```
+
 
 ## UIDesign
 
