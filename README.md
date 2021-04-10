@@ -14,7 +14,7 @@ Useful Swift Things
 - [Swift Style Guide](https://github.com/linkedin/swift-style-guide)
 
 ### Swift Lint
-- https://github.com/realm/SwiftLint apply for all project
+- [Swift Lint](https://github.com/realm/SwiftLint) apply for all project:+1:
 put .yml file into root folder and apply following code in Build Phases
 
 ## UIDesign
