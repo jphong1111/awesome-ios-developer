@@ -10,6 +10,9 @@ Useful Swift Things
 
 
 ## Coding convention
+set of guidelines for a specific programming language that recommend programming style
+
+### Swift Style Guide
 
 - [Swift Style Guide](https://github.com/linkedin/swift-style-guide)
 
