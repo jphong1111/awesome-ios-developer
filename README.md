@@ -5,6 +5,7 @@
 - [Coding convention](#Coding-convention)
 - [UIDesign](#UIDesign)
 - [API](#API)	
+- [JSON](#JSON)
 - [Third Party Library](#Third-Party-Library)
 
 
@@ -48,6 +49,11 @@ put .yml file into root folder and apply following code in Build Phases
 
 ### Various API Site
 - [rapidAPI](www.rapidapi.com)
+
+## JSON
+
+### JSON parser extension for Chrome
+[JSON parser pro](https://chrome.google.com/webstore/detail/json-viewer-pro/eifflpmocdbdmepbjaopkkhbfmdgijcc) **FREE** :+1:
 
 ## Third Party Library
 [This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
