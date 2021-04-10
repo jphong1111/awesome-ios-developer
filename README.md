@@ -14,7 +14,8 @@ Useful Swift Things
 - [Swift Style Guide](https://github.com/linkedin/swift-style-guide)
 
 ### Swift Lint
-The way of force you to adapt coding convention >otherwise project build will **FAILED**
+The way of force you to adapt coding convention 
+>otherwise project build will **FAILED**
 - [Swift Lint](https://github.com/realm/SwiftLint) apply for all project:+1:
 
 put .yml file into root folder and apply following code in Build Phases
