@@ -4,6 +4,8 @@
 ## Content
 - [Coding convention](#Coding-convention)
 - [Design Pattern](#Design-Pattern)
+- [Code Structuring](#Code-Structuring)
+    - [MVC]
 - [UIDesign](#UIDesign)
 - [API](#API)	
 - [JSON](#JSON)
@@ -43,7 +45,9 @@ class SingletonPattern {
     private init() {}
 }
 ```
+## Code Structuring
 
+### MVC
 
 ## UIDesign
 
