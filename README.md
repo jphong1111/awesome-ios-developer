@@ -30,7 +30,7 @@ put .yml file into root folder and apply following code in Build Phases
 
 ### iOS icon 
 
-- [icon8](https://icons8.com/)
+- [icon8](https://icons8.com/) you can download icons for your **APP**
 
 ### UIdesign inspiration
 
