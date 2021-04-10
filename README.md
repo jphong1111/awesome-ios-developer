@@ -7,6 +7,8 @@
 ## Content
 - [Coding convention](#Coding-convention)
 - [Design Pattern](#Design-Pattern)
+    - [Delegate](#Delegate)
+    - [Singleton](#Singleton)
 - [Code Structuring](#Code-Structuring)
     - [MVC](#MVC)
     - [MVVM](#MVVM)
