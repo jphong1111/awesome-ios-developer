@@ -1,7 +1,7 @@
 # Useful Swift Things
 
 <div align="center">
-    <img src="https://github.com/jphong1111/Useful_Swift/blob/main/swift.jpeg">
+    <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/swift.jpeg">
 </div>
 
 ## Content
