@@ -4,6 +4,7 @@
     <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/swift.jpeg">
 </div>
 
+
 ## Content
 - [Coding convention](#Coding-convention)
 - [Design Pattern](#Design-Pattern)
@@ -54,6 +55,10 @@ class SingletonPattern {
 ## Code Structuring
 
 ### MVC
+
+<div align="center">
+    <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVCModel.png">
+</div>
 
 ### MVVM
 
