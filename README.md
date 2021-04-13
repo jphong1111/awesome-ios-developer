@@ -55,6 +55,10 @@ class SingletonPattern {
     private init() {}
 }
 ```
+
+### Observer Pattern
+
+
 ## Code Structuring
 
 ### MVC
@@ -64,6 +68,8 @@ class SingletonPattern {
 </div>
 
 ### MVVM
+
+### Viper
 
 ## UIDesign
 
