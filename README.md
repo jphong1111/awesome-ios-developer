@@ -36,6 +36,7 @@ put .yml file into root folder and apply following code in Build Phases
 
 ## Design Pattern
 Design pattern is
+
 Check [this](https://refactoring.guru/design-patterns/swift) website for design pattern in Swift
 
 ### Delegate Pattern
