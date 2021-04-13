@@ -81,7 +81,7 @@ class SingletonPattern {
 ## API
 
 ### Various API Site
-- [rapidAPI](www.rapidapi.com)
+- [rapidAPI](https://www.rapidapi.com)
 
 ## JSON
 JSON is a language-independent data format
