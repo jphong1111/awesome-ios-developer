@@ -67,7 +67,7 @@ class SingletonPattern {
 
 ### MVVM
 
-###### MVC vs MVVM
+##### MVC vs MVVM
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVVMvsMVC.png">
 
