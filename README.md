@@ -63,11 +63,13 @@ class SingletonPattern {
 
 ### MVC
 
-<div align="center">
-    <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVCModel.png">
-</div>
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVCModel.png">
 
 ### MVVM
+
+###### MVC vs MVVM
+
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVVMvsMVC.png">
 
 ### Viper
 
