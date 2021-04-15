@@ -31,7 +31,7 @@ set of guidelines for a specific programming language that recommend programming
 The way of force you to adapt coding convention 
 >otherwise project build will **FAILED**
 - [Swift Lint](https://github.com/realm/SwiftLint) apply for all project:+1:
-```typescript
+```swift
 if which swiftlint >/dev/null; then
   swiftlint
 else
