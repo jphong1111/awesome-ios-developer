@@ -31,7 +31,14 @@ set of guidelines for a specific programming language that recommend programming
 The way of force you to adapt coding convention 
 >otherwise project build will **FAILED**
 - [Swift Lint](https://github.com/realm/SwiftLint) apply for all project:+1:
-
+```script
+if which swiftlint >/dev/null; then
+  swiftlint
+else
+  echo "error: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+  exit 1
+  fi
+```
 put .yml file into root folder and apply following code in Build Phases
 
 ## Design Pattern
