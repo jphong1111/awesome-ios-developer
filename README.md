@@ -78,6 +78,15 @@ class SingletonPattern {
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVVMvsMVC.png">
 
+M -> Model – Which holds the application data
+
+V –> View – It displays the data that is stored in model. These are visual elements through which a user interacts. These are subclasses of UIView
+
+VM –> View Model – Transform model information/data and it interacts with controller or view to display those informations.
+
+C –> Controller class – It will be there but the responsibility of view business logic has been removed and give to view model
+
+
 ### Viper
 
 ## UIDesign
