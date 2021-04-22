@@ -44,6 +44,8 @@ put .yml file into root folder and apply following code in Build Phases
 
 **You can modify(delete) SwiftLint Option with opening .yml file**
 
+> Shift + Command + . will show the hidden file
+
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/swiftLintChange.png">
 
 ## Design Pattern
