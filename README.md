@@ -109,11 +109,13 @@ C –> Controller class – It will be there but the responsibility of view busi
 - [flickr](http://www.flickr.com/)
 - [mobbin](https://mobbin.design/)
 
-##Helper
+## Helper
 
 You can check the file in the follow link
 
-- [Email, Message, Call]
+- [Email, Message, Call](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/ConversationManager.swift) 
+### Usage
+
 
 
 ## API
