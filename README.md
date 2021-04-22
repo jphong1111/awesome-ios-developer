@@ -115,6 +115,14 @@ You can check the file in the follow link
 
 - [Email, Message, Call](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/ConversationManager.swift) 
 ### Usage
+import MesaageUI first
+
+```swift
+import MessageUI
+```
+
+Then use it
+
 ```swift
     lazy var manager = ConversationManager(presentingController: self, mailDelegate: self, messageDelegate: self )
     
