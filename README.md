@@ -115,8 +115,21 @@ You can check the file in the follow link
 
 - [Email, Message, Call](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/ConversationManager.swift) 
 ### Usage
-
-
+```swift
+    lazy var manager = ConversationManager(presentingController: self, mailDelegate: self, messageDelegate: self )
+    
+    func sendEmail() -> MFMailComposeViewController {
+        manager.sendEmail(feedback: MailFeedback(recipients: ["abcd@example.com"], subject: "Sample", body: "Write body"))
+    }
+    
+    func sendMessage() -> MFMessageComposeViewController {
+        manager.sendMessage(feedback: MessageFeedBack(recipients: ["1111111111"], body: "Type here"))
+    }
+    
+    func call() {
+        manager.makeCall(number: "1111111111")
+    }
+```
 
 ## API
 
