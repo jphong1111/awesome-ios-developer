@@ -20,7 +20,7 @@
 - [Third Party Library](#Third-Party-Library)
 - [Useful Stuff](#Useful-Stuff)
     - [Show Preview in UIKit(Build UI with Code Base)](#show-preview-in-uikitbuild-ui-with-code-base-----)
-
+    - [Write README.md]
 
 
 ## Coding convention
@@ -216,3 +216,7 @@ Enable canvas option like this
 **You are GOOD TO GO**  👏👏👏
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preivew_screenShot.png">
+
+## Write README.md
+
+[This](#https://medium.com/@saumya.ranjan/how-to-write-a-readme-md-file-markdown-file-20cb7cbcd6f) will hel you to write a README.md file more dynamically 👍
