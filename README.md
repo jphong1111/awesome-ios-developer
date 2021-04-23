@@ -18,6 +18,8 @@
 - [API](#API)	
 - [JSON](#JSON)
 - [Third Party Library](#Third-Party-Library)
+- [Useful Stuff](#Useful-Stuff)
+    - [Show Preview in UIKit(Build UI with Code Base)](#Show-Preview-in-UIKit(Build-UI-with-Code-Base))
 
 
 
@@ -178,3 +180,29 @@ This extension makes JSON more structable
 
 ## Third Party Library
 [This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
+
+## Useful Stuff
+
+### Show Preview in UIKit(Build UI with Code Base)
+
+```swift
+import SwiftUI
+
+struct ViewControllerRepresentable: UIViewControllerRepresentable {
+    typealias UIViewControllerType = ViewController
+
+    func makeUIViewController(context: Context) -> ViewController {
+        return ViewController()
+    }
+
+    func updateUIViewController(_ uiViewController: ViewController, context: Context) { 
+    }
+}
+
+@available(iOS 13.0.0, *)
+struct ViewPreview: PreviewProvider {
+    static var previews: some View {
+        ViewControllerRepresentable()
+    }
+}
+```
