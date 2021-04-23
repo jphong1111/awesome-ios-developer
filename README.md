@@ -215,4 +215,4 @@ Enable canvas option like this
 
 **You are GOOD TO GO**  👏👏👏
 
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preivew_screenShot.png", width = "400", height = "400">
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preivew_screenShot.png" width = "400" height = "400">
