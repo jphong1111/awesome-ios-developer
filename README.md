@@ -183,7 +183,9 @@ This extension makes JSON more structable
 
 ## Useful Stuff
 
-### Show Preview in UIKit(Build UI with Code Base)
+### Show Preview in UIKit(Build UI with Code Base) 👍 👍 👍 👍 👍
+
+Copy this code and Paste into your controller
 
 ```swift
 import SwiftUI
@@ -206,3 +208,7 @@ struct ViewPreview: PreviewProvider {
     }
 }
 ```
+
+Enable canvas option like this
+
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preview%20using%20canvas.png">
