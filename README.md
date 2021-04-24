@@ -165,7 +165,7 @@ JSON is a language-independent data format
         {
             "title": "example2",
             "body: "body2"
-        },
+        }
     ]
 }
 ```
