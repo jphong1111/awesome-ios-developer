@@ -3,9 +3,9 @@
 <div align="center">
     <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/swift.jpeg">
 </div>
+<p>
+</p>
 <p align="center">
-    <p>
-    </p>
     <img src="https://img.shields.io/badge/-OneDayOneCommit-critical?style=plastic&logo=swift" />
 </p>
 
