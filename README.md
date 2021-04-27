@@ -10,7 +10,7 @@
 - [Design Pattern](#Design-Pattern)
     - [Delegate](#Delegate)
     - [Singleton](#Singleton)
-    - [Observer](#Observer Pattern)
+    - [Observer](#Observer-Pattern)
 - [Code Structuring](#Code-Structuring)
     - [MVC](#MVC)
     - [MVVM](#MVVM)
