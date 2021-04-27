@@ -10,9 +10,11 @@
 - [Design Pattern](#Design-Pattern)
     - [Delegate](#Delegate)
     - [Singleton](#Singleton)
+    - [Observer](#Observer Pattern)
 - [Code Structuring](#Code-Structuring)
     - [MVC](#MVC)
     - [MVVM](#MVVM)
+    - [VIPER](#VIPER)
 - [UIDesign](#UIDesign)
 - [Helper](#Helper)
 - [API](#API)	
@@ -96,7 +98,7 @@ VM –> View Model – Transform model information/data and it interacts with co
 C –> Controller class – It will be there but the responsibility of view business logic has been removed and give to view model
 
 
-### Viper
+### VIPER
 
 ## UIDesign
 
