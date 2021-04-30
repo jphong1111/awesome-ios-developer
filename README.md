@@ -192,10 +192,13 @@ This extension makes JSON more structable
 GCD(Grand Central Dispatch) is a low-level API for managing concurrent operations. It can help you improve your app’s responsiveness by deferring computationally expensive tasks to the background.
 
 ### DispatchQueue
+An object that manages the execution of tasks serially or concurrently on your app's main thread or on a background thread.
 
 #### main
+We can say main is a serial queue
 
 #### global()
+We can say global is a concurrent queue
 
 ### DispatchGroup
 
