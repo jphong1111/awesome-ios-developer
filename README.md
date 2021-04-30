@@ -215,7 +215,7 @@ Go to this Option and Click **EDIT SCHEME...** 👈
 
 And then go to **RUN** and check **THREAD SANITIZER** 👈
 
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/address_sanitizer2.png">
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/thread_sanitizer.png">
 
 ## Third Party Library
 [This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
