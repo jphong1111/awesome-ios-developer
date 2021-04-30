@@ -28,7 +28,7 @@
     - [DispatchQueue](#DispatchQueue)
     - [DispatchGroup](#DispatchGroup)
     - [DispatchWorkItem](#DispatchWorkItem)
-    - [Address Sanitizer](#Address-Sanitizer)
+    - [Thread Sanitizer](#Thread-Sanitizer)
 - [Useful Stuff](#Useful-Stuff)
     - [Show Preview in UIKit(Build UI with Code Base)](#show-preview-in-uikitbuild-ui-with-code-base-----)
     - [Write README.md](#write-readmemd)
@@ -204,8 +204,8 @@ We can say global is a concurrent queue
 
 ### DispatchWorkItem
 
-### Address Sanitizer
-Address Sanitizer is a tool to identifies the potential memory-related corruption issues. And it is a good way to find the [Readers and Writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) in your application.
+### Thread Sanitizer
+Thread Sanitizer is a tool to identifies the potential thread-related corruption issues. And it is a good way to find the [Readers and Writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) in your application.
 
 #### How to Use Address Sanitizer
 
@@ -213,7 +213,7 @@ Go to this Option and Click **EDIT SCHEME...** 👈
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/address_sanitizer.png">
 
-And then go to **RUN** and check **ADDRESS SANITIZER** 👈
+And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/address_sanitizer2.png">
 
