@@ -208,8 +208,11 @@ Address Sanitizer is a tool to identifies the potential memory-related corruptio
 
 Go to this Option and Click **EDIT SCHEME...** 👈
 
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/address_sanitizer.png">
+
 And then go to **RUN** and check **ADDRESS SANITIZER** 👈
 
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/address_sanitizer2.png">
 
 ## Third Party Library
 [This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
