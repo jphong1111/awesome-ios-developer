@@ -202,7 +202,14 @@ GCD(Grand Central Dispatch) is a low-level API for managing concurrent operation
 ### DispatchWorkItem
 
 ### Address Sanitizer
-Address Sanitizer is a good way to find the [Readers and Writers problem](#https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) in your application.
+Address Sanitizer is a tool to identifies the potential memory-related corruption issues. And it is a good way to find the [Readers and Writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) in your application.
+
+#### How to Use Address Sanitizer
+
+Go to this Option and Click **EDIT SCHEME...** 👈
+
+And then go to **RUN** and check **ADDRESS SANITIZER** 👈
+
 
 ## Third Party Library
 [This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
