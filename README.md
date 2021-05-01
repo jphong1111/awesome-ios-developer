@@ -280,4 +280,4 @@ Enable canvas option like this
 
 ## Author
 
-This README.md file is written by Jungpyo Hong (Dennis)
+This README.md file is written by **Jungpyo Hong (Dennis)**
