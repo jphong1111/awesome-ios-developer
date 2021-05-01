@@ -160,8 +160,7 @@ Then use it
 
 ## API
 
-### Various API Site
-- [rapidAPI](https://www.rapidapi.com)
+API(Application Programming Interface) is an interface that defines interactions between multiple software applications or mixed hardware-software intermediaries. It defines the kinds of calls or requests that can be made, how to make them, the data formats that should be used, the conventions to follow, etc.
 
 ## JSON
 JSON is a language-independent data format
@@ -186,7 +185,26 @@ This extension makes JSON more structable
 
 ### JSON Decoding
 
+To use JSON Decoding in swift, you have to define the model to be Codable or Decodable
+
+```swift
+public typealias Codable = Decodable & Encodable
+```
+
+> Decodable can only decode the json data. Can't encoded json file!!
+
+```swift
+struct User: Codable {
+    var first_name: String
+    var last_name: String
+    var country: String
+}
+```
+
 ### JSONSerialization
+
+### Various API Site
+- [rapidAPI](https://www.rapidapi.com)
 
 ## GCD
 GCD(Grand Central Dispatch) is a low-level API for managing concurrent operations. It can help you improve your app’s responsiveness by deferring computationally expensive tasks to the background.
