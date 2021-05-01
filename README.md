@@ -277,3 +277,7 @@ Enable canvas option like this
 ## Write README.md
 
 [This](https://medium.com/@saumya.ranjan/how-to-write-a-readme-md-file-markdown-file-20cb7cbcd6f) will help you to write a README.md file more dynamically 👍
+
+## Author
+
+This README.md file is written by Jungpyo Hong (Dennis)
