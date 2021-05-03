@@ -10,6 +10,7 @@ import Foundation
 typealias NetworkRouterCompletion<T> = (Result<T, AppError>)->()
 
 class Router<EndPoint: EndPointType>: NetworkRouter {
+    
     private var task: URLSessionTask?
     private let session = URLSession(configuration: .default)
     
@@ -44,6 +45,11 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
                         print(error)
                         completionOnMain(.failure(.parseError))
                     }
+                case 401...500: return print(NetworkResponse.authenticationError.rawValue)
+                    
+                case 501...599: return print(NetworkResponse.badRequest.rawValue)
+                    
+                case 600: return print(NetworkResponse.outdated.rawValue)
                     
                 default:
                     completionOnMain(.failure(.genericError("Something went wrong")))
@@ -54,11 +60,12 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
         }
         task?.resume()
     }
+    
     func cancel() {
         self.task?.cancel()
     }
     
-    fileprivate func buildRequest(from route: EndPoint) throws -> URLRequest {
+    private func buildRequest(from route: EndPoint) throws -> URLRequest {
         
         var request = URLRequest(url: route.baseURL.appendingPathComponent(route.path),
                                  cachePolicy: .reloadIgnoringLocalAndRemoteCacheData,
@@ -106,6 +113,7 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
             throw error
         }
     }
+    
     private func addAdditionalHeaders(_ additionalHeaders: HTTPHeaders?, request: inout URLRequest) {
         guard let headers = additionalHeaders else { return }
         for (key, value) in headers {
