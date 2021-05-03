@@ -113,6 +113,7 @@ C –> Controller class – It will be there but the responsibility of view busi
 
 ### HIG(Human Interface Guidelines)
 - [Apple UI Kit](https://developer.apple.com/documentation/uikit)
+- [iOS Design Guide](https://ivomynttinen.com/blog/ios-design-guidelines)
 
 ### iOS icon 
 
