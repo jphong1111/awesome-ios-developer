@@ -14,3 +14,24 @@ protocol EndPointType{
     var task: HTTPTask { get }
     var headers: HTTPHeaders? { get }
 }
+
+extension EndPointType {
+    var baseURL: URL {
+        guard let url = URL(string: "ADD your baseURL") else {
+            fatalError("baseURL Error")
+        }
+        return url
+    }
+    
+    var httpMethod: HTTPMethod {
+        .get
+    }
+    
+    var task: HTTPTask {
+        .request
+    }
+    
+    var headers: HTTPHeaders? {
+        nil
+    }
+}
