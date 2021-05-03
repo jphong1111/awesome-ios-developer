@@ -21,6 +21,8 @@
     - [VIPER](#VIPER)
 - [UIDesign](#UIDesign)
 - [Helper](#Helper)
+    - [Email, Message, Call](#Email,-Message,-Call)
+    - [Network Layer](#Network-Layer)
 - [API](#API)	
 - [JSON](#JSON)
 - [Third Party Library](#Third-Party-Library)
@@ -131,6 +133,10 @@ C –> Controller class – It will be there but the responsibility of view busi
 
 ## Helper
 
+All files are resuable files and protocol oriented. **Just Copy and Paste inside your project and use it!!** 👍
+ 
+### Email, Message, Call
+
 You can check the file in the follow link
 
 - [Email, Message, Call](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/ConversationManager.swift) 
@@ -158,6 +164,10 @@ Then use it
         manager.makeCall(number: "1111111111")
     }
 ```
+
+### Network Layer
+
+- [Network Layer](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/Network-Layer) 
 
 ## API
 
