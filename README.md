@@ -136,7 +136,7 @@ C –> Controller class – It will be there but the responsibility of view busi
 
 All files are resuable files and protocol oriented. **Just Copy and Paste inside your project and use it!!** 👍
  
-### Email, Message, Call
+## Email, Message, Call
 
 You can check the file in the follow link
 
@@ -166,11 +166,11 @@ Then use it
     }
 ```
 
-### Network Layer
+## Network Layer
 
 - [Network Layer](https://github.com/jphong1111/Useful_Swift/tree/main/Helper/Network%20Layer) 
 
-## How to Use
+### Usage
 
 First, set the base URL in **EndPointType file**
 
@@ -235,11 +235,11 @@ router.request(.first(country: London)) { [weak self] (results: Result<CountryWe
 
 This reusable network layer files for referenced from [here](https://medium.com/flawless-app-stories/writing-network-layer-in-swift-protocol-oriented-approach-4fa40ef1f908)
 
-### Image Picker
+## Image Picker
 
 - [Image Picker](https://github.com/jphong1111/Useful_Swift/tree/main/Helper/Image-Picker) 
 
-## How to Use
+### Usage
 
 Copy and Paste in your project and then declare Image Picker object inside your project 
 
