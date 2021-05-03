@@ -1,6 +1,5 @@
 //
 //  ImagePicker.swift
-//  VariousManagerDemoApp
 //
 //  Created by JungpyoHong on 4/21/21.
 //
@@ -24,7 +23,6 @@ open class ImagePicker: NSObject {
         
         self.presentationController = presentationController
         self.delegate = delegate
-        
         self.imagePicker.delegate = self
         self.imagePicker.allowsEditing = true
         self.imagePicker.mediaTypes = ["public.image"]
@@ -44,7 +42,6 @@ open class ImagePicker: NSObject {
     public func present(from sourceView: UIView) {
         
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        
         if let action = self.action(for: .camera, title: "Take photo") {
             alertController.addAction(action)
         }
@@ -56,13 +53,6 @@ open class ImagePicker: NSObject {
         }
         
         alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        
-//        if UIDevice.current.userInterfaceIdiom == .pad {
-//            alertController.popoverPresentationController?.sourceView = sourceView
-//            alertController.popoverPresentationController?.sourceRect = sourceView.bounds
-//            alertController.popoverPresentationController?.permittedArrowDirections = [.down, .up]
-//        }
-        
         self.presentationController?.present(alertController, animated: true)
     }
     
