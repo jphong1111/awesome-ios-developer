@@ -282,9 +282,26 @@ resultTextField.text = readData
 ```
 > File Manager are wrote with singleton pattern, therefore no need to declare in side your code!
 
+Good To GO 👏👏👏
+
 ## Video Downloader
 
-- [Video Downloader](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/ImagePicker.swift) 
+- [Video Downloader](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/VideoManager.swift) 
+
+## Usage
+
+Make an object of VideoManager inside your code
+
+```swift
+let videoManager = VideoManager()
+```
+
+use downloadVideoLinkAndCreateAsset function to start download with entering URL
+
+```swift
+self.videoManager.downloadVideoLinkAndCreateAsset(text)
+```
+Good To GO 👏👏👏
 
 ## API
 
