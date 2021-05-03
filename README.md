@@ -23,6 +23,7 @@
 - [Helper](#Helper)
     - [Email, Message, Call](#email-message-call)
     - [Network Layer](#Network-Layer)
+    - [Image Picker](#Image-Picker)
 - [API](#API)	
 - [JSON](#JSON)
 - [Third Party Library](#Third-Party-Library)
@@ -169,7 +170,7 @@ Then use it
 
 - [Network Layer](https://github.com/jphong1111/Useful_Swift/tree/main/Helper/Network%20Layer) 
 
-## How to Use it
+## How to Use
 
 First, set the base URL in **EndPointType file**
 
@@ -233,6 +234,32 @@ router.request(.first(country: London)) { [weak self] (results: Result<CountryWe
 
 
 This reusable network layer files for referenced from [here](https://medium.com/flawless-app-stories/writing-network-layer-in-swift-protocol-oriented-approach-4fa40ef1f908)
+
+### Image Picker
+
+- [Image Picker](https://github.com/jphong1111/Useful_Swift/tree/main/Helper/Image-Picker) 
+
+## How to Use
+
+Copy and Paste in your project and then declare Image Picker object inside your project 
+
+```swift
+lazy var imagePicker = ImagePicker(presentationController: self, delegate: self)
+```
+
+Then, extend ImagePickerDelegate to your viewController
+
+```swift
+extension ViewController: ImagePickerDelegate {
+    func didSelect(image: UIImage?) {
+        self.yourImageView.image = image
+        self.dismiss(animated: true, completion: nil)
+    }
+}
+```
+
+Good To GO 👏👏👏
+> See Example [here](https://github.com/jphong1111/ImageMessageHandler_DemoApp)
 
 ## API
 
