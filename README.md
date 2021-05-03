@@ -270,7 +270,17 @@ Good To GO 👏👏👏
 
 ## File Manager
 
-- [File Manager](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/ImagePicker.swift) 
+- [File Manager](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/FileManageHelper.swift) 
+
+### Usage
+
+Copy and Paste in your project 
+
+```swift
+let readData = FileManageHelper.manager.readFile(filename: fileNameTextField.text ?? "", type: extensionTextField.text ?? "")
+resultTextField.text = readData
+```
+> File Manager are wrote with singleton pattern, therefore no need to declare in side your code!
 
 ## Video Downloader
 
