@@ -232,6 +232,8 @@ router.request(.first(country: London)) { [weak self] (results: Result<CountryWe
 > **CountryWeather should be a model with Decodable**
 
 
+This reusable network layer files for referenced from [here](https://medium.com/flawless-app-stories/writing-network-layer-in-swift-protocol-oriented-approach-4fa40ef1f908)
+
 ## API
 
 API(Application Programming Interface) is an interface that defines interactions between multiple software applications or mixed hardware-software intermediaries. It defines the kinds of calls or requests that can be made, how to make them, the data formats that should be used, the conventions to follow, etc.
