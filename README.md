@@ -152,20 +152,19 @@ import MessageUI
 ```
 
 Then use it
+> Don't forget to extend the mail, message delegate to your ViewController!
 
 ```swift
-    lazy var manager = ConversationManager(presentingController: self, mailDelegate: self, messageDelegate: self )
+    lazy var conversation = ConversationManager(presentingController: self, mailDelegate: self, messageDelegate: self, viewController: self)
     
-    func sendEmail() -> MFMailComposeViewController {
-        manager.sendEmail(feedback: MailFeedback(recipients: ["abcd@example.com"], subject: "Sample", body: "Write body"))
+    @IBAction private func sendEmail(_ sender: UIButton) {
+        conversation.sendEmail(feedback: MailFeedback(recipients: ["abcd@google.com"], subject: "FeedBack", body: "Write feedback here"))
     }
-    
-    func sendMessage() -> MFMessageComposeViewController {
-        manager.sendMessage(feedback: MessageFeedBack(recipients: ["1111111111"], body: "Type here"))
+    @IBAction private func sendMessage(_ sender: UIButton) {
+        conversation.sendMessage(feedback: MessageFeedBack(recipients: ["1111111111"], body: "Type here"))
     }
-    
-    func call() {
-        manager.makeCall(number: "1111111111")
+    @IBAction private func startCall(_ sender: UIButton) {
+        conversation.makeCall(number: "1111111111")
     }
 ```
 
