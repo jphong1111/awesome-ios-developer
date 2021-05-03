@@ -24,6 +24,8 @@
     - [Email, Message, Call](#email-message-call)
     - [Network Layer](#Network-Layer)
     - [Image Picker](#Image-Picker)
+    - [File Manager](#File-Manager)
+    - [Video Downloader](#Video-Downloader)
 - [API](#API)	
 - [JSON](#JSON)
 - [Third Party Library](#Third-Party-Library)
@@ -141,6 +143,7 @@ All files are resuable files and protocol oriented. **Just Copy and Paste inside
 You can check the file in the follow link
 
 - [Email, Message, Call](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/ConversationManager.swift) 
+
 ### Usage
 import MesaageUI first
 
@@ -261,6 +264,15 @@ extension ViewController: ImagePickerDelegate {
 
 Good To GO 👏👏👏
 > See Example [here](https://github.com/jphong1111/ImageMessageHandler_DemoApp)
+
+
+## File Manager
+
+- [File Manager](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/ImagePicker.swift) 
+
+## Video Downloader
+
+- [Video Downloader](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/ImagePicker.swift) 
 
 ## API
 
