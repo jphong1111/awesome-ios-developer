@@ -188,7 +188,7 @@ then make a instance of router.swift file in your code
 private let router = Router<YourAPI>()
 ```
 
-for **YourAPI part**, simple create a new enum with cases about specific api URL
+for **YourAPI part**, simply create a new **enum** with cases about specific api URL
 > It will make your router more dynamic!
 > Don't forget extension to EndPointType!
 
@@ -206,7 +206,7 @@ extension YourAPI: EndPointType {
             return "\(country).json"
         case .second(let time):
             return "\(time).json"
-        case .raceResults(let name):
+        case .third(let name):
             return "\(name).json"
         }
     }
