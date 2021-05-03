@@ -167,7 +167,7 @@ Then use it
 
 ### Network Layer
 
-- [Network Layer](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/Network-Layer) 
+- [Network Layer](https://github.com/jphong1111/Useful_Swift/tree/main/Helper/Network%20Layer) 
 
 ## API
 
