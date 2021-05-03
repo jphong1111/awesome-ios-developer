@@ -21,7 +21,7 @@
     - [VIPER](#VIPER)
 - [UIDesign](#UIDesign)
 - [Helper](#Helper)
-    - [Email, Message, Call](#Email,-Message,-Call)
+    - [Email, Message, Call](#email-message-call)
     - [Network Layer](#Network-Layer)
 - [API](#API)	
 - [JSON](#JSON)
