@@ -61,3 +61,18 @@ extension LocationManager: CLLocationManagerDelegate {
     }
 }
 
+extension LocationManager: MKLocalSearchCompleterDelegate {
+    func getPlaceLocation(with location: CLLocation, completion: @escaping ((String?) -> Void)) {
+        let geoCoder = CLGeocoder()
+        geoCoder.reverseGeocodeLocation(location, preferredLocale: .current) { place, error in
+            guard let place = place?.last, error == nil else {
+                completion("")
+                return
+            }
+            let joinedAddressArray = [place.thoroughfare, place.locality, place.administrativeArea, place.country, place.postalCode].compactMap { $0 }.joined(separator: " ")
+            
+            completion(joinedAddressArray)
+        }
+    }
+}
+
