@@ -169,6 +169,69 @@ Then use it
 
 - [Network Layer](https://github.com/jphong1111/Useful_Swift/tree/main/Helper/Network%20Layer) 
 
+## How to Use it
+
+First, set the base URL in **EndPointType file**
+
+```swift
+var baseURL: URL {
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/") else {
+            fatalError("baseURL could not be configured.")
+        }
+        return url
+    }
+```
+
+then make a instance of router.swift file in your code
+
+```swift
+private let router = Router<YourAPI>()
+```
+
+for **YourAPI part**, simple create a new enum with cases about specific api URL
+> It will make your router more dynamic!
+> Don't forget extension to EndPointType!
+
+```swift
+enum YourAPI {
+    case first(country: String)
+    case second(time: Int)
+    case third(name: String)
+}
+
+extension YourAPI: EndPointType {
+    var path: String {
+        switch self {
+        case .first(let country):
+            return "\(country).json"
+        case .second(let time):
+            return "\(time).json"
+        case .raceResults(let name):
+            return "\(name).json"
+        }
+    }
+}
+```
+
+then, use it like this
+
+```swift
+router.request(.first(country: London)) { [weak self] (results: Result<CountryWeather, AppError>) in
+            guard let self = self else { return }
+            switch results {
+            case .success(let data):
+                // insert your modifications!
+                
+            case .failure(let error):
+                // insert your modifications!
+                print(error)
+            }
+        }
+```
+
+> **CountryWeather should be a model with Decodable**
+
+
 ## API
 
 API(Application Programming Interface) is an interface that defines interactions between multiple software applications or mixed hardware-software intermediaries. It defines the kinds of calls or requests that can be made, how to make them, the data formats that should be used, the conventions to follow, etc.
