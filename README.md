@@ -173,6 +173,7 @@ Then use it
 ### Usage
 
 First, set the base URL in **EndPointType file**
+> Don't forget to put your API key in it!
 
 ```swift
 var baseURL: URL {
