@@ -23,39 +23,63 @@ struct MessageFeedBack {
 class ConversationManager: NSObject {
     
     private weak var mailDelegate: MFMailComposeViewControllerDelegate?
-    private let mailController: MFMailComposeViewController
+    private var mailController: MFMailComposeViewController?
     
     private weak var messageDelegate: MFMessageComposeViewControllerDelegate?
-    private let messageController: MFMessageComposeViewController
+    private var messageController: MFMessageComposeViewController?
+    private var controller = UIViewController()
     
-    init(presentingController controller: NSObject, mailDelegate: MFMailComposeViewControllerDelegate, messageDelegate: MFMessageComposeViewControllerDelegate) {
+    // For Mail,Message method
+    init(presentingController controller: NSObject, mailDelegate: MFMailComposeViewControllerDelegate, messageDelegate: MFMessageComposeViewControllerDelegate, viewController: UIViewController) {
         self.mailDelegate = mailDelegate
         self.mailController = MFMailComposeViewController()
-        self.messageDelegate = messageDelegate
         self.messageController = MFMessageComposeViewController()
-            
+        self.messageDelegate = messageDelegate
+        self.controller = viewController
         super.init()
-        messageController.messageComposeDelegate = self
-        mailController.mailComposeDelegate = self
+        mailController?.mailComposeDelegate = self
     }
     
-    func sendEmail(feedback: MailFeedback) -> MFMailComposeViewController {
+    // For Mail method
+     init(presentingController controller: NSObject, mailDelegate: MFMailComposeViewControllerDelegate, viewController: UIViewController) {
+        self.mailDelegate = mailDelegate
+        self.mailController = MFMailComposeViewController()
+        self.controller = viewController
+        super.init()
+        self.mailController?.mailComposeDelegate = self
+    }
+    
+    // For Message method
+    init(presentingController controller: NSObject, messageDelegate: MFMessageComposeViewControllerDelegate, viewController: UIViewController) {
+        self.messageController = MFMessageComposeViewController()
+        self.messageDelegate = messageDelegate
+        self.controller = viewController
+        super.init()
+        self.messageController?.messageComposeDelegate = self
+    }
+    // For call method
+    init(presentingController controller: NSObject, viewController: UIViewController) {
+        self.controller = viewController
+        super.init()
+    }
+    
+    func sendEmail(feedback: MailFeedback) {
         if MFMailComposeViewController.canSendMail() {
             self.mailDelegate = self
-            mailController.setToRecipients(feedback.recipients)
-            mailController.setSubject(feedback.subject)
-            mailController.setMessageBody(feedback.body, isHTML: false)
+            mailController?.setToRecipients(feedback.recipients)
+            mailController?.setSubject(feedback.subject)
+            mailController?.setMessageBody(feedback.body, isHTML: false)
         }
-        return mailController
+        controller.present(mailController ?? UIViewController(), animated: true)
     }
     
-    func sendMessage(feedback: MessageFeedBack) -> MFMessageComposeViewController {
+    func sendMessage(feedback: MessageFeedBack) {
         if MFMessageComposeViewController.canSendText() {
             self.mailDelegate = self
-            messageController.recipients = feedback.recipients
-            messageController.body = feedback.body
+            messageController?.recipients = feedback.recipients
+            messageController?.body = feedback.body
         }
-        return messageController
+        controller.present(messageController ?? UIViewController(), animated: true)
     }
     
     func makeCall(number: String) {
