@@ -26,6 +26,7 @@
     - [Image Picker](#Image-Picker)
     - [File Manager](#File-Manager)
     - [Video Downloader](#Video-Downloader)
+    - [Location Manager](#Location-Manager)
 - [API](#API)	
 - [JSON](#JSON)
 - [Third Party Library](#Third-Party-Library)
@@ -302,6 +303,10 @@ use downloadVideoLinkAndCreateAsset function to start download with entering URL
 self.videoManager.downloadVideoLinkAndCreateAsset(text)
 ```
 Good To GO 👏👏👏
+
+## Location Manager
+
+- [Location Manager](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/LocationManager.swift)
 
 ## API
 
