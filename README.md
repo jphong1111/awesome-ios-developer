@@ -395,25 +395,25 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 Copy this code and Paste into your controller
 
 ```swift
+#if canImport(SwiftUI) && DEBUG
 import SwiftUI
-
-struct ViewControllerRepresentable: UIViewControllerRepresentable {
-    typealias UIViewControllerType = ViewController
-
-    func makeUIViewController(context: Context) -> ViewController {
-        return ViewController()
+struct SwiftLeeViewRepresentable: UIViewRepresentable {
+    func makeUIView(context: Context) -> UIView {
+        return UIStoryboard(name: "Main", bundle: Bundle.main).instantiateInitialViewController()!.view
     }
-
-    func updateUIViewController(_ uiViewController: ViewController, context: Context) { 
+    
+    func updateUIView(_ view: UIView, context: Context) {
+        
     }
 }
 
-@available(iOS 13.0.0, *)
-struct ViewPreview: PreviewProvider {
+@available(iOS 13.0, *)
+struct SwiftLeeViewController_Preview: PreviewProvider {
     static var previews: some View {
-        ViewControllerRepresentable()
+        SwiftLeeViewRepresentable()
     }
 }
+#endif
 ```
 
 Enable canvas option like this
