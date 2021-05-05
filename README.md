@@ -246,7 +246,7 @@ This reusable network layer files for referenced from [here](https://medium.com/
 
 ## Image Picker
 
-- [Image Picker](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/ImagePicker.swift) 
+- [Image Picker](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/ImagePickerHandler/ImagePicker.swift) 
 
 ### Usage
 
