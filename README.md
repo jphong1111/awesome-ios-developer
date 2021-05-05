@@ -308,7 +308,7 @@ Good To GO 👏👏👏
 
 ## Location Manager
 
-- [Location Manager](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/LocationManager.swift)
+- [Location Manager](https://github.com/jphong1111/Useful_Swift/tree/main/Helper/LocationHandler/LocationManager.swift)
 
 ## API
 
