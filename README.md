@@ -124,7 +124,8 @@ C –> Controller class – It will be there but the responsibility of view busi
 
 ### iOS icon 
 
-- [icon8](https://icons8.com/) you can download icons for your **APP**
+- [icon8](https://icons8.com/) You can download icons imge for your **APP**
+- [appicon](#https://appicon.co/) generate the app icon size
 
 ### UIdesign inspiration
 
