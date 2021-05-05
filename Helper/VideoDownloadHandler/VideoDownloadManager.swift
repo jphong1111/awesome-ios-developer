@@ -1,5 +1,5 @@
 //
-//  VideoManager.swift
+//  VideoDownloadManager.swift
 //  DispatchDemoApp
 //
 //  Created by JungpyoHong on 4/29/21.
@@ -7,7 +7,7 @@
 import Foundation
 import PhotosUI
 
-struct VideoManager {
+struct VideoDownloadManager {
     
     func downloadVideoLinkAndCreateAsset(_ videoLink: String) {
 
