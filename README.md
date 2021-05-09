@@ -97,6 +97,7 @@ class SingletonPattern {
 
 The observer pattern lets one object observe changes on another object. Apple added language-level support for this pattern in Swift 5.1 with the addition of Publisher in the Combine framework.
 
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/observer.png" />
 
 ## Code Structuring
 
