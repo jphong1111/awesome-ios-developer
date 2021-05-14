@@ -398,6 +398,14 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 ## Testing
 
+Before start your Testing, add coverage will be a good option to show the result of test
+
+### Add Test Coverage
+
+<img src ="https://github.com/jphong1111/Useful_Swift/blob/main/Images/addCoverage1.png" />
+
+<img src ="https://github.com/jphong1111/Useful_Swift/blob/main/Images/addCoverage2.png" />
+
 ### Unit Test
 
 ### UI Test
