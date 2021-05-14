@@ -37,6 +37,7 @@
     - [DispatchWorkItem](#DispatchWorkItem)
     - [Thread Sanitizer](#Thread-Sanitizer)
 - [Testing](#Testing)
+    - [Code Coverage](#Code-Coverage)
     - [Unit Test](#Unit-Test)
     - [UI Test](#UI-Test)
 - [Useful Stuff](#Useful-Stuff)
@@ -400,9 +401,13 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 Before start your Testing, add coverage will be a good option to show the result of test
 
-### Add Test Coverage
+### Code Coverage
+
+First, check code coverage
 
 <img src ="https://github.com/jphong1111/Useful_Swift/blob/main/Images/addCoverage1.png" />
+
+Then, go to **EDIT SHEME**, check like this
 
 <img src ="https://github.com/jphong1111/Useful_Swift/blob/main/Images/addCoverage2.png" />
 
