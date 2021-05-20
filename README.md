@@ -27,6 +27,7 @@
     - [Image Picker](#Image-Picker)
     - [File Manager](#File-Manager)
     - [Video Downloader](#Video-Downloader)
+    - [Image Downloader](#Image-Downloader)
     - [Location Manager](#Location-Manager)
 - [API](#API)	
 - [JSON](#JSON)
@@ -314,6 +315,23 @@ use downloadVideoLinkAndCreateAsset function to start download with entering URL
 ```swift
 self.videoManager.downloadVideoLinkAndCreateAsset(text)
 ```
+Good To GO 👏👏👏
+
+## Image Downloader
+
+There is no file for Image Downloader.
+
+To download images into device, only thing is this
+
+```swift
+if let data = try? Data(contentsOf: urls),
+   let image = UIImage(data: data) {
+   UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+}
+```
+> UIImageWriteToSavedPhotosAlbum will take care it to download to device.
+> For more info go [here](https://www.hackingwithswift.com/example-code/media/uiimagewritetosavedphotosalbum-how-to-write-to-the-ios-photo-album)
+
 Good To GO 👏👏👏
 
 ## Location Manager
