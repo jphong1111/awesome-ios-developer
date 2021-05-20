@@ -1,21 +1,23 @@
 //
 //  Router.swift
-//  MapDemoApp
+//  
 //
-//  Created by JungpyoHong on 4/25/21.
+//  Created by JungpyoHong on 5/11/21.
 //
 
 import Foundation
 
-typealias NetworkRouterCompletion<T> = (Result<T, AppError>)->()
+typealias NetworkRouterCompletion<T> = (Result<T, AppError>) -> Void
 
 class Router<EndPoint: EndPointType>: NetworkRouter {
-    
     private var task: URLSessionTask?
     private let session = URLSession(configuration: .default)
     
+    func cancel() {
+        self.task?.cancel()
+    }
+    
     func request<T: Decodable>(_ route: EndPoint, completion: @escaping NetworkRouterCompletion<T>) {
-        
         do {
             let request = try self.buildRequest(from: route)
             task = session.dataTask(with: request) { data, response, error in
@@ -45,11 +47,6 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
                         print(error)
                         completionOnMain(.failure(.parseError))
                     }
-                case 401...500: return print(NetworkResponse.authenticationError.rawValue)
-                    
-                case 501...599: return print(NetworkResponse.badRequest.rawValue)
-                    
-                case 600: return print(NetworkResponse.outdated.rawValue)
                     
                 default:
                     completionOnMain(.failure(.genericError("Something went wrong")))
@@ -58,41 +55,29 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
         } catch {
             completion(.failure(.badRequest))
         }
-        task?.resume()
-    }
-    
-    func cancel() {
-        self.task?.cancel()
+        self.task?.resume()
     }
     
     private func buildRequest(from route: EndPoint) throws -> URLRequest {
-        
         var request = URLRequest(url: route.baseURL.appendingPathComponent(route.path),
                                  cachePolicy: .reloadIgnoringLocalAndRemoteCacheData,
                                  timeoutInterval: 10.0)
-        
         request.httpMethod = route.httpMethod.rawValue
         do {
             switch route.task {
             case .request:
                 request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            case .requestParameters(let bodyParameters,
-                                    let bodyEncoding,
-                                    let urlParameters):
                 
+            case .requestParameters(let (bodyParameters, urlParameters)):
                 try self.configureParameters(bodyParameters: bodyParameters,
-                                             bodyEncoding: bodyEncoding,
                                              urlParameters: urlParameters,
                                              request: &request)
                 
-            case .requestParametersAndHeaders(let bodyParameters,
-                                              let bodyEncoding,
-                                              let urlParameters,
-                                              let additionalHeaders):
-                
+            case .requestParametersAndHeaders(let (bodyParameters,
+                                                  urlParameters,
+                                                  additionalHeaders)):
                 self.addAdditionalHeaders(additionalHeaders, request: &request)
                 try self.configureParameters(bodyParameters: bodyParameters,
-                                             bodyEncoding: bodyEncoding,
                                              urlParameters: urlParameters,
                                              request: &request)
             }
@@ -103,12 +88,15 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
     }
     
     private func configureParameters(bodyParameters: Parameters?,
-                                     bodyEncoding: ParameterEncoding,
                                      urlParameters: Parameters?,
                                      request: inout URLRequest) throws {
         do {
-            try bodyEncoding.encode(urlRequest: &request,
-                                    bodyParameters: bodyParameters, urlParameters: urlParameters)
+            if let bodyParameters = bodyParameters {
+                try JSONParameterEncoder.encode(urlRequest: &request, with: bodyParameters)
+            }
+            if let urlParameters = urlParameters {
+                try URLParameterEncoder.encode(urlRequest: &request, with: urlParameters)
+            }
         } catch {
             throw error
         }
