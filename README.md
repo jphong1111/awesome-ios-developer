@@ -329,7 +329,10 @@ if let data = try? Data(contentsOf: urls),
    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
 }
 ```
+Just **change urls into your image URL**
+
 > UIImageWriteToSavedPhotosAlbum will take care it to download to device.
+
 > For more info go [here](https://www.hackingwithswift.com/example-code/media/uiimagewritetosavedphotosalbum-how-to-write-to-the-ios-photo-album)
 
 Good To GO 👏👏👏
