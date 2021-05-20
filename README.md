@@ -360,6 +360,24 @@ struct User: Codable {
 }
 ```
 
+To use JSONDecoding, declare JSONDecoder and use decode() function
+
+```swift
+ do {
+    let data = try JSONDecoder().decode(T.self, from: unwrappedData)
+    completionOnMain(.success(data))
+} catch {
+    print(error)
+    completionOnMain(.failure(.parseError))
+}
+ ```
+ 
+T.self -> Model(Struct) of the data that you want to decode
+ > data will decoded to form of T
+
+unwrappedData -> Input actual data from file or server
+> This should be a Data Type!!
+ 
 ### JSONSerialization
 
 ### Various API Site
