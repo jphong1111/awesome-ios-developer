@@ -248,8 +248,11 @@ router.request(.first(country: London)) { [weak self] (results: Result<CountryWe
 
 > **CountryWeather should be a model with Decodable**
 
+If you want to see how can I use Network Layer in Project, check [this](https://github.com/jphong1111/Unsplash_Clone/tree/main/Unsplah_Clone/ReusableComponent/NetworkLayer)
 
 This reusable network layer files for referenced from [here](https://medium.com/flawless-app-stories/writing-network-layer-in-swift-protocol-oriented-approach-4fa40ef1f908)
+
+> Also [Alamofire](https://github.com/Alamofire/Alamofire) will be a great option for Network Layer!
 
 ## Image Picker
 
