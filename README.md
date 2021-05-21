@@ -41,6 +41,8 @@
     - [Code Coverage](#Code-Coverage)
     - [Unit Test](#Unit-Test)
     - [UI Test](#UI-Test)
+- [IAP](#IAP)
+- [APNS](#APNS)
 - [Useful Stuff](#Useful-Stuff)
     - [Show Preview in UIKit(Build UI with Code Base)](#show-preview-in-uikitbuild-ui-with-code-base-----)
     - [Write README.md](#write-readmemd)
@@ -463,6 +465,15 @@ Then, go to **EDIT SHEME**, check like this
 ### Unit Test
 
 ### UI Test
+
+## IAP
+
+IAP stands for **In App Purchase**
+
+## APNS
+
+APNS stands for **Apple Push Notification service**
+
 
 ## Useful Stuff
 
