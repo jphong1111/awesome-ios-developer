@@ -43,9 +43,11 @@
     - [UI Test](#UI-Test)
 - [IAP](#IAP)
 - [APNS](#APNS)
+- [FRP](#FRP)
 - [Useful Stuff](#Useful-Stuff)
     - [Show Preview in UIKit(Build UI with Code Base)](#show-preview-in-uikitbuild-ui-with-code-base-----)
     - [Write README.md](#write-readmemd)
+    - [Roadmap for iOS Developer](#Roadmap-for-iOS-Developer)
 
 
 ## Coding convention
@@ -474,6 +476,9 @@ IAP stands for **In App Purchase**
 
 APNS stands for **Apple Push Notification service**
 
+## FRP
+
+Functional Reactive Programming a.k.a [RxSwift](https://github.com/ReactiveX/RxSwift)
 
 ## Useful Stuff
 
@@ -514,6 +519,10 @@ Enable canvas option like this
 ## Write README.md
 
 [This](https://medium.com/@saumya.ranjan/how-to-write-a-readme-md-file-markdown-file-20cb7cbcd6f) will help you to write a README.md file more dynamically 👍
+
+## Roadmap for iOS Developer
+
+check this out [here](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
 
 ## Author
 
