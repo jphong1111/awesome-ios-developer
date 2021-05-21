@@ -433,9 +433,9 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 simply move into that path and you can find the documentDirectory of your Application
 > if Library is not shown up, just do **Shift + Command + .** to show hidden files in your folder
 
-### Usage
-f
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultPlistPath.png" />
+
+### Usage
 
 As you can see in the below, intArray will stored inside the device through UserDefaults(), so that if device is shut down, changed value wil be stored in device.
 
