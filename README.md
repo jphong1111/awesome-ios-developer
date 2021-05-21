@@ -431,6 +431,27 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 simply move into that path and you can find the documentDirectory of your Application
 > if Library is not shown up, just do **Shift + Command + .** to show hidden files in your folder
 
+As you can see in the below, intArray will stored inside the device through UserDefaults(), so that if device is shut down, changed value wil be stored in device.
+
+```swift
+class ViewController: UIViewController {
+    var intArray = [1,2,3,4,5]
+    let defaults = UserDefaults()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        intArray = defaults.array(forKey: "IntArray") as! [Int]
+    }
+    
+    @IBOutlet weak var textField: UILabel!
+    @IBAction private func isClicked(_ sender: UIButton) {
+        intArray.append(6)
+        defaults.set(intArray, forKey: "IntArray")
+        textField.text = "\(intArray)"
+    }
+}
+```
+
 ## Core Data
 
 
