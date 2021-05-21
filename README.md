@@ -32,6 +32,7 @@
 - [API](#API)	
 - [JSON](#JSON)
 - [User Default](#User-Default)
+    - [How to find documentDirectory](#How-to-find-documentDirectory)
 - [Core Data](#Core-Data)
 - [Third Party Library](#Third-Party-Library)
 - [GCD](#GCD)
