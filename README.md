@@ -31,6 +31,8 @@
     - [Location Manager](#Location-Manager)
 - [API](#API)	
 - [JSON](#JSON)
+- [User Default](#User-Default)
+- [Core Data](#Core-Data)
 - [Third Party Library](#Third-Party-Library)
 - [GCD](#GCD)
     - [DispatchQueue](#DispatchQueue)
@@ -407,6 +409,29 @@ unwrappedData -> Input actual data from file or server
 > This should be a Data Type!!
  
 ### JSONSerialization
+
+
+## User Default
+
+The UserDefaults class provides a programmatic interface for interacting with the defaults system. Check [Apple Document](https://developer.apple.com/documentation/foundation/userdefaults) for more info
+
+UserDefault has to have **key-value** pair
+
+### How to find documentDirectory 
+
+Put this line of code inside of your project
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last ?? "")
+        return true
+    }
+```
+
+simply move into that path and you can find the documentDirectory of your Application
+> if Library is not shown up, just do **Shift + Command + .** to show hidden files in your folder
+
+## Core Data
+
 
 ### Various API Site
 - [rapidAPI](https://www.rapidapi.com)
