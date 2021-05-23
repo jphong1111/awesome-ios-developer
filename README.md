@@ -13,9 +13,9 @@
 - [Coding Convention](#Coding-convention)
     - [Swift Lint](#Swift-lint)
 - [Design Pattern](#Design-Pattern)
-    - [Delegate](#Delegate)
+    - [Delegation](#Delegation)
     - [Singleton](#Singleton)
-    - [Observer](#Observer-Pattern)
+    - [Observer](#Observer)
 - [Code Structuring](#Code-Structuring)
     - [MVC](#MVC)
     - [MVVM](#MVVM)
@@ -85,13 +85,13 @@ Design pattern is
 
 Check [this](https://refactoring.guru/design-patterns/swift) website for design pattern in Swift
 
-### Delegate Pattern
+### Delegation
 
 ```swift
 weak var delegate: SomeProtocol?
 ```
 
-### Singleton Pattern
+### Singleton
 
 
 ```swift
@@ -102,7 +102,7 @@ class SingletonPattern {
 }
 ```
 
-### Observer Pattern
+### Observer
 
 The observer pattern lets one object observe changes on another object. Apple added language-level support for this pattern in Swift 5.1 with the addition of Publisher in the Combine framework.
 
