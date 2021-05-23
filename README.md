@@ -474,11 +474,11 @@ let defaults = UserDefaults.standard
 ```
 > **standard** allows to access from anywhere inside device
 
-With using set function, you can set userdefaults
+**With using set function, you can set userdefaults**
 
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultSet.png" width = "60%" height = "60%"/>
 
-Also these function will allow to get a data from plist
+**Also these function will allow to get a data from plist**
 
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultGet.png" width = "60%" height = "60%"/>
 
