@@ -10,7 +10,7 @@
 </p>
 
 ## Content
-- [Coding convention](#Coding-convention)
+- [Coding Convention](#Coding-convention)
     - [Swift Lint](#Swift-lint)
 - [Design Pattern](#Design-Pattern)
     - [Delegate](#Delegate)
