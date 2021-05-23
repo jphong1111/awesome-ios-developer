@@ -476,11 +476,11 @@ let defaults = UserDefaults.standard
 
 With using set function, you can set userdefaults
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultPlist.png" />
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultSet.png" />
 
 Also these function will allow to get a data from plist
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultPlist.png" />
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultGet.png" />
 
 **You are GOOD TO GO**  👏👏👏
 
