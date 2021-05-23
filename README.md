@@ -476,11 +476,11 @@ let defaults = UserDefaults.standard
 
 With using set function, you can set userdefaults
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultSet.png" style='height: 50%; width: 50%; object-fit: contain'/>
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultSet.png" width = "60%" height = "60%"/>
 
 Also these function will allow to get a data from plist
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultGet.png" style='height: 50%; width: 50%; object-fit: contain'/>
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultGet.png" width = "60%" height = "60%"/>
 
 **You are GOOD TO GO**  👏👏👏
 
