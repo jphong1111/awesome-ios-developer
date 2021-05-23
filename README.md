@@ -488,7 +488,8 @@ let defaults = UserDefaults.standard
 ## Core Data
 
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/DataStoreInSwift.png" width = "50%" height = "50%"/>
-> From London App Brewery
+
+> Image From London App Brewery
 
 ### Various API Site
 - [rapidAPI](https://www.rapidapi.com)
