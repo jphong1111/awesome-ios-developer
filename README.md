@@ -47,6 +47,7 @@
 - [IAP](#IAP)
 - [APNS](#APNS)
 - [FRP](#FRP)
+- [Error Search](#Error-Search)
 - [Useful Stuff](#Useful-Stuff)
     - [Show Preview in UIKit(Build UI with Code Base)](#show-preview-in-uikitbuild-ui-with-code-base-----)
     - [Write README.md](#write-readmemd)
@@ -558,6 +559,10 @@ APNS stands for **Apple Push Notification service**
 ## FRP
 
 Functional Reactive Programming a.k.a [RxSwift](https://github.com/ReactiveX/RxSwift)
+
+## Error Search
+
+Error Search
 
 ## Useful Stuff
 
