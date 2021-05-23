@@ -422,6 +422,7 @@ The UserDefaults class provides a programmatic interface for interacting with th
 - User information, like name, email address, age, occupation
 - App settings, like user interface language, app color theme or “detailed vs. simple UI”
 - Flags, more on this later
+- If store data is small 
 
 ### How to find documentDirectory 
 
@@ -466,6 +467,21 @@ You can your plist file like this!
 
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultPlist.png" />
 
+Declare Userdefault like this!
+
+```swift
+let defaults = UserDefaults.standard
+```
+> **standard** allows to access from anywhere inside device
+
+With using set function, you can set userdefaults
+
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultPlist.png" />
+
+Also these function will allow to get a data from plist
+
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultPlist.png" />
+
 **You are GOOD TO GO**  👏👏👏
 
 ## Core Data
@@ -478,10 +494,10 @@ You can your plist file like this!
 [This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
 
 Recommand Useful Library
-- [SDWebImage]
-- [Hero]
-- [Alamofire]
-- [RxSwift]
+- [SDWebImage] - Download and set image Library
+- [Hero] - Various kind of animation with using Segue
+- [Alamofire] - Network Layer tool
+- [RxSwift] - Reactive Programming in Swift
 
 
 ## GCD
