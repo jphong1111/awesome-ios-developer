@@ -562,7 +562,9 @@ Functional Reactive Programming a.k.a [RxSwift](https://github.com/ReactiveX/RxS
 
 ## Error Search
 
-Error Search
+Find your common error here
+
+[Error Search](https://github.com/jphong1111/Useful_Swift/blob/error-search/README.md)
 
 ## Useful Stuff
 
