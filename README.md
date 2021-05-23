@@ -31,7 +31,7 @@
     - [Location Manager](#Location-Manager)
 - [API](#API)	
 - [JSON](#JSON)
-- [User Default](#User-Default)
+- [UserDefaults](#UserDefaults)
     - [How to find documentDirectory](#How-to-find-documentDirectory)
 - [Core Data](#Core-Data)
 - [Third Party Library](#Third-Party-Library)
@@ -412,11 +412,16 @@ unwrappedData -> Input actual data from file or server
 ### JSONSerialization
 
 
-## User Default
+## UserDefaults
 
 The UserDefaults class provides a programmatic interface for interacting with the defaults system. Check [Apple Document](https://developer.apple.com/documentation/foundation/userdefaults) for more info
+> UserDefaults has to have **key-value** pair
 
-UserDefault has to have **key-value** pair
+### When do we use UserDafaults
+
+- User information, like name, email address, age, occupation
+- App settings, like user interface language, app color theme or “detailed vs. simple UI”
+- Flags, more on this later
 
 ### How to find documentDirectory 
 
