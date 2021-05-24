@@ -492,6 +492,8 @@ let defaults = UserDefaults.standard
 
 ## Core Data
 
+Use Core Data to save your application’s permanent data for offline use, to cache temporary data, and to add undo functionality to your app on a single device.
+
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/DataStoreInSwift.png" width = "50%" height = "50%"/>
 
 > Image From London App Brewery
@@ -500,13 +502,13 @@ let defaults = UserDefaults.standard
 
 Simply Click Core Data check box when you create a new project
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/DataStoreInSwift.png" width = "50%" height = "50%"/>
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/AddCoreData.png" width = "50%" height = "50%"/>
 
 If you want to attach Core Data in exsiting project
 
 Create **Data Model** file first
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/DataStoreInSwift.png" width = "50%" height = "50%"/>
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/AddDataModel.png" width = "50%" height = "50%"/>
 
 Then import CoreData inside your **AppDelegate.swift** file
 
