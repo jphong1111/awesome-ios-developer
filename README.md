@@ -589,6 +589,19 @@ If your target is **below iOS13**, put this line of code in side your **applicat
 self.saveContext()
 ```
 
+## Usage
+
+Once you create your DataModel file, you can simply create a **Entity(Class)** and **Attributes(Properties)**
+
+And then, change the type of attributes in inspector like this
+
+<img src = ""/>
+
+CoreDataClass, CoreDataProperties are located in below
+
+ /Users/dennis/Library/Developer/Xcode/DerivedData/CoreDataUserDefaultPractice-hisefjfyuvglrjekndpftwazftug/Build/Intermediates.noindex/CoreDataUserDefaultPractice.build/Debug-iphonesimulator/CoreDataUserDefaultPractice.build/DerivedSources/CoreDataGenerated/CoreDataUserDefaultPractice 
+
+
 **You are GOOD TO GO**  👏👏👏
 
 ## Third Party Library
