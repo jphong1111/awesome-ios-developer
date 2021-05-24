@@ -676,6 +676,7 @@ print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
 ```
 
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/CoreDataSQLite.png" />
+
 > You can check Entities, Properties inside that file
 
 **You are GOOD TO GO**  👏👏👏
