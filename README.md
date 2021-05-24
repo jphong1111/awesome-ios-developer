@@ -132,13 +132,13 @@ MVVM patterns stand for Model - View - ViewModel
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVVMvsMVC.png" width = "60%" height = "60%">
 
-M -> Model – Which holds the application data
+ - Model – Which holds the application data
 
-V –> View – It displays the data that is stored in model. These are visual elements through which a user interacts. These are subclasses of UIView
+ - View – It displays the data that is stored in model. These are visual elements through which a user interacts. These are subclasses of UIView
 
-VM –> View Model – Transform model information/data and it interacts with controller or view to display those informations.
+ - View Model – Transform model information/data and it interacts with controller or view to display those informations.
 
-C –> Controller class – It will be there but the responsibility of view business logic has been removed and give to view model
+ - Controller class – It will be there but the responsibility of view business logic has been removed and give to view model
 
 > You can check App example of using MVVM [here](https://github.com/jphong1111/Unsplash_Clone)
 
@@ -151,6 +151,8 @@ C –> Controller class – It will be there but the responsibility of view busi
  - Presenter - contains view logic for preparing content for display (as received from the Interactor) and for reacting to user inputs (by requesting new data from the Interactor).
  - Entity - contains basic model objects used by the Interactor.
  - Routing - contains navigation logic for describing which screens are shown in which order.
+ 
+ > For more info, go [here](https://www.raywenderlich.com/8440907-getting-started-with-the-viper-architecture-pattern)
  
 ## UIDesign
 
