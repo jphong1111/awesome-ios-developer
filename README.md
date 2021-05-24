@@ -161,7 +161,7 @@ MVVM patterns stand for Model - View - ViewModel
 - [iOS Design Guide](https://ivomynttinen.com/blog/ios-design-guidelines)
 
 ### iOS icon 
-
+- [SF Symbols](https://developer.apple.com/sf-symbols/) Download SF Symbols2 for more icons!
 - [icon8](https://icons8.com/) You can download icons imge for your **APP**
 - [appicon](https://appicon.co/) generate the app icon size
 
