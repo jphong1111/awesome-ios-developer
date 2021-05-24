@@ -122,7 +122,7 @@ The observer pattern lets one object observe changes on another object. Apple ad
 
 ##### MVC vs MVVM
 
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVVMvsMVC.png">
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVVMvsMVC.png" width = "70%" height = "70%">
 
 M -> Model – Which holds the application data
 
