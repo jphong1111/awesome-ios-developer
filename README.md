@@ -18,7 +18,7 @@
     - [Delegation](#Delegation)
     - [Singleton](#Singleton)
     - [Observer](#Observer)
-- [Code Structuring](#Code-Structuring)
+- [Code Structuring](#Code-Structuring(Architecture))
     - [MVC](#MVC)
     - [MVVM](#MVVM)
     - [VIPER](#VIPER)
@@ -112,17 +112,25 @@ The observer pattern lets one object observe changes on another object. Apple ad
 
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/observer.png" />
 
-## Code Structuring
+## Code Structuring(Architecture)
 
 ### MVC
 
+MVC pattern stands for Model - View - Controller
+
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVCModel.png">
+
+ - Model - Model take care of storing data.
+ - View - View renders the data for users
+ - Controller - Controller modifies the View, accepts user input and interacts directly with the Model. And take care of view logic and business logic.
 
 ### MVVM
 
+MVVM patterns stand for Model - View - ViewModel
+
 ##### MVC vs MVVM
 
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVVMvsMVC.png" width = "70%" height = "70%">
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVVMvsMVC.png" width = "60%" height = "60%">
 
 M -> Model – Which holds the application data
 
@@ -132,9 +140,15 @@ VM –> View Model – Transform model information/data and it interacts with co
 
 C –> Controller class – It will be there but the responsibility of view business logic has been removed and give to view model
 
+> You can check App example of using MVVM [here](https://github.com/jphong1111/Unsplash_Clone)
 
 ### VIPER
-
+ - View - Displays what it is told to by the Presenter and relays user input back to the Presenter.
+ - Interactor -  Contains the business logic as specified by a use case.
+ - Presenter - contains view logic for preparing content for display (as received from the Interactor) and for reacting to user inputs (by requesting new data from the Interactor).
+ - Entity - contains basic model objects used by the Interactor.
+ - Routing - contains navigation logic for describing which screens are shown in which order.
+ 
 ## UIDesign
 
 ### HIG(Human Interface Guidelines)
