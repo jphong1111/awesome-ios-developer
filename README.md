@@ -37,6 +37,8 @@
     - [How to find documentDirectory](#How-to-find-documentDirectory)
 - [Core Data](#Core-Data)
     - [Set Up Core Data](#Set-Up-Core-Data)
+    - [Usage](#Usage)
+    - [Store Data](#Store-Data)
 - [Third Party Library](#Third-Party-Library)
 - [GCD](#GCD)
     - [DispatchQueue](#DispatchQueue)
@@ -517,6 +519,8 @@ let defaults = UserDefaults.standard
 
 Use Core Data to save your application’s permanent data for offline use, to cache temporary data, and to add undo functionality to your app on a single device.
 
+**Core Data in Swift is using SQLite as DEFAULT**
+
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/DataStoreInSwift.png" width = "50%" height = "50%"/>
 
 > Image From London App Brewery
@@ -643,6 +647,36 @@ And CoreDataClass, CoreDataProperties are looking like this,
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/CoreDataClass_Properties.png"/>
 
 > If your code can run it but didn't get your Entities, **Rebuild it or Restart your Xcode**
+
+## Store Data
+
+Declare context as a global variable
+
+```swift
+let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+```
+> Get viewContext that we defined in AppDelegate.swift file
+
+Simply you can use this code to save your data to CoreData
+```swift
+func saveItem() {
+        do {
+            try context.save()
+        } catch {
+            print("Error Saving Context: \(error.localizedDescription)")
+        }
+    }
+```
+> Use it wherever you want
+
+Data can be find if you print the path
+
+```swift
+print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+```
+
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/CoreDataSQLite.png" />
+> You can check Entities, Properties inside that file
 
 **You are GOOD TO GO**  👏👏👏
 
