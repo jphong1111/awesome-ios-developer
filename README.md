@@ -597,7 +597,7 @@ Once you create your DataModel file, you can simply create a **Entity(Class)** a
 
 And then, change the type of attributes in inspector like this
 
-<img src = ""/>
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/DataModelAttribute_inspector.png" width = "50%" height = "50%"/>
 
 CoreDataClass, CoreDataProperties are located in below
 
