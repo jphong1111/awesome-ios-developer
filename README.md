@@ -9,6 +9,8 @@
     <img src="https://img.shields.io/badge/-OneDayOneCommit-critical?style=plastic&logo=swift" />
 </p>
 
+**Feel free to fork this repository and pull requests!**
+
 ## Content
 - [Coding Convention](#Coding-convention)
     - [Swift Lint](#Swift-lint)
