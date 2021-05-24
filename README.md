@@ -40,6 +40,8 @@
     - [Usage](#Usage)
     - [Store Data](#Store-Data)
     - [Load Data](#Load-Data)
+    - [Update Data](#Update-Data)
+    - [Delete Data](#Delete-Data)
 - [Third Party Library](#Third-Party-Library)
 - [GCD](#GCD)
     - [DispatchQueue](#DispatchQueue)
@@ -695,6 +697,24 @@ Refer this code and apply it to your code wherever you want to reload it
 ```
 > Item will be your Entity, itemArray will be your Entity object
 > Don't forget to import **CoreData**
+
+## Update Data
+
+Simply use setValue function so that you can update your value in DB
+
+```swift
+itemArray[0].setValue(<#T##value: Any?##Any?#>, forKey: <#T##String#>)
+```
+> if you are using TableView or CollectionView, change 0 to indexPath.row
+
+## Delete Data
+
+Simply use delete function in context
+
+```swift
+context.delete(itemArray[0])
+```
+> change number for dynamic!
 
 **You are GOOD TO GO**  👏👏👏
 
