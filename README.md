@@ -641,6 +641,7 @@ CoreDataClass, CoreDataProperties are located in below
 And CoreDataClass, CoreDataProperties are looking like this,
 
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/CoreDataClass_Properties.png"/>
+
 > If your code can run it but didn't get your Entities, **Rebuild it or Restart your Xcode**
 
 **You are GOOD TO GO**  👏👏👏
