@@ -583,7 +583,7 @@ func sceneDidEnterBackground(_ scene: UIScene) {
     }
 ```
 
-If your target is **below iOS13**, put this line of code in side your sceneDidEnterBackground of **AppDelegate.swift** file
+If your target is **below iOS13**, put this line of code in side your **applicationWillTerminate** of **AppDelegate.swift** file
 
 ```swift
 self.saveContext()
