@@ -597,12 +597,20 @@ Once you create your DataModel file, you can simply create a **Entity(Class)** a
 
 And then, change the type of attributes in inspector like this
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/DataModelAttribute_inspector.png" width = "50%" height = "50%"/>
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/DataModelAttribute_inspector.png"/>
+
+Once you create your own Entities & Attributes, go to Inspector and change Module to **CurrentProductModule**
+
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/DataModelAttributes.png"/>
+
+> If you didn't set it, thats fine, but if you are working in big project, then you need to set it. Otherwise this can occurs some error.
 
 CoreDataClass, CoreDataProperties are located in below
 
  /Users/dennis/Library/Developer/Xcode/DerivedData/CoreDataUserDefaultPractice-hisefjfyuvglrjekndpftwazftug/Build/Intermediates.noindex/CoreDataUserDefaultPractice.build/Debug-iphonesimulator/CoreDataUserDefaultPractice.build/DerivedSources/CoreDataGenerated/CoreDataUserDefaultPractice 
 
+And it is looking like this,
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/CoreDataClass_Properties.png"/>
 
 **You are GOOD TO GO**  👏👏👏
 
