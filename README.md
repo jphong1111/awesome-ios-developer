@@ -39,6 +39,7 @@
     - [Set Up Core Data](#Set-Up-Core-Data)
     - [Usage](#Usage)
     - [Store Data](#Store-Data)
+    - [Load Data](#Load-Data)
 - [Third Party Library](#Third-Party-Library)
 - [GCD](#GCD)
     - [DispatchQueue](#DispatchQueue)
@@ -49,7 +50,7 @@
     - [Code Coverage](#Code-Coverage)
     - [Unit Test](#Unit-Test)
     - [UI Test](#UI-Test)
-- [IAP](#IAP)
+- [In App Purchase(IAP)](#In-App-PurchaseIAP)
 - [APNS](#APNS)
 - [FRP](#FRP)
 - [Error Search](#Error-Search)
@@ -679,16 +680,32 @@ print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
 
 > You can check Entities, Properties inside that file
 
+## Load Data
+
+Refer this code and apply it to your code wherever you want to reload it
+```swift
+    func loadItem() {
+        let request: NSFetchRequest<Item> = Item.fetchRequest()
+        do {
+            itemArray = try context.fetch(request)
+        } catch {
+            print("Load Item Error: \(error.localizedDescription)")
+        }
+    }
+```
+> Item will be your Entity, itemArray will be your Entity object
+> Don't forget to import **CoreData**
+
 **You are GOOD TO GO**  👏👏👏
 
 ## Third Party Library
 [This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
 
 Recommand Useful Library
-- [SDWebImage] - Download and set image Library
-- [Hero] - Various kind of animation with using Segue
-- [Alamofire] - Network Layer tool
-- [RxSwift] - Reactive Programming in Swift
+- SDWebImage - Download and set image Library
+- Hero - Various kind of animation with using Segue
+- Alamofire - Network Layer tool
+- RxSwift - Reactive Programming in Swift
 
 
 ## GCD
@@ -738,7 +755,7 @@ Then, go to **EDIT SHEME**, check like this
 
 ### UI Test
 
-## IAP
+## In App Purchase(IAP)
 
 IAP stands for **In App Purchase**
 
