@@ -18,7 +18,7 @@
     - [Delegation](#Delegation)
     - [Singleton](#Singleton)
     - [Observer](#Observer)
-- [Code Structuring](#Code-Structuring(Architecture))
+- [Code Structuring](#code-structuringarchitecture)
     - [MVC](#MVC)
     - [MVVM](#MVVM)
     - [VIPER](#VIPER)
@@ -143,6 +143,9 @@ C –> Controller class – It will be there but the responsibility of view busi
 > You can check App example of using MVVM [here](https://github.com/jphong1111/Unsplash_Clone)
 
 ### VIPER
+
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/Viper.png">
+
  - View - Displays what it is told to by the Presenter and relays user input back to the Presenter.
  - Interactor -  Contains the business logic as specified by a use case.
  - Presenter - contains view logic for preparing content for display (as received from the Interactor) and for reacting to user inputs (by requesting new data from the Interactor).
