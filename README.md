@@ -413,6 +413,10 @@ unwrappedData -> Input actual data from file or server
  
 ### JSONSerialization
 
+JSONSerialization is a old way of decode the JSON file
+
+### Various API Site
+- [rapidAPI](https://www.rapidapi.com)
 
 ## UserDefaults
 
@@ -584,9 +588,6 @@ self.saveContext()
 ```
 
 **You are GOOD TO GO**  👏👏👏
-
-### Various API Site
-- [rapidAPI](https://www.rapidapi.com)
 
 ## Third Party Library
 [This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
