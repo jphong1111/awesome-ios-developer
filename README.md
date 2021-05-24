@@ -605,11 +605,20 @@ Once you create your own Entities & Attributes, go to Inspector and change Modul
 
 > If you didn't set it, thats fine, but if you are working in big project, then you need to set it. Otherwise this can occurs some error.
 
+#### Codegen
+
+As you can see in above, there are three options
+
+- Manual/None - Swift didn't generate CoreDataClass, CoreDataProperties files so that you have to create yourself **(full control)**
+- Class Definition - Swift will generate CoreDataClass, CoreDataProperties files. **(No control)**
+- Category/Extension - Swift will generate only Extension file **(Some Control)**
+
 CoreDataClass, CoreDataProperties are located in below
 
  /Users/dennis/Library/Developer/Xcode/DerivedData/CoreDataUserDefaultPractice-hisefjfyuvglrjekndpftwazftug/Build/Intermediates.noindex/CoreDataUserDefaultPractice.build/Debug-iphonesimulator/CoreDataUserDefaultPractice.build/DerivedSources/CoreDataGenerated/CoreDataUserDefaultPractice 
 
-And it is looking like this,
+And CoreDataClass, CoreDataProperties are looking like this,
+
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/CoreDataClass_Properties.png"/>
 
 **You are GOOD TO GO**  👏👏👏
