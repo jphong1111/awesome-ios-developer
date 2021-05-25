@@ -858,9 +858,15 @@ check this out [here](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
 <a href="https://github.com/jphong1111/useful_swift/stargazers">
 <img src="https://reporoster.com/stars/jphong1111/useful_swift"></a>
 
+### 🍴 Forks
+
+<a href="https://github.com/jphong1111/useful_swift/fork">
+<img src="https://reporoster.com/forks/jphong1111/useful_swift"></a>
+
 ### 🌟 GitHub Stargazers
 
-<a href = "https://seladb.github.io/StarTrack-js/#/preload?r=jphong1111,Useful_Swift" />
+<a href = "https://seladb.github.io/StarTrack-js/#/preload?r=jphong1111,Useful_Swift" >
+<img src="https://seladb.github.io/StarTrack-js/#/preload?r=jphong1111,Useful_Swift"></a>
 
 ## Author
 
