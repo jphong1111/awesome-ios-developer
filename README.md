@@ -853,6 +853,10 @@ Enable canvas option like this
 
 check this out [here](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
 
+### 🌟 GitHub Stargazers
+
+[![Stargazers over time](https://starchart.cc/jphong1111/Useful_Swift.svg)](https://starchart.cc/jphong1111/Useful_Swift)
+
 ## Author
 
 This README.md file is written by **Jungpyo Hong (Dennis)**
