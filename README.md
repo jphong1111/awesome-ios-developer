@@ -783,18 +783,26 @@ Then, go to **EDIT SHEME**, check like this
 
 ## In App Purchase(IAP)
 
-Requirement
+**Requirement**
 
  - Full Apple Developoment Program($99)
  - Physical IPhone Device to test IAP
  > **Simulator can not test IAP!!**
  
-## Set Up your own Paywall
+## Paywall
 
 <img src ="https://github.com/jphong1111/Useful_Swift/blob/main/Images/paywall.jpeg" />
 
 Paywall is a way to restrict access to their information so that only paying users can use it.
  
+Lots of developer recommand  80% - (Paywall) - 20%
+
+## Set Up
+
+TBD
+
+For more info about getting start of IAP, go [here](https://www.raywenderlich.com/5456-in-app-purchase-tutorial-getting-started) 📑
+
 ## APNS
 
 APNS stands for **Apple Push Notification service**
