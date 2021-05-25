@@ -7,6 +7,7 @@
 </p>
 <p align="center">
     <img src="https://img.shields.io/badge/-OneDayOneCommit-critical?style=plastic&logo=swift" />
+    ![visitors](https://page-views.glitch.me/badge?page_id=jphong1111.Useful_Swift)
 </p>
 
 **Feel free to fork this repository and pull requests!**
