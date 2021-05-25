@@ -855,7 +855,7 @@ check this out [here](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
 
 ### 🌟 GitHub Stargazers
 
-[![Stargazers over time](https://starchart.cc/jphong1111/Useful_Swift.svg)](https://starchart.cc/jphong1111/Useful_Swift)
+<img src = "https://seladb.github.io/StarTrack-js/#/preload?r=jphong1111,Useful_Swift" />
 
 ## Author
 
