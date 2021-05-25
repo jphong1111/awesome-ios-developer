@@ -853,6 +853,8 @@ Enable canvas option like this
 
 check this out [here](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
 
+## ❤ Supporters
+
 ### ⭐ Stargazers
 
 <a href="https://github.com/jphong1111/useful_swift/stargazers">
@@ -865,8 +867,7 @@ check this out [here](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
 
 ### 🌟 GitHub Stargazers
 
-<a href = "https://seladb.github.io/StarTrack-js/#/preload?r=jphong1111,Useful_Swift" >
-<img src="https://seladb.github.io/StarTrack-js/#/preload?r=jphong1111,Useful_Swift"></a>
+[![Stargazers over time](https://starchart.cc/jphong1111/useful_swift.svg)](https://starchart.cc/jphong1111/useful_swift)
 
 ## Author
 
