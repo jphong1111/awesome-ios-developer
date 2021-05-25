@@ -5,10 +5,12 @@
 </div>
 <p>
 </p>
-    ![visitors](https://page-views.glitch.me/badge?page_id=jphong1111.Useful_Swift)
+<p align="center">
+  
+<img alt="GitHub search hit counter" src="https://img.shields.io/github/search/jphong1111/Useful_Swift/visitors">
     
 <img src="https://img.shields.io/badge/-OneDayOneCommit-critical?style=plastic&logo=swift" />
-
+</p>
 
 
 
