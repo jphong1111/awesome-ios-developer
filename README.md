@@ -26,6 +26,10 @@
     - [MVVM](#MVVM)
     - [VIPER](#VIPER)
 - [UIDesign](#UIDesign)
+    - [UIdesign Inspiration](#UIdesign-Inspiration)
+    - [Vector Graphic Editors](#Vector Graphic Editors)
+    - [Design Collaboration](#Design-Collaboration)
+    - [Design Tools](#Design-Tools)
 - [Helper](#Helper)
     - [Email, Message, Call](#email-message-call)
     - [Network Layer](#Network-Layer)
@@ -36,6 +40,8 @@
     - [Location Manager](#Location-Manager)
 - [API](#API)	
 - [JSON](#JSON)
+    - [JSONDecoder](#JSONDecoder)
+    - [JSONSerialization](#JSONSerialization)
 - [UserDefaults](#UserDefaults)
     - [How to find documentDirectory](#How-to-find-documentDirectory)
 - [Core Data](#Core-Data)
@@ -46,6 +52,7 @@
     - [Update Data](#Update-Data)
     - [Delete Data](#Delete-Data)
 - [Third Party Library](#Third-Party-Library)
+    - [Recommend Library](#Recommand-Library)
 - [GCD](#GCD)
     - [DispatchQueue](#DispatchQueue)
     - [DispatchGroup](#DispatchGroup)
@@ -183,17 +190,17 @@ MVVM patterns stand for Model - View - ViewModel
 - [Flickr](http://www.flickr.com/)
 - [Mobbin](https://mobbin.design/)
 
-### Design Tools
-- [DetailsPro](https://detailspro.app) You can design with SwiftUI free
-
 ### Vector Graphic Editors
 - [Figma](https://www.figma.com/)
 - [Sketch](https://www.sketch.com/)
 - [Adobe XD](https://www.adobe.com/products/xd.html)
 
-### Design Collaboration
+### Design Collaboration Tools
 - [Sympli](https://sympli.io/)
 - [Zepline](https://zeplin.io/)
+
+### Design Tools
+- [DetailsPro](https://detailspro.app) You can design with SwiftUI free 👍
 
 ## Helper
 
@@ -422,9 +429,9 @@ JSON is a language-independent data format
 This extension makes JSON more structable
 [JSON parser pro](https://chrome.google.com/webstore/detail/json-viewer-pro/eifflpmocdbdmepbjaopkkhbfmdgijcc) **FREE** :+1:
 
-## JSON Decoding
+## JSONDecoder
 
-To use JSON Decoding in swift, you have to define the model to be Codable or Decodable
+To use JSONDecoder in swift, you have to define the model to be Codable or Decodable
 
 ```swift
 public typealias Codable = Decodable & Encodable
@@ -462,7 +469,6 @@ unwrappedData -> Input actual data from file or server
 
 JSONSerialization is a old way of decode the JSON file.
 > Apple populated Codable since Swift 4
-
 
 ### Example
 
@@ -798,11 +804,17 @@ context.delete(itemArray[0])
 ## Third Party Library
 [This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
 
-Recommand Useful Library
-- SDWebImage - Download and set image Library
+### Recommend Library
+- SDWebImage - Downloading and caching images from the web
+- Kingfisher - Downloading and caching images from the web
 - Hero - Various kind of animation with using Segue
 - Alamofire - Network Layer tool
+- Moya - Network abstraction layer written in Swift
 - RxSwift - Reactive Programming in Swift
+- SwiftyJSON - JSON parsar Helper
+- IQKeyboardManager - Easy to manage Keyboard settings
+- SnapKit - Swift Auto Layout DSL for iOS
+- etc...
 
 
 ## GCD
