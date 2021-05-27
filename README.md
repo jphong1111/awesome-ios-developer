@@ -22,6 +22,8 @@ Feel free to fork this repository and pull requests!!
     - [Delegation](#Delegation)
     - [Singleton](#Singleton)
     - [Observer](#Observer)
+       - [KVO]
+       - [KVC]
 - [Code Structuring](#code-structuringarchitecture)
     - [MVC](#MVC)
     - [MVVM](#MVVM)
