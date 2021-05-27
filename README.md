@@ -879,7 +879,7 @@ Then, go to **EDIT SHEME**, check like this
 
 Paywall is a way to restrict access to their information so that only paying users can use it.
  
-Lots of developer recommand  80% - (Paywall) - 20%
+Lots of developer recommend  80% - (Paywall) - 20%
 
 ## Set Up
 
