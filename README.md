@@ -192,7 +192,7 @@ MVVM patterns stand for Model - View - ViewModel
 - [Adobe XD](https://www.adobe.com/products/xd.html)
 
 ### Design Collaboration
-- [sumplio](https://sympli.io/)
+- [Sympli](https://sympli.io/)
 - [Zepline](https://zeplin.io/)
 
 ## Helper
