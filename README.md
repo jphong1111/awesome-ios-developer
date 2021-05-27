@@ -828,6 +828,7 @@ context.delete(itemArray[0])
 - SwiftyJSON - JSON parsar Helper
 - IQKeyboardManager - Easy to manage Keyboard settings
 - SnapKit - Swift Auto Layout DSL for iOS
+- Charts - Make Beutiful Charts in your App
 - etc...
 
 
