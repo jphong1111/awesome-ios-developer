@@ -101,7 +101,6 @@ put .yml file into root folder and apply following code in Build Phases
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/swiftLintChange.png">
 
 ## Design Pattern
-Design pattern is
 
 Check [this](https://refactoring.guru/design-patterns/swift) website for design pattern in Swift
 
@@ -125,6 +124,7 @@ class SingletonPattern {
 ### Observer
 
 Check [this Site](https://www.swiftbysundell.com/articles/observers-in-swift-part-1/) for more info
+
 ~~The observer pattern lets one object observe changes on another object. Apple added language-level support for this pattern in Swift 5.1 with the addition of Publisher in the Combine framework.~~
 
 TBD
