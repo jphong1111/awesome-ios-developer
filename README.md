@@ -397,6 +397,10 @@ Currently Working
 
 API(Application Programming Interface) is an interface that defines interactions between multiple software applications or mixed hardware-software intermediaries. It defines the kinds of calls or requests that can be made, how to make them, the data formats that should be used, the conventions to follow, etc.
 
+### Various API Site
+- [rapidAPI](https://www.rapidapi.com)
+- [Programmableweb](https://www.programmableweb.com/)
+
 ## JSON
 JSON is a language-independent data format
 > Which is relative with **KEY - VALUE** pair
@@ -418,7 +422,7 @@ JSON is a language-independent data format
 This extension makes JSON more structable
 [JSON parser pro](https://chrome.google.com/webstore/detail/json-viewer-pro/eifflpmocdbdmepbjaopkkhbfmdgijcc) **FREE** :+1:
 
-### JSON Decoding
+## JSON Decoding
 
 To use JSON Decoding in swift, you have to define the model to be Codable or Decodable
 
@@ -454,12 +458,70 @@ T.self -> Model(Struct) of the data that you want to decode
 unwrappedData -> Input actual data from file or server
 > This should be a Data Type!!
  
-### JSONSerialization
+## JSONSerialization
 
-JSONSerialization is a old way of decode the JSON file
+JSONSerialization is a old way of decode the JSON file.
+> Apple populated Codable since Swift 4
 
-### Various API Site
-- [rapidAPI](https://www.rapidapi.com)
+
+### Example
+
+Example of number.json data
+
+```json
+{
+    "number": [
+        {
+            "name": "Dennis",
+            "number": "111-222-3333"
+        },
+        {
+            "name": "Jenny",
+            "number": "444-555-6666"
+        },
+        {
+            "name": "Ben",
+            "number": "777-888-9999"
+        }
+    ]
+}
+
+```
+
+Here is a example of JSONSerialization with actaul JSON file in project folder
+> Otherwise you can use URL!
+
+```swift
+    private func populateDataFromJson() {
+        
+        if let path = Bundle.main.path(forResource: "NumberData", ofType: "json") {
+            do {
+                let dataJson = try Data(contentsOf: URL(fileURLWithPath: path))
+                let jsonDict = try JSONSerialization.jsonObject(with: dataJson, options: .mutableContainers)
+                if let jsonResults = jsonDict as? [String: Any],
+                   let results = jsonResults["number"] as? [[String: Any]] {
+                    results.forEach { dict in
+                        // simply appended to list(array)
+                        self.phoneNumberList.append(PhoneNumber(name: dict["name"] as? String ?? "", number: (dict["number"] as? String ?? "")))
+                        self.phoneNumberListClone.append(PhoneNumber(name: dict["name"] as? String ?? "", number: (dict["number"] as? String ?? "")))
+                    }
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+```
+
+> .mutableContainers allows to working like a array and dictionary type
+
+
+### JSON Parser Library
+
+This library provide JSON parsing 
+
+- [SwifyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
+
 
 ## UserDefaults
 
