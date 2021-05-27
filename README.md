@@ -407,6 +407,7 @@ API(Application Programming Interface) is an interface that defines interactions
 
 ### Various API Site
 - [rapidAPI](https://www.rapidapi.com)
+- [AnyAPI](https://any-api.com/)
 - [Programmableweb](https://www.programmableweb.com/)
 
 ## JSON
