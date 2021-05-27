@@ -124,7 +124,9 @@ class SingletonPattern {
 
 ### Observer
 
-The observer pattern lets one object observe changes on another object. Apple added language-level support for this pattern in Swift 5.1 with the addition of Publisher in the Combine framework.
+~~The observer pattern lets one object observe changes on another object. Apple added language-level support for this pattern in Swift 5.1 with the addition of Publisher in the Combine framework.~~
+
+TBD
 
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/observer.png" />
 
@@ -207,6 +209,8 @@ MVVM patterns stand for Model - View - ViewModel
 
 All files are resuable files and protocol oriented. **Just Copy and Paste inside your project and use it!!** 👍
  
+**These helper files are not with Error Handling! careful at use**
+
 ## Email, Message, Call
 
 You can check the file in the follow link
