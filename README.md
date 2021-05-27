@@ -443,11 +443,19 @@ public typealias Codable = Decodable & Encodable
 
 ```swift
 struct User: Codable {
-    var first_name: String
-    var last_name: String
+    var firstName: String
+    var lastName: String
     var country: String
+    
+    enum CodingKeys: String, CodingKey {
+        case firstName = "first_name"
+        case lastName = "last_name"
+        case country
+    }
 }
+
 ```
+> To avoid snake_case in swift, use CodingKeys or JSONDecoder.KeyDecodingStrategy
 
 To use JSONDecoding, declare JSONDecoder and use decode() function
 
