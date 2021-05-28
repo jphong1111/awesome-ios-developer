@@ -126,15 +126,25 @@ class SingletonPattern {
 
 ## Observer
 
-Check [this Site](https://www.swiftbysundell.com/articles/observers-in-swift-part-1/) for more info
+Observer is a behavioral design pattern that allows some objects to notify other objects about changes in their state.
+
+ - Observer - An object that wishes to be notified when the state of another object changes.
+ - Subject (Observable) - An object that maintains a list of observers, and inform them of state changes usually by calling one of their methods. An observable slightly differs in this in that it is just a function that sets up an observation.
+ - Subscribe - An observer lets a subject know that it wants to be informed of changes through a process called subscribing.
+ 
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/observer.png" />
+
+Check following sites
+ - [swiftbysundell](https://www.swiftbysundell.com/articles/observers-in-swift-part-1/) 
 
 TBD
 
 ## KVO
 
+For more info, go [Apple Developer Site](https://developer.apple.com/documentation/swift/cocoa_design_patterns/using_key-value_observing_in_swift)
+
 ## KVC
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/observer.png" />
 
 ## Code Structuring(Architecture)
 
@@ -1007,13 +1017,17 @@ And then
 
 For More Info, visit [here](https://www.raywenderlich.com/19998365-understanding-and-managing-xcode-space)
 
-## Write README.md
-
-[This](https://medium.com/@saumya.ranjan/how-to-write-a-readme-md-file-markdown-file-20cb7cbcd6f) will help you to write a README.md file more dynamically 👍
-
 ## Roadmap for iOS Developer
 
 check this out [here](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
+
+## Use VIM in Xcode
+
+Check [this](https://www.twilio.com/blog/2017/06/adding-vim-keybindings-to-xcode-with-xvim.html) site for more info!
+
+## Write README.md
+
+[This](https://medium.com/@saumya.ranjan/how-to-write-a-readme-md-file-markdown-file-20cb7cbcd6f) will help you to write a README.md file more dynamically 👍
 
 ## ❤ Supporters
 
