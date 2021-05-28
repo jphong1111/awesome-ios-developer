@@ -71,6 +71,7 @@ Feel free to fork this repository and pull requests!!
 - [Error Search](#Error-Search)
 - [Useful Stuff](#Useful-Stuff)
     - [Show Preview in UIKit(Build UI with Code Base)](#show-preview-in-uikitbuild-ui-with-code-base-----)
+    - [Managing Xcode Space](#Managing-Xcode-Space)
     - [Write README.md](#write-readmemd)
     - [Roadmap for iOS Developer](#Roadmap-for-iOS-Developer)
 
@@ -956,7 +957,7 @@ Enable canvas option like this
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preivew_screenShot.png">
 
-## Clean All Xcode Build File
+## Managing Xcode Space
 
 This will be helful when you are running out of storage in your mac
 
