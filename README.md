@@ -1033,17 +1033,17 @@ Check [this](https://www.twilio.com/blog/2017/06/adding-vim-keybindings-to-xcode
 
 ### ⭐ Stargazers
 
-<a href="https://github.com/jphong1111/useful_swift/stargazers">
-<img src="https://reporoster.com/stars/jphong1111/useful_swift"></a>
+<a href="https://github.com/jphong1111/awesome-ios-developer/stargazers">
+<img src="https://reporoster.com/stars/jphong1111/awesome-ios-developer"></a>
 
 ### 🍴 Forks
 
-<a href="https://github.com/jphong1111/useful_swift/fork">
-<img src="https://reporoster.com/forks/jphong1111/useful_swift"></a>
+<a href="https://github.com/jphong1111/awesome-ios-developer/fork">
+<img src="https://reporoster.com/forks/jphong1111/awesome-ios-developer"></a>
 
 ### 🌟 GitHub Stargazers
 
-[![Stargazers over time](https://starchart.cc/jphong1111/useful_swift.svg)](https://starchart.cc/jphong1111/useful_swift)
+[![Stargazers over time](https://starchart.cc/jphong1111/useful_swift.svg)](https://starchart.cc/jphong1111/awesome-ios-developer)
 
 ## Author
 
