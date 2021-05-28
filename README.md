@@ -960,7 +960,7 @@ Enable canvas option like this
 
 This will be helful when you are running out of storage in your mac
 
-```script
+```bash
 # 1
 echo "Removing Derived Data..."
 rm -rf ~/Library/Developer/Xcode/DerivedData/
@@ -992,7 +992,7 @@ echo "Done!"
 
 After writing, run it with this command
 
-```script
+```bash
 chmod u+x clean-xcode.sh
 ```
 
