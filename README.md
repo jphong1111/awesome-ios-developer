@@ -55,6 +55,10 @@ Feel free to fork this repository and pull requests!!
     - [Update Data](#Update-Data)
     - [Delete Data](#Delete-Data)
 - [Third Party Library](#Third-Party-Library)
+    - [Set Up Dependency Manager](#Set-Up-Dependency-Manager)
+        - [CocoaPods](#CocoaPods)
+        - [Carthage](#Carthage)
+        - [Swift Package Manager](#Swift-Package-Manager)
     - [Recommend Library](#Recommend-Library)
 - [GCD](#GCD)
     - [DispatchQueue](#DispatchQueue)
@@ -66,7 +70,9 @@ Feel free to fork this repository and pull requests!!
     - [Unit Test](#Unit-Test)
     - [UI Test](#UI-Test)
 - [In App Purchase(IAP)](#In-App-PurchaseIAP)
-- [APNS](#APNS)
+- [APNs](#APNS)
+    - [Set Up APNs](#Set-Up-APNs)
+    - [Usage](#Usage)
 - [FRP](#FRP)
     - [Rxswift](#Rxswift)
     - [Combine](#Combine)
@@ -836,6 +842,15 @@ context.delete(itemArray[0])
 ## Third Party Library
 [This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
 
+## Set Up Dependency Manager
+
+## CocoaPods
+
+## Carthage
+
+## Swift Package Manager
+
+
 ### Recommend Library
 - SDWebImage - Downloading and caching images from the web
 - Kingfisher - Downloading and caching images from the web
@@ -919,9 +934,15 @@ TBD
 
 For more info about getting start of IAP, go [here](https://www.raywenderlich.com/5456-in-app-purchase-tutorial-getting-started) 📑
 
-## APNS
+## APNs
 
 APNS stands for **Apple Push Notification service**
+
+## Set Up
+
+
+## Usage
+For more info go [here](https://www.raywenderlich.com/11395893-push-notifications-tutorial-getting-started)
 
 ## FRP
 
