@@ -956,6 +956,56 @@ Enable canvas option like this
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preivew_screenShot.png">
 
+## Clean All Xcode Build File
+
+This will be helful when you are running out of storage in your mac
+
+```script
+# 1
+echo "Removing Derived Data..."
+rm -rf ~/Library/Developer/Xcode/DerivedData/
+
+# 2
+echo "Removing Device Support..."
+rm -rf ~/Library/Developer/Xcode/iOS\ DeviceSupport
+rm -rf ~/Library/Developer/Xcode/watchOS\ DeviceSupport
+rm -rf ~/Library/Developer/Xcode/tvOS\ DeviceSupport
+
+# 3
+echo "Removing old simulators..."
+xcrun simctl delete unavailable
+
+# 4
+echo "Removing caches..."
+rm -rf ~/Library/Caches/com.apple.dt.Xcode
+rm -rf ~/Library/Caches/org.carthage.CarthageKit
+
+# 5
+if command -v pod  &> /dev/null
+then
+    # 6
+    pod cache clean --all
+fi
+
+echo "Done!"
+```
+
+After writing, run it with this command
+
+```script
+chmod u+x clean-xcode.sh
+```
+
+And then
+
+```script
+./clean-xcode.sh
+```
+
+**This will cleans out derived data, device support, simulators and caches. So that once you execute it, You have to build your project AGAIN**
+
+For More Info, visit [here](https://www.raywenderlich.com/19998365-understanding-and-managing-xcode-space)
+
 ## Write README.md
 
 [This](https://medium.com/@saumya.ranjan/how-to-write-a-readme-md-file-markdown-file-20cb7cbcd6f) will help you to write a README.md file more dynamically 👍
