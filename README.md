@@ -55,7 +55,7 @@ Feel free to fork this repository and pull requests!!
     - [Update Data](#Update-Data)
     - [Delete Data](#Delete-Data)
 - [Third Party Library](#Third-Party-Library)
-    - [Set Up Dependency Manager](#Set-Up-Dependency-Manager)
+    - [Dependency/Package Manager](#Dependency/Package-Manager)
         - [CocoaPods](#CocoaPods)
         - [Carthage](#Carthage)
         - [Swift Package Manager](#Swift-Package-Manager)
@@ -153,6 +153,8 @@ For more info, go [Apple Developer Site](https://developer.apple.com/documentati
 
 ## KVC
 
+
+[KVO vs KVC](https://medium.com/hackernoon/kvo-kvc-in-swift-12f77300c387)
 
 ## Code Structuring(Architecture)
 
@@ -842,11 +844,24 @@ context.delete(itemArray[0])
 ## Third Party Library
 [This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
 
-## Set Up Dependency Manager
+## Dependency/Package Manager
+
+A package manager is a tool that simplifies the process of working with code from multiple sources.
+
+- Centralised hosting of packages and source code with public server with access to developers or contributors
+- Download the source code at the run time, so that we don’t need to include it in the repository
+- Link the source code to our working repository by including source files
+
+[More Info](https://medium.com/xcblog/swift-dependency-management-for-ios-3bcfc4771ec0)
 
 ## CocoaPods
 
+```bash
+$ sudo gem install cocoapods
+```
+
 ## Carthage
+
 
 ## Swift Package Manager
 
