@@ -372,7 +372,7 @@ Good To GO 👏👏👏
 
 ## File Manager
 
-- [File Manager](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/FileManageHelper/FileManageHelper.swift) 
+- [File Manager](https://github.com/jphong1111/awesome-ios-developer/blob/main/Helper/FileManageHandler/FileManager.swift) 
 
 ### Usage
 
