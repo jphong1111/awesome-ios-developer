@@ -372,7 +372,7 @@ Good To GO 👏👏👏
 
 ## File Manager
 
-- [File Manager](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/FileManageHelper.swift) 
+- [File Manager](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/FileManageHelper/FileManageHelper.swift) 
 
 ### Usage
 
@@ -388,7 +388,7 @@ Good To GO 👏👏👏
 
 ## Video Downloader
 
-- [Video Downloader](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/VideoManager.swift) 
+- [Video Downloader](https://github.com/jphong1111/awesome-ios-developer/blob/main/Helper/VideoDownloadHandler/VideoDownloadManager.swift) 
 
 ## Usage
 
