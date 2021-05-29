@@ -856,9 +856,29 @@ A package manager is a tool that simplifies the process of working with code fro
 
 ## CocoaPods
 
+Download cocoapods
+
 ```bash
 $ sudo gem install cocoapods
 ```
+
+After finish download cocoapods, go to your root folder of your project and make pod file
+
+```bash
+$ pod init
+```
+
+Click into your pod file and edit
+
+<IMAGE>
+
+After finish editing, update your pod file
+
+```bash
+$ pod install
+```
+
+**You are GOOD TO GO**  👏👏👏
 
 ## Carthage
 
@@ -883,7 +903,7 @@ $ sudo gem install cocoapods
 ## GCD
 GCD(Grand Central Dispatch) is a low-level API for managing concurrent operations. It can help you improve your app’s responsiveness by deferring computationally expensive tasks to the background.
 
-### DispatchQueue
+## DispatchQueue
 An object that manages the execution of tasks serially or concurrently on your app's main thread or on a background thread.
 
 #### main
@@ -892,14 +912,14 @@ We can say main is a serial queue
 #### global()
 We can say global is a concurrent queue
 
-### DispatchGroup
+## DispatchGroup
 
-### DispatchWorkItem
+## DispatchWorkItem
 
-### Thread Sanitizer
+## Thread Sanitizer
 Thread Sanitizer is a tool to identifies the potential thread-related corruption issues. And it is a good way to find the [Readers and Writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) in your application.
 
-#### How to Use Address Sanitizer
+### How to Use Address Sanitizer
 
 Go to this Option and Click **EDIT SCHEME...** 👈
 
@@ -911,9 +931,11 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 ## Testing
 
-Before start your Testing, add coverage will be a good option to show the result of test
 
-### Code Coverage
+
+## Code Coverage
+
+Before start your Testing, add coverage will be a good option to show the result of test
 
 First, check code coverage
 
@@ -923,9 +945,9 @@ Then, go to **EDIT SHEME**, check like this
 
 <img src ="https://github.com/jphong1111/Useful_Swift/blob/main/Images/addCoverage2.png" />
 
-### Unit Test
+## Unit Test
 
-### UI Test
+## UI Test
 
 ## In App Purchase(IAP)
 
