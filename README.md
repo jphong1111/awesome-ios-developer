@@ -882,7 +882,16 @@ $ pod install
 
 ## Carthage
 
-
+```bash
+$ brew install carthage
+```
+    
+    
+```bash
+$ carthage update
+```
+**You are GOOD TO GO**  👏👏👏
+    
 ## Swift Package Manager
 
 
