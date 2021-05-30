@@ -49,7 +49,7 @@ Feel free to fork this repository and pull requests!!
     - [How to find documentDirectory](#How-to-find-documentDirectory)
 - [Core Data](#Core-Data)
     - [Set Up Core Data](#Set-Up-Core-Data)
-    - [Usage](#Usage)
+    - [Core Data Usage](#Core-Data-Usage)
     - [Store Data](#Store-Data)
     - [Load Data](#Load-Data)
     - [Update Data](#Update-Data)
@@ -72,7 +72,7 @@ Feel free to fork this repository and pull requests!!
 - [In App Purchase(IAP)](#In-App-PurchaseIAP)
 - [APNs](#APNS)
     - [Set Up APNs](#Set-Up-APNs)
-    - [Usage](#Usage)
+    - [APNs Usage](#APNs-Usage)
 - [FRP](#FRP)
     - [Rxswift](#Rxswift)
     - [Combine](#Combine)
@@ -742,7 +742,7 @@ If your target is **below iOS13**, put this line of code in side your **applicat
 self.saveContext()
 ```
 
-## Usage
+## Core Data Usage
 
 Once you create your DataModel file, you can simply create a **Entity(Class)** and **Attributes(Properties)**
 
@@ -756,7 +756,7 @@ Once you create your own Entities & Attributes, go to Inspector and change Modul
 
 > If you didn't set it, thats fine, but if you are working in big project, then you need to set it. Otherwise this can occurs some error.
 
-#### Codegen
+### Codegen
 
 As you can see in above, there are three options
 
@@ -987,7 +987,7 @@ APNS stands for **Apple Push Notification service**
 ## Set Up
 
 
-## Usage
+## APNs Usage
 For more info go [here](https://www.raywenderlich.com/11395893-push-notifications-tutorial-getting-started)
 
 ## FRP
