@@ -79,7 +79,7 @@ Feel free to fork this repository and pull requests!!
     - [Combine](#Combine)
 - [Error Search](#Error-Search)
 - [Useful Stuff](#Useful-Stuff)
-    - [How to submit your app to the AppStore]
+    - [How to submit your app to the AppStore](#how-to-submit-your-app-to-the-appstore)
     - [Show Preview in UIKit(Build UI with Code Base)](#show-preview-in-uikitbuild-ui-with-code-base-----)
     - [Managing Xcode Space](#Managing-Xcode-Space)
     - [Write README.md](#write-readmemd)
@@ -872,13 +872,14 @@ $ pod init
 
 Click into your pod file and edit
 
-<IMAGE>
+Image
 
 After finish editing, update your pod file
 
 ```bash
 $ pod install
 ```
+    
 
 **You are GOOD TO GO**  👏👏👏
 
@@ -892,6 +893,7 @@ $ brew install carthage
 ```bash
 $ carthage update
 ```
+    
 **You are GOOD TO GO**  👏👏👏
     
 ## Swift Package Manager
@@ -924,6 +926,7 @@ We can say main is a serial queue
 We can say global is a concurrent queue
 
 ## DispatchGroup
+
 
 ## DispatchWorkItem
 
@@ -1014,7 +1017,7 @@ Find your common error here
 
 ## How to submit your app to the AppStore
     
-    [Publishing to AppStore](https://codewithchris.com/submit-your-app-to-the-app-store/#apple-developer-program)
+   [Publishing to AppStore](https://codewithchris.com/submit-your-app-to-the-app-store/#apple-developer-program)
     
 ## Show Preview in UIKit(Build UI with Code Base) 👍 👍 👍 👍 👍
 
