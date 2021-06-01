@@ -1052,9 +1052,10 @@ Enable canvas option like this
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preview%20using%20canvas.png">
 
-**You are GOOD TO GO**  👏👏👏
-
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preivew_screenShot.png">
+
+
+**You are GOOD TO GO**  👏👏👏
 
 ## Compare Changes in Swift Version
 
