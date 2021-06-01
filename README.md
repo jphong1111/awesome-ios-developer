@@ -79,6 +79,7 @@ Feel free to fork this repository and pull requests!!
     - [Combine](#Combine)
 - [Error Search](#Error-Search)
 - [Useful Stuff](#Useful-Stuff)
+    - [How to submit your app to the AppStore]
     - [Show Preview in UIKit(Build UI with Code Base)](#show-preview-in-uikitbuild-ui-with-code-base-----)
     - [Managing Xcode Space](#Managing-Xcode-Space)
     - [Write README.md](#write-readmemd)
@@ -1011,7 +1012,11 @@ Find your common error here
 
 ## Useful Stuff
 
-### Show Preview in UIKit(Build UI with Code Base) 👍 👍 👍 👍 👍
+## How to submit your app to the AppStore
+    
+    [Publishing to AppStore](https://codewithchris.com/submit-your-app-to-the-app-store/#apple-developer-program)
+    
+## Show Preview in UIKit(Build UI with Code Base) 👍 👍 👍 👍 👍
 
 Copy this code and Paste into your controller
 
