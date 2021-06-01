@@ -1005,6 +1005,8 @@ Functional Reactive Programming
 
 ## Combine
 
+Combine released on iOS13 from Apple for Functional Reactive Programming. 
+
 [Swiftbysundell](https://www.swiftbysundell.com/basics/combine/)
 
 ## Error Search
