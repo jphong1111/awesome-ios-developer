@@ -81,6 +81,7 @@ Feel free to fork this repository and pull requests!!
 - [Useful Stuff](#Useful-Stuff)
     - [How to submit your app to the AppStore](#how-to-submit-your-app-to-the-appstore)
     - [Show Preview in UIKit(Build UI with Code Base)](#show-preview-in-uikitbuild-ui-with-code-base-----)
+    - [Compare Changes in Swift Version](#Compare-Changes-in-Swift-Version)
     - [Managing Xcode Space](#Managing-Xcode-Space)
     - [Write README.md](#write-readmemd)
     - [Roadmap for iOS Developer](#Roadmap-for-iOS-Developer)
@@ -1054,6 +1055,12 @@ Enable canvas option like this
 **You are GOOD TO GO**  👏👏👏
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preivew_screenShot.png">
+
+## Compare Changes in Swift Version
+
+You can compare changes based on Swift Verison
+
+[Whatsnewinswift](https://www.whatsnewinswift.com/?from=5.3&to=5.4)
 
 ## Managing Xcode Space
 
