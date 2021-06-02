@@ -48,6 +48,7 @@ Feel free to fork this repository and pull requests!!
     - [JSONSerialization](#JSONSerialization)
 - [UserDefaults](#UserDefaults)
     - [How to find documentDirectory](#How-to-find-documentDirectory)
+    - [Store Object](#Store-Object)
 - [Core Data](#Core-Data)
     - [Set Up Core Data](#Set-Up-Core-Data)
     - [Core Data Usage](#Core-Data-Usage)
@@ -584,7 +585,7 @@ The UserDefaults class provides a programmatic interface for interacting with th
 - Flags, more on this later
 - If store data is small 
 
-### How to find documentDirectory 
+## How to find documentDirectory 
 
 Put this line of code inside of your project
 ```swift
@@ -601,7 +602,7 @@ simply move into that path and you can find the documentDirectory of your Applic
 
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultPlistPath.png" />
 
-### Usage
+## Usage
 
 As you can see in the below, intArray will stored inside the device through UserDefaults(), so that if device is shut down, changed value wil be stored in device.
 
@@ -641,6 +642,12 @@ let defaults = UserDefaults.standard
 **Also these function will allow to get a data from plist**
 
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultGet.png" width = "60%" height = "60%"/>
+
+## Store Object
+
+There are two ways of store object in UserDefault
+
+###
 
 **You are GOOD TO GO**  👏👏👏
 
