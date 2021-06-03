@@ -83,6 +83,7 @@ Feel free to fork this repository and pull requests!!
     - [Checklist For App Security](#Checklist-For-App-Security)
     - [Keychain](#Keychain)
     - [SSL Pinning](#SSL-Pinning)
+    - [Code Obfuscation](#Code-Obfuscation)
     - [Cryptography](#Cryptography)
     - [Biometric Access](#Biometric-Access)
 - [Error Search](#Error-Search)
@@ -1046,6 +1047,8 @@ Combine released on iOS13 from Apple for Functional Reactive Programming.
 ## Keychain
 
 ## SSL Pinning
+
+## Code Obfuscation
 
 ## Cryptography
 
