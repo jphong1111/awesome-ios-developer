@@ -864,7 +864,9 @@ context.delete(itemArray[0])
 
 **You are GOOD TO GO**  👏👏👏
 
-<a align="right" href="#-content">Back to Content</a>
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
 
 ## Third Party Library
 [This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
