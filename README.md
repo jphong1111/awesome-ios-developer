@@ -82,6 +82,9 @@ Feel free to fork this repository and pull requests!!
 - [Security](#Security)
     - [Checklist For App Security](#Checklist-For-App-Security)
     - [Keychain](#Keychain)
+    - [SSL Pinning](#SSL-Pinning)
+    - [Cryptography](#Cryptography)
+    - [Biometric Access](#Biometric-Access)
 - [Error Search](#Error-Search)
 - [Useful Stuff](#Useful-Stuff)
     - [How to submit your app to the AppStore](#how-to-submit-your-app-to-the-appstore)
@@ -1030,18 +1033,23 @@ Combine released on iOS13 from Apple for Functional Reactive Programming.
 
 ## Checklist For App Security
 
- - Keychain For Sensitive Data Storage
- - Application Transport Security Layer
- - SSL Pinning 
- - Jailbroken Device Check
- - Disable Debug Logs
- - Third-Party Library Usage Check 
- - Code Obfuscation
- - Cryptography 
- - Biometric Access
+ - [ ] Keychain For Sensitive Data Storage
+ - [ ] Application Transport Security Layer
+ - [ ] SSL Pinning 
+ - [ ] Jailbroken Device Check
+ - [ ] Disable Debug Logs
+ - [ ] Third-Party Library Usage Check 
+ - [ ] Code Obfuscation
+ - [ ] Cryptography 
+ - [ ] Biometric Access
  
 ## Keychain
 
+## SSL Pinning
+
+## Cryptography
+
+## Biometric Access
 
 ## Error Search
 
