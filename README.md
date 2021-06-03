@@ -1032,10 +1032,19 @@ Combine released on iOS13 from Apple for Functional Reactive Programming.
 
 ## Security
 
+Security secure the data your app manages, and control access to your app.
+
+Check below for more detail about iOS Security as well as Application security
+
+ - [Introduction to Apple platform security](https://support.apple.com/ko-kr/guide/security/seccd5016d31/web)
+ - [iOS Security](https://www.cse.wustl.edu/~jain/cse571-14/ftp/ios_security/index.html) 
+ - [Apple Developer Doc about Security](https://developer.apple.com/documentation/security)
+ - [iOS App Security: Best Practices](https://quickbirdstudios.com/blog/ios-app-security-best-practices/)
+
 ## Checklist For App Security
 
  - [ ] Keychain For Sensitive Data Storage
- - [ ] Application Transport Security Layer
+ - [ ] Application Transport Security Layer(TSL)
  - [ ] SSL Pinning 
  - [ ] Jailbroken Device Check
  - [ ] Disable Debug Logs
@@ -1046,9 +1055,13 @@ Combine released on iOS13 from Apple for Functional Reactive Programming.
  
 ## Keychain
 
+[Keychain raywenderlich](https://www.raywenderlich.com/9240-keychain-services-api-tutorial-for-passwords-in-swift)
+
 ## SSL Pinning
 
-### Relate Stuff
+SSL stands for Secure Socket Layer.
+
+### Relative Stuff
 TrustKit makes it easy to deploy SSL public key pinning
 
 [TrustKit](https://github.com/datatheorem/TrustKit)
