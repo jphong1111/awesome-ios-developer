@@ -1048,6 +1048,11 @@ Combine released on iOS13 from Apple for Functional Reactive Programming.
 
 ## SSL Pinning
 
+### Relate Stuff
+TrustKit makes it easy to deploy SSL public key pinning
+
+[TrustKit](https://github.com/datatheorem/TrustKit)
+
 ## Code Obfuscation
 
 ## Cryptography
