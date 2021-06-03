@@ -672,10 +672,6 @@ let defaults = UserDefaults.standard
 <a href="#-content">Back to Content</a>
 </p>
 
-## Keychain
-
-[Keychain raywenderlich](https://www.raywenderlich.com/9240-keychain-services-api-tutorial-for-passwords-in-swift)
-
 ## Core Data
 
 Use Core Data to save your application’s permanent data for offline use, to cache temporary data, and to add undo functionality to your app on a single device.
