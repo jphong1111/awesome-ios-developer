@@ -1010,9 +1010,6 @@ For more info about getting start of IAP, go [here](https://www.raywenderlich.co
 
 APNS stands for **Apple Push Notification service**
 
-## Set Up
-
-
 ## APNs Usage
 For more info go [here](https://www.raywenderlich.com/11395893-push-notifications-tutorial-getting-started)
 
@@ -1022,7 +1019,10 @@ Functional Reactive Programming
 
 ## Rxswift
 
-[RxSwift](https://github.com/ReactiveX/RxSwift)
+[RxSwift raywenderlich](https://www.raywenderlich.com/books/rxswift-reactive-programming-with-swift/v4.0)
+[RxSwift](https://github.com/ReactiveX/RxSwift) - Github Repository
+
+
 
 ## Combine
 
