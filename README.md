@@ -1086,8 +1086,8 @@ Check below for more detail about iOS Security as well as Application security
 
 SSL stands for Secure Socket Layer.
 
-[Preventing Man-in-the-Middle Attacks in iOS with SSL Pinning](https://www.raywenderlich.com/1484288-preventing-man-in-the-middle-attacks-in-ios-with-ssl-pinning)
-[How to Perform SSL Pinning in iOS Apps](https://appinventiv.com/blog/ssl-pinning-in-ios-app/)
+ - [Preventing Man-in-the-Middle Attacks in iOS with SSL Pinning](https://www.raywenderlich.com/1484288-preventing-man-in-the-middle-attacks-in-ios-with-ssl-pinning)
+ - [How to Perform SSL Pinning in iOS Apps](https://appinventiv.com/blog/ssl-pinning-in-ios-app/)
 
 ### How SSL Works
 
