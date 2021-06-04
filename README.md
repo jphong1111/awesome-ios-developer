@@ -1089,7 +1089,7 @@ When a mobile app communicates with a server, it uses SSL(Secure Socket Layer) p
  - [Preventing Man-in-the-Middle Attacks in iOS with SSL Pinning](https://www.raywenderlich.com/1484288-preventing-man-in-the-middle-attacks-in-ios-with-ssl-pinning)
  - [How to Perform SSL Pinning in iOS Apps](https://appinventiv.com/blog/ssl-pinning-in-ios-app/)
 
-### How SSL Works
+## How SSL Works
 
 1. A browser attempts to connect with a website which is secured with a SSL. The browser then requests the web server to identify itself.
 2. Web server then sends the browser its SSL certificate copy.
@@ -1097,14 +1097,12 @@ When a mobile app communicates with a server, it uses SSL(Secure Socket Layer) p
 4. Web server then sends back an acknowledgement to begin the SSL encrypted session.
 5. The encrypted data is then finally shared between the browser and web server.
 
-### SSL pinning methods
+## SSL pinning methods
 
  - Pin the certificate – you can download the server’s certificate and bundle them in the app. At the runtime, the app compares the server certificate to ones that you have embedded. 
  - Pin the public key – you can retrieve the public key of certificate in the code as string. At the runtime, the application compared the certificate’s public key to one which is hard-coded in the code. 
 
-### Implement SSL Pinning
-
-**Using URLSession**
+## Using URLSession
 
 ```swift
 func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
@@ -1137,7 +1135,7 @@ func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationCh
 }
 ```
 
-**Using Alamofire 5 **
+## Using Alamofire 5
 
 If you are using above version, this code should be changed
 
