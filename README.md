@@ -877,7 +877,13 @@ context.delete(itemArray[0])
 </p>
 
 ## Third Party Library
-[This github](https://github.com/vsouza/awesome-ios) contains all the popular libraries in Swift:+1:
+
+Third Party Library saves you time as you do not need to develop the functionality that the library provides. 
+[SHOULD DEVELOPERS USE THIRD-PARTY LIBRARIES?](https://www.scalablepath.com/blog/third-party-libraries/)
+> Relying on library(abused) is not a good idea
+
+ - [awesome ios github](https://github.com/vsouza/awesome-ios) Contains all the popular libraries in Swift:+1:
+ - [awesome swift site](https://swift.libhunt.com/) You can broswe popular libraries related to iOS
 
 ## Dependency/Package Manager
 
