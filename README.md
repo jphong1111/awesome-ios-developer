@@ -1084,7 +1084,7 @@ Check below for more detail about iOS Security as well as Application security
 
 ## SSL Pinning
 
-SSL stands for Secure Socket Layer.
+When a mobile app communicates with a server, it uses SSL(Secure Socket Layer) pinning technique for protecting the transmitted data against tampering and eavesdropping.
 
  - [Preventing Man-in-the-Middle Attacks in iOS with SSL Pinning](https://www.raywenderlich.com/1484288-preventing-man-in-the-middle-attacks-in-ios-with-ssl-pinning)
  - [How to Perform SSL Pinning in iOS Apps](https://appinventiv.com/blog/ssl-pinning-in-ios-app/)
@@ -1101,7 +1101,39 @@ SSL stands for Secure Socket Layer.
 
  - Pin the certificate – you can download the server’s certificate and bundle them in the app. At the runtime, the app compares the server certificate to ones that you have embedded. 
  - Pin the public key – you can retrieve the public key of certificate in the code as string. At the runtime, the application compared the certificate’s public key to one which is hard-coded in the code. 
- 
+
+### Implement SSL Pinning
+
+```swift
+func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+    if (challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust) {
+        if let serverTrust = challenge.protectionSpace.serverTrust {
+            var secresult = SecTrustResultType.invalid
+            let status = SecTrustEvaluate(serverTrust, &secresult)
+            
+            if (errSecSuccess == status) {
+                if let serverCertificate = SecTrustGetCertificateAtIndex(serverTrust, 0) {
+                    let serverCertificateData = SecCertificateCopyData(serverCertificate)
+                    let data = CFDataGetBytePtr(serverCertificateData);
+                    let size = CFDataGetLength(serverCertificateData);
+                    let cert1 = NSData(bytes: data, length: size)
+                    let file_der = Bundle.main.path(forResource: "name-of-cert-file", ofType: "cer")
+                    
+                    if let file = file_der {
+                        if let cert2 = NSData(contentsOfFile: file) {
+                            if cert1.isEqual(to: cert2 as Data) { completionHandler(URLSession.AuthChallengeDisposition.useCredential, URLCredential(trust:serverTrust))
+                                return
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // Pinning failed completionHandler(URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge, nil)
+}
+```
 
 ### Relative Stuff
 TrustKit makes it easy to deploy SSL public key pinning
