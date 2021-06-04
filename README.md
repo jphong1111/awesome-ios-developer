@@ -1086,6 +1086,23 @@ Check below for more detail about iOS Security as well as Application security
 
 SSL stands for Secure Socket Layer.
 
+[Preventing Man-in-the-Middle Attacks in iOS with SSL Pinning](https://www.raywenderlich.com/1484288-preventing-man-in-the-middle-attacks-in-ios-with-ssl-pinning)
+[How to Perform SSL Pinning in iOS Apps](https://appinventiv.com/blog/ssl-pinning-in-ios-app/)
+
+### How SSL Works
+
+1. A browser attempts to connect with a website which is secured with a SSL. The browser then requests the web server to identify itself.
+2. Web server then sends the browser its SSL certificate copy.
+3. The browser checks if the SSL certificate must be trusted. If it can be, a message is sent to the web server.
+4. Web server then sends back an acknowledgement to begin the SSL encrypted session.
+5. The encrypted data is then finally shared between the browser and web server.
+
+### SSL pinning methods
+
+ - Pin the certificate – you can download the server’s certificate and bundle them in the app. At the runtime, the app compares the server certificate to ones that you have embedded. 
+ - Pin the public key – you can retrieve the public key of certificate in the code as string. At the runtime, the application compared the certificate’s public key to one which is hard-coded in the code. 
+ 
+
 ### Relative Stuff
 TrustKit makes it easy to deploy SSL public key pinning
 
