@@ -1084,6 +1084,8 @@ Check below for more detail about iOS Security as well as Application security
 
 ## SSL Pinning
 
+<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/SSLCertificate.png"/>
+
 When a mobile app communicates with a server, it uses SSL(Secure Socket Layer) pinning technique for protecting the transmitted data against tampering and eavesdropping.
 
  - [Preventing Man-in-the-Middle Attacks in iOS with SSL Pinning](https://www.raywenderlich.com/1484288-preventing-man-in-the-middle-attacks-in-ios-with-ssl-pinning)
