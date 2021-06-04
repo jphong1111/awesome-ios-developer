@@ -1137,26 +1137,46 @@ func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationCh
 }
 ```
 
-**Using Alamofire**
+**Using Alamofire 5 **
+
+If you are using above version, this code should be changed
+
+[More Info](https://devgenes.com/posts/SSL-Pinning-With-Alamofire/)
+
+First, Download SSL certificate to your project folder
+> https://www.yourdomain.com **(NOT IN THIS WAY)**
+
+```bash
+openssl s_client -showcerts -connect yourdomain.com:443 < /dev/null | openssl x509 -outform DER > yourdomain.cer
+```
+
+Make a SessionManager to get SSL Pinning
 
 ```swift
 
- let pathToCert = Bundle.main.path(forResource: “name-of-cert-file”, ofType: “cer”)
- let localCertificate : NSData = NSData(contentsOfFile: pathToCert! )!
+let sessionManager: SessionManager = {
+    let serverTrustPolicies: [String: ServerTrustPolicy] = ["yourdomain.com": .pinCertificates(certificates: ServerTrustPolicy.certificates(),
+                                                                                                validateCertificateChain: true,
+                                                                                                validateHost: true)]
+    
+    return SessionManager(serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies))
+}()
+```
 
- let serverTrustPolicy = ServerTrustPolicy.pinCertificates(
-      certificates : [SecCertificateCreateWithData(nil, localCertificate) !],
-      validateCertificateChain : true,
-      validateHost : true
- )
+request from sessionManager, if it is invalid, print error
 
- let serverTrustPolicies = [
-      “my-server.com” :  serverTrustPolicy
- ]
-
- let sessionManager = SessionManager (
-      serverTrustPolicyManager : ServerTrustPolicyManager(policies : serverTrustPolicies)
- )
+```swift
+sessionManager.request("https://yourdomain.com").responseString { (dataResponse) in
+    switch dataResponse.result {
+    case .failure(let err):
+        print(err)
+    case .success(let val):
+        print(val)
+        if let headerFields = dataResponse.response?.allHeaderFields {
+            print(headerFields)
+        }
+    }
+}
 ```
 
 ### Relative Stuff
