@@ -1142,7 +1142,7 @@ If you are using above version, this code should be changed
 [More Info](https://devgenes.com/posts/SSL-Pinning-With-Alamofire/)
 
 First, Download SSL certificate to your project folder
-> https://www.yourdomain.com **(NOT IN THIS WAY)**
+> https://www.yourdomain.com (NOT IN THIS WAY)
 
 ```bash
 openssl s_client -showcerts -connect yourdomain.com:443 < /dev/null | openssl x509 -outform DER > yourdomain.cer
