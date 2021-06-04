@@ -1104,6 +1104,8 @@ When a mobile app communicates with a server, it uses SSL(Secure Socket Layer) p
 
 ### Implement SSL Pinning
 
+**Using URLSession**
+
 ```swift
 func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
     if (challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust) {
@@ -1133,6 +1135,28 @@ func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationCh
     
     // Pinning failed completionHandler(URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge, nil)
 }
+```
+
+**Using Alamofire**
+
+```swift
+
+ let pathToCert = Bundle.main.path(forResource: “name-of-cert-file”, ofType: “cer”)
+ let localCertificate : NSData = NSData(contentsOfFile: pathToCert! )!
+
+ let serverTrustPolicy = ServerTrustPolicy.pinCertificates(
+      certificates : [SecCertificateCreateWithData(nil, localCertificate) !],
+      validateCertificateChain : true,
+      validateHost : true
+ )
+
+ let serverTrustPolicies = [
+      “my-server.com” :  serverTrustPolicy
+ ]
+
+ let sessionManager = SessionManager (
+      serverTrustPolicyManager : ServerTrustPolicyManager(policies : serverTrustPolicies)
+ )
 ```
 
 ### Relative Stuff
