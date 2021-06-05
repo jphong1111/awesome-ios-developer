@@ -1234,6 +1234,7 @@ struct SwiftLeeViewController_Preview: PreviewProvider {
 #endif
 ```
 
+
 Enable canvas option like this
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preview%20using%20canvas.png">
