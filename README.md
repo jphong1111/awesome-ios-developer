@@ -86,8 +86,7 @@ Feel free to fork this repository and pull requests!!
     - [Code Obfuscation](#Code-Obfuscation)
     - [Cryptography](#Cryptography)
     - [Biometric Access](#Biometric-Access)
-        - [Face ID](#Face-ID)
-        - [Touch ID](#Touch-ID)
+        - [Face ID & Touch ID](#Face-ID-&-Touch-ID)
 - [Error Search](#Error-Search)
 - [Useful Stuff](#Useful-Stuff)
     - [How to submit your app to the AppStore](#how-to-submit-your-app-to-the-appstore)
@@ -1194,11 +1193,60 @@ Code obfuscation is the act of deliberately obscuring source code, making it ver
 
 ## Biometric Access
 
+Apple made a big change when it released the iPhone X: It ditched Touch ID fingerprint security for a new face-based biometric sign-on tool called Face ID. The fingerprint scanner on most post-iPhone X Apple products is gone, and in its place is a new camera array capable of capturing a face map that is, according to Apple, 20 times less likely to be hacked than a Touch ID fingerprint.
 
-## Face ID
+[Apple's Face ID: Cheat sheet](https://www.techrepublic.com/article/apples-face-id-everything-iphone-x-users-need-to-know/)
 
-## Touch ID
+## Face ID & Touch ID
 
+To use Face ID, Add **Privacy - Face ID Usage Description** into your info.plist file in your project
+
+import LocalAuthentication, which can allow you to implement Biometric Access
+
+```swift
+import LocalAuthentication
+```
+
+After that, using LAContext() we can implement Face ID
+
+Here are simple example that how Face ID can impelement
+
+```swift
+@IBAction private func isTouched(_ sender: UIButton!) {
+        let context = LAContext()
+        var error: NSError? = nil
+        if  context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "touch id"
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { [weak self](success, error) in
+                DispatchQueue.main.async {
+                   
+                    guard success, error == nil else {
+                        // If Fail
+                        let alert  = UIAlertController(title: "FAceID Fail", message: "error", preferredStyle: .alert)
+                        let action = UIAlertAction(title: "cancle", style: .cancel, handler: nil)
+                        alert.addAction(action)
+                        self?.present(alert, animated: true, completion: nil)
+                        return
+                    }
+                    // If success
+                    let vc = UIViewController()
+                    vc.title = "hi"
+                    vc.view.backgroundColor = .blue
+                    self?.present(vc, animated: true, completion: nil)
+                }
+            }
+        } else {
+            // If device is not supporting Face ID
+        }
+    }
+```
+> Error Handling is your own part
+
+**You are GOOD TO GO**  👏👏👏
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
 
 ## Error Search
 
