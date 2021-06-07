@@ -86,6 +86,8 @@ Feel free to fork this repository and pull requests!!
     - [Code Obfuscation](#Code-Obfuscation)
     - [Cryptography](#Cryptography)
     - [Biometric Access](#Biometric-Access)
+        - [Face ID](#Face-ID)
+        - [Touch ID](#Touch-ID)
 - [Error Search](#Error-Search)
 - [Useful Stuff](#Useful-Stuff)
     - [How to submit your app to the AppStore](#how-to-submit-your-app-to-the-appstore)
@@ -1191,6 +1193,12 @@ Code obfuscation is the act of deliberately obscuring source code, making it ver
 ## Cryptography
 
 ## Biometric Access
+
+
+## Face ID
+
+## Touch ID
+
 
 ## Error Search
 
