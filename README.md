@@ -1201,7 +1201,7 @@ Apple made a big change when it released the iPhone X: It ditched Touch ID finge
 
 To use Face ID, Add **Privacy - Face ID Usage Description** into your info.plist file in your project
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/FaceID_Info.png"/>
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/FaceID_Info.png" width = "50%" height = "50%"/>
 
 import LocalAuthentication, which can allow you to implement Biometric Access
 
