@@ -86,7 +86,7 @@ Feel free to fork this repository and pull requests!!
     - [Code Obfuscation](#Code-Obfuscation)
     - [Cryptography](#Cryptography)
     - [Biometric Access](#Biometric-Access)
-        - [Face ID & Touch ID](#Face-ID-&-Touch-ID)
+        - [Face ID & Touch ID](#face-id--touch-id)
 - [Error Search](#Error-Search)
 - [Useful Stuff](#Useful-Stuff)
     - [How to submit your app to the AppStore](#how-to-submit-your-app-to-the-appstore)
@@ -1200,6 +1200,8 @@ Apple made a big change when it released the iPhone X: It ditched Touch ID finge
 ## Face ID & Touch ID
 
 To use Face ID, Add **Privacy - Face ID Usage Description** into your info.plist file in your project
+
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/FaceID_Info.png"/>
 
 import LocalAuthentication, which can allow you to implement Biometric Access
 
