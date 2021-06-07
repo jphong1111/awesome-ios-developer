@@ -1186,6 +1186,8 @@ TrustKit makes it easy to deploy SSL public key pinning
 
 ## Code Obfuscation
 
+Code obfuscation is the act of deliberately obscuring source code, making it very difficult for humans to understand, and making it useless to hackers who may have ulterior motives.
+
 ## Cryptography
 
 ## Biometric Access
