@@ -1038,9 +1038,9 @@ Functional Reactive Programming
 
 ## Rxswift
 
-[RxSwift raywenderlich](https://www.raywenderlich.com/books/rxswift-reactive-programming-with-swift/v4.0)
-[RxSwift](https://github.com/ReactiveX/RxSwift) - Github Repository
-[RxSwift](http://reactivex.io/intro.html) - Website
+- [RxSwift raywenderlich](https://www.raywenderlich.com/books/rxswift-reactive-programming-with-swift/v4.0)
+- [RxSwift](https://github.com/ReactiveX/RxSwift) - Github Repository
+- [RxSwift](http://reactivex.io/intro.html) - Website
 
 <p align="right">
 <a href="#-content">Back to Content</a>
