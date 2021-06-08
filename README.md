@@ -72,6 +72,7 @@ Feel free to fork this repository and pull requests!!
     - [Code Coverage](#Code-Coverage)
     - [Unit Test](#Unit-Test)
     - [UI Test](#UI-Test)
+-[CI/CD](#CI/CD)
 - [In App Purchase(IAP)](#In-App-PurchaseIAP)
 - [APNs](#APNS)
     - [Set Up APNs](#Set-Up-APNs)
@@ -1002,6 +1003,13 @@ Then, go to **EDIT SHEME**, check like this
 ## Unit Test
 
 ## UI Test
+
+## CI/CD
+
+[WWDC21](https://www.apple.com/apple-events/june-2021/?&cid=wwa-us-kwgo-features-slid--Brand-AppleLive-Post-&mtid=20925e1t39169&aosid=p238&mnid=sZH3E0Pf0-dc_mtid_20925e1t39169_pcrid_524281987644_pgrid_129696028064_) Apple released [Xcode Cloud](https://developer.apple.com/xcode-cloud/) for continuous integration
+
+For more info, go to [Apple Developer Website](https://developer.apple.com/documentation/Xcode/Xcode-Cloud)
+
 
 ## In App Purchase(IAP)
 
