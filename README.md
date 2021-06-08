@@ -72,7 +72,7 @@ Feel free to fork this repository and pull requests!!
     - [Code Coverage](#Code-Coverage)
     - [Unit Test](#Unit-Test)
     - [UI Test](#UI-Test)
--[CI/CD](#CI/CD)
+- [CI/CD](#cicd)
 - [In App Purchase(IAP)](#In-App-PurchaseIAP)
 - [APNs](#APNS)
     - [Set Up APNs](#Set-Up-APNs)
