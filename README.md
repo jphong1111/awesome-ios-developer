@@ -987,21 +987,27 @@ Then, you can check your language file like this!
 
 Create **Localizable.strings** file into your project
 > Unlike Swift, the .strings file requires that each line terminate with a **semicolon**
+> .strings file is where you can add translation data as **key-value** pairs
 
-To use localization, we use **NSLocalizedString** to implement it
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization4.png" width="50%" height ="50%" />
+
+In your .strings file, check localization button and choose language
+
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization5.png" width="50%" height ="50%" />
+
+And then add Key - Value pairs for tanslation
+
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization6.png"/>
+
+To use localization, use **NSLocalizedString** to implement it
 
 ```swift
 NSLocalizedString(<#T##key: String##String#>, comment: <#T##String#>)
 ```
+ - [key] - put (key - value) pair that you created in .strings file
+ - [comment] - It will help your translators significantly and result in better translations
 
-
-It will help your translators significantly and result in better translations.
-
-## Localization Example
-
-Here is a simple example of implementing localization in your App
-
-Simply create a aleart like this
+Simple example below
 
 ```swift
 @IBAction func showAlert() {
@@ -1019,6 +1025,13 @@ Simply create a aleart like this
     }
 ```
  
+ After that, we have to test if localization is working correctly or not
+ 
+ To test it, you can do either **Edit Scheme** or **New Scheme**
+ 
+ go to Run section, and change App language
+ 
+ <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization7.png" width="50%" height ="50%" />
 
 ## GCD
 GCD(Grand Central Dispatch) is a low-level API for managing concurrent operations. It can help you improve your app’s responsiveness by deferring computationally expensive tasks to the background.
