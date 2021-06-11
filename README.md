@@ -65,7 +65,6 @@ Feel free to fork this repository and pull requests!!
     - [Recommend Library](#Recommend-Library)
 - [Localization](#Localization)
     - [Usage](#Localization-Usage)
-    - [Example](#Localization-Example)
 - [GCD](#GCD)
     - [DispatchQueue](#DispatchQueue)
     - [DispatchGroup](#DispatchGroup)
@@ -997,7 +996,7 @@ In your .strings file, check localization button and choose language
 
 And then add Key - Value pairs for tanslation
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization6.png"/>
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization6.png" width="50%" height ="50%"/>
 
 To use localization, use **NSLocalizedString** to implement it
 
@@ -1029,9 +1028,16 @@ Simple example below
  
  To test it, you can do either **Edit Scheme** or **New Scheme**
  
- go to Run section, and change App language
+ go to Run section, and change **App Language**
  
  <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization7.png" width="50%" height ="50%" />
+ 
+ After finish setting Scheme try to run it!
+ 
+  <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization8.png" width="50%" height ="50%" />
+  <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization9.png" width="50%" height ="50%" />
+  
+**You are GOOD TO GO**  👏👏👏
 
 ## GCD
 GCD(Grand Central Dispatch) is a low-level API for managing concurrent operations. It can help you improve your app’s responsiveness by deferring computationally expensive tasks to the background.
