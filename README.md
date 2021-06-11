@@ -968,6 +968,7 @@ First, you have to check **Use Base Internationalization**
 > It might be checked
 
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization.png" width="50%" height ="50%" />
+
 > English is a base Language
 
 After you check it, add languages that you want to support in your App
