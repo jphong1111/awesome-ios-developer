@@ -1030,7 +1030,7 @@ Simple example below
  
  go to Run section, and change **App Language**
  
- <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization7.png" width="50%" height ="50%" />
+ <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization7.png" />
  
  After finish setting Scheme try to run it!
  
