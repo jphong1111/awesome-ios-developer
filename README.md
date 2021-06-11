@@ -932,15 +932,50 @@ $ pod install
 
 ## Carthage
 
+ - [Getting started with Carthage to manage dependencies in Swift and iOS](https://www.twilio.com/blog/2016/05/getting-started-with-carthage-to-manage-dependencies-in-swift-and-ios.html)
+ - [Carthage Tutorial: Getting Started](https://www.raywenderlich.com/7649117-carthage-tutorial-getting-started)
+
+First, install Carthage through HomeBrew
+
 ```bash
 $ brew install carthage
 ```
-    
+
+if already installed, check if there is latest version.
     
 ```bash
 $ carthage update
 ```
-    
+
+Then, go to your root project folder, and do this
+
+```bash
+touch Cartfile
+```
+
+open cartfile, put library that you want to use
+
+```bash
+github "<owner>/<repo>" == <version>
+```
+
+Example 
+
+```bash
+github "Alamofire/Alamofire" == 4.9.0
+github "Alamofire/AlamofireImage" ~> 3.4
+```
+
+And then, do this
+
+```bash
+carthage update --platform iOS
+```
+
+After finish downloading it, go to **Xcode -> Build phases**
+
+TBD
+
 **You are GOOD TO GO**  👏👏👏
     
 ## Swift Package Manager
