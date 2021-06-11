@@ -65,6 +65,7 @@ Feel free to fork this repository and pull requests!!
     - [Recommend Library](#Recommend-Library)
 - [Localization](#Localization)
     - [Usage](#Localization-Usage)
+    - [Example](#Localization-Example)
 - [GCD](#GCD)
     - [DispatchQueue](#DispatchQueue)
     - [DispatchGroup](#DispatchGroup)
@@ -962,6 +963,11 @@ $ carthage update
 
 Localization is the process of making your app support other languages. (Base language is English)
 
+ - [Localization Apple](https://developer.apple.com/localization/)
+ - [Localization Apple Developer](https://developer.apple.com/documentation/xcode/localization)
+ - [iOS Localization Tutorial](https://medium.com/lean-localization/ios-localization-tutorial-938231f9f881)
+ - [Internationalizing Your iOS App: Getting Started](https://www.raywenderlich.com/250-internationalizing-your-ios-app-getting-started)
+ 
 ## Localization Usage
 
 First, you have to check **Use Base Internationalization**
@@ -979,6 +985,40 @@ Then, you can check your language file like this!
 
 <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization3.png" width="50%" height ="50%" />
 
+Create **Localizable.strings** file into your project
+> Unlike Swift, the .strings file requires that each line terminate with a **semicolon**
+
+To use localization, we use **NSLocalizedString** to implement it
+
+```swift
+NSLocalizedString(<#T##key: String##String#>, comment: <#T##String#>)
+```
+
+
+It will help your translators significantly and result in better translations.
+
+## Localization Example
+
+Here is a simple example of implementing localization in your App
+
+Simply create a aleart like this
+
+```swift
+@IBAction func showAlert() {
+        let alertTitle = NSLocalizedString("Welcome", comment: "")
+        let alertMessage = NSLocalizedString("How are you", comment: "")
+        let cancelButtonText = NSLocalizedString("Cancel", comment: "")
+        let signupButtonText = NSLocalizedString("Signup", comment: "")
+
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: UIAlertController.Style.alert)
+        let cancelAction = UIAlertAction(title: cancelButtonText, style: UIAlertAction.Style.cancel, handler: nil)
+        let signupAction = UIAlertAction(title: signupButtonText, style: UIAlertAction.Style.default, handler: nil)
+        alert.addAction(cancelAction)
+        alert.addAction(signupAction)
+        present(alert, animated: true, completion: nil)
+    }
+```
+ 
 
 ## GCD
 GCD(Grand Central Dispatch) is a low-level API for managing concurrent operations. It can help you improve your app’s responsiveness by deferring computationally expensive tasks to the background.
