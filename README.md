@@ -63,6 +63,8 @@ Feel free to fork this repository and pull requests!!
         - [Carthage](#Carthage)
         - [Swift Package Manager](#Swift-Package-Manager)
     - [Recommend Library](#Recommend-Library)
+- [Localization](#Localization)
+    - [Usage](#Localization-Usage)
 - [GCD](#GCD)
     - [DispatchQueue](#DispatchQueue)
     - [DispatchGroup](#DispatchGroup)
@@ -955,6 +957,26 @@ $ carthage update
 - SnapKit - Swift Auto Layout DSL for iOS
 - Charts - Make Beutiful Charts in your App
 - etc...
+
+## Localization
+
+Localization is the process of making your app support other languages. (Base language is English)
+
+## Localization Usage
+
+First, you have to check **Use Base Internationalization**
+> It might be checked
+
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization.png" width="50%" height ="50%" />
+> English is a base Language
+
+After you check it, add languages that you want to support in your App
+
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization2.png" width="50%" height ="50%" />
+
+Then, you can check your language file like this!
+
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization3.png" width="50%" height ="50%" />
 
 
 ## GCD
