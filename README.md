@@ -65,6 +65,7 @@ Feel free to fork this repository and pull requests!!
     - [Recommend Library](#Recommend-Library)
 - [Localization](#Localization)
     - [Usage](#Localization-Usage)
+    - [Useful for Localization](#Useful-for-Localization)
 - [GCD](#GCD)
     - [DispatchQueue](#DispatchQueue)
     - [DispatchGroup](#DispatchGroup)
@@ -1037,7 +1038,13 @@ Simple example below
   <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization8.png" width="50%" height ="50%" />
   <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization9.png" width="50%" height ="50%" />
   
+  
 **You are GOOD TO GO**  👏👏👏
+
+## Useful for Localization
+
+ - [localazy](https://localazy.com/) localization tool for iOS and macOS apps. Supporting .strings, .stringsdict, .plist and XLIFF files.
+ - [locastudio](https://www.cunningo.com/locastudio/index.html) Analyze, review, and edit your app translations.
 
 ## GCD
 GCD(Grand Central Dispatch) is a low-level API for managing concurrent operations. It can help you improve your app’s responsiveness by deferring computationally expensive tasks to the background.
