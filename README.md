@@ -935,7 +935,8 @@ $ pod install
 
  - [Getting started with Carthage to manage dependencies in Swift and iOS](https://www.twilio.com/blog/2016/05/getting-started-with-carthage-to-manage-dependencies-in-swift-and-ios.html)
  - [Carthage Tutorial: Getting Started](https://www.raywenderlich.com/7649117-carthage-tutorial-getting-started)
-
+ - [Carthage](https://github.com/Carthage/Carthage)
+ 
 First, install Carthage through HomeBrew
 
 ```bash
