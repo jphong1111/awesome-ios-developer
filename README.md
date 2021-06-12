@@ -1520,7 +1520,12 @@ check this out [here](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
 
 ## Use VIM in Xcode
 
-Check [this](https://www.twilio.com/blog/2017/06/adding-vim-keybindings-to-xcode-with-xvim.html) site for more info!
+ ~~Check [this](https://www.twilio.com/blog/2017/06/adding-vim-keybindings-to-xcode-with-xvim.html) site for more info!~~
+ 
+ Since Xcode 13(BETA), you can find Vim in **Preference -> Text Editing -> Editing -> Enable Vim Key bindings**
+ 
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/Vim.png">
+
 
 ## Write README.md
 
