@@ -1090,10 +1090,26 @@ Simple example below
 
 Accessibility is all about making the iPhone, iPod touch, and iPad work for as wide a range of people as possible. That can include the very young, the very old, people brand new to computers and mobile devices, and also people with disabilities and special needs. 
 
+- Designing your app for accessibility makes it easier to write functional tests, whether you’re using the UI Testing in Xcode.
+- You’ll also broaden your market and user base by making your app usable by a larger group.
+- Implementing accessibility in your app shows you’re willing to go the extra mile for every user, and that’s a good thing.
+
 - [iOS Accessibility: Getting Started](https://www.raywenderlich.com/6827616-ios-accessibility-getting-started)
+
 
 ## Accessibility Usage
 
+To use accessibility, you have to enable this
+> For most UIKit classes, **the default is true, but for UILabel it’s false**
+
+```swift
+label.isAccessibilityElement = true
+```
+
+ - accessibilityLabel - short description of control e.g. "Save" for button, "Rating" for label
+ - accessibilityHint - helps the user to understand result of the action e.g "Save the documents"
+ - accessibilityTraits - collection of constants that describe the type of control and/or hot it should be treated
+ - accessibilityValue - Used to describe the value of a none-label UI component e.g. "50%" for progress bar
 
 
 
