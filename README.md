@@ -67,6 +67,7 @@ Feel free to fork this repository and pull requests!!
     - [Usage](#Localization-Usage)
     - [Useful for Localization](#Useful-for-Localization)
 - [Accessibility](#Accessibility)
+    - [USage](#Accessibility-Usage)
 - [GCD](#GCD)
     - [DispatchQueue](#DispatchQueue)
     - [DispatchGroup](#DispatchGroup)
@@ -1087,9 +1088,11 @@ Simple example below
 
 ## Accessibility
 
+Accessibility is all about making the iPhone, iPod touch, and iPad work for as wide a range of people as possible. That can include the very young, the very old, people brand new to computers and mobile devices, and also people with disabilities and special needs. 
 
+- [iOS Accessibility: Getting Started](https://www.raywenderlich.com/6827616-ios-accessibility-getting-started)
 
-
+## Accessibility Usage
 
 
 
