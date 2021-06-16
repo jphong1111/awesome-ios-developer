@@ -1,8 +1,8 @@
 # Awesome iOS Developer
 
-<div align="center">
+<!-- <div align="center">
     <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/swift.jpeg">
-</div>
+</div> -->
 <p>
     
 </p>
