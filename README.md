@@ -1000,6 +1000,10 @@ TBD
 - Charts - Make Beutiful Charts in your App
 - etc...
 
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
 ## Localization
 
 Localization is the process of making your app support other languages. (Base language is English)
@@ -1087,6 +1091,10 @@ Simple example below
  - [localazy](https://localazy.com/) localization tool for iOS and macOS apps. Supporting .strings, .stringsdict, .plist and XLIFF files.
  - [locastudio](https://www.cunningo.com/locastudio/index.html) Analyze, review, and edit your app translations.
 
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
 ## Accessibility
 
 Accessibility is all about making the iPhone, iPod touch, and iPad work for as wide a range of people as possible. That can include the very young, the very old, people brand new to computers and mobile devices, and also people with disabilities and special needs. 
@@ -1112,7 +1120,9 @@ label.isAccessibilityElement = true
  - accessibilityTraits - collection of constants that describe the type of control and/or hot it should be treated
  - accessibilityValue - Used to describe the value of a none-label UI component e.g. "50%" for progress bar
 
-
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
 
 ## GCD
 GCD(Grand Central Dispatch) is a low-level API for managing concurrent operations. It can help you improve your app’s responsiveness by deferring computationally expensive tasks to the background.
@@ -1133,6 +1143,10 @@ We can say global is a concurrent queue
 
 ## Thread Sanitizer
 Thread Sanitizer is a tool to identifies the potential thread-related corruption issues. And it is a good way to find the [Readers and Writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) in your application.
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
 
 ### How to Use Address Sanitizer
 
@@ -1170,6 +1184,9 @@ Then, go to **EDIT SHEME**, check like this
 
 For more info, go to [Apple Developer Website](https://developer.apple.com/documentation/Xcode/Xcode-Cloud)
 
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
 
 ## In App Purchase(IAP)
 
