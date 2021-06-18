@@ -53,6 +53,7 @@ Feel free to fork this repository and pull requests!!
     - [Store Object](#Store-Object)
 - [Core Data](#Core-Data)
     - [Set Up Core Data](#Set-Up-Core-Data)
+    - [Core Data Stack](#Core-Data-Stack)
     - [Core Data Usage](#Core-Data-Usage)
     - [Store Data](#Store-Data)
     - [Load Data](#Load-Data)
