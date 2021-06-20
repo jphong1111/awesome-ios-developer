@@ -21,13 +21,16 @@ Feel free to fork this repository and pull requests!!
 - [Coding Convention](#Coding-convention)
     - [Swift Lint](#Swift-lint)
 - [Design Pattern](#Design-Pattern)
+    - [Adaptor](#Adaptor)
     - [Delegation](#Delegation)
-    - [Singleton](#Singleton)
+    - [Factory](#Factory)
     - [Observer](#Observer)
        - [KVO](#KVO)
        - [KVC](#KVC)
+    - [Singleton](#Singleton)
 - [Code Structuring](#code-structuringarchitecture)
     - [MVC](#MVC)
+    - [MVP](#MVP)
     - [MVVM](#MVVM)
     - [VIPER](#VIPER)
 - [UIDesign](#UIDesign)
@@ -141,22 +144,15 @@ put .yml file into root folder and apply following code in Build Phases
 
 Check [this](https://refactoring.guru/design-patterns/swift) website for design pattern in Swift
 
+## Adaptor
+
 ## Delegation
 
 ```swift
 weak var delegate: SomeProtocol?
 ```
 
-## Singleton
-
-
-```swift
-class SingletonPattern {
-    static let manager = SingletonPattern()
-    
-    private init() {}
-}
-```
+## Factory
 
 ## Observer
 
@@ -179,8 +175,17 @@ For more info, go [Apple Developer Site](https://developer.apple.com/documentati
 
 ## KVC
 
-
 [KVO vs KVC](https://medium.com/hackernoon/kvo-kvc-in-swift-12f77300c387)
+
+## Singleton
+
+```swift
+class SingletonPattern {
+    static let manager = SingletonPattern()
+    
+    private init() {}
+}
+```
 
 ## Code Structuring(Architecture)
 
@@ -193,6 +198,9 @@ MVC pattern stands for Model - View - Controller
  - Model - Model take care of storing data.
  - View - View renders the data for users
  - Controller - Controller modifies the View, accepts user input and interacts directly with the Model. And take care of view logic and business logic.
+
+### MVP
+
 
 ### MVVM
 
