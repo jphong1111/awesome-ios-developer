@@ -1221,11 +1221,26 @@ TBD
 
 For more info about getting start of IAP, go [here](https://www.raywenderlich.com/5456-in-app-purchase-tutorial-getting-started) 📑
 
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
 ## Notification
+
+ - Notifications are an integral way of conveying information to the user outside of an app.
+
+ - Notifications can be either local or remote. The app on the device schedules and configures local notifications. In contrast, a server sends remote notifications using Apple Push Notification Service (APNS)
+
+ - You can configure both local and remote notifications using the UserNotifications framework. 
 
 ## Local Notification
 
-[Swift Local Notification All-In-One](https://itnext.io/swift-local-notification-all-in-one-ee6027ea6e3)
+ - [Local Notifications: Getting Started](https://www.raywenderlich.com/21458686-local-notifications-getting-started)
+ - [Swift Local Notification All-In-One](https://itnext.io/swift-local-notification-all-in-one-ee6027ea6e3)
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
 
 ## Remote Notification
 
@@ -1233,7 +1248,14 @@ For more info about getting start of IAP, go [here](https://www.raywenderlich.co
 
 APNS stands for **Apple Push Notification service**
 
+## APNs Setting
+
+First, go to **Signing & Capabilities** and add two features like this
+
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/apns_Setting.png"/>
+
 ## APNs Usage
+
 For more info go [here](https://www.raywenderlich.com/11395893-push-notifications-tutorial-getting-started)
 
 ## FRP
