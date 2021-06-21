@@ -77,6 +77,8 @@ Feel free to fork this repository and pull requests!!
     - [DispatchQueue](#DispatchQueue)
     - [DispatchGroup](#DispatchGroup)
     - [DispatchWorkItem](#DispatchWorkItem)
+    - [Operation](#operation)
+    - [OperationQueue](#operationQueue)
     - [Thread Sanitizer](#Thread-Sanitizer)
 - [Testing](#Testing)
     - [Code Coverage](#Code-Coverage)
