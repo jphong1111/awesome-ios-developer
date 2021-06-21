@@ -1167,7 +1167,7 @@ Go to this Option and Click **EDIT SCHEME...** 👈
 
 And then go to **RUN** and check **THREAD SANITIZER** 👈
 
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/thread_sanitizer.png">
+<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/thread_sanitizer.png">
 
 ## Testing
 
@@ -1179,11 +1179,11 @@ Before start your Testing, add coverage will be a good option to show the result
 
 First, check code coverage
 
-<img src ="https://github.com/jphong1111/Useful_Swift/blob/main/Images/addCoverage1.png" />
+<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/addCoverage1.png" />
 
 Then, go to **EDIT SHEME**, check like this
 
-<img src ="https://github.com/jphong1111/Useful_Swift/blob/main/Images/addCoverage2.png" />
+<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/addCoverage2.png" />
 
 ## Unit Test
 
@@ -1209,7 +1209,7 @@ For more info, go to [Apple Developer Website](https://developer.apple.com/docum
  
 ## Paywall
 
-<img src ="https://github.com/jphong1111/Useful_Swift/blob/main/Images/paywall.jpeg" />
+<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/paywall.jpeg" />
 
 Paywall is a way to restrict access to their information so that only paying users can use it.
  
@@ -1252,7 +1252,7 @@ APNS stands for **Apple Push Notification service**
 
 First, go to **Signing & Capabilities** and add two features like this
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/apns_Setting.png"/>
+<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/apsn_Setting.png"/>
 
 ## APNs Usage
 
