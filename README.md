@@ -46,6 +46,7 @@ Feel free to fork this repository and pull requests!!
     - [Video Downloader](#Video-Downloader)
     - [Image Downloader](#Image-Downloader)
     - [Location Manager](#Location-Manager)
+    - [Local Notification Manager](#Local-Notification-Manager)
 - [API](#API)	
 - [JSON](#JSON)
     - [JSONDecoder](#JSONDecoder)
@@ -474,6 +475,9 @@ Currently Working
 <p align="right">
 <a href="#-content">Back to Content</a>
 </p>
+
+## Local Notification Manager
+
 
 ## API
 
