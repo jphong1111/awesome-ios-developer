@@ -166,7 +166,7 @@ Dependency injection is a pattern that can be used to eliminate the need for sin
 
 ### Type of Dependency Injection
 
- 1. initializer injection
+ **1. initializer injection**
  
  ``` swift
  class DataManager {
@@ -180,7 +180,7 @@ Dependency injection is a pattern that can be used to eliminate the need for sin
 }
  ```
  
- 2. property injection
+ **2. property injection**
  
  ```swift
  import UIKit
@@ -192,7 +192,7 @@ class ViewController: UIViewController {
 }
 ```
 
- 3. method injection
+ **3. method injection**
  
  ```swift
  import Foundation
