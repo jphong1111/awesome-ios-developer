@@ -23,6 +23,7 @@ Feel free to fork this repository and pull requests!!
 - [Design Pattern](#Design-Pattern)
     - [Adaptor](#Adaptor)
     - [Delegation](#Delegation)
+    - [Dependency Injection](#Dependency-Injection)
     - [Factory](#Factory)
     - [Observer](#Observer)
        - [KVO](#KVO)
@@ -155,6 +156,10 @@ Check [this](https://refactoring.guru/design-patterns/swift) website for design 
 ```swift
 weak var delegate: SomeProtocol?
 ```
+## Dependency Injection
+
+[Nuts and Bolts of Dependency Injection in Swift](https://cocoacasts.com/nuts-and-bolts-of-dependency-injection-in-swift)
+
 
 ## Factory
 
@@ -182,6 +187,8 @@ For more info, go [Apple Developer Site](https://developer.apple.com/documentati
 [KVO vs KVC](https://medium.com/hackernoon/kvo-kvc-in-swift-12f77300c387)
 
 ## Singleton
+
+singleton pattern is to ensure only one instance of a class is alive at any one time.
 
 ```swift
 class SingletonPattern {
