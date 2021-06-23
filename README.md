@@ -84,6 +84,7 @@ Feel free to fork this repository and pull requests!!
 - [Testing](#Testing)
     - [Code Coverage](#Code-Coverage)
     - [Unit Test](#Unit-Test)
+    - [Integration Test](#Integration-Test)
     - [UI Test](#UI-Test)
 - [CI/CD](#cicd)
 - [In App Purchase(IAP)](#In-App-PurchaseIAP)
@@ -1191,7 +1192,12 @@ Then, go to **EDIT SHEME**, check like this
 
 ## Unit Test
 
+
+## Integration Test
+
+
 ## UI Test
+
 
 ## CI/CD
 
