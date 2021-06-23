@@ -158,6 +158,54 @@ weak var delegate: SomeProtocol?
 ```
 ## Dependency Injection
 
+Dependency injection is a pattern that can be used to eliminate the need for singletons in a project
+
+
+ 1. Raise Transparency
+ 2. Improve Testability
+
+### Type of Dependency Injection
+
+ 1. initializer injection
+ 
+ ``` swift
+ class DataManager {
+
+    private let serializer: Serializer
+
+    init(serializer: Serializer) {
+        self.serializer = serializer
+    }
+
+}
+ ```
+ 
+ 2. property injection
+ 
+ ```swift
+ import UIKit
+
+class ViewController: UIViewController {
+
+    var requestManager: RequestManager?
+
+}
+```
+
+ 3. method injection
+ 
+ ```swift
+ import Foundation
+
+class DataManager {
+
+    func serializeRequest(request: Request, withSerializer serializer: Serializer) -> Data? {
+        ...
+    }
+
+}
+```
+ 
 [Nuts and Bolts of Dependency Injection in Swift](https://cocoacasts.com/nuts-and-bolts-of-dependency-injection-in-swift)
 
 
