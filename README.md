@@ -35,7 +35,7 @@ Feel free to fork this repository and pull requests!!
     - [MVVM](#MVVM)
     - [VIPER](#VIPER)
 - [UIDesign](#UIDesign)
-    - [HIG](#HIG)
+    - [HIG](#highuman-interface-guidelines)
     - [UIdesign Inspiration](#UIdesign-Inspiration)
     - [Vector Graphic Editors](#Vector-Graphic-Editors)
     - [Design Collaboration](#Design-Collaboration)
