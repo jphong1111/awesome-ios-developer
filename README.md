@@ -1306,6 +1306,11 @@ For more info about getting start of IAP, go [here](https://www.raywenderlich.co
  - [Local Notifications: Getting Started](https://www.raywenderlich.com/21458686-local-notifications-getting-started)
  - [Swift Local Notification All-In-One](https://itnext.io/swift-local-notification-all-in-one-ee6027ea6e3)
 
+
+If you set repeatation **less than 60 sec**, it will cause ERROR!
+
+<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/Repeatation_Error.png"/>
+
 <p align="right">
 <a href="#-content">Back to Content</a>
 </p>
