@@ -771,7 +771,23 @@ Use Core Data to save your application’s permanent data for offline use, to ca
 
 ## Core Data Stack
 
+ - [The Core Data Stack](https://www.raywenderlich.com/books/core-data-by-tutorials/v7.0/chapters/3-the-core-data-stack)
+ 
 <img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/Core_Data_Stack.png" width = "70%" height = "70%"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Set Up Core Data
 
