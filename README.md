@@ -237,6 +237,8 @@ For more info, go [Apple Developer Site](https://developer.apple.com/documentati
 
 [KVO vs KVC](https://medium.com/hackernoon/kvo-kvc-in-swift-12f77300c387)
 
+We are using KVC in Storyboard!
+
 ## Singleton
 
 singleton pattern is to ensure only one instance of a class is alive at any one time.
