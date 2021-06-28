@@ -914,6 +914,8 @@ And CoreDataClass, CoreDataProperties are looking like this,
 
 > If your code can run it but didn't get your Entities, **Rebuild it or Restart your Xcode**
 
+**The reason that files divided into two files is that one for writing Business Logic, one for Properties**
+
 ## Store Data
 
 Declare context as a global variable
