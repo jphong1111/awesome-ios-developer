@@ -778,9 +778,15 @@ Use Core Data to save your application’s permanent data for offline use, to ca
 <img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/Core_Data_Stack.png" width = "70%" height = "70%"/>
 
 
- - NSManagedObject - This is a base class of all the core data model object. This provides the schema of our database table. This is used to store model data in our application. KVO and KVC compliant. It can notify any changes that are done on its properties if any object is listening.
- - NSManagedObjectContext - Most important class. This is the place where you do all the computations. You can think this as a scratch pad where you do all the operations realated to core data (CRUD). It's an object which you can use to manipulate and track any changes done to manage object. All the changes done on a context object will be held until and unless you are discarding or writing those changes permaneently to persistntent storage.
- - NSPersistentStoreCoordinator - The main functionality is to provide a communication between context and persistent store.
+ - **NSManagedObject** - This is a base class of all the core data model object. This provides the schema of our database table. This is used to store model data in our application. KVO and KVC compliant. It can notify any changes that are done on its properties if any object is listening.
+
+
+ - **NSManagedObjectContext** - Most important class. This is the place where you do all the computations. You can think this as a scratch pad where you do all the operations realated to core data (CRUD). It's an object which you can use to manipulate and track any changes done to manage object. All the changes done on a context object will be held until and unless you are discarding or writing those changes permaneently to persistntent storage.
+
+
+ - **NSPersistentStoreCoordinator** - The main functionality is to provide a communication between context and persistent store.
+
+
  - NSPersistentStore - They are the stores in which the data are being saved. These includes SQLite, In-Memory, Binary, XML(the XML store is not available on iOS).
  - NSPersistentContainer - This contains the whole core data stacks.
 
