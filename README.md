@@ -61,6 +61,11 @@ Feel free to fork this repository and pull requests!!
     - [Core Data Stack](#Core-Data-Stack)
     - [Set Up Core Data](#Set-Up-Core-Data)
     - [Core Data Usage](#Core-Data-Usage)
+        - [Codegen](#codegen)
+        - [Entities](#Entities)
+        - [Attributes](#Attributes)
+        - [Relationships](#Relationships)
+        - [Delete Rules](#Delete-Rules)
     - [Store Data](#Store-Data)
     - [Load Data](#Load-Data)
     - [Update Data](#Update-Data)
@@ -763,6 +768,8 @@ let defaults = UserDefaults.standard
 
 ## Core Data
 
+[Everything Core Data](https://metova.com/everything-core-data/)
+
 Use Core Data to save your application’s permanent data for offline use, to cache temporary data, and to add undo functionality to your app on a single device.
 
 **Core Data in Swift is using SQLite as DEFAULT**
@@ -789,9 +796,6 @@ Use Core Data to save your application’s permanent data for offline use, to ca
 
  - NSPersistentStore - They are the stores in which the data are being saved. These includes SQLite, In-Memory, Binary, XML(the XML store is not available on iOS).
  - NSPersistentContainer - This contains the whole core data stacks.
-
-
-
 
 
 
@@ -894,6 +898,7 @@ self.saveContext()
 
 ## Core Data Usage
 
+
 Once you create your DataModel file, you can simply create a **Entity(Class)** and **Attributes(Properties)**
 
 And then, change the type of attributes in inspector like this
@@ -906,7 +911,7 @@ Once you create your own Entities & Attributes, go to Inspector and change Modul
 
 > If you didn't set it, thats fine, but if you are working in big project, then you need to set it. Otherwise this can occurs some error.
 
-### Codegen
+## Codegen
 
 As you can see in above, there are three options
 
@@ -925,6 +930,35 @@ And CoreDataClass, CoreDataProperties are looking like this,
 > If your code can run it but didn't get your Entities, **Rebuild it or Restart your Xcode**
 
 **The reason that files divided into two files is that one for writing Business Logic, one for Properties**
+ 
+## Entities
+
+An entity represents a table in your database. It is the blueprint for the NSManagedObject subclass instances that you will create and use throughout your application.
+
+## Attributes
+
+Attributes are properties of your object. They translate to a column in your database table and a property in your managed object. You can choose from a variety of primitive values that the database has to offer such as a string, integer, or date.
+
+## Relationships
+
+A relationship describes how one entity relates to another. Two important aspects of this are the cardinality and the deletion rule
+
+### Cardinality
+
+ - **One-to-many** - Lets say that each Department has a group of Employees that can only work for a single Department. This would be a “one-to-many” relationship since each Department could have many Employees and each Employee can only work for one Department.
+ - **Many-to-many** - If a single Employee could work for multiple Departments, then our Department/Employee relationship would be “many-to-many” because each Department could have many Employees and each Employee could work for multiple Departments.
+ 
+ 
+### Delete Rules
+
+[Core Data Relationships and Delete Rules](https://cocoacasts.com/core-data-relationships-and-delete-rules)
+
+ - **No Action** - Do nothing to the object at the destination of the relationship. For example, if you delete a department, leave all the employees as they are, even if they still believe they belong to that department.
+ - **Nullify (Default)** - Set the inverse relationship for objects at the destination to null. For example, if you delete a department, set the department for all the current members to null. This only makes sense if the department relationship for an employee is optional, or if you ensure that you set a new department for each of the employees before the next save operation.
+ - **Cascade** - Delete the objects at the destination of the relationship. For example, if you delete a department, fire all the employees in that department at the same time.
+ - **Deny** - If there is at least one object at the relationship destination, then the source object cannot be deleted. For example, if you want to remove a department, you must ensure that all the employees in that department are first transferred elsewhere (or fired!) otherwise the department cannot be deleted.
+
+
 
 ## Store Data
 
