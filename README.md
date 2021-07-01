@@ -1302,7 +1302,13 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 ## Testing
 
+## TDD
 
+Test Driven Development
+
+## BDD
+
+Behavior Driven Development
 
 ## Code Coverage
 
