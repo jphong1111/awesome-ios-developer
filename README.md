@@ -1160,31 +1160,31 @@ Localization is the process of making your app support other languages. (Base la
 First, you have to check **Use Base Internationalization**
 > It might be checked
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization.png" width="50%" height ="50%" />
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization.png" width="70%" height ="70%" />
 
 > English is a base Language
 
 After you check it, add languages that you want to support in your App
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization2.png" width="50%" height ="50%" />
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization2.png" width="70%" height ="70%" />
 
 Then, you can check your language file like this!
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization3.png" width="50%" height ="50%" />
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization3.png" width="70%" height ="70%" />
 
 Create **Localizable.strings** file into your project
 > Unlike Swift, the .strings file requires that each line terminate with a **semicolon**
 > .strings file is where you can add translation data as **key-value** pairs
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization4.png" width="50%" height ="50%" />
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization4.png" width="70%" height ="70%" />
 
 In your .strings file, check localization button and choose language
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization5.png" width="50%" height ="50%" />
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization5.png" width="70%" height ="70%" />
 
 And then add Key - Value pairs for tanslation
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization6.png" width="50%" height ="50%"/>
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization6.png" width="70%" height ="70%"/>
 
 To use localization, use **NSLocalizedString** to implement it
 
