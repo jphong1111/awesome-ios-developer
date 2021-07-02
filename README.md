@@ -83,6 +83,7 @@ Feel free to fork this repository and pull requests!!
     - [USage](#Accessibility-Usage)
 - [GCD](#GCD)
     - [DispatchQueue](#DispatchQueue)
+        - [Thread Safety](#thread-safety)
     - [DispatchGroup](#DispatchGroup)
     - [DispatchWorkItem](#DispatchWorkItem)
     - [Operation](#operation)
@@ -1272,11 +1273,20 @@ GCD(Grand Central Dispatch) is a low-level API for managing concurrent operation
 ## DispatchQueue
 An object that manages the execution of tasks serially or concurrently on your app's main thread or on a background thread.
 
-#### main
+### main
 We can say main is a serial queue
 
-#### global()
+### global()
 We can say global is a concurrent queue
+
+## Thread Safety
+
+[Concurrency & Thread Safety in Swift](https://medium.com/cubo-ai/concurrency-thread-safety-in-swift-5281535f7d3a)
+
+1. Dispatch Barrier
+2. Dispatch Semaphore
+3. NSLock
+
 
 ## DispatchGroup
 
