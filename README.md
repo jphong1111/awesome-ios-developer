@@ -1290,7 +1290,7 @@ Thread Sanitizer is a tool to identifies the potential thread-related corruption
 <a href="#-content">Back to Content</a>
 </p>
 
-### How to Use Address Sanitizer
+### How to Use Thread Sanitizer
 
 Go to this Option and Click **EDIT SCHEME...** 👈
 
