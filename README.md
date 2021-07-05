@@ -221,6 +221,11 @@ class DataManager {
 
 ## Factory
 
+Factory method is a creational design pattern which solves the problem of creating product objects without specifying their concrete classes.
+
+- [Factory Method in Swift](https://refactoring.guru/design-patterns/factory-method/swift/example)
+- [The Factory Pattern using Swift](https://stevenpcurtis.medium.com/the-factory-pattern-using-swift-b534ae9f983f)
+
 ## Observer
 
 Observer is a behavioral design pattern that allows some objects to notify other objects about changes in their state.
