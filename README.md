@@ -8,7 +8,6 @@
 <img alt="awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" />
 
 [![Join the chat at https://gitter.im/awesome-ios-developer/community](https://badges.gitter.im/awesome-ios-developer/community.svg)](https://gitter.im/awesome-ios-developer/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fjphong1111%2FUseful_Swift&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true"/></a>
 <img src="https://img.shields.io/badge/-OneDayOneCommit-critical?style=plastic&logo=swift" />
     
