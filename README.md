@@ -1149,6 +1149,7 @@ TBD
 - IQKeyboardManager - Easy to manage Keyboard settings
 - SnapKit - Swift Auto Layout DSL for iOS
 - Charts - Make Beutiful Charts in your App
+- Quick/Nimble - Testing Library + Asynchronous tests purpose
 - etc...
 
 <p align="right">
