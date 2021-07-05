@@ -54,7 +54,7 @@ Feel free to fork this repository and pull requests!!
 - [JSON](#JSON)
     - [JSONDecoder](#JSONDecoder)
     - [JSONSerialization](#JSONSerialization)
-- [Notification Center](#Nofitication-Center)
+- [Notification Center](#Notification-Center)
 - [UserDefaults](#UserDefaults)
     - [How to find documentDirectory](#How-to-find-documentDirectory)
     - [Store Object](#Store-Object)
@@ -686,6 +686,9 @@ This library provide JSON parsing
 
 ## Notification Center
 
+A notification dispatch mechanism that enables the broadcast of information to registered observers.
+
+[NotificationCenter Apple Document](https://developer.apple.com/documentation/foundation/notificationcenter)
 
 ## UserDefaults
 
