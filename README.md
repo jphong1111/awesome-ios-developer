@@ -1349,11 +1349,27 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 ## TDD
 
-Test Driven Development
+**Test Driven Development**
+
 
 ## BDD
 
-Behavior Driven Development
+**Behavior Driven Development**
+
+ - Encouraging collaboration across roles to build shared understanding of the problem to be solved
+ - Working in rapid, small iterations to increase feedback and the flow of value
+ - Producing system documentation that is automatically checked against the system’s behaviour
+ 
+ ### Three Steps(Iterative) in BDD 
+ 
+ First, take a small upcoming change to the system – a User Story – and talk about concrete examples of the new functionality to explore, discover and agree on the details of what’s expected to be done.
+ 
+Next, document those examples in a way that can be automated, and check for agreement.
+
+Finally, implement the behaviour described by each documented example, starting with an automated test to guide the development of the code.
+
+[Behaviour-Driven Development](https://cucumber.io/docs/bdd/)
+[What is BDD? An Introduction to Behavioral Driven Development](https://blog.testlodge.com/what-is-bdd/)
 
 ## Code Coverage
 
