@@ -1354,6 +1354,8 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 ## BDD
 
+BDD improves communication between tech and non-tech teams and stakeholders. In BDD, tests are more user-focused and based on the system’s behavior.
+
 **Behavior Driven Development**
 
  - Encouraging collaboration across roles to build shared understanding of the problem to be solved
