@@ -49,7 +49,7 @@ Feel free to fork this repository and pull requests!!
     - [Image Downloader](#Image-Downloader)
     - [Location Manager](#Location-Manager)
     - [Local Notification Manager](#Local-Notification-Manager)
-- [API](#API)	
+- [API](#API)	 
 - [JSON](#JSON)
     - [JSONDecoder](#JSONDecoder)
     - [JSONSerialization](#JSONSerialization)
@@ -86,9 +86,9 @@ Feel free to fork this repository and pull requests!!
         - [Thread Safety](#thread-safety)
     - [DispatchGroup](#DispatchGroup)
     - [DispatchWorkItem](#DispatchWorkItem)
-    - [Operation](#operation)
+- [Operation](#operation)
     - [OperationQueue](#operationQueue)
-    - [Thread Sanitizer](#Thread-Sanitizer)
+- [Thread Sanitizer](#Thread-Sanitizer)
 - [Testing](#Testing)
     - [TDD](#TDD)
     - [BDD](#BDD)
@@ -1291,10 +1291,21 @@ We can say global is a concurrent queue
 ## Thread Safety
 
 [Concurrency & Thread Safety in Swift](https://medium.com/cubo-ai/concurrency-thread-safety-in-swift-5281535f7d3a)
+[Thread Safety in Swift](https://swiftrocks.com/thread-safety-in-swift)
 
-1. Dispatch Barrier
-2. Dispatch Semaphore
-3. NSLock
+- **Dispatch Barrier**
+
+Use a barrier to synchronize the execution of one or more tasks in your dispatch queue. 
+
+[Dispatch Barrier Apple Documentation](https://developer.apple.com/documentation/dispatch/dispatch_barrier)
+
+- **Dispatch Semaphore**
+
+[Dispatch Semaphore Apple Documentation](https://developer.apple.com/documentation/dispatch/dispatch_semaphore)
+
+
+
+- **NSLock**
 
 
 ## DispatchGroup
@@ -1302,6 +1313,20 @@ We can say global is a concurrent queue
 [DispatchGroup Apple Document](https://developer.apple.com/documentation/dispatch/dispatchgroup)
 
 ## DispatchWorkItem
+
+
+
+## Operation
+
+
+
+
+## OperationQueue
+
+
+
+
+
 
 ## Thread Sanitizer
 Thread Sanitizer is a tool to identifies the potential thread-related corruption issues. And it is a good way to find the [Readers and Writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) in your application.
