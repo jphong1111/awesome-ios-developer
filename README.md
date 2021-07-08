@@ -1318,12 +1318,13 @@ Use a barrier to synchronize the execution of one or more tasks in your dispatch
 
 ## Operation
 
-
+[NSOperation Apple Documentation](https://developer.apple.com/documentation/foundation/nsoperation)
 
 
 ## OperationQueue
 
 
+[NSOperationQueue Apple Documentation](https://developer.apple.com/documentation/foundation/nsoperationqueue)
 
 
 
