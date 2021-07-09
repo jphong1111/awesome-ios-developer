@@ -115,6 +115,8 @@ Feel free to fork this repository and pull requests!!
     - [Cryptography](#Cryptography)
     - [Biometric Access](#Biometric-Access)
         - [Face ID & Touch ID](#face-id--touch-id)
+- [Objective-C](#Objective-C)
+    - [Bridging Header](#Bridging-Header)
 - [Error Search](#Error-Search)
 - [Useful Stuff](#Useful-Stuff)
     - [How to submit your app to the AppStore](#how-to-submit-your-app-to-the-appstore)
@@ -1682,6 +1684,25 @@ Here are simple example that how Face ID can impelement
 > Error Handling is your own part
 
 **You are GOOD TO GO**  👏👏👏
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
+## Objective-C
+
+Still we need to study Objective-C for legacy code which is still remain in our project! 
+
+Here are some useful website that you can study about simple concept of Obj-C!!
+
+[Learn Objective-C in 24 Days](https://www.binpress.com/learn-objective-c-24-days/)
+
+## Bridging Header
+
+Bridging header means access classes and other declarations from your Objective-C code in Swift.
+
+[Importing Objective-C into Swift Apple Documentation](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift)
+
 
 <p align="right">
 <a href="#-content">Back to Content</a>
