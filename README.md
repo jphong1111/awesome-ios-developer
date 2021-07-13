@@ -1704,6 +1704,15 @@ Here are some useful website that you can study about simple concept of Obj-C!!
 
 [Learn Objective-C in 24 Days](https://www.binpress.com/learn-objective-c-24-days/)
 
+```swift
+break set -r "-\[.*\]"
+break set -r DebugMode
+break set -r Emoji
+```
+
+Use one of above line when you want to find out how many objective-c codes are consist in simple pure swift application!!
+
+
 <p align="right">
 <a href="#-content">Back to Content</a>
 </p>
