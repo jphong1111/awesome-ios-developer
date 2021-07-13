@@ -1706,14 +1706,23 @@ Here are some useful website that you can study about simple concept of Obj-C!!
 
 [Learn Objective-C in 24 Days](https://www.binpress.com/learn-objective-c-24-days/)
 
+### Pure Swift Application?
+
+Can we really say "Our application is built with pure Swift"?. NO! Lots of Objective-C codes are running in the background to built swift.
+
+Here is a example that you can try 
+
+**Simply create a pure swift application and use this lines in debug console!!**
+
 ```swift
 break set -r "-\[.*\]"
 break set -r DebugMode
 break set -r Emoji
 ```
 
-Use one of above line when you want to find out how many objective-c codes are consist in simple pure swift application!!
+Use one of above line when you want to find out how many Objective-C codes are consist in simple pure swift application!!
 
+<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/ObjcBreakPoint.png" />
 
 <p align="right">
 <a href="#-content">Back to Content</a>
