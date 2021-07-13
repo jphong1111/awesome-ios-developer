@@ -1637,6 +1637,8 @@ Code obfuscation is the act of deliberately obscuring source code, making it ver
 
 ## Cryptography
 
+[Introducing Swift Crypto](https://swift.org/blog/crypto/)
+
 ## Biometric Access
 
 Apple made a big change when it released the iPhone X: It ditched Touch ID fingerprint security for a new face-based biometric sign-on tool called Face ID. The fingerprint scanner on most post-iPhone X Apple products is gone, and in its place is a new camera array capable of capturing a face map that is, according to Apple, 20 times less likely to be hacked than a Touch ID fingerprint.
