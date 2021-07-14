@@ -1316,7 +1316,9 @@ Use a barrier to synchronize the execution of one or more tasks in your dispatch
 
 ## DispatchWorkItem
 
+The work you want to perform, encapsulated in a way that lets you attach a completion handle or execution dependencies.
 
+[DispatchWorkItem Apple Document](https://developer.apple.com/documentation/dispatch/dispatchworkitem)
 
 ## Operation
 
