@@ -1142,6 +1142,10 @@ TBD
 
 <img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/SwiftPackageManager.png" width = "50%" height = "50%"/>
 
+<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/SwiftPackageManager2.png" width = "50%" height = "50%"/>
+
+<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/SwiftPackageManager3.png" width = "50%" height = "50%"/>
+
 ### Recommend Library
 - SDWebImage - Downloading and caching images from the web
 - Kingfisher - Downloading and caching images from the web
