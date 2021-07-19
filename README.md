@@ -93,9 +93,9 @@ Feel free to fork this repository and pull requests!!
     - [TDD](#TDD)
     - [BDD](#BDD)
     - [Code Coverage](#Code-Coverage)
-    - [Integration Test](#Integration-Test)
-    - [Unit Test](#Unit-Test)
-    - [UI Test](#UI-Test)
+    - [Integration Testing](#Integration-Testing)
+    - [Unit Testing](#Unit-Testing)
+    - [UI Testing](#UI-Testing)
 - [CI/CD](#cicd)
     - [Jenkins](#Jenkins)
 - [In App Purchase(IAP)](#In-App-PurchaseIAP)
@@ -1404,19 +1404,20 @@ Then, go to **EDIT SHEME**, check like this
 
 <img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/addCoverage2.png" />
 
-## Integration Test
+## Integration Testing
+
+[Integration Testing Swift by Sundell](https://www.swiftbysundell.com/articles/integration-tests-in-swift/)
 
 
 
 
+## Unit Testing
 
-## Unit Test
-
-
-
+[Unit Testing Swift by Sundell](https://www.swiftbysundell.com/basics/unit-testing/)
 
 
-## UI Test
+
+## UI Testing
 
 [Your first UITest in Swift](https://uxdesign.cc/your-first-uitest-in-swift-847bc5595c26)
 
