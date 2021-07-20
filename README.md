@@ -163,6 +163,34 @@ Check [this](https://refactoring.guru/design-patterns/swift) website for design 
 
 ## Adaptor
 
+Adapter pattern is a structural design pattern that is useful for composing classes and objects into a larger system.
+
+```swift
+protocol Target {
+    func request()
+}
+
+class Adaptee {
+    func specificRequest() {}
+}
+
+class Adapter: Target {
+    let adaptee: Adaptee
+    
+    init(adaptee: Adaptee) {
+        self.adaptee = adaptee
+    }
+    
+    func request() {
+        adaptee.specificRequest()
+    }
+}
+```
+
+ - [‘Adapter’ Pattern in Swift](https://levelup.gitconnected.com/adapter-pattern-in-swift-b6403cfa0a78)
+ - [Swift adapter design pattern](https://theswiftdev.com/swift-adapter-design-pattern/)
+ - [Adapter in Swift](https://refactoring.guru/design-patterns/adapter/swift/example)
+ 
 ## Delegation
 
 ```swift
