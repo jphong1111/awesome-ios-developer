@@ -193,9 +193,33 @@ class Adapter: Target {
  
 ## Delegation
 
+Delegation is a design pattern that enables a class to hand off (or “delegate”) some of its responsibilities to an instance of another class.
+
+### Example
+
+Create a protocol 
+
+```swift
+protocol SomeProtocol {
+    func reload()
+}
+```
+
+Create a delegate 
 ```swift
 weak var delegate: SomeProtocol?
 ```
+
+
+
+You can check the code using delegation pattern [here]()
+
+- [Delegation in Swift Swift by Sundell](https://www.swiftbysundell.com/articles/delegation-in-swift/)
+- [Delegation in Swift Explained](https://learnappmaking.com/delegation-swift-how-to/)
+- [Delegation Pattern in Swift 5.1](https://medium.com/@nimjea/delegation-pattern-in-swift-4-2-f6aca61f4bf5)
+
+
+
 ## Dependency Injection
 
 Dependency injection is a pattern that can be used to eliminate the need for singletons in a project
