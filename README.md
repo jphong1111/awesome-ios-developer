@@ -200,7 +200,7 @@ Delegation is a design pattern that enables a class to hand off (or â€œdelegateâ
 Create a protocol 
 
 ```swift
-protocol SomeProtocol {
+protocol SomeProtocol: AnyObject {
     func reload()
 }
 ```
@@ -212,7 +212,7 @@ weak var delegate: SomeProtocol?
 
 
 
-You can check the code using delegation pattern [here]()
+You can check the code using delegation pattern [here](https://github.com/jphong1111/Unsplash_Clone/blob/main/Unsplah_Clone/Module/MainMenu/AccountScreenModule/ViewModel/AccountViewModel.swift#L35)
 
 - [Delegation in Swift Swift by Sundell](https://www.swiftbysundell.com/articles/delegation-in-swift/)
 - [Delegation in Swift Explained](https://learnappmaking.com/delegation-swift-how-to/)
