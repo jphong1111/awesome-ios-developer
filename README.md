@@ -70,6 +70,7 @@ Feel free to fork this repository and pull requests!!
     - [Load Data](#Load-Data)
     - [Update Data](#Update-Data)
     - [Delete Data](#Delete-Data)
+- [Core Bluetooth](#Core-Bluetooth)
 - [Third Party Library](#Third-Party-Library)
     - [Dependency/Package Manager](#Dependency/Package-Manager)
         - [CocoaPods](#CocoaPods)
@@ -1096,6 +1097,28 @@ Simply use delete function in context
 context.delete(itemArray[0])
 ```
 > change number for dynamic!
+
+**You are GOOD TO GO**  👏👏👏
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
+## Core Bluetooth
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 **You are GOOD TO GO**  👏👏👏
 
