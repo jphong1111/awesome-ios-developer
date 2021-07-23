@@ -1118,6 +1118,9 @@ context.delete(itemArray[0])
 
 
 
+ - [Introduction to BLE Mobile Development [iOS]](https://www.novelbits.io/intro-ble-mobile-development-ios/)
+ - [Core Bluetooth Tutorial for iOS: Heart Rate Monitor](https://www.raywenderlich.com/231-core-bluetooth-tutorial-for-ios-heart-rate-monitor)
+ - [Getting Started with Core Bluetooth](https://ditto.live/blog/posts/getting-started-with-core-bluetooth)
 
 
 **You are GOOD TO GO**  👏👏👏
