@@ -1175,6 +1175,10 @@ $ pod install
 
 **You are GOOD TO GO**  👏👏👏
 
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
 ## Carthage
 
  - [Getting started with Carthage to manage dependencies in Swift and iOS](https://www.twilio.com/blog/2016/05/getting-started-with-carthage-to-manage-dependencies-in-swift-and-ios.html)
@@ -1224,6 +1228,10 @@ TBD
 
 **You are GOOD TO GO**  👏👏👏
     
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
 ## Swift Package Manager
 
 <img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/SwiftPackageManager.png" width = "50%" height = "50%"/>
@@ -1430,7 +1438,9 @@ The work you want to perform, encapsulated in a way that lets you attach a compl
 
 [NSOperationQueue Apple Documentation](https://developer.apple.com/documentation/foundation/nsoperationqueue)
 
-
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
 
 
 ## Thread Sanitizer
