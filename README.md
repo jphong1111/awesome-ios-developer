@@ -361,7 +361,7 @@ MVVM patterns stand for Model - View - ViewModel
  - Entity - contains basic model objects used by the Interactor.
  - Routing - contains navigation logic for describing which screens are shown in which order.
  
- > For more info, go [here](https://www.raywenderlich.com/8440907-getting-started-with-the-viper-architecture-pattern)
+[Getting Started with the VIPER Architecture Pattern](https://www.raywenderlich.com/8440907-getting-started-with-the-viper-architecture-pattern)
  
 ## UIDesign
 
