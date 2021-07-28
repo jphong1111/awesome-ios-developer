@@ -1421,6 +1421,9 @@ Use a barrier to synchronize the execution of one or more tasks in your dispatch
 
 - **NSLock**
 
+An object that coordinates the operation of multiple threads of execution within the same application.
+
+[NSLock](https://developer.apple.com/documentation/foundation/nslock)
 
 ## DispatchGroup
 
