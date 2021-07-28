@@ -99,6 +99,7 @@ Feel free to fork this repository and pull requests!!
     - [UI Testing](#UI-Testing)
 - [CI/CD](#cicd)
     - [Jenkins](#Jenkins)
+    - [Jira](#Jira)
 - [In App Purchase(IAP)](#In-App-PurchaseIAP)
 - [Notification](#Notification)
     - [Local Notification](#Local-Notification)
@@ -1539,6 +1540,16 @@ For more info, go to [Apple Developer Website](https://developer.apple.com/docum
 [Jenkins](https://www.jenkins.io/)
 
 Jenkins is most popular CI/CD tools 
+
+## Jira
+
+
+
+
+
+
+
+
 
 
 ## In App Purchase(IAP)
