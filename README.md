@@ -299,7 +299,12 @@ TBD
 
 ## KVO
 
-For more info, go [Apple Developer Site](https://developer.apple.com/documentation/swift/cocoa_design_patterns/using_key-value_observing_in_swift)
+KVO stands for Key Value Observing
+
+
+ - [Apple Developer Site](https://developer.apple.com/documentation/swift/cocoa_design_patterns/using_key-value_observing_in_swift)
+ - [KVO (Key Value Observing) in Swift](https://medium.com/@abhishek1nacc/kvo-key-value-observing-in-swift-65d05ac2d240)
+
 
 ## KVC
 
