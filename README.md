@@ -297,7 +297,7 @@ Check following sites
 
 TBD
 
-## KVO
+### KVO
 
 KVO stands for Key Value Observing
 
@@ -306,7 +306,7 @@ KVO stands for Key Value Observing
  - [KVO (Key Value Observing) in Swift](https://medium.com/@abhishek1nacc/kvo-key-value-observing-in-swift-65d05ac2d240)
 
 
-## KVC
+### KVC
 
 [KVO vs KVC](https://medium.com/hackernoon/kvo-kvc-in-swift-12f77300c387)
 
