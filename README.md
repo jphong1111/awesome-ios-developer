@@ -385,7 +385,8 @@ SwiftUI is a user interface toolkit that lets us design apps in a **declarative 
 
  - [Fucking SwiftUI](https://fuckingswiftui.com/) Cheat Sheet for SwiftUI
  - [Gosh Darn SwiftUI](https://goshdarnswiftui.com/) Cheat Sheet for SwiftUI
-
+ - [SimpleBoilerplates/SwiftUI-Cheat-Sheet](https://github.com/SimpleBoilerplates/SwiftUI-Cheat-Sheet)
+ 
 TBA
 
 
