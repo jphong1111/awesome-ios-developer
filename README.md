@@ -104,6 +104,7 @@ Feel free to fork this repository and pull requests!!
     - [Jenkins](#Jenkins)
     - [Jira](#Jira)
     - [CircleCI](#CircleCI)
+    - [Codemagic](#Codemagic)
 - [In App Purchase(IAP)](#In-App-PurchaseIAP)
 - [Notification](#Notification)
     - [Local Notification](#Local-Notification)
@@ -1607,6 +1608,9 @@ Jenkins is most popular CI/CD tools
 
 
 [CircleCI](https://circleci.com/)
+
+## Codemagic 
+[Codemagic](https://codemagic.io/) - Build, test and deliver your mobile projects 20% faster. 
 
 
 
