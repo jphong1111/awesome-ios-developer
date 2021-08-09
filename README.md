@@ -1610,6 +1610,7 @@ Jenkins is most popular CI/CD tools
 [CircleCI](https://circleci.com/)
 
 ## Codemagic 
+
 [Codemagic](https://codemagic.io/) - Build, test and deliver your mobile projects 20% faster. 
 
 
