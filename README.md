@@ -347,6 +347,7 @@ MVC pattern stands for Model - View - Controller
 
 ## MVP
 
+<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/MVPdesign.png" />
 
 ## MVVM
 
