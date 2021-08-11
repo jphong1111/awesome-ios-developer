@@ -35,6 +35,7 @@ Feel free to fork this repository and pull requests!!
     - [MVP](#MVP)
     - [MVVM](#MVVM)
     - [VIPER](#VIPER)
+    - [Swift Composable Architecture](#Swift-Composable-Architecture)
 - [UIDesign](#UIDesign)
     - [HIG](#highuman-interface-guidelines)
     - [SwiftUI](#SwiftUI)
@@ -334,7 +335,7 @@ class SingletonPattern {
 
 ## Code Structuring(Architecture)
 
-### MVC
+## MVC
 
 MVC pattern stands for Model - View - Controller
 
@@ -344,14 +345,14 @@ MVC pattern stands for Model - View - Controller
  - View - View renders the data for users
  - Controller - Controller modifies the View, accepts user input and interacts directly with the Model. And take care of view logic and business logic.
 
-### MVP
+## MVP
 
 
-### MVVM
+## MVVM
 
 MVVM patterns stand for Model - View - ViewModel
 
-##### MVC vs MVVM
+### MVC vs MVVM
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVVMvsMVC.png" width = "60%" height = "60%">
 
@@ -365,7 +366,7 @@ MVVM patterns stand for Model - View - ViewModel
 
 > You can check App example of using MVVM [here](https://github.com/jphong1111/Unsplash_Clone)
 
-### VIPER
+## VIPER
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/Viper.png">
 
@@ -376,6 +377,23 @@ MVVM patterns stand for Model - View - ViewModel
  - Routing - contains navigation logic for describing which screens are shown in which order.
  
 [Getting Started with the VIPER Architecture Pattern](https://www.raywenderlich.com/8440907-getting-started-with-the-viper-architecture-pattern)
+ 
+ ## Swift Composable Architecture
+ 
+ The Composable Architecture. The Composable Architecture is a library for building applications in a consistent and understandable way, with composition, testing, and ergonomics in mind
+ 
+  - [Composable Architecture @ Point Free](https://www.pointfree.co/collections/composable-architecture)
+  - [The Composable Architecture GitHub](https://github.com/pointfreeco/swift-composable-architecture)
+  - [The Composable Architecture — One of the Best-Suited Architectures for SwiftUI](https://medium.com/swlh/the-composable-architecture-one-of-the-best-suited-architectures-for-swiftui-35bfc5102b83)
+ 
+ 
+ ```swift
+ // example will update here
+ ```
+ 
+ 
+ 
+ 
  
 ## UIDesign
 
