@@ -95,7 +95,7 @@ Feel free to fork this repository and pull requests!!
     - [OperationQueue](#operationQueue)
 - [Thread Sanitizer](#Thread-Sanitizer)
 - [Testing](#Testing)
-    - [Various Types Of Test Method](#Various-types-of-test-method)
+    - [Test Double](#Test-Double)
     - [TDD](#TDD)
     - [BDD](#BDD)
     - [Code Coverage](#Code-Coverage)
@@ -1548,19 +1548,41 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 ## Testing
 
 
-## Various types of test method
+## Test Double
+
+**Test Double is a generic term for any case where you replace a production object for testing purposes.**
 
  - Mocks - Mocks are pre-programmered with expectations which form a specification of the calls they are expected to receive. They can throw an exception if they receive a call they don't expect and are checked during verification to ensure they got all the calls they were expecting.
 
 ```swift
-
+// exaple code will update
 ```
 
 
  - Fake
+
+```swift
+// exaple code will update
+```
+
  - Spies
+
+```swift
+// exaple code will update
+```
+
  - Stubs
+
+```swift
+// exaple code will update
+```
+
  - Dummy
+
+```swift
+// exaple code will update
+```
+
 
 
 
