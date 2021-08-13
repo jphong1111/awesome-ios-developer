@@ -1559,7 +1559,7 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 ```
 
 
- - Fake
+ - Fake - 
 
 ```swift
 // exaple code will update
@@ -1577,7 +1577,7 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 // exaple code will update
 ```
 
- - Dummy
+ - Dummy - Objects are passed around but never actually used. Usually they are just used to fill parameter lists.
 
 ```swift
 // exaple code will update
