@@ -168,6 +168,15 @@ put .yml file into root folder and apply following code in Build Phases
 
 <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/swiftLintChange.png">
 
+
+📚📚 Recommend Book 📚📚 
+
+Clean Code: A Handbook of Agile Software Craftsmanship
+
+by Robert C. Martin 
+
+
+
 ## Design Pattern
 
 Check [this](https://refactoring.guru/design-patterns/swift) website for design pattern in Swift
