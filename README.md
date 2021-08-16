@@ -340,6 +340,11 @@ class SingletonPattern {
 }
 ```
 
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
+
 ## Code Structuring(Architecture)
 
 ## MVC
@@ -402,7 +407,9 @@ MVVM patterns stand for Model - View - ViewModel
  ```
  
  
- 
+ <p align="right">
+<a href="#-content">Back to Content</a>
+</p>
  
  
 ## UIDesign
@@ -430,7 +437,9 @@ TBA
 
 
 
-
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
 
 ## iOS icon 
 - [SF Symbols](https://developer.apple.com/sf-symbols/) Download SF Symbols2 for more icons!
