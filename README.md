@@ -1,4 +1,4 @@
-## Awesome iOS Developer [![Join the chat at https://gitter.im/awesome-ios-developer/community](https://badges.gitter.im/awesome-ios-developer/community.svg)](https://gitter.im/awesome-ios-developer/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+ㅇ## Awesome iOS Developer [![Join the chat at https://gitter.im/awesome-ios-developer/community](https://badges.gitter.im/awesome-ios-developer/community.svg)](https://gitter.im/awesome-ios-developer/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 <p>
 </p>
@@ -1575,19 +1575,19 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 ```
 
 
- - Fake - 
+ - Fake - Objects actually have working implementations, but usually take some shortcut which makes them not suitable for production.
 
 ```swift
 // exaple code will update
 ```
 
- - Spies
+ - Spies - Spies are stubs that also record some information based on how they were called. One form of this might be an email service that records how many messages it was sent.
 
 ```swift
 // exaple code will update
 ```
 
- - Stubs
+ - Stubs - Stubs provide canned answers to calls made during the test, usually not responding at all to anything outside what's programmed in for the test.
 
 ```swift
 // exaple code will update
