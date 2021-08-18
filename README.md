@@ -1606,7 +1606,7 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 **Test Driven Development**
 
-<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/TDD.png"/>
+<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/TDD.png" width="50%" height="50%"/>
 
 - [Why Test-Driven Development (TDD)](https://marsner.com/blog/why-test-driven-development-tdd/)
 
