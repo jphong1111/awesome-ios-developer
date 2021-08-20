@@ -349,6 +349,12 @@ class SingletonPattern {
 
 ## Code Structuring(Architecture)
 
+📚📚 Recommend Book 📚📚 
+
+| Book Name   | Authors Name |
+| :----------- | :----------- |
+| Advanced iOS App Architecture : Real-world app architecture in Swift | raywenderlich Tutorial Team |
+
 ## MVC
 
 MVC pattern stands for Model - View - Controller
@@ -1773,6 +1779,12 @@ Functional Reactive Programming
 - [RxSwift](https://github.com/ReactiveX/RxSwift) - Github Repository
 - [RxSwift](http://reactivex.io/intro.html) - Website
 
+📚📚 Recommend Book 📚📚 
+
+| Book Name   | Authors Name |
+| :----------- | :----------- |
+| RxSwift: Reactive Programming with Swift  | raywenderlich Tutorial Team |
+
 <p align="right">
 <a href="#-content">Back to Content</a>
 </p>
@@ -1783,6 +1795,11 @@ Combine released on iOS13 from Apple for Functional Reactive Programming.
 
 [Swiftbysundell](https://www.swiftbysundell.com/basics/combine/)
 
+📚📚 Recommend Book 📚📚 
+
+| Book Name   | Authors Name |
+| :----------- | :----------- |
+|  |  |
 
 ## RxCombine
 
@@ -2003,6 +2020,12 @@ Still we need to study Objective-C for legacy code which is still remain in our 
 Here are some useful website that you can study about simple concept of Obj-C!!
 
 [Learn Objective-C in 24 Days](https://www.binpress.com/learn-objective-c-24-days/)
+
+📚📚 Recommend Book 📚📚 
+
+| Book Name   | Authors Name |
+| :----------- | :----------- |
+| Objective-C Programming: The Big Nerd Ranch Guide | Aaron Hillegass, Mikey Ward |
 
 ### Pure Swift Application?
 
