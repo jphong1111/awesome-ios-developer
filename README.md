@@ -172,8 +172,8 @@ put .yml file into root folder and apply following code in Build Phases
 📚📚 Recommend Book 📚📚 
 
 | Book Name   | Authors Name |
-| ----------- | ----------- |
-| Clean Code: A Handbook of Agile Software Craftsmanship      | Robert C. Martin        |
+| :----------- | :----------- |
+| Clean Code: A Handbook of Agile Software Craftsmanship | Robert C. Martin |
 
 
 
