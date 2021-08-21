@@ -1620,7 +1620,7 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 ## BDD
 
-<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/BDDvdTDD.png" width="30%" height="30%"/>
+<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/BDDvsTDD.png" width="30%" height="30%"/>
 
 BDD improves communication between tech and non-tech teams and stakeholders. In BDD, tests are more user-focused and based on the system’s behavior.
 
@@ -1638,9 +1638,10 @@ Next, document those examples in a way that can be automated, and check for agre
 
 Finally, implement the behaviour described by each documented example, starting with an automated test to guide the development of the code.
 
-[Behaviour-Driven Development](https://cucumber.io/docs/bdd/)
-[What is BDD? An Introduction to Behavioral Driven Development](https://blog.testlodge.com/what-is-bdd/)
-
+ - [Behaviour-Driven Development](https://cucumber.io/docs/bdd/)
+ - [What is BDD? An Introduction to Behavioral Driven Development](https://blog.testlodge.com/what-is-bdd/)
+ - [The WHY Behind the Code: BDD vs. TDD](https://saucelabs.com/blog/a-two-minute-bdd-overview)
+ 
 ## Code Coverage
 
 Before start your Testing, add coverage will be a good option to show the result of test
