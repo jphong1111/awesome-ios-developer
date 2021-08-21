@@ -1620,6 +1620,8 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 ## BDD
 
+<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/BDDvdTDD.png" width="30%" height="30%"/>
+
 BDD improves communication between tech and non-tech teams and stakeholders. In BDD, tests are more user-focused and based on the system’s behavior.
 
 **Behavior Driven Development**
