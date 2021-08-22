@@ -1689,10 +1689,11 @@ Jenkins is most popular CI/CD tools
 
 ## Jira
 
+Jira is project management software first and foremost, but it began its life in 2002 as an issue tracking platform for software developers
 
-[Jira](https://www.atlassian.com/software/jira)
-
-
+ - [Jira](https://www.atlassian.com/software/jira)
+ - [What is Jira used for?](https://www.atlassian.com/software/jira/guides/use-cases/what-is-jira-used-for#Jira-for-requirements-&-test-case-management)
+ - [What Is Jira: An Overview of a Unique Project Management Tool](https://www.fool.com/the-blueprint/what-is-jira/)
 
 
 ## CircleCI
