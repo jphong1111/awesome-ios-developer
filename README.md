@@ -453,6 +453,8 @@ TBA
 - [SF Symbols](https://developer.apple.com/sf-symbols/) Download SF Symbols2 for more icons!
 - [icon8](https://icons8.com/) You can download icons imge for your **APP**
 - [appicon](https://appicon.co/) generate the app icon size
+- [flaticon](www.flaticon.com) Free icons download
+
 
 ## UIdesign Inspiration
 
