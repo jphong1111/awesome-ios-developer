@@ -1673,6 +1673,15 @@ Then, go to **EDIT SHEME**, check like this
 
 [Your first UITest in Swift](https://uxdesign.cc/your-first-uitest-in-swift-847bc5595c26)
 
+## TestFlight
+
+TestFlight makes it easy to invite users to test your apps and App Clips and collect valuable feedback before releasing your apps on the App Store.
+
+ - [TestFlight Apple](https://developer.apple.com/testflight/)
+
+
+
+
 ## CI/CD
 
 [WWDC21](https://www.apple.com/apple-events/june-2021/?&cid=wwa-us-kwgo-features-slid--Brand-AppleLive-Post-&mtid=20925e1t39169&aosid=p238&mnid=sZH3E0Pf0-dc_mtid_20925e1t39169_pcrid_524281987644_pgrid_129696028064_) Apple released [Xcode Cloud](https://developer.apple.com/xcode-cloud/) for continuous integration
