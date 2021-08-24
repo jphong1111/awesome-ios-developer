@@ -102,7 +102,7 @@ Feel free to fork this repository and pull requests!!
     - [Integration Testing](#Integration-Testing)
     - [Unit Testing](#Unit-Testing)
     - [UI Testing](#UI-Testing)
-    - [TestFlight](#TestFlight)
+    - [TestFlight](#testflight)
 - [CI/CD](#cicd)
     - [Jenkins](#Jenkins)
     - [Jira](#Jira)
