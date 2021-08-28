@@ -709,7 +709,9 @@ API(Application Programming Interface) is an interface that defines interactions
 
 ## xAPI
 
+The Experience API (or xAPI) is a new specification for learning technology that makes it possible to collect data about the wide range of experiences a person has (online and offline). This API captures data in a consistent format about a person or group’s activities from many technologies. Very different systems are able to securely communicate by capturing and sharing this stream of activities using xAPI’s simple vocabulary.
 
+ - [What is the Experience API?](https://xapi.com/overview/?utm_source=google&utm_medium=natural_search)
 
 
 
