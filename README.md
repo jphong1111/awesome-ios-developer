@@ -668,7 +668,7 @@ To download images into device, only thing is this
 ```swift
 if let data = try? Data(contentsOf: urls),
    let image = UIImage(data: data) {
-   UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+   UIImageWriteToSavedPhotosAlbum(image, nil, nilil)
 }
 ```
 Just **change urls into your image URL**
@@ -1823,7 +1823,7 @@ Combine released on iOS13 from Apple for Functional Reactive Programming.
 
 | Book Name   | Authors Name |
 | :----------- | :----------- |
-|  |  |
+|  Combine: Asynchronous Programming with Swift | raywenderlich Tutorial Team |
 
 ## RxCombine
 
