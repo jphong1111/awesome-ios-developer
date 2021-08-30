@@ -106,6 +106,7 @@ Feel free to fork this repository and pull requests!!
     - [Jira](#Jira)
     - [CircleCI](#CircleCI)
     - [Codemagic](#Codemagic)
+    - [Xcode Cloud](#xcode-cloud)
 - [In App Purchase(IAP)](#In-App-PurchaseIAP)
 - [Notification](#Notification)
     - [Local Notification](#Local-Notification)
@@ -1684,13 +1685,13 @@ TestFlight makes it easy to invite users to test your apps and App Clips and col
 
 ## CI/CD
 
-[WWDC21](https://www.apple.com/apple-events/june-2021/?&cid=wwa-us-kwgo-features-slid--Brand-AppleLive-Post-&mtid=20925e1t39169&aosid=p238&mnid=sZH3E0Pf0-dc_mtid_20925e1t39169_pcrid_524281987644_pgrid_129696028064_) Apple released [Xcode Cloud](https://developer.apple.com/xcode-cloud/) for continuous integration
+CI and CD stand for continuous integration and continuous delivery/continuous deployment
 
-For more info, go to [Apple Developer Website](https://developer.apple.com/documentation/Xcode/Xcode-Cloud)
 
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
+ - [Why is CI/CD important?](#https://www.synopsys.com/glossary/what-is-cicd.html)
+ - [What is CI/CD? Continuous integration and continuous delivery explained](#https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html)
+ - [What’s the difference between agile, CI/CD, and DevOps?](#https://www.synopsys.com/blogs/software-security/agile-cicd-devops-difference/)
+
 
 ## Jenkins
 
@@ -1718,7 +1719,15 @@ Jira is project management software first and foremost, but it began its life in
 [Codemagic](https://codemagic.io/) - Build, test and deliver your mobile projects 20% faster. 
 
 
+## Xcode Cloud
 
+[WWDC21](https://www.apple.com/apple-events/june-2021/?&cid=wwa-us-kwgo-features-slid--Brand-AppleLive-Post-&mtid=20925e1t39169&aosid=p238&mnid=sZH3E0Pf0-dc_mtid_20925e1t39169_pcrid_524281987644_pgrid_129696028064_) Apple released [Xcode Cloud](https://developer.apple.com/xcode-cloud/) for continuous integration
+
+For more info, go to [Apple Developer Website](https://developer.apple.com/documentation/Xcode/Xcode-Cloud)
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
 
 ## In App Purchase(IAP)
 
