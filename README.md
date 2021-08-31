@@ -960,6 +960,13 @@ Use Core Data to save your application’s permanent data for offline use, to ca
 
 > Image From London App Brewery
 
+
+📚📚 Recommend Book 📚📚 
+
+| Book Name   | Authors Name |
+| :----------- | :----------- |
+| Core Data by Tutorials: iOS 12 and Swift 4.2 Edition | raywenderlich Tutorial Team |
+
 ## Core Data Stack
 
  - [The Core Data Stack](https://www.raywenderlich.com/books/core-data-by-tutorials/v7.0/chapters/3-the-core-data-stack)
