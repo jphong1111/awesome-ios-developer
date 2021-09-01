@@ -1798,7 +1798,7 @@ First, go to **Signing & Capabilities** and add two features like this
 
 ## APNs Usage
 
-For more info go [here](https://www.raywenderlich.com/11395893-push-notifications-tutorial-getting-started)
+- [Push Notifications Tutorial: Getting Started](https://www.raywenderlich.com/11395893-push-notifications-tutorial-getting-started)
 
 ## FRP
 
