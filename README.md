@@ -114,6 +114,7 @@ Feel free to fork this repository and pull requests!!
         - [APNs](#APNS)
             - [Set Up APNs](#Set-Up-APNs)
             - [APNs Usage](#APNs-Usage)
+- [NotificationCenter](#NotificationCenter)
 - [FRP](#FRP)
     - [Rxswift](#Rxswift)
     - [Combine](#Combine)
@@ -1799,6 +1800,10 @@ First, go to **Signing & Capabilities** and add two features like this
 ## APNs Usage
 
 - [Push Notifications Tutorial: Getting Started](https://www.raywenderlich.com/11395893-push-notifications-tutorial-getting-started)
+
+## NotificationCenter
+
+ - [How To: Using Notification Center In Swift](#https://learnappmaking.com/notification-center-how-to-swift/)
 
 ## FRP
 
