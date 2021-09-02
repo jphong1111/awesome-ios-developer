@@ -55,7 +55,7 @@ Feel free to fork this repository and pull requests!!
 - [JSON](#JSON)
     - [JSONDecoder](#JSONDecoder)
     - [JSONSerialization](#JSONSerialization)
-- [Notification Center](#Notification-Center)
+- [NotificationCenter](#NotificationCenter)
 - [UserDefaults](#UserDefaults)
     - [How to find documentDirectory](#How-to-find-documentDirectory)
     - [Store Object](#Store-Object)
@@ -114,7 +114,6 @@ Feel free to fork this repository and pull requests!!
         - [APNs](#APNS)
             - [Set Up APNs](#Set-Up-APNs)
             - [APNs Usage](#APNs-Usage)
-- [NotificationCenter](#NotificationCenter)
 - [FRP](#FRP)
     - [Rxswift](#Rxswift)
     - [Combine](#Combine)
@@ -858,11 +857,13 @@ This library provide JSON parsing
 <a href="#-content">Back to Content</a>
 </p>
 
-## Notification Center
+## NotificationCenter
 
 A notification dispatch mechanism that enables the broadcast of information to registered observers.
 
-[NotificationCenter Apple Document](https://developer.apple.com/documentation/foundation/notificationcenter)
+ - [NotificationCenter Apple Document](https://developer.apple.com/documentation/foundation/notificationcenter)
+ - [How To: Using Notification Center In Swift](https://learnappmaking.com/notification-center-how-to-swift/)
+
 
 <p align="right">
 <a href="#-content">Back to Content</a>
@@ -1801,9 +1802,6 @@ First, go to **Signing & Capabilities** and add two features like this
 
 - [Push Notifications Tutorial: Getting Started](https://www.raywenderlich.com/11395893-push-notifications-tutorial-getting-started)
 
-## NotificationCenter
-
- - [How To: Using Notification Center In Swift](#https://learnappmaking.com/notification-center-how-to-swift/)
 
 ## FRP
 
