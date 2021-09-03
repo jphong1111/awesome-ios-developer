@@ -414,7 +414,7 @@ MVVM patterns stand for Model - View - ViewModel
  ```
  
  
- <p align="right">
+<p align="right">
 <a href="#-content">Back to Content</a>
 </p>
  
@@ -1465,6 +1465,10 @@ Simple example below
   
   
 **You are GOOD TO GO**  👏👏👏
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
 
 ## Useful for Localization
 
