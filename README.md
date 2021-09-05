@@ -174,6 +174,7 @@ put .yml file into root folder and apply following code in Build Phases
 | Book Name   | Authors Name |
 | :----------- | :----------- |
 | Clean Code: A Handbook of Agile Software Craftsmanship | Robert C. Martin |
+| The Pragmatic Programmer Your Journey to Mastery, 20th Anniversary Edition| Andrew Hunt David Hurst Thomas |
 
 
 
