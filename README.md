@@ -38,6 +38,7 @@ Feel free to fork this repository and pull requests!!
 - [UIDesign](#UIDesign)
     - [HIG](#highuman-interface-guidelines)
     - [SwiftUI](#SwiftUI)
+        - [Useful Cheat Sheet for SwiftUI](#Useful-Cheat-Sheet-for-SwiftUI)
     - [UIdesign Inspiration](#UIdesign-Inspiration)
     - [Vector Graphic Editors](#Vector-Graphic-Editors)
     - [Design Collaboration](#Design-Collaboration)
@@ -423,7 +424,8 @@ MVVM patterns stand for Model - View - ViewModel
  
 ## UIDesign
 
-### HIG(Human Interface Guidelines)
+## HIG(Human Interface Guidelines)
+- [HIG](https://developer.apple.com/design/human-interface-guidelines/)
 - [Apple UI Kit](https://developer.apple.com/documentation/uikit)
 - [iOS Design Guide](https://ivomynttinen.com/blog/ios-design-guidelines)
 
@@ -432,7 +434,7 @@ MVVM patterns stand for Model - View - ViewModel
 SwiftUI is a user interface toolkit that lets us design apps in a **declarative way(Declarative syntax)**. 
 
 
-### Useful Cheat Sheet for SwiftUI
+## Useful Cheat Sheet for SwiftUI
 
  - [Fucking SwiftUI](https://fuckingswiftui.com/) Cheat Sheet for SwiftUI
  - [Gosh Darn SwiftUI](https://goshdarnswiftui.com/) Cheat Sheet for SwiftUI
