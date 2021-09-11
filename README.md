@@ -1687,6 +1687,11 @@ Then, go to **EDIT SHEME**, check like this
 [Unit Testing Swift by Sundell](https://www.swiftbysundell.com/basics/unit-testing/)
 
 
+📚📚 Recommend Book 📚📚 
+
+| Book Name   | Authors Name |
+| :----------- | :----------- |
+| iOS Unit Testing by Example | Jon Reid |
 
 ## UI Testing
 
