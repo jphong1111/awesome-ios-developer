@@ -51,7 +51,7 @@ Feel free to fork this repository and pull requests!!
     - [Video Downloader](#Video-Downloader)
     - [Image Downloader](#Image-Downloader)
     - [Location Manager](#Location-Manager)
-    - [Local Notification Manager](#Local-Notification-Manager)
+    - [Local Notification Manager](#local-notification-manager)
 - [API](#API)	
     - [xAPI](#xapi) 
 - [JSON](#JSON)
