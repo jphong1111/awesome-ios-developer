@@ -102,6 +102,7 @@ Feel free to fork this repository and pull requests!!
     - [Integration Testing](#Integration-Testing)
     - [Unit Testing](#Unit-Testing)
     - [UI Testing](#UI-Testing)
+    - [Snapshot Testing](#snapshot-testing)
     - [TestFlight](#testflight)
 - [CI/CD](#cicd)
     - [Jenkins](#Jenkins)
@@ -1697,6 +1698,29 @@ Then, go to **EDIT SHEME**, check like this
 ## UI Testing
 
 [Your first UITest in Swift](https://uxdesign.cc/your-first-uitest-in-swift-847bc5595c26)
+
+
+## Snapshot Testing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## TestFlight
 
