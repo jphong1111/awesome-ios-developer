@@ -42,6 +42,7 @@ Feel free to fork this repository and pull requests!!
     - [Vector Graphic Editors](#Vector-Graphic-Editors)
     - [Design Collaboration](#Design-Collaboration)
     - [Design Tools](#Design-Tools)
+    - [Useful Sites](#useful-sites)
 - [Screen Layout Programmatically](#screen-layout-programmatically)
 - [Helper](#Helper)
     - [Email, Message, Call](#email-message-call)
@@ -486,6 +487,15 @@ TBA
 <a href="#-content">Back to Content</a>
 </p>
 
+
+## Useful Sites 
+
+ - [HEX Color Picker](https://imagecolorpicker.com/) Good for picking color as Hex 👍
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
 ## Screen Layout Programmatically
 
 
@@ -527,6 +537,7 @@ TBA
 <p align="right">
 <a href="#-content">Back to Content</a>
 </p>
+
 
 ## Helper
 
