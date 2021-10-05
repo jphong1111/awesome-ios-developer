@@ -1816,6 +1816,10 @@ Jira is project management software first and foremost, but it began its life in
 
 [CircleCI](https://circleci.com/)
 
+
+You can integrate Circle CI into Github repo, therefore we can use it in PR.
+
+
 ## Codemagic 
 
 [Codemagic](https://codemagic.io/) - Build, test and deliver your mobile projects 20% faster. 
