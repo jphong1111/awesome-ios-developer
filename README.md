@@ -20,6 +20,7 @@ Feel free to fork this repository and pull requests!!
 ## 🔎 Content
 - [Coding Convention](#Coding-convention)
     - [Swift Lint](#Swift-lint)
+- [App Life Cycle](#app-life-cycle)
 - [Design Pattern](#Design-Pattern)
     - [Adaptor](#Adaptor)
     - [Delegation](#Delegation)
