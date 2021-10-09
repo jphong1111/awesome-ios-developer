@@ -182,6 +182,31 @@ put .yml file into root folder and apply following code in Build Phases
 | The Pragmatic Programmer Your Journey to Mastery, 20th Anniversary Edition| Andrew Hunt David Hurst Thomas |
 
 
+## App Life Cycle
+
+
+[iOS App Life Cycle](https://medium.com/@neroxiao/ios-app-life-cycle-ec1b31cee9dc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Design Pattern
 
