@@ -20,6 +20,7 @@ Feel free to fork this repository and pull requests!!
 - [Coding Convention](#Coding-convention)
     - [Swift Lint](#Swift-lint)
 - [App Life Cycle](#app-life-cycle)
+- [View Life Cycle](#view-life-cycle)
 - [Design Pattern](#Design-Pattern)
     - [Adaptor](#Adaptor)
     - [Delegation](#Delegation)
@@ -191,6 +192,9 @@ put .yml file into root folder and apply following code in Build Phases
 
 
 
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
 
 
 
@@ -199,8 +203,19 @@ put .yml file into root folder and apply following code in Build Phases
 
 
 
+## View Life Cycle
+
+[iOS View Controller Life Cycle](https://medium.com/good-morning-swift/ios-view-controller-life-cycle-2a0f02e74ff5)
 
 
+
+
+
+
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
 
 
 
