@@ -205,6 +205,17 @@ put .yml file into root folder and apply following code in Build Phases
 
 ## View Life Cycle
 
+
+- viewDidLoad
+- viewWillAppear
+- viewWillLayoutSubviews
+- viewDidLayoutSubviews
+- viewDidAppear
+- viewWillDisappear
+- viewDidDisappear
+
+
+
 [iOS View Controller Life Cycle](https://medium.com/good-morning-swift/ios-view-controller-life-cycle-2a0f02e74ff5)
 
 
