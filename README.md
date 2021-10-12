@@ -137,6 +137,7 @@ Feel free to fork this repository and pull requests!!
 - [Error Search](#Error-Search)
 - [Useful Stuff](#Useful-Stuff)
     - [How to submit your app to the AppStore](#how-to-submit-your-app-to-the-appstore)
+    - [iOS Version Adoption Tracker](#iOS-version-adoption-tracker)
     - [Online Swift Playground](#Online-Swift-Playground)
     - [Show Preview in UIKit(Build UI with Code Base)](#show-preview-in-uikitbuild-ui-with-code-base-----)
     - [Compare Changes in Swift Version](#Compare-Changes-in-Swift-Version)
@@ -2262,6 +2263,20 @@ I listed some of the useful & interesting stuff related with Swift
    - [StoreKit](https://developer.apple.com/documentation/storekit)
    - [What is a provisioning profile & code signing in iOS?](https://abhimuralidharan.medium.com/what-is-a-provisioning-profile-in-ios-77987a7c54c2)
   
+## iOS Version Adoption Tracker
+
+You can check the iOS Version adoption in this site
+
+[iOS Version Adoption Tracker](https://mixpanel.com/trends/#report/ios_15)
+
+
+<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/iosVersionAdoption.png" />
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
+
 ## Online Swift Playground
 
 [SwiftPlayground](http://online.swiftplayground.run/) -  Online Swift Playground
