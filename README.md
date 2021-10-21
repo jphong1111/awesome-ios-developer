@@ -207,6 +207,8 @@ put .yml file into root folder and apply following code in Build Phases
 
 ## View Life Cycle
 
+<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/iOSViewLifeCycle.png" />
+
 
 - viewDidLoad
 - viewWillAppear
