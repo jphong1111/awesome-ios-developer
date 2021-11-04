@@ -23,6 +23,7 @@ Feel free to fork this repository and pull requests!!
 - [View Life Cycle](#view-life-cycle)
 - [Design Pattern](#Design-Pattern)
     - [Adaptor](#Adaptor)
+    - [Coordinator](#Coordinator)
     - [Delegation](#Delegation)
     - [Dependency Injection](#Dependency-Injection)
     - [Factory](#Factory)
@@ -270,6 +271,36 @@ class Adapter: Target {
  - [Swift adapter design pattern](https://theswiftdev.com/swift-adapter-design-pattern/)
  - [Adapter in Swift](https://refactoring.guru/design-patterns/adapter/swift/example)
  
+## Coordinator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Delegation
 
 Delegation is a design pattern that enables a class to hand off (or “delegate”) some of its responsibilities to an instance of another class.
