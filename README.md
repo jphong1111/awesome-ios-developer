@@ -2349,4 +2349,122 @@ struct SwiftLeeViewController_Preview: PreviewProvider {
 
 Enable canvas option like this
 
-<img src
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preview%20using%20canvas.png">
+
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preivew_screenShot.png">
+
+
+**You are GOOD TO GO**  👏👏👏
+
+## Compare Changes in Swift Version
+
+You can compare changes based on Swift Verison
+
+[Whatsnewinswift](https://www.whatsnewinswift.com/?from=5.3&to=5.4)
+
+## Managing Xcode Space
+
+This will be helful when you are running out of storage in your mac
+
+```bash
+# 1
+echo "Removing Derived Data..."
+rm -rf ~/Library/Developer/Xcode/DerivedData/
+
+# 2
+echo "Removing Device Support..."
+rm -rf ~/Library/Developer/Xcode/iOS\ DeviceSupport
+rm -rf ~/Library/Developer/Xcode/watchOS\ DeviceSupport
+rm -rf ~/Library/Developer/Xcode/tvOS\ DeviceSupport
+
+# 3
+echo "Removing old simulators..."
+xcrun simctl delete unavailable
+
+# 4
+echo "Removing caches..."
+rm -rf ~/Library/Caches/com.apple.dt.Xcode
+rm -rf ~/Library/Caches/org.carthage.CarthageKit
+
+# 5
+if command -v pod  &> /dev/null
+then
+    # 6
+    pod cache clean --all
+fi
+
+echo "Done!"
+```
+
+After writing, run it with this command
+
+```bash
+chmod u+x clean-xcode.sh
+```
+
+And then
+
+```script
+./clean-xcode.sh
+```
+
+**This will cleans out derived data, device support, simulators and caches. So that once you execute it, You have to build your project AGAIN**
+
+For More Info, visit [here](https://www.raywenderlich.com/19998365-understanding-and-managing-xcode-space)
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
+## Roadmap for iOS Developer
+
+check this out [here](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
+
+## Use VIM in Xcode
+
+ ~~Check [this](https://www.twilio.com/blog/2017/06/adding-vim-keybindings-to-xcode-with-xvim.html) site for more info!~~
+ 
+ Since Xcode 13(BETA), you can find Vim in **Preference -> Text Editing -> Editing -> Enable Vim Key bindings**
+ 
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/Vim.png">
+
+
+## Write README.md
+
+[how-to-write-a-readme](https://medium.com/@saumya.ranjan/how-to-write-a-readme-md-file-markdown-file-20cb7cbcd6f) will help you to write a README.md file more dynamically 👍
+
+Also you can edit Readme.md file with VSCode Extension! Check out in VSCode!
+
+[Markdown Preview Enhanced](https://github.com/shd101wyy/markdown-preview-enhanced)
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
+## ❤ Supporters
+
+### ⭐ Stargazers
+
+<a href="https://github.com/jphong1111/awesome-ios-developer/stargazers">
+<img src="https://reporoster.com/stars/jphong1111/awesome-ios-developer"></a>
+
+### 🍴 Forks
+
+<a href="https://github.com/jphong1111/awesome-ios-developer/fork">
+<img src="https://reporoster.com/forks/jphong1111/awesome-ios-developer"></a>
+
+### 🌟 GitHub Stargazers
+
+[![Stargazers over time](https://starchart.cc/jphong1111/useful_swift.svg)](https://starchart.cc/jphong1111/awesome-ios-developer) 
+
+
+## Author
+
+This README.md file is written by **Jungpyo Hong (Dennis)**
+email: ghdwjdvy96@gmail.com
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
+
