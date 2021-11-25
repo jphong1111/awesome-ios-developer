@@ -273,6 +273,7 @@ class Adapter: Target {
  
 ## Coordinator
 
+- [Leverage the Coordinator Design Pattern in Swift 5](https://betterprogramming.pub/leverage-the-coordinator-design-pattern-in-swift-5-cd5bb9e78e12)
 
 
 
