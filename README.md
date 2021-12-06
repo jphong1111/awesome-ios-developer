@@ -1531,6 +1531,7 @@ Enter url of library that you want to install
 - SnapKit - Swift Auto Layout DSL for iOS
 - Charts - Make Beutiful Charts in your App
 - Quick/Nimble - Testing Library + Asynchronous tests purpose
+- Periphery - A tool to identify unused code in Swift Projects
 - etc...
 
 <p align="right">
