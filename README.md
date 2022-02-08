@@ -1531,6 +1531,7 @@ Enter url of library that you want to install
 - Charts - Make Beutiful Charts in your App
 - Quick/Nimble - Testing Library + Asynchronous tests purpose
 - Periphery - A tool to identify unused code in Swift Projects
+- Tuist - Tuist is a command line tool that helps you generate, maintain and interact with Xcode projects.
 - etc...
 
 <p align="right">
