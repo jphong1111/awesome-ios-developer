@@ -1939,7 +1939,7 @@ For more info, go to [Apple Developer Website](https://developer.apple.com/docum
 <a href="#-content">Back to Content</a>
 </p>
 
-## Tuist
+# Tuist
 
 - Tuist is a command line tool that helps you generate, maintain and interact with Xcode projects.
 
@@ -1948,7 +1948,7 @@ For more info, go to [Apple Developer Website](https://developer.apple.com/docum
 - [Tuist Tutorial for Xcode](https://www.raywenderlich.com/24508362-tuist-tutorial-for-xcode)
 
 
-## In App Purchase(IAP)
+# In App Purchase(IAP)
 
 **Requirement**
 
@@ -2056,7 +2056,7 @@ RxCombine provides bi-directional type bridging between RxSwift and Apple's Comb
 
 
 
-## Security
+# Security
 
 Security secure the data your app manages, and control access to your app.
 
