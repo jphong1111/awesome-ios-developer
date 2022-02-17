@@ -110,6 +110,7 @@ Feel free to fork this repository and pull requests!!
     - [Snapshot Testing](#snapshot-testing)
     - [TestFlight](#testflight)
 - [CI/CD](#cicd)
+    - [Fastlane](#Fastlane)
     - [Jenkins](#Jenkins)
     - [Jira](#Jira)
     - [CircleCI](#CircleCI)
@@ -1888,12 +1889,21 @@ CI and CD stand for continuous integration and continuous delivery/continuous de
  - [What is CI/CD? Continuous integration and continuous delivery explained](#https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html)
  - [What’s the difference between agile, CI/CD, and DevOps?](#https://www.synopsys.com/blogs/software-security/agile-cicd-devops-difference/)
 
+## Fastlane
+
+The easiest way to build and release mobile apps.
+
+[Fastlane](https://fastlane.tools/)
+
+<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/fastlane.png" />
+
 
 ## Jenkins
 
+Jenkins is most popular CI/CD tools 
+
 [Jenkins](https://www.jenkins.io/)
 
-Jenkins is most popular CI/CD tools 
 
 ## Jira
 
