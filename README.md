@@ -116,6 +116,7 @@ Feel free to fork this repository and pull requests!!
     - [CircleCI](#CircleCI)
     - [Codemagic](#Codemagic)
     - [Xcode Cloud](#xcode-cloud)
+- [Tuist](#Tuist)
 - [In App Purchase(IAP)](#In-App-PurchaseIAP)
 - [Notification](#Notification)
     - [Local Notification](#Local-Notification)
@@ -1533,7 +1534,6 @@ Enter url of library that you want to install
 - Charts - Make Beutiful Charts in your App
 - Quick/Nimble - Testing Library + Asynchronous tests purpose
 - Periphery - A tool to identify unused code in Swift Projects
-- Tuist - Tuist is a command line tool that helps you generate, maintain and interact with Xcode projects.
 - etc...
 
 <p align="right">
@@ -1880,7 +1880,7 @@ TestFlight makes it easy to invite users to test your apps and App Clips and col
 
 
 
-## CI/CD
+# CI/CD
 
 CI and CD stand for continuous integration and continuous delivery/continuous deployment
 
@@ -1938,6 +1938,15 @@ For more info, go to [Apple Developer Website](https://developer.apple.com/docum
 <p align="right">
 <a href="#-content">Back to Content</a>
 </p>
+
+## Tuist
+
+- Tuist is a command line tool that helps you generate, maintain and interact with Xcode projects.
+
+- [Tuist](https://docs.tuist.io/tutorial/get-started)
+- [Tuist Github](https://github.com/tuist/tuist)
+- [Tuist Tutorial for Xcode](https://www.raywenderlich.com/24508362-tuist-tutorial-for-xcode)
+
 
 ## In App Purchase(IAP)
 
