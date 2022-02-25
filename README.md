@@ -1533,6 +1533,7 @@ Enter url of library that you want to install
 - Charts - Make Beutiful Charts in your App
 - Quick/Nimble - Testing Library + Asynchronous tests purpose
 - Periphery - A tool to identify unused code in Swift Projects
+- ReactorKit - A framework for a reactive and unidirectional Swift application architecture
 - etc...
 
 <p align="right">
