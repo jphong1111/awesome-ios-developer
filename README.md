@@ -106,6 +106,7 @@ Feel free to fork this repository and pull requests!!
     - [Integration Testing](#Integration-Testing)
     - [Unit Testing](#Unit-Testing)
     - [UI Testing](#UI-Testing)
+        - [Robot Testing](#Robot-Testing)
     - [Snapshot Testing](#snapshot-testing)
     - [TestFlight](#testflight)
 - [CI/CD](#cicd)
@@ -1820,20 +1821,20 @@ Before start your Testing, add coverage will be a good option to show the result
 
 First, check code coverage
 
-<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/addCoverage1.png" />
+<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/addCoverage1.png"/>
 
 Then, go to **EDIT SHEME**, check like this
 
-<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/addCoverage2.png" />
+<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/addCoverage2.png"/>
 
-## Integration Testing
+# Integration Testing
 
 [Integration Testing Swift by Sundell](https://www.swiftbysundell.com/articles/integration-tests-in-swift/)
 
 
 
 
-## Unit Testing
+# Unit Testing
 
 [Unit Testing Swift by Sundell](https://www.swiftbysundell.com/basics/unit-testing/)
 
@@ -1844,12 +1845,31 @@ Then, go to **EDIT SHEME**, check like this
 | :----------- | :----------- |
 | iOS Unit Testing by Example | Jon Reid |
 
-## UI Testing
+# UI Testing
 
-[Your first UITest in Swift](https://uxdesign.cc/your-first-uitest-in-swift-847bc5595c26)
+UI Testing, also known as GUI Testing is basically a mechanism meant to test the aspects of any software that a user will come into contact with. This usually means testing the visual elements to verify that they are functioning according to requirements – in terms of functionality and performance. UI testing ensures that UI functions are bug-free.
 
+- [UI Testing: A Detailed Guide](https://www.browserstack.com/guide/ui-testing-guide)
+- [Your first UITest in Swift](https://uxdesign.cc/your-first-uitest-in-swift-847bc5595c26)
+
+
+## Robot Testing
+
+Robot testing is a test design pattern that makes you to create stable, readable, and maintainable tests.
+
+<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/robot_testing.png"/>
+
+- [Robot Pattern Testing for XCUITest](https://medium.com/capital-one-tech/robot-pattern-testing-for-xcuitest-4c2f0c40b4ad)
+- [Testing Robots- JAKE WHARTON](https://jakewharton.com/testing-robots/)
+- [Robot Testing Pattern - Overview](https://www.youtube.com/watch?v=ykM9AiYtCz4&ab_channel=HandstandTechnologies)
 
 ## Snapshot Testing
+
+
+
+
+
+
 
 
 
