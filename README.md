@@ -57,7 +57,6 @@ Feel free to fork this repository and pull requests!!
     - [Location Manager](#Location-Manager)
     - [Local Notification Manager](#local-notification-manager)
 - [API](#API)	
-    - [xAPI](#xapi) 
 - [JSON](#JSON)
     - [JSONDecoder](#JSONDecoder)
     - [JSONSerialization](#JSONSerialization)
@@ -850,11 +849,11 @@ Currently Working
 <a href="#-content">Back to Content</a>
 </p>
 
-## API
+# API
 
 API(Application Programming Interface) is an interface that defines interactions between multiple software applications or mixed hardware-software intermediaries. It defines the kinds of calls or requests that can be made, how to make them, the data formats that should be used, the conventions to follow, etc.
 
-### Various API Site
+## Various API Site
 - [rapidAPI](https://www.rapidapi.com)
 - [AnyAPI](https://any-api.com/)
 - [Programmableweb](https://www.programmableweb.com/)
@@ -862,22 +861,6 @@ API(Application Programming Interface) is an interface that defines interactions
 <p align="right">
 <a href="#-content">Back to Content</a>
 </p>
-
-## xAPI
-
-The Experience API (or xAPI) is a new specification for learning technology that makes it possible to collect data about the wide range of experiences a person has (online and offline). This API captures data in a consistent format about a person or group’s activities from many technologies. Very different systems are able to securely communicate by capturing and sharing this stream of activities using xAPI’s simple vocabulary.
-
- - [What is the Experience API?](https://xapi.com/overview/?utm_source=google&utm_medium=natural_search)
-
-
-
-
-
-
-
-
-
-
 
 
 ## JSON
@@ -1105,7 +1088,7 @@ let defaults = UserDefaults.standard
 <a href="#-content">Back to Content</a>
 </p>
 
-## Core Data
+# Core Data
 
 [Everything Core Data](https://metova.com/everything-core-data/)
 
@@ -1151,7 +1134,7 @@ Use Core Data to save your application’s permanent data for offline use, to ca
 
 
 
-### Set Up Core Data
+## Set Up Core Data
 
 Simply Click Core Data check box when you create a new project
 
@@ -1402,7 +1385,7 @@ context.delete(itemArray[0])
 <a href="#-content">Back to Content</a>
 </p>
 
-## Third Party Library
+# Third Party Library
 
 Third Party Library saves you time as you do not need to develop the functionality that the library provides. 
 [SHOULD DEVELOPERS USE THIRD-PARTY LIBRARIES?](https://www.scalablepath.com/blog/third-party-libraries/)
