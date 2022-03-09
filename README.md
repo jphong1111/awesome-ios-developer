@@ -1927,6 +1927,17 @@ Jira is project management software first and foremost, but it began its life in
 
 You can integrate Circle CI into Github repo, therefore we can use it in PR.
 
+## Danger
+
+[Danger](https://github.com/danger/danger)
+
+- Danger runs after your CI, automating your team's conventions surrounding code review.
+
+- This provides another logical step in your process, through this Danger can help lint your rote tasks in daily code review.
+
+- You can use Danger to codify your team's norms, leaving humans to think about harder problems.
+
+
 
 ## Codemagic 
 
