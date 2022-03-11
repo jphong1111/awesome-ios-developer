@@ -38,6 +38,7 @@ Feel free to fork this repository and pull requests!!
     - [MVVM](#MVVM)
     - [VIPER](#VIPER)
     - [Swift Composable Architecture(SCA)](#Swift-Composable-Architecture)
+    - [Repository Pattern](#Repository-Pattern)
 - [UIDesign](#UIDesign)
     - [HIG](#highuman-interface-guidelines)
     - [SwiftUI](#SwiftUI)
@@ -453,6 +454,7 @@ class SingletonPattern {
 | Book Name   | Authors Name |
 | :----------- | :----------- |
 | Advanced iOS App Architecture : Real-world app architecture in Swift | raywenderlich Tutorial Team |
+| Clean Architecture: A Craftsman's Guide to Software Structure and Design | Robert Martin |
 
 ## MVC
 
@@ -518,6 +520,21 @@ MVVM patterns stand for Model - View - ViewModel
 <a href="#-content">Back to Content</a>
 </p>
  
+## Repository Pattern
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 ## UIDesign
 
