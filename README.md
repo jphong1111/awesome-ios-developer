@@ -1577,7 +1577,7 @@ Create **Localizable.strings** file into your project
 
 In your .strings file, check localization button and choose language
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization5.png" width="70%" height ="70%" />
+<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization5.png" />
 
 And then add Key - Value pairs for tanslation
 
