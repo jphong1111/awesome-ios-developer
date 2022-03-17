@@ -1919,8 +1919,8 @@ CI and CD stand for continuous integration and continuous delivery/continuous de
 
 The easiest way to build and release mobile apps.
 
-[Fastlane](https://fastlane.tools/)
-[fastlane Tutorial: Getting Started](https://www.raywenderlich.com/233168-fastlane-tutorial-getting-started)
+- [Fastlane](https://fastlane.tools/)
+- [fastlane Tutorial: Getting Started](https://www.raywenderlich.com/233168-fastlane-tutorial-getting-started)
 
 <img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/fastlane.png" />
 
