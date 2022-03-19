@@ -4,9 +4,18 @@
 
 <!-- Need to be updated
 
+git useful
 https://www.gitkraken.com/ -> similar with git tower
 https://www.git-tower.com/mac -> observe filehistory
 https://kaleidoscope.app -> diff file manager
+
+
+reduce build time when TDD
+1819
+
+add more description
+
+
 -->
 
 </p>
@@ -110,6 +119,7 @@ Feel free to fork this repository and pull requests!!
     - [Five Factor Testing](#Five-Factor-Testing)
     - [Test Double](#Test-Double)
     - [TDD](#TDD)
+        - [Reduce Build Time](#Reduce-Build-Time)
     - [BDD](#BDD)
     - [Code Coverage](#Code-Coverage)
     - [Integration Testing](#Integration-Testing)
@@ -1797,7 +1807,7 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 
 
-## TDD
+# TDD
 
 **Test Driven Development**
 
@@ -1805,7 +1815,30 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 - [Why Test-Driven Development (TDD)](https://marsner.com/blog/why-test-driven-development-tdd/)
 
-## BDD
+## Reduce Build Time
+
+Normally in complicated Application, build time for testing is crazy therefore, TDD spent most of time in building the project.
+
+Here are useful ways that we can reduce build time when we are working with TDD style.
+
+1. tuist focus
+2. detach debug in scheme
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# BDD
 
 <img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/BDDvsTDD.png" width="70%" height="70%"/>
 
@@ -1817,7 +1850,7 @@ BDD improves communication between tech and non-tech teams and stakeholders. In 
  - Working in rapid, small iterations to increase feedback and the flow of value
  - Producing system documentation that is automatically checked against the system’s behaviour
  
- ### Three Steps(Iterative) in BDD 
+ ## Three Steps(Iterative) in BDD 
  
  First, take a small upcoming change to the system – a User Story – and talk about concrete examples of the new functionality to explore, discover and agree on the details of what’s expected to be done.
  
@@ -1829,7 +1862,7 @@ Finally, implement the behaviour described by each documented example, starting 
  - [What is BDD? An Introduction to Behavioral Driven Development](https://blog.testlodge.com/what-is-bdd/)
  - [The WHY Behind the Code: BDD vs. TDD](https://saucelabs.com/blog/a-two-minute-bdd-overview)
  
-## Code Coverage
+# Code Coverage
 
 Before start your Testing, add coverage will be a good option to show the result of test
 
