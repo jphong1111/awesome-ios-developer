@@ -2,7 +2,7 @@
 
 <p>
 
-<-- Need to be updated
+<!-- Need to be updated
 
 https://www.gitkraken.com/ -> similar with git tower
 https://www.git-tower.com/mac -> observe filehistory
