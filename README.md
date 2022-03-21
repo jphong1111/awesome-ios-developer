@@ -11,9 +11,12 @@ https://kaleidoscope.app -> diff file manager
 
 
 reduce build time when TDD
-1819
+line 1819
 
 add more description
+
+
+add more description about router service pattern
 
 
 -->
