@@ -483,6 +483,15 @@ class SingletonPattern {
 | Advanced iOS App Architecture : Real-world app architecture in Swift | raywenderlich Tutorial Team |
 | Clean Architecture: A Craftsman's Guide to Software Structure and Design | Robert Martin |
 
+## Clean Architecture
+
+
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/Clean_Architecture.png">
+
+
+[Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+
+
 ## MVC
 
 MVC pattern stands for Model - View - Controller
