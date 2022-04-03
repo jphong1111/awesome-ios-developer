@@ -32,7 +32,7 @@ add domain pattern
 add dependency inversion
 
 
-
+add service locator
 
 
 -->
