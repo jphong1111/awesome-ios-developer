@@ -1851,11 +1851,11 @@ Normally in complicated Application, build time for testing is crazy therefore, 
 
 Here are useful ways that we can reduce build time when we are working with TDD style.
 
-### tuist focus
+### 1. tuist focus
 
 
 
-### Detach debugger in **Edit Scheme**
+### 2. Detach debugger in **Edit Scheme**
 
 un-check Debugger option
 
