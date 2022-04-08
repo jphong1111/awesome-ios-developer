@@ -1852,9 +1852,11 @@ Normally in complicated Application, build time for testing is crazy therefore, 
 Here are useful ways that we can reduce build time when we are working with TDD style.
 
 1. tuist focus
-2. detach debug in scheme
+2. Detach debugger in **Edit Scheme**
 
+ [] un-check Debugger option
 
+<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/detach_debuger.png"/>
 
 
 
