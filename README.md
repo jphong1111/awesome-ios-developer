@@ -37,6 +37,9 @@ add service locator
 
 
 add description about coordinator pattern
+
+
+add UI design inpiration in chat
 -->
 
 </p>
