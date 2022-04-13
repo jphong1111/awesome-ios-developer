@@ -627,10 +627,10 @@ TBA
 - [Dribble](https://dribbble.com/)
 - [Pinterest](https://pinterest.com/)
 - [Behance](https://www.behance.net/)
-- [Pttrns](https://pttrns.com/)
+- [Pttrns](https://pttrns.com/)👍
 - [Awwwards](https://www.awwwards.com/)
 - [Flickr](http://www.flickr.com/)
-- [Mobbin](https://mobbin.design/)
+- [Mobbin](https://mobbin.design/dictionary)👍
 
 ## Vector Graphic Editors
 - [Figma](https://www.figma.com/)
