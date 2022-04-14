@@ -42,6 +42,9 @@ add UI design inpiration in chat(##DONE##)
 
 
 add modular architecture
+
+
+add description for tuist template
 -->
 
 </p>
