@@ -49,7 +49,10 @@ add description for tuist template
 
 add recommanded developer site(apple developer)
 
-add useful debugging in XCode
+
+add useful debugging in XCode(Youtube iOS)
+
+
 -->
 
 </p>
