@@ -1854,11 +1854,13 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 [Debugging in Xcode 13: Tips & Tricks (2022) – iOS](https://www.youtube.com/watch?v=ZAqnJQn7xp4&list=LL&index=5&ab_channel=iOSAcademy)
 
-1. Change expression in debugging stage
+## 1. Change expression in debugging stage
 
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/debugging_expression.png">
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/debugging_expression.png" width = "80%" height = "80%">
 
-2. Symbolic Breakpoint
+Use ```expression``` at the beginning and then add whatever what you want to change into. It will change in debugging stage 👍
+
+## 2. Symbolic Breakpoint
 
 If we want to know whenever hit certain function, use symbolic breakpoint
 
