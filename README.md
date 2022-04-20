@@ -154,6 +154,7 @@ Feel free to fork this repository and pull requests!!
 - [Testing](#Testing)
     - [Five Factor Testing](#Five-Factor-Testing)
     - [Test Double](#Test-Double)
+    - [Useful Debugging Technique]
     - [TDD](#TDD)
         - [Reduce Build Time](#Reduce-Build-Time)
     - [BDD](#BDD)
@@ -1789,14 +1790,14 @@ The work you want to perform, encapsulated in a way that lets you attach a compl
 </p>
 
 
-## Thread Sanitizer
+# Thread Sanitizer
 Thread Sanitizer is a tool to identifies the potential thread-related corruption issues. And it is a good way to find the [Readers and Writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) in your application.
 
 <p align="right">
 <a href="#-content">Back to Content</a>
 </p>
 
-### How to Use Thread Sanitizer
+## How to Use Thread Sanitizer
 
 Go to this Option and Click **EDIT SCHEME...** 👈
 
@@ -1814,7 +1815,7 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 
 
 
-## Test Double
+# Test Double
 
 **Test Double is a generic term for any case where you replace a production object for testing purposes.**
 
@@ -1848,6 +1849,41 @@ And then go to **RUN** and check **THREAD SANITIZER** 👈
 ```swift
 // exaple code will update
 ```
+
+# Useful Debugging Technique
+
+[Debugging in Xcode 13: Tips & Tricks (2022) – iOS](https://www.youtube.com/watch?v=ZAqnJQn7xp4&list=LL&index=5&ab_channel=iOSAcademy)
+
+1. Change expression in debugging stage
+
+<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/debugging_expression.png">
+
+2. Symbolic Breakpoint
+
+If we want to know whenever hit certain function, use symbolic breakpoint
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
