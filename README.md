@@ -1,7 +1,6 @@
 ## Awesome iOS Developer [![Join the chat at https://gitter.im/awesome-ios-developer/community](https://badges.gitter.im/awesome-ios-developer/community.svg)](https://gitter.im/awesome-ios-developer/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 <p>
-
 <!-- 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%UPDATE LIST%%%%%%
@@ -38,20 +37,14 @@ add service locator
 add description about coordinator pattern
 
 
-add UI design inpiration in chat(##DONE##)
-
-
 add modular architecture
 
 
 add description for tuist template
 
 
-add recommanded developer site(apple developer)
-
-
 add useful debugging in XCode(Youtube iOS)
-
++ need to add more with pic
 
 -->
 
@@ -196,6 +189,7 @@ Feel free to fork this repository and pull requests!!
     - [Bridging Header](#Bridging-Header)
 - [Error Search](#Error-Search)
 - [Useful Stuff](#Useful-Stuff)
+    - [Useful Blogs for iOS Developers](#Useful-Blogs-for-iOS-Developers)
     - [How to submit your app to the AppStore](#how-to-submit-your-app-to-the-appstore)
     - [iOS Version Adoption Tracker](#iOS-version-adoption-tracker)
     - [Online Swift Playground](#Online-Swift-Playground)
@@ -2471,19 +2465,57 @@ Bridging header means access classes and other declarations from your Objective-
 <a href="#-content">Back to Content</a>
 </p>
 
-## Error Search
+# Error Search
 
 Find your common error here
 
 [Error Search](https://github.com/jphong1111/Useful_Swift/blob/error-search/README.md)
 
-## Useful Stuff
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Useful Stuff
 
 I listed some of the useful & interesting stuff related with Swift
 
 <p align="right">
 <a href="#-content">Back to Content</a>
 </p>
+
+## Useful Blogs for iOS Developers
+
+Here are the useful blog list which you can get references & knowledges about iOS development
+
+- [SwiftLee](https://www.avanderlee.com/) 👍
+- [Apple Developer](https://developer.apple.com/videos/) Find recent technique with videos and example codes!!
+- Continue adding lists...
+
 
 ## How to submit your app to the AppStore
     
@@ -2630,19 +2662,19 @@ Also you can edit Readme.md file with VSCode Extension! Check out in VSCode!
 <a href="#-content">Back to Content</a>
 </p>
 
-## ❤ Supporters
+# ❤ Supporters
 
-### ⭐ Stargazers
+## ⭐ Stargazers
 
 <a href="https://github.com/jphong1111/awesome-ios-developer/stargazers">
 <img src="https://reporoster.com/stars/jphong1111/awesome-ios-developer"></a>
 
-### 🍴 Forks
+## 🍴 Forks
 
 <a href="https://github.com/jphong1111/awesome-ios-developer/fork">
 <img src="https://reporoster.com/forks/jphong1111/awesome-ios-developer"></a>
 
-### 🌟 GitHub Stargazers
+## 🌟 GitHub Stargazers
 
 [![Stargazers over time](https://starchart.cc/jphong1111/useful_swift.svg)](https://starchart.cc/jphong1111/awesome-ios-developer) 
 
