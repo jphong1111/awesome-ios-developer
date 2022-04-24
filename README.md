@@ -153,6 +153,7 @@ Feel free to fork this repository and pull requests!!
     - [Useful Debugging Technique](#Useful-Debugging-Technique)
     - [TDD](#TDD)
         - [Reduce Build Time](#Reduce-Build-Time)
+            - [Check build time in Xcode](#Check-build-time-in-Xcode)
     - [BDD](#BDD)
     - [Code Coverage](#Code-Coverage)
     - [Integration Testing](#Integration-Testing)
@@ -1901,6 +1902,7 @@ Normally in complicated Application, build time for testing is crazy therefore, 
 
 Here are useful ways that we can reduce build time when we are working with TDD style.
 
+
 ### 1. tuist focus
 
 
@@ -1913,6 +1915,15 @@ un-check Debugger option
 
 
 
+## Check build time in Xcode
+
+Enter below code in your ternimal, be sure to **restart Xcode** after enter this code and **Command + B**
+
+```bash
+defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
+```
+
+<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/show_build_time.png"/>
 
 
 
