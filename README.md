@@ -1917,9 +1917,9 @@ un-check Debugger option
 
 ## Check build time in Xcode
 
-Enter below code in your ternimal, be sure to **restart Xcode** after enter this code and **Command + B**
+Enter below code in your terminal, be sure to **restart Xcode** after enter this code and **Command + B**
 
-```bash
+```shell
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
 ```
 
