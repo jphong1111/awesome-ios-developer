@@ -46,8 +46,6 @@ add description for tuist template
 
 add useful debugging in XCode(Youtube iOS)
 + need to add more with pic
-
-
 -->
 
 </p>
