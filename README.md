@@ -33,7 +33,7 @@ add dependency inversion
 
 + 
 
-add service locator
+add service locator + dependency container
 
 
 add description about coordinator pattern
