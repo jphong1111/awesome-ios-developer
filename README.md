@@ -49,6 +49,8 @@ add useful debugging in XCode(Youtube iOS)
 + need to add more with pic
 
 
+using fastlane + periphery
+
 -->
 
 <p align="center">
