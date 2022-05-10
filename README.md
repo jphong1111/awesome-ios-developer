@@ -1996,7 +1996,7 @@ Robot testing is a test design pattern that makes you to create stable, readable
 
 <img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/robot_testing.png"/>
 
-- [Robot Pattern Testing for XCUITest](https://medium.com/capital-one-tech/robot-pattern-testing-for-xcuitest-4c2f0c40b4ad)
+- [Robot Pattern Testing for XCUITest](https://medium.com/capital-one-tech/robot-pattern-testing-for-xcuitest-4c2f0c40b4ad)👍
 - [Testing Robots- JAKE WHARTON](https://jakewharton.com/testing-robots/)
 - [Robot Testing Pattern - Overview](https://www.youtube.com/watch?v=ykM9AiYtCz4&ab_channel=HandstandTechnologies)
 
