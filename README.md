@@ -26,7 +26,7 @@ add more description about router service pattern
 add TCA description
 
 
-add domain pattern
+add domain pattern(layer)
 
 
 add dependency inversion
