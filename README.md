@@ -5,7 +5,6 @@
    
    
    
-   
 <!-- 
 
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -30,7 +29,7 @@ add more description about router service pattern
 add TCA description
 
 
-add domain pattern(layer)
+add domain pattern(layer) + robot testing in ios
 
 
 add dependency inversion
