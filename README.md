@@ -64,8 +64,8 @@ AR Kit add
 add book for debugging( ray wenderlich)
 
 
-
 add reducer
+
 
 add service locator pattern
 
