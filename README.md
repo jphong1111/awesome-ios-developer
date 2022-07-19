@@ -70,6 +70,9 @@ add reducer
 
 add service locator pattern
 
+composition layer
+
+-sil option for optimization build for swift compile
 
 -->
 
