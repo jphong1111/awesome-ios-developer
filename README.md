@@ -75,6 +75,8 @@ composition layer
 
 -sil option for optimization build for swift compile
 
+SwiftGen - auto generate string & asset enum opensource
+
 -->
 
 <p align="center">
