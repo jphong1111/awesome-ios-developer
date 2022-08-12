@@ -77,6 +77,7 @@ composition layer
 
 SwiftGen - auto generate string & asset enum opensource
 
+apple developer tutorial video link update
 -->
 
 <p align="center">
