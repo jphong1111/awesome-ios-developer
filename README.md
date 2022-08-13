@@ -1619,6 +1619,7 @@ Enter url of library that you want to install
 - Quick/Nimble - Testing Library + Asynchronous tests purpose
 - Periphery - A tool to identify unused code in Swift Projects
 - ReactorKit - A framework for a reactive and unidirectional Swift application architecture
+- SwiftGen - SwiftGen is a tool to automatically generate Swift code for resources of your projects (like images etc), to make them type-safe to use. 
 - etc...
 
 <p align="right">
