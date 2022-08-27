@@ -3,10 +3,6 @@
 <p>
 
    
-   
-   
-   
-   
 <!-- 
 
 
@@ -65,10 +61,6 @@ AR Kit add
 
 add book for debugging( ray wenderlich)
 
-
-add reducer
-
-
 add service locator pattern
 
 composition layer
@@ -113,7 +105,8 @@ apple developer tutorial video link update
     - [MVP](#MVP)
     - [MVVM](#MVVM)
     - [VIPER](#VIPER)
-    - [Swift Composable Architecture(SCA)](#Swift-Composable-Architecture)
+    - [The Composable Architecture(TCA)](#The-Composable-Architecture)
+       - [Reducer](#Reducer)
     - [Repository Pattern](#Repository-Pattern)
 - [UIDesign](#UIDesign)
     - [HIG](#highuman-interface-guidelines)
@@ -583,20 +576,26 @@ MVVM patterns stand for Model - View - ViewModel
  
 [Getting Started with the VIPER Architecture Pattern](https://www.raywenderlich.com/8440907-getting-started-with-the-viper-architecture-pattern)
  
- ## Swift Composable Architecture
+ # The Composable Architecture
  
- The Composable Architecture. The Composable Architecture is a library for building applications in a consistent and understandable way, with composition, testing, and ergonomics in mind
+The Composable Architecture is a library for building applications in a consistent and understandable way, with composition, testing, and ergonomics in mind
  
  <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/SCA.png">
  
   - [Composable Architecture @ Point Free](https://www.pointfree.co/collections/composable-architecture)
   - [The Composable Architecture GitHub](https://github.com/pointfreeco/swift-composable-architecture)
   - [The Composable Architecture — One of the Best-Suited Architectures for SwiftUI](https://medium.com/swlh/the-composable-architecture-one-of-the-best-suited-architectures-for-swiftui-35bfc5102b83)
- 
- 
+  
  ```swift
  // example will update here
  ```
+ 
+ ## Reducer
+ 
+ A reducer describes how to evolve the current state of an application to the next state, given an action, and describes what Effects should be executed later by the store, if any.
+ 
+ - [Reducer in TCA](https://pointfreeco.github.io/swift-composable-architecture/Reducer/)
+
  
  
 <p align="right">
