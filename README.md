@@ -1493,6 +1493,8 @@ Third Party Library saves you time as you do not need to develop the functionali
 
  - [awesome ios github](https://github.com/vsouza/awesome-ios) Contains all the popular libraries in Swift:+1:
  - [awesome swift site](https://swift.libhunt.com/) You can broswe popular libraries related to iOS
+ - [Explore Swift](https://kandi.openweaver.com/explore/swift) Discover & find a curated list of popular & new libraries, top authors and trending discussions on kandi.
+
 
 ## Dependency/Package Manager
 
