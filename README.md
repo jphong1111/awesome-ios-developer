@@ -2031,8 +2031,18 @@ Robot testing is a test design pattern that makes you to create stable, readable
 
 ## Snapshot Testing
 
+Snapshot Testing is a testing technique that can be used in Swift (and other programming languages) to test the user interface (UI) of an application.
+
+In Snapshot Testing, a snapshot of the UI is taken and compared to a previously saved snapshot to check if any changes have been made. This technique can be used to ensure that changes to the UI do not break the existing functionality of the application.
+
+### Environment Variable
+
+With using Environment Variable in Xcode, we can directly re-capture failing snapshot test cases
 
 
+<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/env_variable.png"/>
+
+SNAPSHOT_TESTING = YES
 
 
 
