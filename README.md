@@ -2575,10 +2575,10 @@ Here are the useful blog list which you can get references & knowledges about iO
 
 You can check the iOS Version adoption in this site
 
-[iOS Version Adoption Tracker](https://mixpanel.com/trends/#report/ios_15)
+[iOS Version Adoption Tracker](https://mixpanel.com/trends/#report/ios_16)
 
 
-<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/iosVersionAdoption.png" />
+<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/iOS16_adoption.png" />
 
 <p align="right">
 <a href="#-content">Back to Content</a>
