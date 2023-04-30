@@ -120,7 +120,7 @@ apple developer tutorial video link update
 - [Bundle](#Bundle)
     - [Static Library](#static-library)
     - [Dynamic Library](#dynamic-library)
-    - [.xcframework](#.xcframework)
+    - [xcframework](#xcframework)
 - [Screen Layout Programmatically](#screen-layout-programmatically)
 - [Helper](#Helper)
     - [Email, Message, Call](#email-message-call)
@@ -744,7 +744,7 @@ TBA
 <a href="#-content">Back to Content</a>
 </p>
 
-## Bundle
+# Bundle
 
 [Bundles and Packages](https://nshipster.com/bundles-and-packages/)
 
@@ -752,7 +752,7 @@ TBA
 
 ## Dynamic Library
 
-## .xcframework
+## xcframework
 
 XCFrameworks is a distributable binary package created by Xcode that contains variants of a framework or library so that it can be used on multiple platforms (iOS, macOS, tvOS, and watchOS), including Simulator builds
 
