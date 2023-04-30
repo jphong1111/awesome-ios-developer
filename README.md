@@ -117,6 +117,10 @@ apple developer tutorial video link update
     - [Design Collaboration](#Design-Collaboration)
     - [Design Tools](#Design-Tools)
     - [Useful Sites](#useful-sites)
+- [Bundle](#Bundle)
+    - [Static Library](#static-library)
+    - [Dynamic Library](#dynamic-library)
+    - [.xcframework](#.xcframework)
 - [Screen Layout Programmatically](#screen-layout-programmatically)
 - [Helper](#Helper)
     - [Email, Message, Call](#email-message-call)
@@ -739,6 +743,30 @@ TBA
 <p align="right">
 <a href="#-content">Back to Content</a>
 </p>
+
+## Bundle
+
+[Bundles and Packages](https://nshipster.com/bundles-and-packages/)
+
+## Static Library
+
+## Dynamic Library
+
+## .xcframework
+
+XCFrameworks is a distributable binary package created by Xcode that contains variants of a framework or library so that it can be used on multiple platforms (iOS, macOS, tvOS, and watchOS), including Simulator builds
+
+[Creating a multiplatform binary framework bundle](https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle)
+
+
+
+
+
+
+<p align="right">
+<a href="#-content">Back to Content</a>
+</p>
+
 
 
 ## Helper
