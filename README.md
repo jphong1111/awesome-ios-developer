@@ -746,6 +746,8 @@ TBA
 
 # Bundle
 
+You can use [Bundle+Extension.swift]() file to configure your bundle to your project.
+
 [Bundles and Packages](https://nshipster.com/bundles-and-packages/)
 
 ## Static Library
