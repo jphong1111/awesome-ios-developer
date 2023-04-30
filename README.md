@@ -746,9 +746,10 @@ TBA
 
 # Bundle
 
-You can use [Bundle+Extension.swift]() file to configure your bundle to your project.
+You can use [Bundle+Extension.swift](https://github.com/jphong1111/awesome-ios-developer/blob/main/Bundle%2BExtension.swift) file to configure your bundle to your application. 
+> Source code from : [PhoneNumberKit](https://github.com/marmelroy/PhoneNumberKit)
 
-[Bundles and Packages](https://nshipster.com/bundles-and-packages/)
+- [Bundles and Packages](https://nshipster.com/bundles-and-packages/)
 
 ## Static Library
 
@@ -757,6 +758,7 @@ You can use [Bundle+Extension.swift]() file to configure your bundle to your pro
 ## xcframework
 
 XCFrameworks is a distributable binary package created by Xcode that contains variants of a framework or library so that it can be used on multiple platforms (iOS, macOS, tvOS, and watchOS), including Simulator builds
+
 
 [Creating a multiplatform binary framework bundle](https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle)
 
