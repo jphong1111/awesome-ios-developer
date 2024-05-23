@@ -89,7 +89,7 @@ apple developer tutorial video link update
 - [Coding Convention](#Coding-convention)
     - [Swift Lint](#Swift-lint)
 - [App Life Cycle](#app-life-cycle)
-- [ViewContoller Life Cycle](#viewcontoller-life-cycle)
+- [ViewController Life Cycle](#viewcontroller-life-cycle)
 - [Design Pattern](#Design-Pattern)
     - [Adaptor](#Adaptor)
     - [Coordinator](#Coordinator)
