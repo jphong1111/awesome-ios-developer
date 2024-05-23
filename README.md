@@ -89,7 +89,7 @@ apple developer tutorial video link update
 - [Coding Convention](#Coding-convention)
     - [Swift Lint](#Swift-lint)
 - [App Life Cycle](#app-life-cycle)
-- [View Life Cycle](#view-life-cycle)
+- [ViewContoller Life Cycle](#viewContoller-life-cycle)
 - [Design Pattern](#Design-Pattern)
     - [Adaptor](#Adaptor)
     - [Coordinator](#Coordinator)
@@ -288,7 +288,7 @@ put .yml file into root folder and apply following code in Build Phases
 
 
 
-## View Life Cycle
+## ViewController Life Cycle
 
 <img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/iOSViewLifeCycle.png" width="70%" height="70%"/>
 
