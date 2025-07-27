@@ -2630,6 +2630,8 @@ You can check the iOS Version adoption in this site
 [SwiftPlayground](http://online.swiftplayground.run/) -  Online Swift Playground
 
 ## Show Preview in UIKit(Build UI with Code Base) 👍 👍 👍 👍 👍
+> Now Apple officially support Preview  
+> [previews-in-xcode](https://developer.apple.com/documentation/swiftui/previews-in-xcode)
 
 [Inject (3rd Party Library)](https://github.com/krzysztofzablocki/Inject)
 
