@@ -4,7 +4,8 @@
 
    
 <!-- 
-
+Appsize reduction field
+-> final, lazy var to let, periphery plugin usage
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%UPDATE LIST%%%%%%
