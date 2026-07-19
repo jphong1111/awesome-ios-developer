@@ -1,2784 +1,893 @@
-# Awesome iOS Developer [![Join the chat at https://gitter.im/awesome-ios-developer/community](https://badges.gitter.im/awesome-ios-developer/community.svg)](https://gitter.im/awesome-ios-developer/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)    
-
-<p>
-
-   
-<!-- 
-Appsize reduction field
--> final, lazy var to let, periphery plugin usage
-
-%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%UPDATE LIST%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%
-
-git useful
-https://www.gitkraken.com/ -> similar with git tower
-https://www.git-tower.com/mac -> observe filehistory
-https://kaleidoscope.app -> diff file manager
-
-
-reduce build time when TDD
-line 1819
-
-add more description
-
-
-add more description about router service pattern
-
-
-add TCA description
-
-
-add domain pattern(layer) + robot testing in ios
-
-
-add dependency inversion
-
-+ 
-
-add service locator + dependency container
-
-
-add description about coordinator pattern
-
-
-add modular architecture
-
-
-add description for tuist template
-
-
-add useful debugging in XCode(Youtube iOS)
-+ need to add more with pic
-
-
-using fastlane + periphery
-
-
-dependency container
-
-
-AR Kit add
-
-add book for debugging( ray wenderlich)
-
-add service locator pattern
-
-composition layer
-
--sil option for optimization build for swift compile
-
-SwiftGen - auto generate string & asset enum opensource
-
-apple developer tutorial video link update
--->
+# Awesome iOS Developer
 
 <p align="center">
-<img alt="awesome" src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" />
-<a href="https://hits.seeyoufarm.com">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fjphong1111%2FUseful_Swift&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true"/>
-</a>
-
+  <a href="https://awesome.re">
+    <img alt="Awesome" src="https://awesome.re/badge.svg">
+  </a>
 </p>
-
 
 <p align="center">
-🌟Feel free to contribute this Repository!!🌟
+  A practical, opinionated field guide for building high-quality iOS apps with Swift.
 </p>
 
-## 🔎 Content
-- [Coding Convention](#Coding-convention)
-    - [Swift Lint](#Swift-lint)
-- [App Life Cycle](#app-life-cycle)
-- [ViewController Life Cycle](#viewcontroller-life-cycle)
-- [Design Pattern](#Design-Pattern)
-    - [Adaptor](#Adaptor)
-    - [Coordinator](#Coordinator)
-    - [Delegation](#Delegation)
-    - [Dependency Injection](#Dependency-Injection)
-    - [Factory](#Factory)
-    - [Observer](#Observer)
-       - [KVO](#KVO)
-       - [KVC](#KVC)
-    - [Singleton](#Singleton)
-- [Code Structuring](#code-structuringarchitecture)
-    - [MVC](#MVC)
-    - [MVP](#MVP)
-    - [MVVM](#MVVM)
-    - [VIPER](#VIPER)
-    - [The Composable Architecture(TCA)](#The-Composable-Architecture)
-       - [Reducer](#Reducer)
-    - [Repository Pattern](#Repository-Pattern)
-- [UIDesign](#UIDesign)
-    - [HIG](#highuman-interface-guidelines)
-    - [SwiftUI](#SwiftUI)
-        - [Useful Cheat Sheet for SwiftUI](#Useful-Cheat-Sheet-for-SwiftUI)
-    - [UIdesign Inspiration](#UIdesign-Inspiration)
-    - [Vector Graphic Editors](#Vector-Graphic-Editors)
-    - [Design Collaboration](#Design-Collaboration)
-    - [Design Tools](#Design-Tools)
-    - [Useful Sites](#useful-sites)
-- [Bundle](#Bundle)
-    - [Static Library](#static-library)
-    - [Dynamic Library](#dynamic-library)
-    - [xcframework](#xcframework)
-- [Screen Layout Programmatically](#screen-layout-programmatically)
-- [Helper](#Helper)
-    - [Email, Message, Call](#email-message-call)
-    - [Network Layer](#Network-Layer)
-    - [Image Picker](#Image-Picker)
-    - [File Manager](#File-Manager)
-    - [Video Downloader](#Video-Downloader)
-    - [Image Downloader](#Image-Downloader)
-    - [Location Manager](#Location-Manager)
-    - [Local Notification Manager](#local-notification-manager)
-- [API](#API)	
-- [JSON](#JSON)
-    - [JSONDecoder](#JSONDecoder)
-    - [JSONSerialization](#JSONSerialization)
-- [NotificationCenter](#NotificationCenter)
-- [UserDefaults](#UserDefaults)
-    - [How to find documentDirectory](#How-to-find-documentDirectory)
-    - [Store Object](#Store-Object)
-- [Core Data](#Core-Data)
-    - [Core Data Stack](#Core-Data-Stack)
-    - [Set Up Core Data](#Set-Up-Core-Data)
-    - [Core Data Usage](#Core-Data-Usage)
-        - [Codegen](#codegen)
-        - [Entities](#Entities)
-        - [Attributes](#Attributes)
-        - [Relationships](#Relationships)
-        - [Delete Rules](#Delete-Rules)
-    - [Store Data](#Store-Data)
-    - [Load Data](#Load-Data)
-    - [Update Data](#Update-Data)
-    - [Delete Data](#Delete-Data)
-- [Core Bluetooth](#Core-Bluetooth)
-- [Third Party Library](#Third-Party-Library)
-    - [Dependency/Package Manager](#Dependency/Package-Manager)
-        - [CocoaPods](#CocoaPods)
-        - [Carthage](#Carthage)
-        - [Swift Package Manager](#Swift-Package-Manager)
-    - [Recommend Library](#Recommend-Library)
-- [Localization](#Localization)
-    - [Usage](#Localization-Usage)
-    - [Useful for Localization](#Useful-for-Localization)
-- [Accessibility](#Accessibility)
-    - [USage](#Accessibility-Usage)
-- [GCD](#GCD)
-    - [DispatchQueue](#DispatchQueue)
-        - [Thread Safety](#thread-safety)
-    - [DispatchGroup](#DispatchGroup)
-    - [DispatchWorkItem](#DispatchWorkItem)
-- [Operation](#operation)
-    - [OperationQueue](#operationQueue)
-- [Thread Sanitizer](#Thread-Sanitizer)
-- [Testing](#Testing)
-    - [Five Factor Testing](#Five-Factor-Testing)
-    - [Test Double](#Test-Double)
-    - [Useful Debugging Technique](#Useful-Debugging-Technique)
-    - [TDD](#TDD)
-        - [Reduce Build Time](#Reduce-Build-Time)
-            - [Check build time in Xcode](#Check-build-time-in-Xcode)
-    - [BDD](#BDD)
-    - [Code Coverage](#Code-Coverage)
-    - [Integration Testing](#Integration-Testing)
-    - [Unit Testing](#Unit-Testing)
-    - [UI Testing](#UI-Testing)
-        - [Robot Testing](#Robot-Testing)
-    - [Snapshot Testing](#snapshot-testing)
-    - [TestFlight](#testflight)
-- [CI/CD](#cicd)
-    - [Fastlane](#Fastlane)
-    - [Jenkins](#Jenkins)
-    - [Jira](#Jira)
-    - [CircleCI](#CircleCI)
-    - [Codemagic](#Codemagic)
-    - [Xcode Cloud](#xcode-cloud)
-- [Swift DocC](#swift-DocC)
-- [Tuist](#Tuist)
-- [In App Purchase(IAP)](#In-App-PurchaseIAP)
-- [Notification](#Notification)
-    - [Local Notification](#Local-Notification)
-    - [Remote Notification](#Remote-Notification)
-        - [APNs](#APNS)
-            - [Set Up APNs](#Set-Up-APNs)
-            - [APNs Usage](#APNs-Usage)
-- [FRP](#FRP)
-    - [Rxswift](#Rxswift)
-    - [Combine](#Combine)
-    - [RxCombine](#Rxcombine)
-- [Security](#Security)
-    - [Checklist For App Security](#Checklist-For-App-Security)
-    - [Keychain](#Keychain)
-    - [SSL Pinning](#SSL-Pinning)
-    - [Code Obfuscation](#Code-Obfuscation)
-    - [Cryptography](#Cryptography)
-    - [Biometric Access](#Biometric-Access)
-        - [Face ID & Touch ID](#face-id--touch-id)
-- [Objective-C](#Objective-C)
-    - [Bridging Header](#Bridging-Header)
-- [Error Search](#Error-Search)
-- [Useful Stuff](#Useful-Stuff)
-    - [Useful Blogs for iOS Developers](#Useful-Blogs-for-iOS-Developers)
-    - [How to submit your app to the AppStore](#how-to-submit-your-app-to-the-appstore)
-    - [iOS Version Adoption Tracker](#iOS-version-adoption-tracker)
-    - [Online Swift Playground](#Online-Swift-Playground)
-    - [Show Preview in UIKit(Build UI with Code Base)](#show-preview-in-uikitbuild-ui-with-code-base-----)
-    - [Compare Changes in Swift Version](#Compare-Changes-in-Swift-Version)
-    - [Managing Xcode Space](#Managing-Xcode-Space)
-    - [Roadmap for iOS Developer](#Roadmap-for-iOS-Developer)
-    - [Vim in Xcode](#use-vim-in-xcode)
-    - [Write README.md](#write-readmemd)
+This repository is a map, not a checklist.
+Start with the fundamentals, build a small app end to end, and return to the deeper topics when a real problem gives them context.
+
+The guide favors first-party frameworks, official documentation, measurable engineering practices, and dependencies that solve a demonstrated need.
+It also keeps UIKit, Objective-C interoperability, Core Data, Combine, and older package managers visible because production iOS work often includes mature codebases.
+
+## 🔎 Contents
+
+- [Start Here](#-start-here)
+- [Swift and Xcode](#-swift-and-xcode)
+- [Application and UI Fundamentals](#-application-and-ui-fundamentals)
+- [State, Architecture, and Navigation](#-state-architecture-and-navigation)
+- [Concurrency](#-concurrency)
+- [Networking](#-networking)
+- [Persistence](#-persistence)
+- [System Capabilities](#-system-capabilities)
+- [Dependencies and Modularization](#-dependencies-and-modularization)
+- [Testing](#-testing)
+- [Debugging, Performance, and Observability](#-debugging-performance-and-observability)
+- [Accessibility and Localization](#-accessibility-and-localization)
+- [Security and Privacy](#-security-and-privacy)
+- [CI/CD and Team Workflow](#-cicd-and-team-workflow)
+- [Distribution and Monetization](#-distribution-and-monetization)
+- [Legacy Code and Interoperability](#-legacy-code-and-interoperability)
+- [Learning Resources](#-learning-resources)
+- [Contributing](#-contributing)
+- [Author](#author)
+
+## 🚀 Start Here
+
+### A sensible learning order
+
+| Stage | Learn | Build |
+| --- | --- | --- |
+| 1. Language | Swift syntax, value and reference semantics, protocols, generics, optionals, errors, and collections | A command-line or playground model |
+| 2. Tools | Xcode, Simulator, Git, breakpoints, schemes, build settings, and Swift Package Manager | A small app that builds from a clean checkout |
+| 3. Interface | SwiftUI, UIKit basics, layout, navigation, state, and the Human Interface Guidelines | A multi-screen app with loading, empty, error, and content states |
+| 4. Data | `Codable`, `URLSession`, persistence, caching, and dependency injection | An app that works with both remote and local data |
+| 5. Reliability | Swift concurrency, unit tests, UI tests, accessibility, localization, and observability | A tested feature that handles cancellation and failure |
+| 6. Delivery | Code signing, CI, TestFlight, privacy declarations, and App Store review | A beta build delivered to testers |
+
+### The default stack
+
+Use this as a starting point, not as a rule that every app must follow.
+
+| Need | Start with | Reach for something else when |
+| --- | --- | --- |
+| UI | [SwiftUI](https://developer.apple.com/documentation/swiftui) | UIKit offers required control, platform coverage, or integration |
+| Imperative UI and mature apps | [UIKit](https://developer.apple.com/documentation/uikit) | SwiftUI clearly reduces complexity for the feature |
+| Concurrency | Swift `async`/`await`, tasks, actors, and `Sendable` | A lower-level primitive is justified by measurement or interoperability |
+| Networking | `URLSession`, `Codable`, and HTTP caching | The app has a proven need for a networking abstraction |
+| Preferences | `UserDefaults` or SwiftUI app storage | The data is sensitive, relational, large, or user-created |
+| Secrets | [Keychain Services](https://developer.apple.com/documentation/security/keychain_services) | A server should own the secret instead of the app |
+| Structured persistence | [SwiftData](https://developer.apple.com/documentation/swiftdata) | Core Data better fits deployment targets, migrations, or an existing store |
+| Unit tests | [Swift Testing](https://developer.apple.com/documentation/testing) | Existing XCTest coverage or an XCTest-only capability makes migration unnecessary |
+| UI and performance tests | [XCTest and XCUITest](https://developer.apple.com/documentation/xctest) | A focused third-party tool provides measurable value |
+| Dependencies | [Swift Package Manager](https://docs.swift.org/swiftpm/documentation/packagemanagerdocs/) | A legacy dependency is only distributed another way |
+| Logging | [`Logger`](https://developer.apple.com/documentation/os/logging) and unified logging | A backend observability product is required |
+
+### What “production ready” means
+
+- The app handles loading, empty, offline, error, cancellation, and retry states deliberately.
+- The main thread stays responsive and shared mutable state has an explicit isolation strategy.
+- Tests protect important behavior, while analytics, logs, and crash reports make failures diagnosable.
+- Accessibility, localization, privacy, and security are part of feature design rather than release-week cleanup.
+- CI can reproduce the build from a clean checkout.
+- A human can explain every dependency, permission, entitlement, and piece of collected data.
+
+## 🧑‍💻 Swift and Xcode
+
+### Swift
+
+- [The Swift Programming Language](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/) is the canonical language guide.
+- [Swift API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/) explains how Swift APIs should read at the call site.
+- [Swift Evolution](https://www.swift.org/swift-evolution/) records accepted and proposed language changes.
+- [Swift Forums](https://forums.swift.org/) is the best place to understand language design and implementation discussions.
+
+Focus on these concepts before collecting framework recipes:
+
+- Value semantics, copy-on-write behavior, identity, and ownership.
+- Optionals and error propagation without force-unwrapping normal failure states.
+- Protocols and generics for real substitution, not abstraction for its own sake.
+- Access control and module boundaries.
+- Closures, capture semantics, and avoiding accidental retain cycles.
+- `async`/`await`, actor isolation, `Sendable`, cancellation, and task lifetime.
+- Memory ownership with strong, weak, and unowned references.
 
+### Style and static analysis
 
-## Coding convention
-set of guidelines for a specific programming language that recommend programming style
+Consistency matters more than allegiance to one style guide.
+Automate rules that are objective and leave design judgment to review.
 
-### Swift Style Guide
+- [Swift.org API Design Guidelines](https://www.swift.org/documentation/api-design-guidelines/)
+- [Google Swift Style Guide](https://google.github.io/swift/)
+- [SwiftLint](https://github.com/realm/SwiftLint)
+- [swift-format](https://github.com/swiftlang/swift-format)
 
-- [Swift Style Guide](https://github.com/linkedin/swift-style-guide)
+Do not make a build depend on a developer’s globally installed formatter or linter without documenting and pinning the expected version.
+Swift Package plugins, a repository tool installer, or CI-managed tooling make clean checkouts more reproducible.
 
-### Swift Lint
-The way of force you to adapt coding convention 
->otherwise project build will **FAILED**
-- [Swift Lint](https://github.com/realm/SwiftLint) apply for all project:+1:
-```swift
-if which swiftlint >/dev/null; then
-  swiftlint
-else
-  echo "error: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
-  exit 1
-  fi
-```
-put .yml file into root folder and apply following code in Build Phases
+### Xcode
 
-**You can modify(delete) SwiftLint Option with opening .yml file**
+Learn the tool instead of treating it as a Run button.
 
-> Shift + Command + . will show the hidden file
+- Targets describe products that Xcode builds.
+- Schemes describe actions such as Run, Test, Profile, Analyze, and Archive.
+- Build configurations describe groups of settings such as Debug and Release.
+- `.xcconfig` files keep build settings reviewable and reduce configuration drift.
+- Test plans organize test configurations, languages, locales, sanitizers, and execution policies.
+- The Organizer surfaces archives, crashes, hangs, energy use, and distributed performance data.
 
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/swiftLintChange.png">
+Useful official references:
 
+- [Xcode documentation](https://developer.apple.com/documentation/xcode)
+- [Xcode release notes](https://developer.apple.com/documentation/xcode-release-notes)
+- [Sample code](https://developer.apple.com/documentation/samplecode)
+- [WWDC videos](https://developer.apple.com/videos/)
 
-📚📚 Recommend Book 📚📚 
+### Git and repository hygiene
 
-| Book Name   | Authors Name |
-| :----------- | :----------- |
-| Clean Code: A Handbook of Agile Software Craftsmanship | Robert C. Martin |
-| The Pragmatic Programmer Your Journey to Mastery, 20th Anniversary Edition| Andrew Hunt David Hurst Thomas |
+- Commit one coherent change at a time.
+- Keep generated files, local user data, build products, and credentials out of source control.
+- Review `Package.resolved` changes as dependency changes, not noise.
+- Prefer small pull requests with a clear purpose, validation evidence, and rollback path.
+- Protect the default branch with required reviews and required CI checks.
 
+## 📱 Application and UI Fundamentals
 
-## App Life Cycle
+### Application lifecycle
 
+A modern app may use SwiftUI lifecycle APIs, UIKit lifecycle APIs, or both.
 
-[iOS App Life Cycle](https://medium.com/@neroxiao/ios-app-life-cycle-ec1b31cee9dc)
+- SwiftUI apps define an entry point with the [`App`](https://developer.apple.com/documentation/swiftui/app) protocol and organize UI through scenes.
+- UIKit apps use `UIApplicationDelegate`, `UISceneDelegate`, windows, and view controllers.
+- Background execution is constrained by the system, so save durable state when it changes instead of relying on termination callbacks.
+- Scene phase changes are signals to pause, resume, refresh, or persist work, not guarantees about future lifecycle events.
 
+### SwiftUI
 
+SwiftUI is Apple’s declarative UI framework across Apple platforms.
+Its core skill is not memorizing modifiers; it is understanding identity, data flow, layout proposals, navigation state, and update behavior.
 
+Learn:
 
+- View identity and the difference between view values and stored model state.
+- `@State`, bindings, environment values, and the Observation framework.
+- `NavigationStack`, sheets, popovers, alerts, and state-driven presentation.
+- Lists, grids, custom layouts, animation, gestures, focus, and keyboard behavior.
+- Previews as a fast feedback tool rather than a substitute for tests.
+- UIKit interoperability through representable types and hosting controllers.
 
+Recommended references:
 
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
+- [SwiftUI documentation](https://developer.apple.com/documentation/swiftui)
+- [SwiftUI tutorials](https://developer.apple.com/tutorials/swiftui)
+- [Managing model data in your app](https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app)
+- [SwiftUI performance](https://developer.apple.com/documentation/xcode/understanding-and-improving-swiftui-performance)
 
+### UIKit
 
+UIKit remains important for mature applications, specialized controls, established navigation stacks, and APIs that expose UIKit-first integration points.
 
+Learn:
 
+- View-controller containment and presentation.
+- Auto Layout, intrinsic content size, content hugging, and compression resistance.
+- Collection views and diffable data sources.
+- Trait collections, adaptive layout, Dynamic Type, and appearance changes.
+- Reuse, prefetching, cell configuration, and scrolling performance.
+- Responder-chain, event, focus, and keyboard behavior.
 
+Recommended references:
 
+- [UIKit documentation](https://developer.apple.com/documentation/uikit)
+- [View controller programming guide](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/)
+- [Auto Layout guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/)
 
+### Design
 
-## ViewController Life Cycle
+The [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/) should be the first design reference.
+Respect platform behavior before creating custom interaction patterns.
 
-<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/iOSViewLifeCycle.png" width="70%" height="70%"/>
+Design and asset tools:
 
-
-- viewDidLoad
-- viewWillAppear
-- viewWillLayoutSubviews
-- viewDidLayoutSubviews
-- viewDidAppear
-- viewWillDisappear
-- viewDidDisappear
-
-
-
-[iOS View Controller Life Cycle](https://medium.com/good-morning-swift/ios-view-controller-life-cycle-2a0f02e74ff5)
-
-
-
-
-
-
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-
-
-
-
-
-## Design Pattern
-
-Check [this](https://refactoring.guru/design-patterns/swift) website for design pattern in Swift
-
-## Adaptor
-
-Adapter pattern is a structural design pattern that is useful for composing classes and objects into a larger system.
-
-```swift
-protocol Target {
-    func request()
-}
-
-class Adaptee {
-    func specificRequest() {}
-}
-
-class Adapter: Target {
-    let adaptee: Adaptee
-    
-    init(adaptee: Adaptee) {
-        self.adaptee = adaptee
-    }
-    
-    func request() {
-        adaptee.specificRequest()
-    }
-}
-```
-
- - [‘Adapter’ Pattern in Swift](https://levelup.gitconnected.com/adapter-pattern-in-swift-b6403cfa0a78)
- - [Swift adapter design pattern](https://theswiftdev.com/swift-adapter-design-pattern/)
- - [Adapter in Swift](https://refactoring.guru/design-patterns/adapter/swift/example)
- 
-## Coordinator
-
-- [Leverage the Coordinator Design Pattern in Swift 5](https://betterprogramming.pub/leverage-the-coordinator-design-pattern-in-swift-5-cd5bb9e78e12)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Delegation
-
-Delegation is a design pattern that enables a class to hand off (or “delegate”) some of its responsibilities to an instance of another class.
-
-### Example
-
-Create a protocol 
-
-```swift
-protocol SomeProtocol: AnyObject {
-    func reload()
-}
-```
-
-Create a delegate 
-```swift
-weak var delegate: SomeProtocol?
-```
-
-
-
-You can check the code using delegation pattern [here](https://github.com/jphong1111/Unsplash_Clone/blob/main/Unsplah_Clone/Module/MainMenu/AccountScreenModule/ViewModel/AccountViewModel.swift#L35)
-
-- [Delegation in Swift Swift by Sundell](https://www.swiftbysundell.com/articles/delegation-in-swift/)
-- [Delegation in Swift Explained](https://learnappmaking.com/delegation-swift-how-to/)
-- [Delegation Pattern in Swift 5.1](https://medium.com/@nimjea/delegation-pattern-in-swift-4-2-f6aca61f4bf5)
-
-
-
-## Dependency Injection
-
-Dependency injection is a pattern that can be used to eliminate the need for singletons in a project
-
-
- 1. Raise Transparency
- 2. Improve Testability
-
-### Type of Dependency Injection
-
- **1. initializer injection**
- 
- ``` swift
- class DataManager {
-
-    private let serializer: Serializer
-
-    init(serializer: Serializer) {
-        self.serializer = serializer
-    }
-
-}
- ```
- 
- **2. property injection**
- 
- ```swift
- import UIKit
-
-class ViewController: UIViewController {
-
-    var requestManager: RequestManager?
-
-}
-```
-
- **3. method injection**
- 
- ```swift
- import Foundation
-
-class DataManager {
-
-    func serializeRequest(request: Request, withSerializer serializer: Serializer) -> Data? {
-        ...
-    }
-
-}
-```
- 
-[Nuts and Bolts of Dependency Injection in Swift](https://cocoacasts.com/nuts-and-bolts-of-dependency-injection-in-swift)
-
-
-## Factory
-
-Factory method is a creational design pattern which solves the problem of creating product objects without specifying their concrete classes.
-
-- [Factory Method in Swift](https://refactoring.guru/design-patterns/factory-method/swift/example)
-- [The Factory Pattern using Swift](https://stevenpcurtis.medium.com/the-factory-pattern-using-swift-b534ae9f983f)
-
-## Observer
-
-Observer is a behavioral design pattern that allows some objects to notify other objects about changes in their state.
-
- - Observer - An object that wishes to be notified when the state of another object changes.
- - Subject (Observable) - An object that maintains a list of observers, and inform them of state changes usually by calling one of their methods. An observable slightly differs in this in that it is just a function that sets up an observation.
- - Subscribe - An observer lets a subject know that it wants to be informed of changes through a process called subscribing.
- 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/observer.png" />
-
-Check following sites
- - [swiftbysundell](https://www.swiftbysundell.com/articles/observers-in-swift-part-1/) 
-
-TBD
-
-### KVO
-
-KVO stands for Key Value Observing
-
-
- - [Apple Developer Site](https://developer.apple.com/documentation/swift/cocoa_design_patterns/using_key-value_observing_in_swift)
- - [KVO (Key Value Observing) in Swift](https://medium.com/@abhishek1nacc/kvo-key-value-observing-in-swift-65d05ac2d240)
-
-
-### KVC
-
-[KVO vs KVC](https://medium.com/hackernoon/kvo-kvc-in-swift-12f77300c387)
-
-We are using KVC in Storyboard!
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-
-## Singleton
-
-singleton pattern is to ensure only one instance of a class is alive at any one time.
-
-```swift
-class SingletonPattern {
-    static let manager = SingletonPattern()
-    
-    private init() {}
-}
-```
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Swift DocC
-Swift-DocC is a documentation compiler for Swift frameworks and packages aimed at making it easy to write and publish great developer documentation.
-
-Simple goes to Product-Build Documentation and DocC will open
-
-- [Swift DocC Apple Github](https://github.com/apple/swift-docc)
-- [DocC Tutorial for Swift : Getting Started](https://www.kodeco.com/34919511-docc-tutorial-for-swift-getting-started)
-
-## Code Structuring(Architecture)
-
-📚📚 Recommend Book 📚📚 
-
-| Book Name   | Authors Name |
-| :----------- | :----------- |
-| Advanced iOS App Architecture : Real-world app architecture in Swift | raywenderlich Tutorial Team |
-| Clean Architecture: A Craftsman's Guide to Software Structure and Design | Robert Martin |
-
-## Clean Architecture
-
-
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/Clean_Architecture.png">
-
-
-[Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
-
-
-## MVC
-
-MVC pattern stands for Model - View - Controller
-
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVCModel.png">
-
- - Model - Model take care of storing data.
- - View - View renders the data for users
- - Controller - Controller modifies the View, accepts user input and interacts directly with the Model. And take care of view logic and business logic.
-
-## MVP
-
-<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/MVPdesign.png" />
-
-## MVVM
-
-MVVM patterns stand for Model - View - ViewModel
-
-### MVC vs MVVM
-
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/MVVMvsMVC.png" width = "60%" height = "60%">
-
- - Model – Which holds the application data
-
- - View – It displays the data that is stored in model. These are visual elements through which a user interacts. These are subclasses of UIView
-
- - View Model – Transform model information/data and it interacts with controller or view to display those informations.
-
- - Controller class – It will be there but the responsibility of view business logic has been removed and give to view model
-
-> You can check App example of using MVVM [here](https://github.com/jphong1111/Unsplash_Clone)
-
-## VIPER
-
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/Viper.png">
-
- - View - Displays what it is told to by the Presenter and relays user input back to the Presenter.
- - Interactor -  Contains the business logic as specified by a use case.
- - Presenter - contains view logic for preparing content for display (as received from the Interactor) and for reacting to user inputs (by requesting new data from the Interactor).
- - Entity - contains basic model objects used by the Interactor.
- - Routing - contains navigation logic for describing which screens are shown in which order.
- 
-[Getting Started with the VIPER Architecture Pattern](https://www.raywenderlich.com/8440907-getting-started-with-the-viper-architecture-pattern)
- 
- # The Composable Architecture
- 
-The Composable Architecture is a library for building applications in a consistent and understandable way, with composition, testing, and ergonomics in mind
- 
- <img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/SCA.png">
- 
-  - [Composable Architecture @ Point Free](https://www.pointfree.co/collections/composable-architecture)
-  - [The Composable Architecture GitHub](https://github.com/pointfreeco/swift-composable-architecture)
-  - [The Composable Architecture — One of the Best-Suited Architectures for SwiftUI](https://medium.com/swlh/the-composable-architecture-one-of-the-best-suited-architectures-for-swiftui-35bfc5102b83)
-  
- ```swift
- // example will update here
- ```
- 
- ## Reducer
- 
- A reducer describes how to evolve the current state of an application to the next state, given an action, and describes what Effects should be executed later by the store, if any.
- 
- - [Reducer in TCA](https://pointfreeco.github.io/swift-composable-architecture/Reducer/)
-
- 
- 
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
- 
-## Repository Pattern
-
-
-[The Repository and Unit of Work Patterns](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
-
-
-
-
-
-
-
-
-
-
-
- 
-## UIDesign
-
-## HIG(Human Interface Guidelines)
-- [HIG](https://developer.apple.com/design/human-interface-guidelines/)
-- [Apple UI Kit](https://developer.apple.com/documentation/uikit)
-- [iOS Design Guide](https://ivomynttinen.com/blog/ios-design-guidelines)
-
-## SwiftUI
-
-SwiftUI is a user interface toolkit that lets us design apps in a **declarative way(Declarative syntax)**. 
-
-
-## Useful Cheat Sheet for SwiftUI
-
- - [Fucking SwiftUI](https://fuckingswiftui.com/) Cheat Sheet for SwiftUI
- - [Gosh Darn SwiftUI](https://goshdarnswiftui.com/) Cheat Sheet for SwiftUI
- - [SimpleBoilerplates/SwiftUI-Cheat-Sheet](https://github.com/SimpleBoilerplates/SwiftUI-Cheat-Sheet)
- 
-TBA
-
-
-
-
-
-
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## iOS icon 
-- [SF Symbols](https://developer.apple.com/sf-symbols/) Download SF Symbols2 for more icons!
-- [icon8](https://icons8.com/) You can download icons imge for your **APP**
-- [appicon](https://appicon.co/) generate the app icon size
-- [flaticon](www.flaticon.com) Free icons download
-
-
-## UIdesign Inspiration
-
-- [Dribble](https://dribbble.com/)
-- [Pinterest](https://pinterest.com/)
-- [Behance](https://www.behance.net/)
-- [Pttrns](https://pttrns.com/)👍
-- [Awwwards](https://www.awwwards.com/)
-- [Flickr](http://www.flickr.com/)
-- [Mobbin](https://mobbin.design/dictionary)👍
-
-## Vector Graphic Editors
+- [SF Symbols](https://developer.apple.com/sf-symbols/)
 - [Figma](https://www.figma.com/)
 - [Sketch](https://www.sketch.com/)
-- [Adobe XD](https://www.adobe.com/products/xd.html)
+- [Mobbin](https://mobbin.com/) for product pattern research
+- [App Icon Generator](https://www.appicon.co/) for asset preparation
 
-## Design Collaboration Tools
-- [Sympli](https://sympli.io/)
-- [Zepline](https://zeplin.io/)
+Check every important screen with:
 
-## Design Tools
-- [DetailsPro](https://detailspro.app) You can design with SwiftUI free 👍
+- Small and large devices.
+- Portrait and landscape when supported.
+- Light and dark appearances.
+- Larger accessibility text sizes.
+- Right-to-left layout.
+- Long translated strings.
+- Reduced motion and increased contrast.
+- Offline, empty, loading, and failure states.
 
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
+## 🧭 State, Architecture, and Navigation
 
+Architecture should make change safer.
+It should not exist to maximize the number of folders, protocols, or diagrams.
 
-## Useful Sites 
+### Start with boundaries
 
- - [HEX Color Picker](https://imagecolorpicker.com/) Good for picking color as Hex 👍
+For a small feature, three responsibilities are often enough:
 
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
+1. Presentation renders state and forwards user intent.
+2. Domain logic decides what the feature means and how state changes.
+3. Data access talks to remote services, persistence, and system APIs.
 
-## Screen Layout Programmatically
+Keep dependencies pointing inward toward policy and domain behavior.
+Create protocols at boundaries where substitution, testing, or multiple implementations are real requirements.
 
+### Dependency injection
 
-TBA
+Initializer injection should be the default because it makes dependencies explicit and allows immutable storage.
+Property and method injection are useful when lifecycle or framework integration requires them.
+A composition root should assemble the concrete dependency graph near the application entry point.
 
+Avoid using a service locator or global singleton as invisible dependency injection.
+Shared stateless services can be reasonable, but shared mutable state needs explicit ownership and isolation.
 
+### Common patterns
 
+| Pattern | Useful when | Watch for |
+| --- | --- | --- |
+| MVC | The feature is small and framework conventions already provide the separation | Massive view controllers and business logic tied to UIKit |
+| MVVM | Presentation state and transformations deserve a testable model | View models that become an entire application layer |
+| Coordinator or Router | Navigation policy is complex or reused | Navigation abstractions that mirror UIKit without simplifying it |
+| Reducer or unidirectional flow | State transitions, effects, and replayable tests are valuable | Boilerplate for simple screens |
+| Repository | Multiple data sources need one domain-facing interface | Generic CRUD repositories that erase useful domain meaning |
+| Adapter | An external or legacy API does not match the interface the feature needs | Wrapping every dependency without a concrete mismatch |
+| Factory | Construction varies and callers should not know concrete types | A factory with one permanent branch |
+| Observer | One-to-many change propagation is inherent to the problem | Unbounded subscriptions, unclear ownership, and hidden control flow |
 
+Architecture references:
 
+- [The Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture)
+- [Swift Dependencies](https://github.com/pointfreeco/swift-dependencies)
+- [Refactoring.Guru Swift patterns](https://refactoring.guru/design-patterns/swift)
+- [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 
+No architecture is automatically “clean.”
+Judge it by dependency direction, testability, clarity, build performance, and how safely the team can change behavior.
 
+### Navigation
 
+- Model navigation as state when deep links, restoration, or tests need deterministic behavior.
+- Keep URL parsing and route authorization separate from view construction.
+- Validate external deep links and universal links as untrusted input.
+- Decide which feature owns dismissal, cancellation, and returned results.
+- Test cold-start and already-running deep-link flows.
 
+## ⚡ Concurrency
 
+Swift concurrency is the default model for new asynchronous Swift code.
 
+Learn:
 
+- `async` functions and `await` suspension points.
+- Structured child tasks and task groups.
+- Actor isolation and `@MainActor`.
+- `Sendable` and safe transfers between isolation domains.
+- Cancellation as a normal control-flow event.
+- `AsyncSequence` for streams of values.
+- Continuations for carefully bridging callback APIs.
 
+Rules of thumb:
 
+- Keep UI state on the main actor.
+- Do not block the main actor with synchronous I/O, waiting, or expensive computation.
+- Prefer structured tasks whose lifetime follows the operation that created them.
+- Check cancellation before expensive or user-irrelevant work.
+- Avoid `Task.detached` unless the work truly should not inherit actor, priority, task-local values, or cancellation.
+- Treat `@unchecked Sendable` as a reviewed safety assertion, not a compiler escape hatch.
+- Use actors to protect shared mutable state when actor isolation fits the access pattern.
+- Measure before replacing clear actor-based code with locks or custom executors.
 
+Grand Central Dispatch, locks, operation queues, and semaphores remain relevant for legacy code, framework interoperability, and specialized synchronization.
+Do not mix concurrency models casually or assume a serial queue automatically makes an entire object safe.
 
+References:
 
+- [Concurrency in The Swift Programming Language](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/)
+- [`Sendable`](https://developer.apple.com/documentation/swift/sendable)
+- [Migrating to Swift concurrency](https://developer.apple.com/documentation/swift/adoptingswift6)
 
+## 🌐 Networking
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-# Bundle
-
-You can use [Bundle+Extension.swift](https://github.com/jphong1111/awesome-ios-developer/blob/main/Bundle%2BExtension.swift) file to configure your bundle to your application. 
-> Source code from : [PhoneNumberKit](https://github.com/marmelroy/PhoneNumberKit)
-
-- [Bundles and Packages](https://nshipster.com/bundles-and-packages/)
-
-## Static Library
-
-## Dynamic Library
-
-## xcframework
-
-XCFrameworks is a distributable binary package created by Xcode that contains variants of a framework or library so that it can be used on multiple platforms (iOS, macOS, tvOS, and watchOS), including Simulator builds
-
-
-[Creating a multiplatform binary framework bundle](https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle)
-
-
-
-
-
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-
-
-## Helper
-
-All files are resuable files and protocol oriented. **Just Copy and Paste inside your project and use it!!** 👍
- 
-**These helper files are not with Error Handling! careful at use**
-
-## Email, Message, Call
-
-You can check the file in the follow link
-
-- [Email, Message, Call](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/ConversationHandler/ConversationManager.swift)
-
-### Usage
-import MessageUI first
+Start with `URLSession`, `Codable`, `HTTPURLResponse`, and Swift concurrency.
+Add an abstraction when the app needs consistent authentication, retries, caching, metrics, decoding, or endpoint construction.
 
 ```swift
-import MessageUI
-```
-
-Then use it
-> Don't forget to extend the mail, message delegate to your ViewController!
-
-```swift
-    lazy var conversation = ConversationManager(presentingController: self, mailDelegate: self, messageDelegate: self, viewController: self)
-    
-    @IBAction private func sendEmail(_ sender: UIButton) {
-        conversation.sendEmail(feedback: MailFeedback(recipients: ["abcd@google.com"], subject: "FeedBack", body: "Write feedback here"))
-    }
-    @IBAction private func sendMessage(_ sender: UIButton) {
-        conversation.sendMessage(feedback: MessageFeedBack(recipients: ["1111111111"], body: "Type here"))
-    }
-    @IBAction private func startCall(_ sender: UIButton) {
-        conversation.makeCall(number: "1111111111")
-    }
-```
-
-Good To GO 👏👏👏
-> See Example [here](https://github.com/jphong1111/ImageMessageHandler_DemoApp)
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Network Layer
-
-- [Network Layer](https://github.com/jphong1111/Useful_Swift/tree/main/Helper/Network%20Layer) 
-
-### Usage
-
-First, set the base URL in **EndPointType file**
-> Don't forget to put your API key in it!
-
-```swift
-var baseURL: URL {
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/") else {
-            fatalError("baseURL could not be configured.")
-        }
-        return url
-    }
-```
-
-then make a instance of router.swift file in your code
-
-```swift
-private let router = Router<YourAPI>()
-```
-
-for **YourAPI part**, simply create a new **enum** with cases about specific api URL
-> It will make your router more dynamic!
-> Don't forget extension to EndPointType!
-
-```swift
-enum YourAPI {
-    case first(country: String)
-    case second(time: Int)
-    case third(name: String)
+enum APIError: Error {
+    case invalidResponse
 }
 
-extension YourAPI: EndPointType {
-    var path: String {
-        switch self {
-        case .first(let country):
-            return "\(country).json"
-        case .second(let time):
-            return "\(time).json"
-        case .third(let name):
-            return "\(name).json"
-        }
-    }
-}
-```
+let (data, response) = try await URLSession.shared.data(for: request)
 
-then, use it like this
-
-```swift
-router.request(.first(country: London)) { [weak self] (results: Result<CountryWeather, AppError>) in
-            guard let self = self else { return }
-            switch results {
-            case .success(let data):
-                // insert your modifications!
-                
-            case .failure(let error):
-                // insert your modifications!
-                print(error)
-            }
-        }
-```
-
-> **CountryWeather should be a model with Decodable**
-
-If you want to see how can I use Network Layer in Project, check [this](https://github.com/jphong1111/Unsplash_Clone/tree/main/Unsplah_Clone/ReusableComponent/NetworkLayer)
-
-This reusable network layer files for referenced from [here](https://medium.com/flawless-app-stories/writing-network-layer-in-swift-protocol-oriented-approach-4fa40ef1f908)
-
-> Also [Alamofire](https://github.com/Alamofire/Alamofire) will be a great option for Network Layer!
-
-## Image Picker
-
-- [Image Picker](https://github.com/jphong1111/Useful_Swift/blob/main/Helper/ImagePickerHandler/ImagePicker.swift) 
-
-### Usage
-
-Copy and Paste in your project and then declare Image Picker object inside your project 
-
-```swift
-lazy var imagePicker = ImagePicker(presentationController: self, delegate: self)
-```
-
-Then, extend ImagePickerDelegate to your viewController
-
-```swift
-extension ViewController: ImagePickerDelegate {
-    func didSelect(image: UIImage?) {
-        self.yourImageView.image = image
-        self.dismiss(animated: true, completion: nil)
-    }
-}
-```
-
-Good To GO 👏👏👏
-> See Example [here](https://github.com/jphong1111/ImageMessageHandler_DemoApp)
-
-
-## File Manager
-
-- [File Manager](https://github.com/jphong1111/awesome-ios-developer/blob/main/Helper/FileManageHandler/FileManager.swift) 
-
-### Usage
-
-Copy and Paste in your project 
-
-```swift
-let readData = FileManageHelper.manager.readFile(filename: fileNameTextField.text ?? "", type: extensionTextField.text ?? "")
-resultTextField.text = readData
-```
-> File Manager are wrote with singleton pattern, therefore no need to declare in side your code!
-
-Good To GO 👏👏👏
-
-## Video Downloader
-
-- [Video Downloader](https://github.com/jphong1111/awesome-ios-developer/blob/main/Helper/VideoDownloadHandler/VideoDownloadManager.swift) 
-
-## Usage
-
-Make an object of VideoManager inside your code
-
-```swift
-let videoManager = VideoManager()
-```
-
-use downloadVideoLinkAndCreateAsset function to start download with entering URL
-
-```swift
-self.videoManager.downloadVideoLinkAndCreateAsset(text)
-```
-Good To GO 👏👏👏
-
-## Image Downloader
-
-There is no file for Image Downloader.
-
-To download images into device, only thing is this
-
-```swift
-if let data = try? Data(contentsOf: urls),
-   let image = UIImage(data: data) {
-   UIImageWriteToSavedPhotosAlbum(image, nil, nilil)
-}
-```
-Just **change urls into your image URL**
-
-> UIImageWriteToSavedPhotosAlbum will take care it to download to device.
-
-> For more info go [here](https://www.hackingwithswift.com/example-code/media/uiimagewritetosavedphotosalbum-how-to-write-to-the-ios-photo-album)
-
-Good To GO 👏👏👏
-
-## Location Manager
-
-- ~~[Location Manager](https://github.com/jphong1111/Useful_Swift/tree/main/Helper/LocationHandler/LocationManager.swift)~~
-
-Currently Working
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Local Notification Manager
-
- - [Local Notification Manager](https://github.com/jphong1111/awesome-ios-developer/blob/main/Helper/LocalNotificationHelper/LocalNotificationManager.swift)
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-# API
-
-API(Application Programming Interface) is an interface that defines interactions between multiple software applications or mixed hardware-software intermediaries. It defines the kinds of calls or requests that can be made, how to make them, the data formats that should be used, the conventions to follow, etc.
-
-## Various API Site
-- [rapidAPI](https://www.rapidapi.com)
-- [AnyAPI](https://any-api.com/)
-- [Programmableweb](https://www.programmableweb.com/)
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-
-## JSON
-JSON is a language-independent data format
-> Which is relative with **KEY - VALUE** pair
-```json
-{
-    "main": [
-        {
-            "title": "example1",
-            "body": "body1"
-        },
-        {
-            "title": "example2",
-            "body: "body2"
-        }
-    ]
-}
-```
-### JSON parser extension for Chrome
-This extension makes JSON more structable
-[JSON parser pro](https://chrome.google.com/webstore/detail/json-viewer-pro/eifflpmocdbdmepbjaopkkhbfmdgijcc) **FREE** :+1:
-
-## JSONDecoder
-
-To use JSONDecoder in swift, you have to define the model to be Codable or Decodable
-
-```swift
-public typealias Codable = Decodable & Encodable
-```
-
-> Decodable can only decode the json data. Can't encoded json file!!
-
-```swift
-struct User: Codable {
-    var firstName: String
-    var lastName: String
-    var country: String
-    
-    enum CodingKeys: String, CodingKey {
-        case firstName = "first_name"
-        case lastName = "last_name"
-        case country
-    }
+guard let httpResponse = response as? HTTPURLResponse,
+      200..<300 ~= httpResponse.statusCode else {
+    throw APIError.invalidResponse
 }
 
-```
-> To avoid snake_case in swift, use CodingKeys or JSONDecoder.KeyDecodingStrategy
-
-To use JSONDecoding, declare JSONDecoder and use decode() function
-
-```swift
- do {
-    let data = try JSONDecoder().decode(T.self, from: unwrappedData)
-    completionOnMain(.success(data))
-} catch {
-    print(error)
-    completionOnMain(.failure(.parseError))
-}
- ```
- 
-T.self -> Model(Struct) of the data that you want to decode
- > data will decoded to form of T
-
-unwrappedData -> Input actual data from file or server
-> This should be a Data Type!!
- 
-## JSONSerialization
-
-JSONSerialization is a old way of decode the JSON file.
-> Apple populated Codable since Swift 4
-
-### Example
-
-Example of number.json data
-
-```json
-{
-    "number": [
-        {
-            "name": "Dennis",
-            "number": "111-222-3333"
-        },
-        {
-            "name": "Jenny",
-            "number": "444-555-6666"
-        },
-        {
-            "name": "Ben",
-            "number": "777-888-9999"
-        }
-    ]
-}
-
+let model = try JSONDecoder().decode(Model.self, from: data)
 ```
 
-Here is a example of JSONSerialization with actaul JSON file in project folder
-> Otherwise you can use URL!
-
-```swift
-    private func populateDataFromJson() {
-        
-        if let path = Bundle.main.path(forResource: "NumberData", ofType: "json") {
-            do {
-                let dataJson = try Data(contentsOf: URL(fileURLWithPath: path))
-                let jsonDict = try JSONSerialization.jsonObject(with: dataJson, options: .mutableContainers)
-                if let jsonResults = jsonDict as? [String: Any],
-                   let results = jsonResults["number"] as? [[String: Any]] {
-                    results.forEach { dict in
-                        // simply appended to list(array)
-                        self.phoneNumberList.append(PhoneNumber(name: dict["name"] as? String ?? "", number: (dict["number"] as? String ?? "")))
-                        self.phoneNumberListClone.append(PhoneNumber(name: dict["name"] as? String ?? "", number: (dict["number"] as? String ?? "")))
-                    }
-                }
-            } catch {
-                print(error.localizedDescription)
-            }
-        }
-    }
-```
+Production networking needs more than a successful JSON decode:
+
+- Define request and response contracts.
+- Map transport, HTTP, decoding, authentication, cancellation, and domain errors separately.
+- Set timeouts intentionally.
+- Respect HTTP caching and conditional requests.
+- Retry only operations that are safe to repeat, with limits, delay, and jitter.
+- Propagate cancellation when a screen or operation no longer needs the response.
+- Redact authorization headers, tokens, personal data, and request bodies from logs.
+- Monitor latency, status codes, payload size, and failure rate without collecting unnecessary user data.
+- Test malformed payloads, missing fields, server errors, offline behavior, slow responses, and cancellation.
+
+Never ship a privileged API secret in an iOS application.
+Anything in the app bundle or process should be treated as recoverable by an attacker.
+Keep privileged credentials and authorization decisions on a server you control.
 
-> .mutableContainers allows to working like a array and dictionary type
+Useful references:
+
+- [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession)
+- [`Codable`](https://developer.apple.com/documentation/swift/codable)
+- [Network framework](https://developer.apple.com/documentation/network)
+- [Alamofire](https://github.com/Alamofire/Alamofire) when its feature set justifies the dependency
 
+## 💾 Persistence
 
-### JSON Parser Library
+Choose storage from data semantics, not familiarity.
+
+| Data | Appropriate starting point |
+| --- | --- |
+| Small preferences and feature flags | `UserDefaults` |
+| Credentials, tokens, and small secrets | Keychain Services |
+| User-created documents | Documents directory or a document-based API |
+| Re-creatable downloads and derived files | Caches directory |
+| Structured object graph for a modern deployment target | SwiftData |
+| Mature object graph, advanced migrations, or existing store | Core Data |
+| Cross-device Apple ecosystem sync | CloudKit, directly or through a supported persistence integration |
 
-This library provide JSON parsing 
+### UserDefaults
 
-- [SwifyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
+`UserDefaults` is for preferences and small property-list values.
+It is not a database, secure storage, or a good home for large encoded object graphs.
+Use `UserDefaults.standard` unless an app group or a dedicated suite is required.
+
+### File system
+
+Use [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager) URLs instead of hard-coded paths.
+Choose Documents, Application Support, Caches, or temporary storage according to ownership, backup behavior, and whether the data can be recreated.
+Use atomic writes where partial files would be harmful.
+
+### SwiftData
+
+[SwiftData](https://developer.apple.com/documentation/swiftdata) integrates a model layer with Swift and SwiftUI.
+Evaluate deployment targets, migration needs, CloudKit behavior, query complexity, and testability before choosing it.
+
+### Core Data
+
+[Core Data](https://developer.apple.com/documentation/coredata) is an object graph and persistence framework, not simply a SQLite wrapper.
+The backing store is an implementation choice, and managed objects belong to their managed object context.
+
+Important topics:
+
+- Persistent containers, contexts, and save propagation.
+- Queue confinement and concurrency.
+- Fetch requests, predicates, sorting, batching, and faulting.
+- Unique constraints, relationships, inverse relationships, and delete rules.
+- Lightweight and custom migration.
+- Persistent history and remote changes when multiple writers exist.
+- In-memory stores for focused tests.
+
+Avoid fetching a global context through `UIApplication.shared.delegate`.
+Inject a persistence boundary or context appropriate to the feature and execution domain.
+
+## 🧩 System Capabilities
+
+Add a capability because the product needs it, then study its lifecycle, permissions, background behavior, and failure modes.
+
+| Capability | Framework or starting point |
+| --- | --- |
+| Local and remote notifications | [UserNotifications](https://developer.apple.com/documentation/usernotifications) |
+| Push delivery | [Apple Push Notification service](https://developer.apple.com/documentation/usernotifications/setting-up-a-remote-notification-server) |
+| Location | [Core Location](https://developer.apple.com/documentation/corelocation) |
+| Bluetooth Low Energy | [Core Bluetooth](https://developer.apple.com/documentation/corebluetooth) |
+| Photos and limited-library access | [PhotoKit](https://developer.apple.com/documentation/photokit) |
+| Camera and media capture | [AVFoundation](https://developer.apple.com/av-foundation/) |
+| Biometrics and device-owner authentication | [LocalAuthentication](https://developer.apple.com/documentation/localauthentication) |
+| Background work | [BackgroundTasks](https://developer.apple.com/documentation/backgroundtasks) |
+| Widgets and controls | [WidgetKit](https://developer.apple.com/documentation/widgetkit) |
+| Live Activities | [ActivityKit](https://developer.apple.com/documentation/activitykit) |
+| Siri, Shortcuts, Spotlight, and system actions | [App Intents](https://developer.apple.com/documentation/appintents) |
+| Health data | [HealthKit](https://developer.apple.com/documentation/healthkit) |
+| Maps | [MapKit](https://developer.apple.com/documentation/mapkit) |
+| Purchases and subscriptions | [StoreKit](https://developer.apple.com/storekit/) |
+
+Request permission in context, explain the benefit before the system prompt, and make denial a supported product state.
+Include accurate usage-description strings for protected resources.
+Do not request capabilities “for later.”
+
+### Notifications
+
+- Ask for authorization at a moment when the user understands the value.
+- A local repeating notification must use a valid interval and system-supported trigger.
+- Remote notification delivery is not guaranteed and should not be the only source of durable state.
+- Keep device tokens associated with the correct environment, app, user, and installation.
+- Treat notification payloads and deep-link values as untrusted input.
 
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
+### Biometrics
 
-## NotificationCenter
+Use `LAContext` to evaluate a policy, and handle unavailable, unenrolled, locked-out, canceled, and fallback states.
+Biometrics authenticate device ownership or presence; they do not replace server-side authorization.
+Store protected secrets in the Keychain with an access-control policy appropriate to the product.
 
-A notification dispatch mechanism that enables the broadcast of information to registered observers.
+## 📦 Dependencies and Modularization
 
- - [NotificationCenter Apple Document](https://developer.apple.com/documentation/foundation/notificationcenter)
- - [How To: Using Notification Center In Swift](https://learnappmaking.com/notification-center-how-to-swift/)
+### Swift Package Manager first
 
+[Swift Package Manager](https://docs.swift.org/swiftpm/documentation/packagemanagerdocs/) is the default dependency manager for new Swift code.
+Use CocoaPods or Carthage when maintaining a project or integrating a dependency that still requires them.
 
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
+Before adding a dependency, check:
 
-## UserDefaults
+- Whether an Apple framework or a small amount of clear code already solves the problem.
+- Maintenance activity and response to security issues.
+- License compatibility.
+- Supported platforms and toolchains.
+- Transitive dependencies.
+- Binary size and build-time cost.
+- Concurrency annotations and strict-concurrency readiness.
+- Privacy manifest and required-reason API declarations.
+- Migration and removal cost.
 
-The UserDefaults class provides a programmatic interface for interacting with the defaults system. Check [Apple Document](https://developer.apple.com/documentation/foundation/userdefaults) for more info
-> UserDefaults has to have **key-value** pair
+Review dependency updates like code changes.
+Pin according to the project’s risk tolerance, keep the resolved graph in source control for applications, and automate update visibility.
 
-### When do we use UserDafaults
+### Useful packages and tools
 
-- User information, like name, email address, age, occupation
-- App settings, like user interface language, app color theme or “detailed vs. simple UI”
-- Flags, more on this later
-- If store data is small 
+These are options to evaluate, not a default shopping list.
 
-## How to find documentDirectory 
+| Project | Purpose |
+| --- | --- |
+| [SwiftLint](https://github.com/realm/SwiftLint) | Enforce selected Swift style and correctness rules |
+| [swift-format](https://github.com/swiftlang/swift-format) | Format Swift source |
+| [SwiftGen](https://github.com/SwiftGen/SwiftGen) | Generate type-safe resource access |
+| [Periphery](https://github.com/peripheryapp/periphery) | Detect unused Swift code |
+| [Alamofire](https://github.com/Alamofire/Alamofire) | Networking features and request abstraction |
+| [Kingfisher](https://github.com/onevcat/Kingfisher) | Image downloading and caching |
+| [SDWebImage](https://github.com/SDWebImage/SDWebImage) | Image loading and caching across Apple UI frameworks |
+| [The Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture) | Reducer-based application architecture |
+| [swift-dependencies](https://github.com/pointfreeco/swift-dependencies) | Dependency management designed for testability |
+| [swift-snapshot-testing](https://github.com/pointfreeco/swift-snapshot-testing) | Snapshot tests for values and UI |
+| [Quick](https://github.com/Quick/Quick) and [Nimble](https://github.com/Quick/Nimble) | Behavior-style test organization and matchers |
+| [Swift Collections](https://github.com/apple/swift-collections) | Additional data structures |
+| [Swift Algorithms](https://github.com/apple/swift-algorithms) | Sequence and collection algorithms |
 
-Put this line of code inside of your project
-```swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last ?? "")
-        return true
-    }
-```
+### Modularization
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/DocumentPath.png" />
+Modules should express ownership and dependency boundaries.
+They are not automatically an improvement.
 
-simply move into that path and you can find the documentDirectory of your Application
-> if Library is not shown up, just do **Shift + Command + .** to show hidden files in your folder
+Modularize when it provides one or more of these benefits:
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultPlistPath.png" />
+- Independent ownership or release.
+- Enforced access control.
+- Reuse across products.
+- Smaller test and build scopes.
+- Isolation of volatile infrastructure.
+- A stable feature or domain boundary.
 
-## Usage
+Track build time before and after modularization.
+An excessive module graph can increase configuration, dependency, and linking costs.
 
-As you can see in the below, intArray will stored inside the device through UserDefaults(), so that if device is shut down, changed value wil be stored in device.
+Useful tools:
 
-```swift
-class ViewController: UIViewController {
-    var intArray = [1,2,3,4,5]
-    let defaults = UserDefaults()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        intArray = defaults.array(forKey: "IntArray") as! [Int]
-    }
-    
-    @IBOutlet weak var textField: UILabel!
-    @IBAction private func isClicked(_ sender: UIButton) {
-        intArray.append(6)
-        defaults.set(intArray, forKey: "IntArray")
-        textField.text = "\(intArray)"
-    }
-}
-```
-You can your plist file like this!
+- [Tuist](https://tuist.dev/) for generated projects, workspaces, caching, and project automation.
+- [XcodeGen](https://github.com/yonaskolb/XcodeGen) for generating Xcode projects from specifications.
+- [XCFrameworks](https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle) for distributing multi-platform binary frameworks.
+- [DocC](https://www.swift.org/documentation/docc/) for API and conceptual documentation.
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultPlist.png" />
+## 🧪 Testing
 
-Declare Userdefault like this!
+Tests should protect behavior that matters and make refactoring safer.
+A large test count is not evidence of useful coverage.
 
-```swift
-let defaults = UserDefaults.standard
-```
-> **standard** allows to access from anywhere inside device
+### Choose the right layer
 
-**With using set function, you can set userdefaults**
+| Test | Best for | Avoid |
+| --- | --- | --- |
+| Unit | Pure logic, reducers, transformations, validation, and edge cases | Re-testing framework behavior |
+| Integration | Persistence, networking boundaries, decoding, migrations, and module contracts | Calling uncontrolled production services |
+| UI | Critical user journeys and system integration | Reproducing every unit-level branch through the UI |
+| Snapshot | Stable visual or structural output | Treating every pixel change as a regression |
+| Performance | Launch, scrolling, algorithms, persistence, and memory-sensitive behavior | Thresholds that are noisy on shared CI hardware |
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultSet.png" width = "60%" height = "60%"/>
+### Swift Testing and XCTest
 
-**Also these function will allow to get a data from plist**
+Use [Swift Testing](https://developer.apple.com/documentation/testing) for new Swift unit tests when it fits the project.
+It supports parameterization, traits, tags, concurrency, and flexible suite organization.
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/UserDefaultGet.png" width = "60%" height = "60%"/>
+Use [XCTest](https://developer.apple.com/documentation/xctest) for UI tests, performance tests, Objective-C tests, and existing suites.
+Swift Testing and XCTest can coexist during incremental migration, but do not mix their APIs inside one test.
 
-## Store Object
+### Test doubles
 
-[Store Object](https://stackoverflow.com/questions/29986957/save-custom-objects-into-nsuserdefaults)
+- A dummy fills an unused parameter.
+- A stub returns controlled answers.
+- A spy records interactions for later verification.
+- A mock verifies expected interactions.
+- A fake provides a working but simplified implementation, such as an in-memory repository.
 
+Prefer a fake or stub that expresses behavior over a brittle mock of implementation details.
 
-**You are GOOD TO GO**  👏👏👏
+### UI testing
 
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
+- Use accessibility identifiers only where semantic queries are insufficient.
+- Keep screen interaction behind small robot or page objects when it improves readability.
+- Reset state deterministically.
+- Disable uncontrolled animations or network dependencies through launch configuration.
+- Capture screenshots and logs on failure.
+- Test permissions, deep links, interruptions, and relaunch behavior where they affect critical journeys.
 
-# Core Data
+### Accessibility testing
 
-[Everything Core Data](https://metova.com/everything-core-data/)
+Run Accessibility Inspector audits and automate appropriate checks with XCUITest.
+Automated audits catch common issues but do not replace VoiceOver, Switch Control, keyboard, and real-device testing.
 
-Use Core Data to save your application’s permanent data for offline use, to cache temporary data, and to add undo functionality to your app on a single device.
+### StoreKit testing
 
-**Core Data in Swift is using SQLite as DEFAULT**
+Use a StoreKit configuration for local development and deterministic tests.
+Use the sandbox and TestFlight to validate App Store Connect products and server interactions.
+Test success, cancellation, pending approval, failed purchase, restore, refund, renewal, expiration, grace period, and interrupted transactions.
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/DataStoreInSwift.png" width = "50%" height = "50%"/>
+References:
 
-> Image From London App Brewery
+- [Testing and performance overview](https://developer.apple.com/documentation/technologyoverviews/testing-and-performance)
+- [Organizing tests with test plans](https://developer.apple.com/documentation/xcode/organizing-tests-to-improve-feedback)
+- [StoreKit Test](https://developer.apple.com/documentation/storekittest)
+- [Testing in-app purchases in Xcode](https://developer.apple.com/documentation/storekit/testing-in-app-purchases-in-xcode)
 
+## 🐛 Debugging, Performance, and Observability
 
-📚📚 Recommend Book 📚📚 
+### Debugging
 
-| Book Name   | Authors Name |
-| :----------- | :----------- |
-| Core Data by Tutorials: iOS 12 and Swift 4.2 Edition | raywenderlich Tutorial Team |
+Learn these Xcode tools:
 
-## Core Data Stack
+- Source, symbolic, exception, and runtime-issue breakpoints.
+- LLDB commands such as `po`, `p`, `expression`, `bt`, and breakpoint commands.
+- View hierarchy debugger.
+- Memory graph debugger.
+- Address Sanitizer, Thread Sanitizer, and Undefined Behavior Sanitizer.
+- Main Thread Checker and Thread Performance Checker.
+- Network and file activity instruments.
+- Crash and hang reports in Organizer.
 
- - [The Core Data Stack](https://www.raywenderlich.com/books/core-data-by-tutorials/v7.0/chapters/3-the-core-data-stack)
- 
-<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/Core_Data_Stack.png" width = "70%" height = "70%"/>
+Never “fix” a race by adding arbitrary delay.
+Reproduce it, identify the ownership or isolation violation, and leave a test or diagnostic that would catch the regression.
 
+### Performance
 
- - **NSManagedObject** - This is a base class of all the core data model object. This provides the schema of our database table. This is used to store model data in our application. KVO and KVC compliant. It can notify any changes that are done on its properties if any object is listening.
+Measure on a representative physical device with an optimized build.
+Simulator results are useful for iteration but do not represent device CPU, GPU, memory pressure, thermal behavior, or power use.
 
+Watch:
 
- - **NSManagedObjectContext** - Most important class. This is the place where you do all the computations. You can think this as a scratch pad where you do all the operations realated to core data (CRUD). It's an object which you can use to manipulate and track any changes done to manage object. All the changes done on a context object will be held until and unless you are discarding or writing those changes permaneently to persistntent storage.
+- Launch and first-interaction latency.
+- Hangs, hitches, and main-thread work.
+- Scrolling and animation frame time.
+- Memory growth, leaks, retain cycles, and termination pressure.
+- Disk and network I/O.
+- Battery and thermal impact.
+- Download size, installed size, and on-demand resources.
 
+Use [Instruments and Xcode performance tools](https://developer.apple.com/documentation/xcode/performance-and-metrics) before guessing.
 
- - **NSPersistentStoreCoordinator** - The main functionality is to provide a communication between context and persistent store.
+### Logging and metrics
 
+Use unified logging through `Logger`.
+Choose subsystem, category, and level deliberately.
+Mark sensitive interpolated values as private and avoid logging secrets or full payloads.
 
- - NSPersistentStore - They are the stores in which the data are being saved. These includes SQLite, In-Memory, Binary, XML(the XML store is not available on iOS).
- - NSPersistentContainer - This contains the whole core data stacks.
+Use signposts for important intervals that need Instruments correlation.
+Use [MetricKit](https://developer.apple.com/documentation/metrickit) and Xcode Organizer to understand behavior on distributed builds.
+Use crash reporting and product analytics only with clear privacy rules, retention, and consent where required.
 
+## ♿ Accessibility and Localization
 
+### Accessibility
 
+Accessibility is a product requirement.
+Build with semantic system controls first, then add custom accessibility behavior where the UI needs it.
 
+Verify:
 
+- Useful labels, values, hints, traits, actions, and focus order.
+- Dynamic Type without clipping or hiding essential actions.
+- Sufficient contrast without relying on color alone.
+- VoiceOver reading order and rotor behavior.
+- Reduce Motion, Reduce Transparency, Bold Text, and Increased Contrast.
+- Switch Control, Voice Control, Full Keyboard Access, and external keyboards where relevant.
+- Captions, transcripts, and alternatives for meaningful audio or visual content.
 
+References:
 
+- [Accessibility](https://developer.apple.com/accessibility/)
+- [Accessibility for SwiftUI](https://developer.apple.com/documentation/swiftui/accessibility)
+- [Accessibility for UIKit](https://developer.apple.com/documentation/uikit/accessibility)
+- [Performing accessibility audits](https://developer.apple.com/documentation/accessibility/performing-accessibility-audits-for-your-app)
 
+### Localization
 
-## Set Up Core Data
+Localization includes language, pluralization, grammar, layout direction, calendars, dates, times, numbers, names, units, and culturally appropriate assets.
 
-Simply Click Core Data check box when you create a new project
+Use [String Catalogs](https://developer.apple.com/documentation/xcode/localizing-and-varying-text-with-a-string-catalog) for new Xcode projects.
+Provide translator comments and avoid constructing user-facing sentences from fragments.
+Use `FormatStyle` and locale-aware Foundation formatters instead of hand-built date or number strings.
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/AddCoreData.png" width = "50%" height = "50%"/>
+Test:
 
-If you want to attach Core Data in exsiting project
+- Every supported language and a pseudolanguage.
+- Long strings and large text.
+- Right-to-left layout.
+- Singular, plural, and grammatical variants.
+- Non-Gregorian calendars and 12/24-hour time where product behavior depends on them.
+- Region-specific prices, decimal separators, measurement systems, and names.
 
-Create **Data Model** file first
+References:
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/AddDataModel.png" width = "50%" height = "50%"/>
+- [Localization](https://developer.apple.com/localization/)
+- [Preparing text for translation](https://developer.apple.com/documentation/xcode/preparing-your-apps-text-for-translation)
+- [Editing XLIFF and String Catalog files](https://developer.apple.com/documentation/xcode/editing-xliff-and-string-catalog-files)
 
-Then import CoreData inside your **AppDelegate.swift** file
+## 🔐 Security and Privacy
 
-```swift
-import CoreData
-```
+Security is risk management, not a checklist of tricks.
+Start with a threat model: identify assets, trust boundaries, attackers, abuse cases, and the impact of failure.
 
-And Copy and Paste this lines of code inside your **AppDelegate.swift** file
+### Baseline
 
-```swift
-    // MARK: - Core Data stack
+- Minimize collected data and retention.
+- Keep authorization decisions and privileged credentials on the server.
+- Use TLS and App Transport Security without broad exceptions.
+- Store small secrets in the Keychain with appropriate accessibility and access-control settings.
+- Use CryptoKit or other reviewed platform cryptography instead of designing cryptographic algorithms.
+- Validate every server response, deep link, file, pasteboard value, notification payload, and imported document.
+- Redact secrets and personal data from logs, analytics, screenshots, and crash metadata.
+- Review third-party SDK behavior, privacy manifests, signatures, licenses, and transitive dependencies.
+- Keep development menus, debug endpoints, and verbose logging out of production builds.
+- Handle compromised credentials and server-side revocation.
 
-    lazy var persistentContainer: NSPersistentContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-        */
-        let container = NSPersistentContainer(name: "Your DataModel file name")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
+### Transport security and pinning
 
-    // MARK: - Core Data Saving support
+[App Transport Security](https://developer.apple.com/documentation/security/preventing-insecure-network-connections) enforces secure connection requirements by default.
+Use narrowly scoped exceptions only when a documented compatibility requirement leaves no safer option.
 
-    func saveContext () {
-        let context = persistentContainer.viewContext
-        if context.hasChanges {
-            do {
-                try context.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }
-        }
-    }
-```
+Certificate or public-key pinning adds operational risk.
+Use it only when the threat model justifies it and the team can support backup pins, certificate rotation, expiration, incident recovery, and remote failure.
+Do not copy deprecated `SecTrustEvaluate` examples or assume pinning replaces normal trust evaluation.
 
-Don't forget to change it
-```swift
-let container = NSPersistentContainer(name: "Your DataModel file name")
-```
+### Keychain and cryptography
 
-And goto **SceneDelegate.swift** file, copy below lines of code and replace yours
+- [Using the Keychain to manage user secrets](https://developer.apple.com/documentation/security/using-the-keychain-to-manage-user-secrets)
+- [CryptoKit](https://developer.apple.com/documentation/cryptokit)
+- [LocalAuthentication](https://developer.apple.com/documentation/localauthentication)
 
-```swift
-func sceneDidEnterBackground(_ scene: UIScene) {
-        // Called as the scene transitions from the foreground to the background.
-        // Use this method to save data, release shared resources, and store enough scene-specific state information
-        // to restore the scene back to its current state.
+### Privacy
 
-        // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-    }
-```
+Privacy work includes both product behavior and App Store declarations.
 
-If your target is **below iOS13**, put this line of code in side your **applicationWillTerminate** of **AppDelegate.swift** file
+- Maintain accurate App Privacy answers in App Store Connect.
+- Include valid privacy manifests and required-reason API declarations where applicable.
+- Audit included SDKs because their collection and required-reason APIs become part of the app.
+- Ask for protected-resource access only when the feature needs it.
+- Provide account and data deletion flows where policy or law requires them.
+- Make consent specific and avoid dark patterns.
 
-```swift
-self.saveContext()
-```
+References:
 
-## Core Data Usage
+- [Privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy-manifest-files)
+- [Adding a privacy manifest](https://developer.apple.com/documentation/bundleresources/adding-a-privacy-manifest-to-your-app-or-third-party-sdk)
+- [User privacy and data use](https://developer.apple.com/app-store/user-privacy-and-data-use/)
+- [Apple Platform Security](https://support.apple.com/guide/security/welcome/web)
+- [OWASP Mobile Application Security](https://mas.owasp.org/)
 
+Obfuscation and jailbreak detection can raise the cost of analysis, but neither establishes a trustworthy device.
+Treat them as optional defense-in-depth controls, not security boundaries.
 
-Once you create your DataModel file, you can simply create a **Entity(Class)** and **Attributes(Properties)**
+## 🔄 CI/CD and Team Workflow
 
-And then, change the type of attributes in inspector like this
+CI should make the repository reproducible and the default branch trustworthy.
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/DataModelAttribute_inspector.png"/>
+A useful pull-request pipeline:
 
-Once you create your own Entities & Attributes, go to Inspector and change Module to **CurrentProductModule**
+1. Resolve dependencies from a clean checkout.
+2. Build supported configurations.
+3. Run formatting and lint checks.
+4. Run unit and integration tests.
+5. Run selected UI, accessibility, and performance tests.
+6. Scan for secrets and vulnerable dependencies.
+7. Archive or export a build when distribution behavior matters.
+8. Publish concise logs, test results, and artifacts.
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/DataModelAttributes.png"/>
+Keep signing material and credentials in the CI provider’s protected secret store.
+Use short-lived credentials or workload identity when supported.
+Do not run secret-bearing workflows against untrusted pull-request code.
 
-> If you didn't set it, thats fine, but if you are working in big project, then you need to set it. Otherwise this can occurs some error.
+Tools:
 
-## Codegen
+- [Xcode Cloud](https://developer.apple.com/xcode-cloud/)
+- [GitHub Actions](https://docs.github.com/actions)
+- [fastlane](https://fastlane.tools/)
+- [Tuist](https://tuist.dev/)
+- [Danger](https://danger.systems/) for deterministic review conventions
+- [Codemagic](https://codemagic.io/)
+- [CircleCI](https://circleci.com/)
 
-As you can see in above, there are three options
+### Build performance
 
-- Manual/None - Swift didn't generate CoreDataClass, CoreDataProperties files so that you have to create yourself **(full control)**
-- Class Definition - Swift will generate CoreDataClass, CoreDataProperties files. **(No control)**
-- Category/Extension - Swift will generate only Extension file **(Some Control)**
+Treat build time as a measured developer-experience metric.
 
-CoreDataClass, CoreDataProperties are located in below
+- Inspect Xcode build timing summaries and dependency graphs.
+- Keep run-script phases deterministic and declare their inputs and outputs.
+- Avoid unnecessary code generation and always-run scripts.
+- Measure type-checking and module-boundary changes.
+- Cache only artifacts that are safe and correctly keyed.
+- Use project-generation focus or selective-build features only after measuring the bottleneck.
 
- > /Users/dennis/Library/Developer/Xcode/DerivedData/CoreDataUserDefaultPractice-hisefjfyuvglrjekndpftwazftug/Build/Intermediates.noindex/CoreDataUserDefaultPractice.build/Debug-iphonesimulator/CoreDataUserDefaultPractice.build/DerivedSources/CoreDataGenerated/CoreDataUserDefaultPractice 
+## 🚢 Distribution and Monetization
 
-And CoreDataClass, CoreDataProperties are looking like this,
+### Code signing
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/CoreDataClass_Properties.png"/>
+Understand:
 
-> If your code can run it but didn't get your Entities, **Rebuild it or Restart your Xcode**
+- Bundle identifiers, App IDs, certificates, provisioning profiles, entitlements, and capabilities.
+- Development, Ad Hoc, TestFlight, App Store, and enterprise distribution differences.
+- Automatic signing versus intentionally managed signing in CI.
+- Export compliance and privacy requirements.
 
-**The reason that files divided into two files is that one for writing Business Logic, one for Properties**
- 
-## Entities
+References:
 
-An entity represents a table in your database. It is the blueprint for the NSManagedObject subclass instances that you will create and use throughout your application.
+- [Code signing](https://developer.apple.com/support/code-signing/)
+- [App distribution](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases)
+- [App Store Connect Help](https://developer.apple.com/help/app-store-connect/)
 
-## Attributes
+### TestFlight
 
-Attributes are properties of your object. They translate to a column in your database table and a property in your managed object. You can choose from a variety of primitive values that the database has to offer such as a string, integer, or date.
+[TestFlight](https://developer.apple.com/testflight/) distributes beta builds and collects feedback before release.
+Test migration, account, notification, background, purchase, and server-compatibility behavior on TestFlight rather than assuming a development build is equivalent.
 
-## Relationships
+### App Store
 
-A relationship describes how one entity relates to another. Two important aspects of this are the cardinality and the deletion rule
+Read the [App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/) before implementation decisions become expensive.
+Validate metadata, screenshots, privacy answers, support URLs, account deletion, review notes, and demo credentials before submission.
 
-### Cardinality
+### StoreKit and subscriptions
 
- - **One-to-many** - Lets say that each Department has a group of Employees that can only work for a single Department. This would be a “one-to-many” relationship since each Department could have many Employees and each Employee can only work for one Department.
- - **Many-to-many** - If a single Employee could work for multiple Departments, then our Department/Employee relationship would be “many-to-many” because each Department could have many Employees and each Employee could work for multiple Departments.
- 
- 
-### Delete Rules
+Use [StoreKit 2](https://developer.apple.com/storekit/) for modern Swift purchase flows.
+Model entitlement state independently from the paywall UI.
+Verify transactions, finish processed transactions, listen for updates, restore access, and design for purchases that occur on another device or outside the app.
 
-[Core Data Relationships and Delete Rules](https://cocoacasts.com/core-data-relationships-and-delete-rules)
+Testing does not require a physical device for every stage.
+StoreKit Testing in Xcode supports local purchase scenarios, while sandbox and TestFlight cover App Store-connected behavior.
 
- - **No Action** - Do nothing to the object at the destination of the relationship. For example, if you delete a department, leave all the employees as they are, even if they still believe they belong to that department.
- - **Nullify (Default)** - Set the inverse relationship for objects at the destination to null. For example, if you delete a department, set the department for all the current members to null. This only makes sense if the department relationship for an employee is optional, or if you ensure that you set a new department for each of the employees before the next save operation.
- - **Cascade** - Delete the objects at the destination of the relationship. For example, if you delete a department, fire all the employees in that department at the same time.
- - **Deny** - If there is at least one object at the relationship destination, then the source object cannot be deleted. For example, if you want to remove a department, you must ensure that all the employees in that department are first transferred elsewhere (or fired!) otherwise the department cannot be deleted.
+Useful references:
 
+- [Setting up StoreKit Testing in Xcode](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode)
+- [Testing purchases with sandbox](https://developer.apple.com/documentation/storekit/testing-in-app-purchases-with-sandbox)
+- [App Store Server API](https://developer.apple.com/documentation/appstoreserverapi)
+- [App Store Server Notifications](https://developer.apple.com/documentation/appstoreservernotifications)
+- [Subscriptions and offers](https://developer.apple.com/app-store/subscriptions/)
 
+Test renewal, expiration, cancellation, refund, revocation, billing retry, grace period, upgrade, downgrade, restore, Ask to Buy, and interrupted transactions.
+Do not unlock durable server-owned value based only on an unverified client boolean.
 
-## Store Data
+## 🧱 Legacy Code and Interoperability
 
-Declare context as a global variable
+Production iOS development often includes APIs and patterns that are no longer the first choice for a new app.
+Learn enough to maintain them safely before attempting a migration.
 
-```swift
-let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-```
-> Get viewContext that we defined in AppDelegate.swift file
+### Objective-C
 
-Simply you can use this code to save your data to CoreData
-```swift
-func saveItem() {
-        do {
-            try context.save()
-        } catch {
-            print("Error Saving Context: \(error.localizedDescription)")
-        }
-    }
-```
-> Use it wherever you want
+Understand:
 
-Data can be find if you print the path
+- Header and implementation files.
+- Categories, protocols, delegates, blocks, and nullability.
+- Dynamic dispatch, selectors, KVC, and KVO.
+- ARC ownership and retain-cycle behavior.
+- Bridging headers and generated Swift interfaces.
+- Module maps and framework boundaries.
 
-```swift
-print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
-```
+References:
 
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/CoreDataSQLite.png" />
+- [Using imported C and Objective-C APIs in Swift](https://developer.apple.com/documentation/swift/using-imported-c-and-objective-c-apis-in-swift)
+- [Importing Objective-C into Swift](https://developer.apple.com/documentation/swift/importing-objective-c-into-swift)
 
-> You can check Entities, Properties inside that file
+Do not describe a Swift app as free of Objective-C runtime or C-family foundations merely because the application target contains only `.swift` files.
+That fact rarely affects product architecture, so investigate it only when interoperability, runtime behavior, or debugging makes it relevant.
 
-## Load Data
+### Frameworks and patterns you may inherit
 
-Refer this code and apply it to your code wherever you want to reload it
-```swift
-    func loadItem() {
-        let request: NSFetchRequest<Item> = Item.fetchRequest()
-        do {
-            itemArray = try context.fetch(request)
-        } catch {
-            print("Load Item Error: \(error.localizedDescription)")
-        }
-    }
-```
-> Item will be your Entity, itemArray will be your Entity object
-> Don't forget to import **CoreData**
+- UIKit storyboards and nibs.
+- Core Data.
+- Objective-C modules.
+- CocoaPods and Carthage.
+- GCD and `OperationQueue`.
+- Combine and RxSwift.
+- MVC, MVVM, VIPER, coordinators, and custom routers.
+- Custom networking and persistence layers.
 
-## Update Data
+Migration rule: preserve behavior first, add characterization tests, move one boundary at a time, and measure the result.
+A rewrite is not automatically simpler than the code it replaces.
 
-Simply use setValue function so that you can update your value in DB
+## 📚 Learning Resources
 
-```swift
-itemArray[0].setValue(<#T##value: Any?##Any?#>, forKey: <#T##String#>)
-```
-> if you are using TableView or CollectionView, change 0 to indexPath.row
+### Apple and Swift
 
-## Delete Data
+- [Apple Developer Documentation](https://developer.apple.com/documentation/)
+- [Apple Developer Videos](https://developer.apple.com/videos/)
+- [Apple Sample Code](https://developer.apple.com/documentation/samplecode)
+- [Develop in Swift Tutorials](https://developer.apple.com/tutorials/develop-in-swift)
+- [Swift.org Documentation](https://www.swift.org/documentation/)
+- [Swift Forums](https://forums.swift.org/)
+- [Swift Evolution](https://www.swift.org/swift-evolution/)
+- [Swift Package Index](https://swiftpackageindex.com/)
 
-Simply use delete function in context
+### Community
 
-```swift
-context.delete(itemArray[0])
-```
-> change number for dynamic!
+- [Swift by Sundell](https://www.swiftbysundell.com/)
+- [SwiftLee](https://www.avanderlee.com/)
+- [Hacking with Swift](https://www.hackingwithswift.com/)
+- [Point-Free](https://www.pointfree.co/)
+- [objc.io](https://www.objc.io/)
+- [NSHipster](https://nshipster.com/)
+- [iOS Dev Weekly](https://iosdevweekly.com/)
+- [Use Your Loaf](https://useyourloaf.com/)
+- [Kodeco](https://www.kodeco.com/ios)
+- [Donny Wals](https://www.donnywals.com/)
 
-**You are GOOD TO GO**  👏👏👏
+### Discovery
 
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
+- [awesome-ios](https://github.com/vsouza/awesome-ios)
+- [Swift package ecosystem](https://www.swift.org/packages/)
+- [WWDC Index](https://nonstrict.eu/wwdcindex/)
+- [iOS Developer Roadmap](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
 
-## Core Bluetooth
+Prefer a recent official source when framework behavior, platform policy, security, privacy, or App Store requirements matter.
+Community material is most valuable for explanation, tradeoffs, and experience reports.
 
+## Contributing
 
+Contributions are welcome.
 
+Before adding a link or recommendation, check that:
 
+- It teaches a durable concept or solves a real iOS engineering problem.
+- The technical claim is current and can be verified.
+- The project is maintained or clearly labeled as legacy.
+- The description explains why the resource is useful.
+- A first-party framework does not already cover the need more simply.
+- The license, privacy, and security implications are acceptable.
+- The addition fits an existing section or justifies a new one.
 
+Keep pull requests focused.
+When correcting a technical claim, include the official source used to verify it.
 
-
-
-
-
-
-
-
- - [Introduction to BLE Mobile Development [iOS]](https://www.novelbits.io/intro-ble-mobile-development-ios/)
- - [Core Bluetooth Tutorial for iOS: Heart Rate Monitor](https://www.raywenderlich.com/231-core-bluetooth-tutorial-for-ios-heart-rate-monitor)
- - [Getting Started with Core Bluetooth](https://ditto.live/blog/posts/getting-started-with-core-bluetooth)
-
-
-**You are GOOD TO GO**  👏👏👏
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-# Third Party Library
-
-Third Party Library saves you time as you do not need to develop the functionality that the library provides. 
-[SHOULD DEVELOPERS USE THIRD-PARTY LIBRARIES?](https://www.scalablepath.com/blog/third-party-libraries/)
-> Relying on library(abused) is not a good idea
-
- - [awesome ios github](https://github.com/vsouza/awesome-ios) Contains all the popular libraries in Swift:+1:
- - [awesome swift site](https://swift.libhunt.com/) You can broswe popular libraries related to iOS
- - [Explore Swift](https://kandi.openweaver.com/explore/swift) Discover & find a curated list of popular & new libraries, top authors and trending discussions on kandi.
-
-
-## Dependency/Package Manager
-
-A package manager is a tool that simplifies the process of working with code from multiple sources.
-
-- Centralised hosting of packages and source code with public server with access to developers or contributors
-- Download the source code at the run time, so that we don’t need to include it in the repository
-- Link the source code to our working repository by including source files
-
-[More Info](https://medium.com/xcblog/swift-dependency-management-for-ios-3bcfc4771ec0)
-
-## CocoaPods
-
-Download cocoapods
-
-```bash
-$ sudo gem install cocoapods
-```
-
-After finish download cocoapods, go to your root folder of your project and make pod file
-
-```bash
-$ pod init
-```
-
-Click into your pod file and edit
-
-Image
-
-After finish editing, update your pod file
-
-```bash
-$ pod install
-```
-    
-
-**You are GOOD TO GO**  👏👏👏
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Carthage
-
- - [Getting started with Carthage to manage dependencies in Swift and iOS](https://www.twilio.com/blog/2016/05/getting-started-with-carthage-to-manage-dependencies-in-swift-and-ios.html)
- - [Carthage Tutorial: Getting Started](https://www.raywenderlich.com/7649117-carthage-tutorial-getting-started)
- - [Carthage](https://github.com/Carthage/Carthage)
- 
-First, install Carthage through HomeBrew
-
-```bash
-$ brew install carthage
-```
-
-if already installed, check if there is latest version.
-    
-```bash
-$ carthage update
-```
-
-Then, go to your root project folder, and do this
-
-```bash
-touch Cartfile
-```
-
-open cartfile, put library that you want to use
-
-```bash
-github "<owner>/<repo>" == <version>
-```
-
-Example 
-
-```bash
-github "Alamofire/Alamofire" == 4.9.0
-github "Alamofire/AlamofireImage" ~> 3.4
-```
-
-And then, do this
-
-```bash
-carthage update --platform iOS
-```
-
-After finish downloading it, go to **Xcode -> Build phases**
-
-TBD
-
-**You are GOOD TO GO**  👏👏👏
-    
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Swift Package Manager
-
-<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/SwiftPackageManager.png" width = "50%" height = "50%"/>
-
-Enter url of library that you want to install
-
-<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/SwiftPackageManager2.png" width = "50%" height = "50%"/>
-
-<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/SwiftPackageManager3.png" width = "50%" height = "50%"/>
-
-**You are GOOD TO GO**  👏👏👏
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Recommend Library
-- SDWebImage - Downloading and caching images from the web
-- Kingfisher - Downloading and caching images from the web
-- Hero - Various kind of animation with using Segue
-- Alamofire - Network Layer tool
-- Moya - Network abstraction layer written in Swift
-- RxSwift - Reactive Programming in Swift
-- SwiftyJSON - JSON parsar Helper
-- IQKeyboardManager - Easy to manage Keyboard settings
-- SnapKit - Swift Auto Layout DSL for iOS
-- Charts - Make Beutiful Charts in your App
-- Quick/Nimble - Testing Library + Asynchronous tests purpose
-- Periphery - A tool to identify unused code in Swift Projects
-- ReactorKit - A framework for a reactive and unidirectional Swift application architecture
-- SwiftGen - SwiftGen is a tool to automatically generate Swift code for resources of your projects (like images etc), to make them type-safe to use. 
-- etc...
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Localization
-
-Localization is the process of making your app support other languages. (Base language is English)
-
- - [Localization Apple](https://developer.apple.com/localization/)
- - [Localization Apple Developer](https://developer.apple.com/documentation/xcode/localization)
- - [iOS Localization Tutorial](https://medium.com/lean-localization/ios-localization-tutorial-938231f9f881)
- - [Internationalizing Your iOS App: Getting Started](https://www.raywenderlich.com/250-internationalizing-your-ios-app-getting-started)
- 
-## Localization Usage
-
-First, you have to check **Use Base Internationalization**
-> It might be checked
-
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization.png" width="70%" height ="70%" />
-
-> English is a base Language
-
-After you check it, add languages that you want to support in your App
-
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization2.png" width="70%" height ="70%" />
-
-Then, you can check your language file like this!
-
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization3.png" width="70%" height ="70%" />
-
-Create **Localizable.strings** file into your project
-> Unlike Swift, the .strings file requires that each line terminate with a **semicolon**
-> .strings file is where you can add translation data as **key-value** pairs
-
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization4.png" width="70%" height ="70%" />
-
-In your .strings file, check localization button and choose language
-
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization5.png" />
-
-And then add Key - Value pairs for tanslation
-
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization6.png" width="70%" height ="70%"/>
-
-To use localization, use **NSLocalizedString** to implement it
-
-```swift
-NSLocalizedString(<#T##key: String##String#>, comment: <#T##String#>)
-```
- - [key] - put (key - value) pair that you created in .strings file
- - [comment] - It will help your translators significantly and result in better translations
-
-Simple example below
-
-```swift
-@IBAction func showAlert() {
-        let alertTitle = NSLocalizedString("Welcome", comment: "")
-        let alertMessage = NSLocalizedString("How are you", comment: "")
-        let cancelButtonText = NSLocalizedString("Cancel", comment: "")
-        let signupButtonText = NSLocalizedString("Signup", comment: "")
-
-        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: UIAlertController.Style.alert)
-        let cancelAction = UIAlertAction(title: cancelButtonText, style: UIAlertAction.Style.cancel, handler: nil)
-        let signupAction = UIAlertAction(title: signupButtonText, style: UIAlertAction.Style.default, handler: nil)
-        alert.addAction(cancelAction)
-        alert.addAction(signupAction)
-        present(alert, animated: true, completion: nil)
-    }
-```
- 
- After that, we have to test if localization is working correctly or not
- 
- To test it, you can do either **Edit Scheme** or **New Scheme**
- 
- go to Run section, and change **App Language**
- 
- <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization7.png" />
- 
- After finish setting Scheme try to run it!
- 
-  <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization8.png" width="50%" height ="50%" />
-  <img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/Internationalization9.png" width="50%" height ="50%" />
-  
-  
-**You are GOOD TO GO**  👏👏👏
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Useful for Localization
-
- - [localazy](https://localazy.com/) localization tool for iOS and macOS apps. Supporting .strings, .stringsdict, .plist and XLIFF files.
- - [locastudio](https://www.cunningo.com/locastudio/index.html) Analyze, review, and edit your app translations.
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Accessibility
-
-Accessibility is all about making the iPhone, iPod touch, and iPad work for as wide a range of people as possible. That can include the very young, the very old, people brand new to computers and mobile devices, and also people with disabilities and special needs. 
-
-- Designing your app for accessibility makes it easier to write functional tests, whether you’re using the UI Testing in Xcode.
-- You’ll also broaden your market and user base by making your app usable by a larger group.
-- Implementing accessibility in your app shows you’re willing to go the extra mile for every user, and that’s a good thing.
-
-- [iOS Accessibility: Getting Started](https://www.raywenderlich.com/6827616-ios-accessibility-getting-started)
-
-
-## Accessibility Usage
-
-To use accessibility, you have to enable this
-> For most UIKit classes, **the default is true, but for UILabel it’s false**
-
-```swift
-label.isAccessibilityElement = true
-```
-
- - accessibilityLabel - short description of control e.g. "Save" for button, "Rating" for label
- - accessibilityHint - helps the user to understand result of the action e.g "Save the documents"
- - accessibilityTraits - collection of constants that describe the type of control and/or hot it should be treated
- - accessibilityValue - Used to describe the value of a none-label UI component e.g. "50%" for progress bar
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## GCD
-GCD(Grand Central Dispatch) is a low-level API for managing concurrent operations. It can help you improve your app’s responsiveness by deferring computationally expensive tasks to the background.
-
-## DispatchQueue
-An object that manages the execution of tasks serially or concurrently on your app's main thread or on a background thread.
-
-### main
-We can say main is a serial queue
-
-### global()
-We can say global is a concurrent queue
-
-## Thread Safety
-
-[Concurrency & Thread Safety in Swift](https://medium.com/cubo-ai/concurrency-thread-safety-in-swift-5281535f7d3a)
-[Thread Safety in Swift](https://swiftrocks.com/thread-safety-in-swift)
-
-- **Dispatch Barrier**
-
-Use a barrier to synchronize the execution of one or more tasks in your dispatch queue. 
-
-[Dispatch Barrier Apple Documentation](https://developer.apple.com/documentation/dispatch/dispatch_barrier)
-
-- **Dispatch Semaphore**
-
-[Dispatch Semaphore Apple Documentation](https://developer.apple.com/documentation/dispatch/dispatch_semaphore)
-
-
-
-- **NSLock**
-
-An object that coordinates the operation of multiple threads of execution within the same application.
-
-[NSLock](https://developer.apple.com/documentation/foundation/nslock)
-
-## DispatchGroup
-
-[DispatchGroup Apple Document](https://developer.apple.com/documentation/dispatch/dispatchgroup)
-
-## DispatchWorkItem
-
-The work you want to perform, encapsulated in a way that lets you attach a completion handle or execution dependencies.
-
-[DispatchWorkItem Apple Document](https://developer.apple.com/documentation/dispatch/dispatchworkitem)
-
-## Operation
-
-[NSOperation Apple Documentation](https://developer.apple.com/documentation/foundation/nsoperation)
-
-
-## OperationQueue
-
-
-[NSOperationQueue Apple Documentation](https://developer.apple.com/documentation/foundation/nsoperationqueue)
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-
-# Thread Sanitizer
-Thread Sanitizer is a tool to identifies the potential thread-related corruption issues. And it is a good way to find the [Readers and Writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) in your application.
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## How to Use Thread Sanitizer
-
-Go to this Option and Click **EDIT SCHEME...** 👈
-
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/address_sanitizer.png">
-
-And then go to **RUN** and check **THREAD SANITIZER** 👈
-
-<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/thread_sanitizer.png">
-
-# Testing
-
-## Five Factor Testing
-
-[Five Factor Testing](https://madeintandem.com/blog/five-factor-testing/)
-
-
-
-# Test Double
-
-**Test Double is a generic term for any case where you replace a production object for testing purposes.**
-
- - Mocks - Mocks are pre-programmered with expectations which form a specification of the calls they are expected to receive. They can throw an exception if they receive a call they don't expect and are checked during verification to ensure they got all the calls they were expecting.
-
-```swift
-// exaple code will update
-```
-
-
- - Fake - Objects actually have working implementations, but usually take some shortcut which makes them not suitable for production.
-
-```swift
-// exaple code will update
-```
-
- - Spies - Spies are stubs that also record some information based on how they were called. One form of this might be an email service that records how many messages it was sent.
-
-```swift
-// exaple code will update
-```
-
- - Stubs - Stubs provide canned answers to calls made during the test, usually not responding at all to anything outside what's programmed in for the test.
-
-```swift
-// exaple code will update
-```
-
- - Dummy - Objects are passed around but never actually used. Usually they are just used to fill parameter lists.
-
-```swift
-// exaple code will update
-```
-
-# Useful Debugging Technique
-
-[Debugging in Xcode 13: Tips & Tricks (2022) – iOS](https://www.youtube.com/watch?v=ZAqnJQn7xp4&list=LL&index=5&ab_channel=iOSAcademy)
-
-## 1. Change expression in debugging stage
-
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/debugging_expression.png" width = "80%" height = "80%">
-
-Use ```expression``` at the beginning and then add whatever what you want to change into. It will change in debugging stage 👍
-
-## 2. Symbolic Breakpoint
-
-If we want to know whenever hit certain function, use symbolic breakpoint
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# TDD
-
-**Test Driven Development**
-
-<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/TDD.png" width="30%" height="30%"/>
-
-- [Why Test-Driven Development (TDD)](https://marsner.com/blog/why-test-driven-development-tdd/)
-
-## Reduce Build Time
-
-Normally in complicated Application, build time for testing is crazy therefore, TDD spent most of time in building the project.
-
-Here are useful ways that we can reduce build time when we are working with TDD style.
-
-
-### 1. tuist focus
-
-
-
-### 2. Detach debugger in **Edit Scheme**
-
-un-check Debugger option
-
-<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/detach_debuger.png"/>
-
-
-
-## Check build time in Xcode
-
-Enter below code in your terminal, be sure to **restart Xcode** after enter this code and **Command + B**
-
-```shell
-defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
-```
-
-<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/show_build_time.png"/>
-
-
-
-
-
-
-
-
-
-
-# BDD
-
-<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/BDDvsTDD.png" width="70%" height="70%"/>
-
-BDD improves communication between tech and non-tech teams and stakeholders. In BDD, tests are more user-focused and based on the system’s behavior.
-
-**Behavior Driven Development**
-
- - Encouraging collaboration across roles to build shared understanding of the problem to be solved
- - Working in rapid, small iterations to increase feedback and the flow of value
- - Producing system documentation that is automatically checked against the system’s behaviour
- 
- ## Three Steps(Iterative) in BDD 
- 
- First, take a small upcoming change to the system – a User Story – and talk about concrete examples of the new functionality to explore, discover and agree on the details of what’s expected to be done.
- 
-Next, document those examples in a way that can be automated, and check for agreement.
-
-Finally, implement the behaviour described by each documented example, starting with an automated test to guide the development of the code.
-
- - [Behaviour-Driven Development](https://cucumber.io/docs/bdd/)
- - [What is BDD? An Introduction to Behavioral Driven Development](https://blog.testlodge.com/what-is-bdd/)
- - [The WHY Behind the Code: BDD vs. TDD](https://saucelabs.com/blog/a-two-minute-bdd-overview)
- 
-# Code Coverage
-
-Before start your Testing, add coverage will be a good option to show the result of test
-
-First, check code coverage
-
-<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/addCoverage1.png"/>
-
-Then, go to **EDIT SHEME**, check like this
-
-<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/addCoverage2.png"/>
-
-# Integration Testing
-
-[Integration Testing Swift by Sundell](https://www.swiftbysundell.com/articles/integration-tests-in-swift/)
-
-
-
-
-# Unit Testing
-
-[Unit Testing Swift by Sundell](https://www.swiftbysundell.com/basics/unit-testing/)
-
-
-📚📚 Recommend Book 📚📚 
-
-| Book Name   | Authors Name |
-| :----------- | :----------- |
-| iOS Unit Testing by Example | Jon Reid |
-
-# UI Testing
-
-UI Testing, also known as GUI Testing is basically a mechanism meant to test the aspects of any software that a user will come into contact with. This usually means testing the visual elements to verify that they are functioning according to requirements – in terms of functionality and performance. UI testing ensures that UI functions are bug-free.
-
-- [UI Testing: A Detailed Guide](https://www.browserstack.com/guide/ui-testing-guide)
-- [Your first UITest in Swift](https://uxdesign.cc/your-first-uitest-in-swift-847bc5595c26)
-
-
-## Robot Testing
-
-Robot testing is a test design pattern that makes you to create stable, readable, and maintainable tests.
-
-<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/robot_testing.png"/>
-
-- [Robot Pattern Testing for XCUITest](https://www.capitalone.com/tech/software-engineering/robot-pattern-testing-for-xcuitest/)👍
-- [Testing Robots- JAKE WHARTON](https://jakewharton.com/testing-robots/)
-- [Robot Testing Pattern - Overview](https://www.youtube.com/watch?v=ykM9AiYtCz4&ab_channel=HandstandTechnologies)
-
-## Snapshot Testing
-
-Snapshot Testing is a testing technique that can be used in Swift (and other programming languages) to test the user interface (UI) of an application.
-
-In Snapshot Testing, a snapshot of the UI is taken and compared to a previously saved snapshot to check if any changes have been made. This technique can be used to ensure that changes to the UI do not break the existing functionality of the application.
-
-### Environment Variable
-
-With using Environment Variable in Xcode, we can directly re-capture failing snapshot test cases
-
-
-<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/env_variable.png"/>
-
-SNAPSHOT_TESTING = YES
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## TestFlight
-
-TestFlight makes it easy to invite users to test your apps and App Clips and collect valuable feedback before releasing your apps on the App Store.
-
- - [TestFlight Apple](https://developer.apple.com/testflight/)
-
-
-
-
-# CI/CD
-
-CI and CD stand for continuous integration and continuous delivery/continuous deployment
-
-
- - [Why is CI/CD important?](#https://www.synopsys.com/glossary/what-is-cicd.html)
- - [What is CI/CD? Continuous integration and continuous delivery explained](#https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html)
- - [What’s the difference between agile, CI/CD, and DevOps?](#https://www.synopsys.com/blogs/software-security/agile-cicd-devops-difference/)
-
-## Fastlane
-
-The easiest way to build and release mobile apps.
-
-- [Fastlane](https://fastlane.tools/)
-- [fastlane Tutorial: Getting Started](https://www.raywenderlich.com/233168-fastlane-tutorial-getting-started)
-
-<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/fastlane.png" />
-
-
-## Jenkins
-
-Jenkins is most popular CI/CD tools 
-
-[Jenkins](https://www.jenkins.io/)
-
-
-## Jira
-
-Jira is project management software first and foremost, but it began its life in 2002 as an issue tracking platform for software developers
-
- - [Jira](https://www.atlassian.com/software/jira)
- - [What is Jira used for?](https://www.atlassian.com/software/jira/guides/use-cases/what-is-jira-used-for#Jira-for-requirements-&-test-case-management)
- - [What Is Jira: An Overview of a Unique Project Management Tool](https://www.fool.com/the-blueprint/what-is-jira/)
-
-
-## CircleCI
-
-
-
-[CircleCI](https://circleci.com/)
-
-
-You can integrate Circle CI into Github repo, therefore we can use it in PR.
-
-## Danger
-
-[Danger](https://github.com/danger/danger)
-
-- Danger runs after your CI, automating your team's conventions surrounding code review.
-
-- This provides another logical step in your process, through this Danger can help lint your rote tasks in daily code review.
-
-- You can use Danger to codify your team's norms, leaving humans to think about harder problems.
-
-
-
-## Codemagic 
-
-[Codemagic](https://codemagic.io/) - Build, test and deliver your mobile projects 20% faster. 
-
-
-## Xcode Cloud
-
-[WWDC21](https://www.apple.com/apple-events/june-2021/?&cid=wwa-us-kwgo-features-slid--Brand-AppleLive-Post-&mtid=20925e1t39169&aosid=p238&mnid=sZH3E0Pf0-dc_mtid_20925e1t39169_pcrid_524281987644_pgrid_129696028064_) Apple released [Xcode Cloud](https://developer.apple.com/xcode-cloud/) for continuous integration
-
-For more info, go to [Apple Developer Website](https://developer.apple.com/documentation/Xcode/Xcode-Cloud)
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-# Tuist
-
-- Tuist is a command line tool that helps you generate, maintain and interact with Xcode projects.
-
-- [Tuist](https://docs.tuist.io/tutorial/get-started)
-- [Tuist Github](https://github.com/tuist/tuist)
-- [Tuist Tutorial for Xcode](https://www.raywenderlich.com/24508362-tuist-tutorial-for-xcode)
-
-
-# In App Purchase(IAP)
-
-**Requirement**
-
- - Full Apple Developoment Program($99)
- - Physical IPhone Device to test IAP
- > **Simulator can not test IAP!!**
- 
-## Paywall
-
-<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/paywall.jpeg" />
-
-Paywall is a way to restrict access to their information so that only paying users can use it.
- 
-Lots of developer recommend  80% - (Paywall) - 20%
-
-## Set Up
-
-TBD
-
-For more info about getting start of IAP, go [here](https://www.raywenderlich.com/5456-in-app-purchase-tutorial-getting-started) 📑
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Notification
-
- - Notifications are an integral way of conveying information to the user outside of an app.
-
- - Notifications can be either local or remote. The app on the device schedules and configures local notifications. In contrast, a server sends remote notifications using Apple Push Notification Service (APNS)
-
- - You can configure both local and remote notifications using the UserNotifications framework. 
-
-## Local Notification
-
- - [Local Notifications: Getting Started](https://www.raywenderlich.com/21458686-local-notifications-getting-started)
- - [Swift Local Notification All-In-One](https://itnext.io/swift-local-notification-all-in-one-ee6027ea6e3)
-
-
-If you set repeatation **less than 60 sec**, it will cause ERROR!
-
-<img src ="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/Repeatation_Error.png"/>
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Remote Notification
-
-## APNs
-
-APNS stands for **Apple Push Notification service**
-
-## APNs Setting
-
-First, go to **Signing & Capabilities** and add two features like this
-
-<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/apsn_Setting.png"/>
-
-## APNs Usage
-
-- [Push Notifications Tutorial: Getting Started](https://www.raywenderlich.com/11395893-push-notifications-tutorial-getting-started)
-
-
-## FRP
-
-Functional Reactive Programming 
-
-## Rxswift
-
-- [RxSwift raywenderlich](https://www.raywenderlich.com/books/rxswift-reactive-programming-with-swift/v4.0)
-- [RxSwift](https://github.com/ReactiveX/RxSwift) - Github Repository
-- [RxSwift](http://reactivex.io/intro.html) - Website
-
-📚📚 Recommend Book 📚📚 
-
-| Book Name   | Authors Name |
-| :----------- | :----------- |
-| RxSwift: Reactive Programming with Swift  | raywenderlich Tutorial Team |
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Combine
-
-Combine released on iOS13 from Apple for Functional Reactive Programming. 
-
-[Swiftbysundell](https://www.swiftbysundell.com/basics/combine/)
-
-📚📚 Recommend Book 📚📚 
-
-| Book Name   | Authors Name |
-| :----------- | :----------- |
-|  Combine: Asynchronous Programming with Swift | raywenderlich Tutorial Team |
-
-## RxCombine
-
-RxCombine provides bi-directional type bridging between RxSwift and Apple's Combine framework.
-
-[RxCombine](https://github.com/CombineCommunity/RxCombine)
-
-
-
-
-
-
-# Security
-
-Security secure the data your app manages, and control access to your app.
-
-Check below for more detail about iOS Security as well as Application security
-
- - [Introduction to Apple platform security](https://support.apple.com/ko-kr/guide/security/seccd5016d31/web)
- - [iOS Security](https://www.cse.wustl.edu/~jain/cse571-14/ftp/ios_security/index.html) 
- - [Apple Developer Doc about Security](https://developer.apple.com/documentation/security)
- - [iOS App Security: Best Practices](https://quickbirdstudios.com/blog/ios-app-security-best-practices/)
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Checklist For App Security
-
- - [ ] Keychain For Sensitive Data Storage
- - [ ] Application Transport Security Layer(TSL)
- - [ ] SSL Pinning 
- - [ ] Jailbroken Device Check
- - [ ] Disable Debug Logs
- - [ ] Third-Party Library Usage Check 
- - [ ] Code Obfuscation
- - [ ] Cryptography 
- - [ ] Biometric Access
- 
-## Keychain
-
- - [Storing Keys in the Keychain](https://developer.apple.com/documentation/security/certificate_key_and_trust_services/keys/storing_keys_in_the_keychain)
- - [Keychain raywenderlich](https://www.raywenderlich.com/9240-keychain-services-api-tutorial-for-passwords-in-swift)
-
-## SSL Pinning
-
-<img src = "https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/SSLCertificate.png"/>
-
-When a mobile app communicates with a server, it uses SSL(Secure Socket Layer) pinning technique for protecting the transmitted data against tampering and eavesdropping.
-
- - [Preventing Man-in-the-Middle Attacks in iOS with SSL Pinning](https://www.raywenderlich.com/1484288-preventing-man-in-the-middle-attacks-in-ios-with-ssl-pinning)
- - [How to Perform SSL Pinning in iOS Apps](https://appinventiv.com/blog/ssl-pinning-in-ios-app/)
-
-## How SSL Works
-
-1. A browser attempts to connect with a website which is secured with a SSL. The browser then requests the web server to identify itself.
-2. Web server then sends the browser its SSL certificate copy.
-3. The browser checks if the SSL certificate must be trusted. If it can be, a message is sent to the web server.
-4. Web server then sends back an acknowledgement to begin the SSL encrypted session.
-5. The encrypted data is then finally shared between the browser and web server.
-
-## SSL pinning methods
-
- - Pin the certificate – you can download the server’s certificate and bundle them in the app. At the runtime, the app compares the server certificate to ones that you have embedded. 
- - Pin the public key – you can retrieve the public key of certificate in the code as string. At the runtime, the application compared the certificate’s public key to one which is hard-coded in the code. 
-
-## Using URLSession
-
-```swift
-func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-    if (challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust) {
-        if let serverTrust = challenge.protectionSpace.serverTrust {
-            var secresult = SecTrustResultType.invalid
-            let status = SecTrustEvaluate(serverTrust, &secresult)
-            
-            if (errSecSuccess == status) {
-                if let serverCertificate = SecTrustGetCertificateAtIndex(serverTrust, 0) {
-                    let serverCertificateData = SecCertificateCopyData(serverCertificate)
-                    let data = CFDataGetBytePtr(serverCertificateData);
-                    let size = CFDataGetLength(serverCertificateData);
-                    let cert1 = NSData(bytes: data, length: size)
-                    let file_der = Bundle.main.path(forResource: "name-of-cert-file", ofType: "cer")
-                    
-                    if let file = file_der {
-                        if let cert2 = NSData(contentsOfFile: file) {
-                            if cert1.isEqual(to: cert2 as Data) { completionHandler(URLSession.AuthChallengeDisposition.useCredential, URLCredential(trust:serverTrust))
-                                return
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    // Pinning failed completionHandler(URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge, nil)
-}
-```
-
-## Using Alamofire 5
-
-If you are using above version, this code should be changed
-
-[More Info](https://devgenes.com/posts/SSL-Pinning-With-Alamofire/)
-
-First, Download SSL certificate to your project folder
-> https://www.yourdomain.com (NOT IN THIS WAY)
-
-```bash
-openssl s_client -showcerts -connect yourdomain.com:443 < /dev/null | openssl x509 -outform DER > yourdomain.cer
-```
-
-Make a SessionManager to get SSL Pinning
-
-```swift
-
-let sessionManager: SessionManager = {
-    let serverTrustPolicies: [String: ServerTrustPolicy] = ["yourdomain.com": .pinCertificates(certificates: ServerTrustPolicy.certificates(),
-                                                                                                validateCertificateChain: true,
-                                                                                                validateHost: true)]
-    
-    return SessionManager(serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies))
-}()
-```
-
-request from sessionManager, if it is invalid, print error
-
-```swift
-sessionManager.request("https://yourdomain.com").responseString { (dataResponse) in
-    switch dataResponse.result {
-    case .failure(let err):
-        print(err)
-    case .success(let val):
-        print(val)
-        if let headerFields = dataResponse.response?.allHeaderFields {
-            print(headerFields)
-        }
-    }
-}
-```
-
-### Relative Stuff
-TrustKit makes it easy to deploy SSL public key pinning
-
-[TrustKit](https://github.com/datatheorem/TrustKit)
-
-## Code Obfuscation
-
-Code obfuscation is the act of deliberately obscuring source code, making it very difficult for humans to understand, and making it useless to hackers who may have ulterior motives.
-
-## Cryptography
-
-[Introducing Swift Crypto](https://swift.org/blog/crypto/)
-
-## Biometric Access
-
-Apple made a big change when it released the iPhone X: It ditched Touch ID fingerprint security for a new face-based biometric sign-on tool called Face ID. The fingerprint scanner on most post-iPhone X Apple products is gone, and in its place is a new camera array capable of capturing a face map that is, according to Apple, 20 times less likely to be hacked than a Touch ID fingerprint.
-
-[Apple's Face ID: Cheat sheet](https://www.techrepublic.com/article/apples-face-id-everything-iphone-x-users-need-to-know/)
-
-## Face ID & Touch ID
-
-To use Face ID, Add **Privacy - Face ID Usage Description** into your info.plist file in your project
-
-<img src = "https://github.com/jphong1111/Useful_Swift/blob/main/Images/FaceID_Info.png" width = "50%" height = "50%"/>
-
-import LocalAuthentication, which can allow you to implement Biometric Access
-
-```swift
-import LocalAuthentication
-```
-
-After that, using LAContext() we can implement Face ID
-
-Here are simple example that how Face ID can impelement
-
-```swift
-@IBAction private func isTouched(_ sender: UIButton!) {
-        let context = LAContext()
-        var error: NSError? = nil
-        if  context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "touch id"
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { [weak self](success, error) in
-                DispatchQueue.main.async {
-                   
-                    guard success, error == nil else {
-                        // If Fail
-                        let alert  = UIAlertController(title: "FAceID Fail", message: "error", preferredStyle: .alert)
-                        let action = UIAlertAction(title: "cancle", style: .cancel, handler: nil)
-                        alert.addAction(action)
-                        self?.present(alert, animated: true, completion: nil)
-                        return
-                    }
-                    // If success
-                    let vc = UIViewController()
-                    vc.title = "hi"
-                    vc.view.backgroundColor = .blue
-                    self?.present(vc, animated: true, completion: nil)
-                }
-            }
-        } else {
-            // If device is not supporting Face ID
-        }
-    }
-```
-> Error Handling is your own part
-
-**You are GOOD TO GO**  👏👏👏
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Objective-C
-
-Still we need to study Objective-C for legacy code which is still remain in our project! 
-
-Here are some useful website that you can study about simple concept of Obj-C!!
-
-[Learn Objective-C in 24 Days](https://www.binpress.com/learn-objective-c-24-days/)
-
-📚📚 Recommend Book 📚📚 
-
-| Book Name   | Authors Name |
-| :----------- | :----------- |
-| Objective-C Programming: The Big Nerd Ranch Guide | Aaron Hillegass, Mikey Ward |
-
-### Pure Swift Application?
-
-Can we really say "Our application is built with pure Swift"?. NO! Lots of Objective-C codes are running in the background to built swift.
-
-Here is a example that you can try 
-
-**Simply create a pure swift application and use this lines in debug console!!**
-
-```swift
-break set -r "-\[.*\]"
-break set -r DebugMode
-break set -r Emoji
-```
-
-Use one of above line when you want to find out how many Objective-C codes are consist in simple pure swift application!!
-
-<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/ObjcBreakPoint.png" />
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Bridging Header
-
-Bridging header means access classes and other declarations from your Objective-C code in Swift.
-
-[Importing Objective-C into Swift Apple Documentation](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift)
-
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-# Error Search
-
-Find your common error here
-
-[Error Search](https://github.com/jphong1111/Useful_Swift/blob/error-search/README.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Useful Stuff
-
-I listed some of the useful & interesting stuff related with Swift
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Useful Blogs for iOS Developers
-
-Here are the useful blog list which you can get references & knowledges about iOS development
-
-- [SwiftLee](https://www.avanderlee.com/) 👍
-- [Apple Developer](https://developer.apple.com/videos/) Find recent technique with videos and example codes!!
-- [appinventiv](https://appinventiv.com/blog/) Including iOS and others!! 
-- Continue adding lists...
-
-
-## How to submit your app to the AppStore
-    
-   - [Publishing to AppStore](https://codewithchris.com/submit-your-app-to-the-app-store/#apple-developer-program)
-   - [StoreKit](https://developer.apple.com/documentation/storekit)
-   - [What is a provisioning profile & code signing in iOS?](https://abhimuralidharan.medium.com/what-is-a-provisioning-profile-in-ios-77987a7c54c2)
-  
-## iOS Version Adoption Tracker
-
-You can check the iOS Version adoption in this site
-
-[iOS Version Adoption Tracker](https://mixpanel.com/trends/#report/ios_18)
-
-
-<img src="https://github.com/jphong1111/awesome-ios-developer/blob/main/Images/iOS18_adoption.png" />
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-
-## Online Swift Playground
-
-[SwiftPlayground](http://online.swiftplayground.run/) -  Online Swift Playground
-
-## Show Preview in UIKit(Build UI with Code Base) 👍 👍 👍 👍 👍
-> Now Apple officially support Preview  
-> [previews-in-xcode](https://developer.apple.com/documentation/swiftui/previews-in-xcode)
-
-[Inject (3rd Party Library)](https://github.com/krzysztofzablocki/Inject)
-
-Copy this code and Paste into your controller
-
-```swift
-#if canImport(SwiftUI) && DEBUG
-import SwiftUI
-struct SwiftLeeViewRepresentable: UIViewRepresentable {
-    func makeUIView(context: Context) -> UIView {
-        return UIStoryboard(name: "Main", bundle: Bundle.main).instantiateInitialViewController()!.view
-    }
-    
-    func updateUIView(_ view: UIView, context: Context) {
-        
-    }
-}
-
-@available(iOS 13.0, *)
-struct SwiftLeeViewController_Preview: PreviewProvider {
-    static var previews: some View {
-        SwiftLeeViewRepresentable()
-    }
-}
-#endif
-```
-
-
-Enable canvas option like this
-
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preview%20using%20canvas.png">
-
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/preivew_screenShot.png">
-
-
-**You are GOOD TO GO**  👏👏👏
-
-## Compare Changes in Swift Version
-
-You can compare changes based on Swift Verison
-
-[Whatsnewinswift](https://www.whatsnewinswift.com/?from=5.3&to=5.4)
-
-## Managing Xcode Space
-
-This will be helful when you are running out of storage in your mac
-
-```bash
-# 1
-echo "Removing Derived Data..."
-rm -rf ~/Library/Developer/Xcode/DerivedData/
-
-# 2
-echo "Removing Device Support..."
-rm -rf ~/Library/Developer/Xcode/iOS\ DeviceSupport
-rm -rf ~/Library/Developer/Xcode/watchOS\ DeviceSupport
-rm -rf ~/Library/Developer/Xcode/tvOS\ DeviceSupport
-
-# 3
-echo "Removing old simulators..."
-xcrun simctl delete unavailable
-
-# 4
-echo "Removing caches..."
-rm -rf ~/Library/Caches/com.apple.dt.Xcode
-rm -rf ~/Library/Caches/org.carthage.CarthageKit
-
-# 5
-if command -v pod  &> /dev/null
-then
-    # 6
-    pod cache clean --all
-fi
-
-echo "Done!"
-```
-
-After writing, run it with this command
-
-```bash
-chmod u+x clean-xcode.sh
-```
-
-And then
-
-```script
-./clean-xcode.sh
-```
-
-**This will cleans out derived data, device support, simulators and caches. So that once you execute it, You have to build your project AGAIN**
-
-For More Info, visit [here](https://www.raywenderlich.com/19998365-understanding-and-managing-xcode-space)
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-## Roadmap for iOS Developer
-
-check this out [here](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
-
-## Use VIM in Xcode
-
- Check [this](https://www.twilio.com/blog/2017/06/adding-vim-keybindings-to-xcode-with-xvim.html) site for more info!
- 
- ~~Since Xcode 13(BETA), you can find Vim in **Preference -> Text Editing -> Editing -> Enable Vim Key bindings**~~
- this feature deprecated in Xcode 13(BETA)
-<img src="https://github.com/jphong1111/Useful_Swift/blob/main/Images/Vim.png">
-
-
-## Write README.md
-
-[how-to-write-a-readme](https://medium.com/@saumya.ranjan/how-to-write-a-readme-md-file-markdown-file-20cb7cbcd6f) will help you to write a README.md file more dynamically 👍
-
-Also you can edit Readme.md file with VSCode Extension! Check out in VSCode!
-
-[Markdown Preview Enhanced](https://github.com/shd101wyy/markdown-preview-enhanced)
-
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-# ❤ Supporters
-
-## ⭐ Stargazers
-
-<a href="https://github.com/jphong1111/awesome-ios-developer/stargazers">
-<img src="https://reporoster.com/stars/jphong1111/awesome-ios-developer"></a>
-
-## 🍴 Forks
-
-<a href="https://github.com/jphong1111/awesome-ios-developer/fork">
-<img src="https://reporoster.com/forks/jphong1111/awesome-ios-developer"></a>
-
-## 🌟 GitHub Stargazers
-
-[![Stargazers over time](https://starchart.cc/jphong1111/useful_swift.svg)](https://starchart.cc/jphong1111/awesome-ios-developer) 
-
+If this guide helps you, star the repository or open an issue with a concrete improvement.
 
 ## Author
 
-This README.md file is written by **Jungpyo Hong (Dennis)**
-email: ghdwjdvy96@gmail.com
+Created and maintained by **Jungpyo Hong (Dennis)**.
 
-<p align="right">
-<a href="#-content">Back to Content</a>
-</p>
-
-
+- GitHub: [@jphong1111](https://github.com/jphong1111)
+- Email: [ghdwjdvy96@gmail.com](mailto:ghdwjdvy96@gmail.com)
