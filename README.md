@@ -852,6 +852,7 @@ A rewrite is not automatically simpler than the code it replaces.
 - [objc.io](https://www.objc.io/)
 - [NSHipster](https://nshipster.com/)
 - [iOS Dev Weekly](https://iosdevweekly.com/)
+- [Storefront Brief](https://fortune-insight.onrender.com/shop/brief/index.html) - English weekly on iOS/indie App Store fees, ASO, and storefront ops. [RSS](https://fortune-insight.onrender.com/shop/brief/feed.xml) · [Issue 1](https://fortune-insight.onrender.com/shop/brief/issue-001-en.html)
 - [Use Your Loaf](https://useyourloaf.com/)
 - [Kodeco](https://www.kodeco.com/ios)
 - [Donny Wals](https://www.donnywals.com/)
