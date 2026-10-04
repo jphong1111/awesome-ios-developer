@@ -2611,6 +2611,7 @@ Here are the useful blog list which you can get references & knowledges about iO
    - [Publishing to AppStore](https://codewithchris.com/submit-your-app-to-the-app-store/#apple-developer-program)
    - [StoreKit](https://developer.apple.com/documentation/storekit)
    - [What is a provisioning profile & code signing in iOS?](https://abhimuralidharan.medium.com/what-is-a-provisioning-profile-in-ios-77987a7c54c2)
+   - [Apple App Store Screenshots Generator](https://github.com/jawwadfirdousi/apple-appstore-screens-generator) - Open-source tool to generate App Store screenshots faster.
   
 ## iOS Version Adoption Tracker
 
@@ -2780,5 +2781,3 @@ email: ghdwjdvy96@gmail.com
 <p align="right">
 <a href="#-content">Back to Content</a>
 </p>
-
-
