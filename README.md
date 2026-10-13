@@ -666,6 +666,7 @@ TBA
 - [icon8](https://icons8.com/) You can download icons imge for your **APP**
 - [appicon](https://appicon.co/) generate the app icon size
 - [flaticon](www.flaticon.com) Free icons download
+- [APPLORE App Icon Generator](https://applore.app/app-icon-generator) Turn one 1024px image into a full Xcode AppIcon set plus macOS, Icon Composer (.icon), Android and favicon sizes in one ZIP, free in the browser
 
 
 ## UIdesign Inspiration
