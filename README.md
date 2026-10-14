@@ -2603,6 +2603,7 @@ Here are the useful blog list which you can get references & knowledges about iO
 - [SwiftLee](https://www.avanderlee.com/) 👍
 - [Apple Developer](https://developer.apple.com/videos/) Find recent technique with videos and example codes!!
 - [appinventiv](https://appinventiv.com/blog/) Including iOS and others!! 
+- [Proceeds Ledger Guides](https://proceedsledger.noemacreate.org/guide/apple-payment-reconciliation) - App Store payments, payouts and bookkeeping in Xero and QuickBooks
 - Continue adding lists...
 
 
