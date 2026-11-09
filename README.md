@@ -2190,9 +2190,9 @@ For more info, go to [Apple Developer Website](https://developer.apple.com/docum
 
 # Tuist
 
-- Tuist is a command line tool that helps you generate, maintain and interact with Xcode projects.
+- Tuist builds infrastructure for faster, more reliable build and test workflows across developers, CI, and coding agents; on Apple it also generates Xcode projects.
 
-- [Tuist](https://docs.tuist.io/tutorial/get-started)
+- [Tuist](https://tuist.dev/en/docs)
 - [Tuist Github](https://github.com/tuist/tuist)
 - [Tuist Tutorial for Xcode](https://www.raywenderlich.com/24508362-tuist-tutorial-for-xcode)
 
