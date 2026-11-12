@@ -195,6 +195,7 @@ apple developer tutorial video link update
     - [CircleCI](#CircleCI)
     - [Codemagic](#Codemagic)
     - [Xcode Cloud](#xcode-cloud)
+    - [Buddy](#buddy)
 - [Swift DocC](#swift-DocC)
 - [Tuist](#Tuist)
 - [In App Purchase(IAP)](#In-App-PurchaseIAP)
@@ -2183,6 +2184,11 @@ You can integrate Circle CI into Github repo, therefore we can use it in PR.
 [WWDC21](https://www.apple.com/apple-events/june-2021/?&cid=wwa-us-kwgo-features-slid--Brand-AppleLive-Post-&mtid=20925e1t39169&aosid=p238&mnid=sZH3E0Pf0-dc_mtid_20925e1t39169_pcrid_524281987644_pgrid_129696028064_) Apple released [Xcode Cloud](https://developer.apple.com/xcode-cloud/) for continuous integration
 
 For more info, go to [Apple Developer Website](https://developer.apple.com/documentation/Xcode/Xcode-Cloud)
+
+
+## Buddy
+
+[Buddy](https://buddy.works/docs/basics/workflows/ios/pipeline-configuration) - Pipeline actions that build iOS apps with Xcode or Fastlane on macOS VMs, sign the archive with your certificate and provisioning profile, and upload the .ipa to App Store Connect.
 
 <p align="right">
 <a href="#-content">Back to Content</a>
