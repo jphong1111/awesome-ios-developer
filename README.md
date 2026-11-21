@@ -2612,6 +2612,7 @@ Here are the useful blog list which you can get references & knowledges about iO
    - [StoreKit](https://developer.apple.com/documentation/storekit)
    - [What is a provisioning profile & code signing in iOS?](https://abhimuralidharan.medium.com/what-is-a-provisioning-profile-in-ios-77987a7c54c2)
    - [Apple App Store Screenshots Generator](https://github.com/jawwadfirdousi/apple-appstore-screens-generator) - Open-source tool to generate App Store screenshots faster.
+   - [XShots](https://selfark.com/xshots) - Native Mac editor for designing, localizing, and batch-exporting app store screenshot sets. Three-day trial, then paid.
   
 ## iOS Version Adoption Tracker
 
