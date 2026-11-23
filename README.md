@@ -2612,6 +2612,7 @@ Here are the useful blog list which you can get references & knowledges about iO
    - [StoreKit](https://developer.apple.com/documentation/storekit)
    - [What is a provisioning profile & code signing in iOS?](https://abhimuralidharan.medium.com/what-is-a-provisioning-profile-in-ios-77987a7c54c2)
    - [Apple App Store Screenshots Generator](https://github.com/jawwadfirdousi/apple-appstore-screens-generator) - Open-source tool to generate App Store screenshots faster.
+   - [Mobileprovision Viewer](https://bestlatestapps.com/tools/mobileprovision-viewer/) - Browser tool that shows a .mobileprovision file's app ID, team, expiry, devices, certificates and entitlements, handy when a signing or install error needs debugging.
   
 ## iOS Version Adoption Tracker
 
